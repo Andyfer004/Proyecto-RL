@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=69"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "thruster-landing"
+version = "0.1.0"
+description = "Simulador académico 2D de aterrizaje con propulsores"
+readme = "README.md"
+requires-python = ">=3.11,<3.15"
+dependencies = ["numpy>=1.26,<3", "gymnasium>=1.1,<2"]
+
+[project.optional-dependencies]
+render = ["pygame-ce>=2.5,<3"]
+dev = ["pytest>=8,<10"]
+rl = ["torch>=2.5,<3"]
+analysis = ["pandas>=2.2,<4", "matplotlib>=3.9,<4"]
+
+[project.scripts]
+thruster-play = "thruster_landing.play:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra"

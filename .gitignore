@@ -1,0 +1,51 @@
+# Entornos, compilación y cachés
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+*.egg-info/
+build/
+dist/
+.coverage
+htmlcov/
+# Archivos temporales y del sistema
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+*.tmp
+# Resultados completos: se conservan localmente, selección en docs/resultados/
+/artifacts/
+/checkpoints/
+/replay_buffers/
+/logs/
+*.pt
+*.pth
+*.ckpt
+*.resume.*
+*.replay.*
+*.log
+*.traces.csv
+*.mp4
+*.mov
+*.avi
+*.webm
+# Credenciales y datos privados
+.env
+.env.*
+*.pem
+*.key
+/.aws/
+/secrets/
+/private_data/
+# Registros y auxiliares de asistentes; el código y la documentación se incluyen
+/.codex/
+/.agents/
+/.aider*
+/conversations/
+/prompts/
+/transcripts/
