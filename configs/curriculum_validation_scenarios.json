@@ -1,0 +1,2182 @@
+{
+  "schema_version": 1,
+  "split": "validation",
+  "scenarios": [
+    {
+      "id": "curriculum-validation-l1-000",
+      "condition": "level1",
+      "source_level": 1,
+      "seed": 71000,
+      "options": {
+        "initial_state": {
+          "x": 0.009496846478239963,
+          "y": 1.642915791708713,
+          "vx": 0.019726755299285602,
+          "vy": -0.09928366192705393,
+          "theta": 0.008425917049465959,
+          "omega": -0.0007254040331875378
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "curriculum-validation-l1-001",
+      "condition": "level1",
+      "source_level": 1,
+      "seed": 71001,
+      "options": {
+        "initial_state": {
+          "x": -0.04103064219128061,
+          "y": 1.6528535300430973,
+          "vx": -0.012069039500593712,
+          "vy": -0.056739109677838545,
+          "theta": -0.0062613559913024044,
+          "omega": -0.0039034232784335324
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "curriculum-validation-l1-002",
+      "condition": "level1",
+      "source_level": 1,
+      "seed": 71002,
+      "options": {
+        "initial_state": {
+          "x": -0.057006820397367534,
+          "y": 2.0631222824889526,
+          "vx": -0.0061853237498798765,
+          "vy": -0.13339187911400596,
+          "theta": 0.00954499282113423,
+          "omega": -0.00024371280077512103
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "curriculum-validation-l1-003",
+      "condition": "level1",
+      "source_level": 1,
+      "seed": 71003,
+      "options": {
+        "initial_state": {
+          "x": -0.016573300315028995,
+          "y": 2.075587811197029,
+          "vx": -0.0027081618014494066,
+          "vy": -0.06422056824366473,
+          "theta": 0.007414646547406374,
+          "omega": 0.0018863354925605803
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "curriculum-validation-l1-004",
+      "condition": "level1",
+      "source_level": 1,
+      "seed": 71004,
+      "options": {
+        "initial_state": {
+          "x": 0.057440421522618995,
+          "y": 1.706308971914734,
+          "vx": 0.023920894349285,
+          "vy": -0.0933020333397761,
+          "theta": -0.0008086220478240947,
+          "omega": -0.00021568708151358472
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "curriculum-validation-l1-005",
+      "condition": "level1",
+      "source_level": 1,
+      "seed": 71005,
+      "options": {
+        "initial_state": {
+          "x": 0.08939740506976941,
+          "y": 1.6129676535873556,
+          "vx": 0.01685623027918086,
+          "vy": -0.21271226448230038,
+          "theta": -0.005567423660318867,
+          "omega": -0.0008476983261539573
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "curriculum-validation-l1-006",
+      "condition": "level1",
+      "source_level": 1,
+      "seed": 71006,
+      "options": {
+        "initial_state": {
+          "x": 0.01211964454125163,
+          "y": 2.131550138240826,
+          "vx": -0.003274409059509391,
+          "vy": -0.08787679135136767,
+          "theta": 0.0033655656665389413,
+          "omega": -0.0027551493809131245
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "curriculum-validation-l1-007",
+      "condition": "level1",
+      "source_level": 1,
+      "seed": 71007,
+      "options": {
+        "initial_state": {
+          "x": -0.003247205439517198,
+          "y": 2.1390131893644355,
+          "vx": 0.007906579231927438,
+          "vy": -0.09721881592491802,
+          "theta": 0.007655979065814827,
+          "omega": 0.002741491416001186
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "curriculum-validation-l1-008",
+      "condition": "level1",
+      "source_level": 1,
+      "seed": 71008,
+      "options": {
+        "initial_state": {
+          "x": -0.054933546492488786,
+          "y": 2.2446007106162673,
+          "vx": 0.009931803346971503,
+          "vy": -0.14331438445957737,
+          "theta": 0.0061853527050659916,
+          "omega": 0.004324773392118386
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "curriculum-validation-l1-009",
+      "condition": "level1",
+      "source_level": 1,
+      "seed": 71009,
+      "options": {
+        "initial_state": {
+          "x": -0.007364645708568718,
+          "y": 1.804476401664061,
+          "vx": -0.007054490957328987,
+          "vy": -0.1420274157273301,
+          "theta": 0.007452223582513411,
+          "omega": -0.00016817636870053999
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "curriculum-validation-l1-010",
+      "condition": "level1",
+      "source_level": 1,
+      "seed": 71010,
+      "options": {
+        "initial_state": {
+          "x": 0.04815937035014209,
+          "y": 2.1550769235258493,
+          "vx": 0.02356830317731071,
+          "vy": -0.2868441153528118,
+          "theta": -0.009234729340681534,
+          "omega": -0.0012051440355612508
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "curriculum-validation-l1-011",
+      "condition": "level1",
+      "source_level": 1,
+      "seed": 71011,
+      "options": {
+        "initial_state": {
+          "x": 0.01326331854558398,
+          "y": 1.9999451150499805,
+          "vx": 0.007157072785736296,
+          "vy": -0.11977058158848125,
+          "theta": 0.005687086095790919,
+          "omega": 0.0012706366041364558
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "curriculum-validation-l1-012",
+      "condition": "level1",
+      "source_level": 1,
+      "seed": 71012,
+      "options": {
+        "initial_state": {
+          "x": 0.08180309305939569,
+          "y": 2.197361320994299,
+          "vx": -0.023234080933105923,
+          "vy": -0.12670108030506003,
+          "theta": -0.007825230414305485,
+          "omega": 0.0027285522034558806
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "curriculum-validation-l1-013",
+      "condition": "level1",
+      "source_level": 1,
+      "seed": 71013,
+      "options": {
+        "initial_state": {
+          "x": -0.02858669192666781,
+          "y": 2.3861673975237427,
+          "vx": -0.008901776977014398,
+          "vy": -0.2142930257799867,
+          "theta": 0.0008816499179049143,
+          "omega": 0.0005133214956488464
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "curriculum-validation-l1-014",
+      "condition": "level1",
+      "source_level": 1,
+      "seed": 71014,
+      "options": {
+        "initial_state": {
+          "x": 0.09130213474278935,
+          "y": 1.6785945942948863,
+          "vx": -0.0006756549412180112,
+          "vy": -0.2831983282570171,
+          "theta": 0.009789082104647547,
+          "omega": 0.0023852131137649703
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "curriculum-validation-l1-015",
+      "condition": "level1",
+      "source_level": 1,
+      "seed": 71015,
+      "options": {
+        "initial_state": {
+          "x": 0.06338987910416254,
+          "y": 1.8193904367983411,
+          "vx": 0.025509241669742007,
+          "vy": -0.270099502528196,
+          "theta": 0.004757887787124762,
+          "omega": -0.0030707877223762193
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "curriculum-validation-l1-016",
+      "condition": "level1",
+      "source_level": 1,
+      "seed": 71016,
+      "options": {
+        "initial_state": {
+          "x": 0.07391652689916704,
+          "y": 1.8384026879958502,
+          "vx": -0.02627766093470871,
+          "vy": -0.263980611013608,
+          "theta": 0.005385912947500209,
+          "omega": -0.0015101196483475522
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "curriculum-validation-l1-017",
+      "condition": "level1",
+      "source_level": 1,
+      "seed": 71017,
+      "options": {
+        "initial_state": {
+          "x": -0.007386460560403952,
+          "y": 1.7364487342328028,
+          "vx": -0.01417253412284407,
+          "vy": -0.10594049633437413,
+          "theta": 0.002276470753652917,
+          "omega": -0.0036265923426267764
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "curriculum-validation-l1-018",
+      "condition": "level1",
+      "source_level": 1,
+      "seed": 71018,
+      "options": {
+        "initial_state": {
+          "x": 0.09268931800753362,
+          "y": 1.951098244316389,
+          "vx": 0.021680757107305427,
+          "vy": -0.11214080712943691,
+          "theta": -0.006703448606062672,
+          "omega": 3.116228233803753e-05
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "curriculum-validation-l1-019",
+      "condition": "level1",
+      "source_level": 1,
+      "seed": 71019,
+      "options": {
+        "initial_state": {
+          "x": -0.07009546674841116,
+          "y": 2.2464620626714535,
+          "vx": 0.009065494024728738,
+          "vy": -0.08768629043073112,
+          "theta": -0.007048098547270676,
+          "omega": 0.0012620587065112477
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "curriculum-validation-l1-020",
+      "condition": "level1",
+      "source_level": 1,
+      "seed": 71020,
+      "options": {
+        "initial_state": {
+          "x": -0.08757550244740911,
+          "y": 2.209056984231512,
+          "vx": 0.026692080638495957,
+          "vy": -0.062318645120673144,
+          "theta": -0.0011815569485148325,
+          "omega": -0.0023633786184709973
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "curriculum-validation-l1-021",
+      "condition": "level1",
+      "source_level": 1,
+      "seed": 71021,
+      "options": {
+        "initial_state": {
+          "x": -0.005280806963494667,
+          "y": 2.234432883289017,
+          "vx": 0.017549908185921358,
+          "vy": -0.20028307800334988,
+          "theta": -0.006927560348133679,
+          "omega": 0.0021253195106635835
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "curriculum-validation-l1-022",
+      "condition": "level1",
+      "source_level": 1,
+      "seed": 71022,
+      "options": {
+        "initial_state": {
+          "x": -0.018820464726955557,
+          "y": 2.371024862660823,
+          "vx": -0.01316882694036089,
+          "vy": -0.2826784041966679,
+          "theta": 0.005344810547708121,
+          "omega": 0.002999310109860183
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "curriculum-validation-l1-023",
+      "condition": "level1",
+      "source_level": 1,
+      "seed": 71023,
+      "options": {
+        "initial_state": {
+          "x": 0.07270948026664313,
+          "y": 1.749827401474339,
+          "vx": 0.01970648953992767,
+          "vy": -0.20397887364155212,
+          "theta": 0.005884601563309129,
+          "omega": 0.004245966885603881
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "curriculum-validation-l1-024",
+      "condition": "level1",
+      "source_level": 1,
+      "seed": 71024,
+      "options": {
+        "initial_state": {
+          "x": 0.0878757246504443,
+          "y": 2.3268015537504203,
+          "vx": 0.016643581969023564,
+          "vy": -0.15954406706133953,
+          "theta": 0.008575931222781106,
+          "omega": -0.0017010663241166424
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "curriculum-validation-l1-025",
+      "condition": "level1",
+      "source_level": 1,
+      "seed": 71025,
+      "options": {
+        "initial_state": {
+          "x": -0.01568293608545468,
+          "y": 2.021910655709496,
+          "vx": 0.006451410521672071,
+          "vy": -0.08708105996813076,
+          "theta": 0.0008045087627197822,
+          "omega": -0.001388294970226035
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "curriculum-validation-l1-026",
+      "condition": "level1",
+      "source_level": 1,
+      "seed": 71026,
+      "options": {
+        "initial_state": {
+          "x": 0.0953762187934994,
+          "y": 2.326356864404103,
+          "vx": -0.006473663196202321,
+          "vy": -0.20045858830498964,
+          "theta": -0.004154339802635449,
+          "omega": 0.0038709723515398223
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "curriculum-validation-l1-027",
+      "condition": "level1",
+      "source_level": 1,
+      "seed": 71027,
+      "options": {
+        "initial_state": {
+          "x": 0.033635209266425915,
+          "y": 2.3294840815087854,
+          "vx": -0.001781789029877898,
+          "vy": -0.2701021348556723,
+          "theta": 0.0012680138389776908,
+          "omega": -0.0030393527706979663
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "curriculum-validation-l1-028",
+      "condition": "level1",
+      "source_level": 1,
+      "seed": 71028,
+      "options": {
+        "initial_state": {
+          "x": -0.05076170068240722,
+          "y": 1.7866372591969422,
+          "vx": 0.014802596500747644,
+          "vy": -0.25199195788974876,
+          "theta": -0.008873097674613034,
+          "omega": 0.003242843179489956
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "curriculum-validation-l1-029",
+      "condition": "level1",
+      "source_level": 1,
+      "seed": 71029,
+      "options": {
+        "initial_state": {
+          "x": -0.03584592683201968,
+          "y": 1.8427813425766744,
+          "vx": -0.005905481923536759,
+          "vy": -0.21452116357734805,
+          "theta": -0.0019379298059850393,
+          "omega": -0.0003753562457290427
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "curriculum-validation-l1-030",
+      "condition": "level1",
+      "source_level": 1,
+      "seed": 71030,
+      "options": {
+        "initial_state": {
+          "x": -0.0017819951961498993,
+          "y": 1.7039450135275942,
+          "vx": 0.004380802582988452,
+          "vy": -0.0660514917624817,
+          "theta": -0.0038822563371683815,
+          "omega": 0.00427916580942276
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "curriculum-validation-l1-031",
+      "condition": "level1",
+      "source_level": 1,
+      "seed": 71031,
+      "options": {
+        "initial_state": {
+          "x": -0.027958064365568025,
+          "y": 1.8923063616204079,
+          "vx": 0.022289964733557596,
+          "vy": -0.20477057812143726,
+          "theta": 0.0019442702032706504,
+          "omega": 0.003310029954710463
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "curriculum-validation-l2-000",
+      "condition": "level2",
+      "source_level": 2,
+      "seed": 72000,
+      "options": {
+        "initial_state": {
+          "x": 0.15896843861748675,
+          "y": 5.577569569816383,
+          "vx": -0.03522336588313779,
+          "vy": -0.515556435293622,
+          "theta": 0.010806250613753265,
+          "omega": -0.008317504421538328
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "curriculum-validation-l2-001",
+      "condition": "level2",
+      "source_level": 2,
+      "seed": 72001,
+      "options": {
+        "initial_state": {
+          "x": 0.0035626595942504836,
+          "y": 5.2637775973829966,
+          "vx": -0.06621940569117434,
+          "vy": -0.4299641888770653,
+          "theta": 0.022601493125270995,
+          "omega": -0.009209442583867007
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "curriculum-validation-l2-002",
+      "condition": "level2",
+      "source_level": 2,
+      "seed": 72002,
+      "options": {
+        "initial_state": {
+          "x": 0.27686414312657076,
+          "y": 4.470112045133954,
+          "vx": -0.019393887739920148,
+          "vy": -0.5746156238312452,
+          "theta": -0.005264034179913084,
+          "omega": -0.007441511841431963
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "curriculum-validation-l2-003",
+      "condition": "level2",
+      "source_level": 2,
+      "seed": 72003,
+      "options": {
+        "initial_state": {
+          "x": -0.18734429830418958,
+          "y": 5.335958689432848,
+          "vx": -0.09965010795921536,
+          "vy": -0.3685193131783335,
+          "theta": 0.013730553039078632,
+          "omega": -0.002201704475570758
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "curriculum-validation-l2-004",
+      "condition": "level2",
+      "source_level": 2,
+      "seed": 72004,
+      "options": {
+        "initial_state": {
+          "x": -0.2537253571925603,
+          "y": 6.330456073257894,
+          "vx": 0.0817681338833725,
+          "vy": -0.31888905669501594,
+          "theta": -0.0011189106442707874,
+          "omega": 0.008124177631362478
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "curriculum-validation-l2-005",
+      "condition": "level2",
+      "source_level": 2,
+      "seed": 72005,
+      "options": {
+        "initial_state": {
+          "x": -0.3212551902999848,
+          "y": 4.896424956174328,
+          "vx": 0.06676248570996302,
+          "vy": -0.4888429781115072,
+          "theta": -0.004659242698580419,
+          "omega": 0.00894534925448981
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "curriculum-validation-l2-006",
+      "condition": "level2",
+      "source_level": 2,
+      "seed": 72006,
+      "options": {
+        "initial_state": {
+          "x": 0.008183301443816937,
+          "y": 5.913301618503527,
+          "vx": -0.06090241755319919,
+          "vy": -0.1872073009883447,
+          "theta": -0.013763116887098113,
+          "omega": 0.005897632848189231
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "curriculum-validation-l2-007",
+      "condition": "level2",
+      "source_level": 2,
+      "seed": 72007,
+      "options": {
+        "initial_state": {
+          "x": 0.1052560005802154,
+          "y": 5.681181540955522,
+          "vx": 0.056602813463058156,
+          "vy": -0.2746840160516866,
+          "theta": 0.019475047945425344,
+          "omega": -0.002767534881833513
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "curriculum-validation-l2-008",
+      "condition": "level2",
+      "source_level": 2,
+      "seed": 72008,
+      "options": {
+        "initial_state": {
+          "x": -0.188772130513856,
+          "y": 5.9146351102306935,
+          "vx": -0.034380543926376926,
+          "vy": -0.4562223759249139,
+          "theta": 0.0010267436745210823,
+          "omega": 0.008801369376794725
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "curriculum-validation-l2-009",
+      "condition": "level2",
+      "source_level": 2,
+      "seed": 72009,
+      "options": {
+        "initial_state": {
+          "x": -0.20407027307185877,
+          "y": 6.303613800761375,
+          "vx": 0.018923094724625413,
+          "vy": -0.05993584939730686,
+          "theta": 0.03234460728646593,
+          "omega": -0.0003583488613189689
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "curriculum-validation-l2-010",
+      "condition": "level2",
+      "source_level": 2,
+      "seed": 72010,
+      "options": {
+        "initial_state": {
+          "x": 0.05687735251121682,
+          "y": 5.043038765965794,
+          "vx": 0.02902917824087388,
+          "vy": -0.06651930866334493,
+          "theta": -0.02447736993849807,
+          "omega": -0.006440794092429858
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "curriculum-validation-l2-011",
+      "condition": "level2",
+      "source_level": 2,
+      "seed": 72011,
+      "options": {
+        "initial_state": {
+          "x": -0.3698021643954015,
+          "y": 6.319328124051673,
+          "vx": 0.035471843498202094,
+          "vy": -0.05893942347823591,
+          "theta": -0.03567576063680619,
+          "omega": 0.003519456945047901
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "curriculum-validation-l2-012",
+      "condition": "level2",
+      "source_level": 2,
+      "seed": 72012,
+      "options": {
+        "initial_state": {
+          "x": 0.39156915899097183,
+          "y": 6.774938132562544,
+          "vx": 0.09884049579810464,
+          "vy": -0.427357297640674,
+          "theta": -0.019940908055332277,
+          "omega": 0.009772288034910615
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "curriculum-validation-l2-013",
+      "condition": "level2",
+      "source_level": 2,
+      "seed": 72013,
+      "options": {
+        "initial_state": {
+          "x": -0.2646039228043855,
+          "y": 6.361700195892767,
+          "vx": -0.023894428623441846,
+          "vy": -0.6654750110385548,
+          "theta": -0.024092406380380293,
+          "omega": -0.0033936264114556147
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "curriculum-validation-l2-014",
+      "condition": "level2",
+      "source_level": 2,
+      "seed": 72014,
+      "options": {
+        "initial_state": {
+          "x": -0.0012068779062745173,
+          "y": 4.638859349147468,
+          "vx": 0.05956927989024046,
+          "vy": -0.16463035417853847,
+          "theta": -0.027952946761558534,
+          "omega": 0.009466391837134547
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "curriculum-validation-l2-015",
+      "condition": "level2",
+      "source_level": 2,
+      "seed": 72015,
+      "options": {
+        "initial_state": {
+          "x": 0.10622943330834521,
+          "y": 5.098537172399145,
+          "vx": -0.05440066750753236,
+          "vy": -0.6067223382858016,
+          "theta": 0.03845022547290903,
+          "omega": -0.00974562581567515
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "curriculum-validation-l2-016",
+      "condition": "level2",
+      "source_level": 2,
+      "seed": 72016,
+      "options": {
+        "initial_state": {
+          "x": 0.23956720463525266,
+          "y": 6.472391245135664,
+          "vx": -0.04549908457935284,
+          "vy": -0.3527817505583476,
+          "theta": 0.004007341756051135,
+          "omega": 0.0007636600471498678
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "curriculum-validation-l2-017",
+      "condition": "level2",
+      "source_level": 2,
+      "seed": 72017,
+      "options": {
+        "initial_state": {
+          "x": 0.11793150191265456,
+          "y": 6.713288863541155,
+          "vx": 0.08930909222342298,
+          "vy": -0.2825308684264949,
+          "theta": 0.031031147961156007,
+          "omega": -0.003373526292538638
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "curriculum-validation-l2-018",
+      "condition": "level2",
+      "source_level": 2,
+      "seed": 72018,
+      "options": {
+        "initial_state": {
+          "x": -0.3648397607017949,
+          "y": 6.626649267560377,
+          "vx": -0.048780827453122004,
+          "vy": -0.47193099805724414,
+          "theta": -0.01164864618747111,
+          "omega": -0.005964587808231406
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "curriculum-validation-l2-019",
+      "condition": "level2",
+      "source_level": 2,
+      "seed": 72019,
+      "options": {
+        "initial_state": {
+          "x": 0.14845903829035878,
+          "y": 6.3070810448921595,
+          "vx": -0.046829574201589425,
+          "vy": -0.30691407883077515,
+          "theta": 0.03654925326912646,
+          "omega": -0.002054066046262539
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "curriculum-validation-l2-020",
+      "condition": "level2",
+      "source_level": 2,
+      "seed": 72020,
+      "options": {
+        "initial_state": {
+          "x": 0.03835583320460367,
+          "y": 6.509440035960072,
+          "vx": -0.07005766846515733,
+          "vy": -0.20811975843812555,
+          "theta": 0.00528152571178226,
+          "omega": -0.0052243938130661196
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "curriculum-validation-l2-021",
+      "condition": "level2",
+      "source_level": 2,
+      "seed": 72021,
+      "options": {
+        "initial_state": {
+          "x": 0.33420290775114314,
+          "y": 4.86866842243845,
+          "vx": -0.05314281113558739,
+          "vy": -0.19953813069100432,
+          "theta": -0.012446797659143983,
+          "omega": 0.003351506443321948
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "curriculum-validation-l2-022",
+      "condition": "level2",
+      "source_level": 2,
+      "seed": 72022,
+      "options": {
+        "initial_state": {
+          "x": 0.04209841851239915,
+          "y": 6.561672622794278,
+          "vx": 0.08232130518403197,
+          "vy": -0.1110532461401177,
+          "theta": -0.010008091006567828,
+          "omega": 0.005531970852433312
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "curriculum-validation-l2-023",
+      "condition": "level2",
+      "source_level": 2,
+      "seed": 72023,
+      "options": {
+        "initial_state": {
+          "x": 0.04012357942685645,
+          "y": 4.667202959205426,
+          "vx": 0.054267446107921426,
+          "vy": -0.4491802245204892,
+          "theta": 0.001587136163969225,
+          "omega": 0.0035894194041173333
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "curriculum-validation-l2-024",
+      "condition": "level2",
+      "source_level": 2,
+      "seed": 72024,
+      "options": {
+        "initial_state": {
+          "x": 0.21967876147910045,
+          "y": 6.147329385468508,
+          "vx": -0.025413598104964442,
+          "vy": -0.2233457140752043,
+          "theta": -0.03129810510894851,
+          "omega": -0.009952996722597305
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "curriculum-validation-l2-025",
+      "condition": "level2",
+      "source_level": 2,
+      "seed": 72025,
+      "options": {
+        "initial_state": {
+          "x": 0.34621800016039483,
+          "y": 5.185996766822477,
+          "vx": -0.00748292000909876,
+          "vy": -0.4033868234573436,
+          "theta": 0.013287965812143537,
+          "omega": 0.0008034298583803135
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "curriculum-validation-l2-026",
+      "condition": "level2",
+      "source_level": 2,
+      "seed": 72026,
+      "options": {
+        "initial_state": {
+          "x": -0.3388842158096032,
+          "y": 4.914924003566312,
+          "vx": 0.09484963648954366,
+          "vy": -0.6034397465143195,
+          "theta": -0.02954698452142658,
+          "omega": 0.0034192023979541064
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "curriculum-validation-l2-027",
+      "condition": "level2",
+      "source_level": 2,
+      "seed": 72027,
+      "options": {
+        "initial_state": {
+          "x": 0.2893884022766735,
+          "y": 6.049951109633689,
+          "vx": 0.03511252774899489,
+          "vy": -0.5647741657007921,
+          "theta": 0.02847831930844781,
+          "omega": 0.0012243176785565124
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "curriculum-validation-l2-028",
+      "condition": "level2",
+      "source_level": 2,
+      "seed": 72028,
+      "options": {
+        "initial_state": {
+          "x": -0.021855615326771983,
+          "y": 5.21970338196469,
+          "vx": -0.04386274133447765,
+          "vy": -0.4306291621556384,
+          "theta": 0.03547296175804762,
+          "omega": 0.004639827770612895
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "curriculum-validation-l2-029",
+      "condition": "level2",
+      "source_level": 2,
+      "seed": 72029,
+      "options": {
+        "initial_state": {
+          "x": -0.03731210542529153,
+          "y": 4.811169295190711,
+          "vx": -0.07028471791742455,
+          "vy": -0.43604502882196117,
+          "theta": 0.007865727278740025,
+          "omega": 0.008726260160554779
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "curriculum-validation-l2-030",
+      "condition": "level2",
+      "source_level": 2,
+      "seed": 72030,
+      "options": {
+        "initial_state": {
+          "x": -0.17154058665124738,
+          "y": 6.925781682599957,
+          "vx": 0.011333134826720381,
+          "vy": -0.4769595179405037,
+          "theta": -0.005700860937527681,
+          "omega": 0.006574270383025116
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "curriculum-validation-l2-031",
+      "condition": "level2",
+      "source_level": 2,
+      "seed": 72031,
+      "options": {
+        "initial_state": {
+          "x": -0.2834525609769692,
+          "y": 5.2738841028741135,
+          "vx": 0.06294961106517775,
+          "vy": -0.5797637985918314,
+          "theta": 0.025680779454863797,
+          "omega": 0.002015008670678087
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "curriculum-validation-l3-000",
+      "condition": "level3",
+      "source_level": 3,
+      "seed": 73000,
+      "options": {
+        "initial_state": {
+          "x": 0.0,
+          "y": 11.874338537445091,
+          "vx": 0.0,
+          "vy": -0.5384534855933812,
+          "theta": 0.0,
+          "omega": 0.0
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "curriculum-validation-l3-001",
+      "condition": "level3",
+      "source_level": 3,
+      "seed": 73001,
+      "options": {
+        "initial_state": {
+          "x": 0.0,
+          "y": 11.917338769036878,
+          "vx": 0.0,
+          "vy": -0.6806752468091778,
+          "theta": 0.0,
+          "omega": 0.0
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "curriculum-validation-l3-002",
+      "condition": "level3",
+      "source_level": 3,
+      "seed": 73002,
+      "options": {
+        "initial_state": {
+          "x": 0.0,
+          "y": 11.534336269022525,
+          "vx": 0.0,
+          "vy": -0.21648611035544973,
+          "theta": 0.0,
+          "omega": 0.0
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "curriculum-validation-l3-003",
+      "condition": "level3",
+      "source_level": 3,
+      "seed": 73003,
+      "options": {
+        "initial_state": {
+          "x": 0.0,
+          "y": 11.090895842882826,
+          "vx": 0.0,
+          "vy": -0.5921328879800766,
+          "theta": 0.0,
+          "omega": 0.0
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "curriculum-validation-l3-004",
+      "condition": "level3",
+      "source_level": 3,
+      "seed": 73004,
+      "options": {
+        "initial_state": {
+          "x": 0.0,
+          "y": 10.645644166595917,
+          "vx": 0.0,
+          "vy": -0.6037566954496504,
+          "theta": 0.0,
+          "omega": 0.0
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "curriculum-validation-l3-005",
+      "condition": "level3",
+      "source_level": 3,
+      "seed": 73005,
+      "options": {
+        "initial_state": {
+          "x": 0.0,
+          "y": 10.227659879034938,
+          "vx": 0.0,
+          "vy": -0.8549653396701377,
+          "theta": 0.0,
+          "omega": 0.0
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "curriculum-validation-l3-006",
+      "condition": "level3",
+      "source_level": 3,
+      "seed": 73006,
+      "options": {
+        "initial_state": {
+          "x": 0.0,
+          "y": 10.788249469129417,
+          "vx": 0.0,
+          "vy": -0.20730395636014198,
+          "theta": 0.0,
+          "omega": 0.0
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "curriculum-validation-l3-007",
+      "condition": "level3",
+      "source_level": 3,
+      "seed": 73007,
+      "options": {
+        "initial_state": {
+          "x": 0.0,
+          "y": 10.075864415028628,
+          "vx": 0.0,
+          "vy": -0.6239542264547457,
+          "theta": 0.0,
+          "omega": 0.0
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "curriculum-validation-l3-008",
+      "condition": "level3",
+      "source_level": 3,
+      "seed": 73008,
+      "options": {
+        "initial_state": {
+          "x": 0.0,
+          "y": 11.984725412403789,
+          "vx": 0.0,
+          "vy": -0.0477154008338988,
+          "theta": 0.0,
+          "omega": 0.0
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "curriculum-validation-l3-009",
+      "condition": "level3",
+      "source_level": 3,
+      "seed": 73009,
+      "options": {
+        "initial_state": {
+          "x": 0.0,
+          "y": 10.445258908025643,
+          "vx": 0.0,
+          "vy": -0.08786904039935561,
+          "theta": 0.0,
+          "omega": 0.0
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "curriculum-validation-l3-010",
+      "condition": "level3",
+      "source_level": 3,
+      "seed": 73010,
+      "options": {
+        "initial_state": {
+          "x": 0.0,
+          "y": 11.16302825367018,
+          "vx": 0.0,
+          "vy": -0.1711342376880287,
+          "theta": 0.0,
+          "omega": 0.0
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "curriculum-validation-l3-011",
+      "condition": "level3",
+      "source_level": 3,
+      "seed": 73011,
+      "options": {
+        "initial_state": {
+          "x": 0.0,
+          "y": 11.155701964068514,
+          "vx": 0.0,
+          "vy": -0.29095312875973145,
+          "theta": 0.0,
+          "omega": 0.0
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "curriculum-validation-l3-012",
+      "condition": "level3",
+      "source_level": 3,
+      "seed": 73012,
+      "options": {
+        "initial_state": {
+          "x": 0.0,
+          "y": 11.536531426673104,
+          "vx": 0.0,
+          "vy": -0.15155530311441534,
+          "theta": 0.0,
+          "omega": 0.0
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "curriculum-validation-l3-013",
+      "condition": "level3",
+      "source_level": 3,
+      "seed": 73013,
+      "options": {
+        "initial_state": {
+          "x": 0.0,
+          "y": 11.93124757527659,
+          "vx": 0.0,
+          "vy": -0.8792528308137483,
+          "theta": 0.0,
+          "omega": 0.0
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "curriculum-validation-l3-014",
+      "condition": "level3",
+      "source_level": 3,
+      "seed": 73014,
+      "options": {
+        "initial_state": {
+          "x": 0.0,
+          "y": 10.177532810101102,
+          "vx": 0.0,
+          "vy": -0.31119232074281844,
+          "theta": 0.0,
+          "omega": 0.0
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "curriculum-validation-l3-015",
+      "condition": "level3",
+      "source_level": 3,
+      "seed": 73015,
+      "options": {
+        "initial_state": {
+          "x": 0.0,
+          "y": 11.997904495705173,
+          "vx": 0.0,
+          "vy": -0.8567224988384037,
+          "theta": 0.0,
+          "omega": 0.0
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "curriculum-validation-l3-016",
+      "condition": "level3",
+      "source_level": 3,
+      "seed": 73016,
+      "options": {
+        "initial_state": {
+          "x": 0.0,
+          "y": 11.623962527226416,
+          "vx": 0.0,
+          "vy": -0.37407455629445663,
+          "theta": 0.0,
+          "omega": 0.0
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "curriculum-validation-l3-017",
+      "condition": "level3",
+      "source_level": 3,
+      "seed": 73017,
+      "options": {
+        "initial_state": {
+          "x": 0.0,
+          "y": 10.867358254960276,
+          "vx": 0.0,
+          "vy": -0.5929878465312647,
+          "theta": 0.0,
+          "omega": 0.0
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "curriculum-validation-l3-018",
+      "condition": "level3",
+      "source_level": 3,
+      "seed": 73018,
+      "options": {
+        "initial_state": {
+          "x": 0.0,
+          "y": 11.13075920567098,
+          "vx": 0.0,
+          "vy": -0.24113009513169792,
+          "theta": 0.0,
+          "omega": 0.0
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "curriculum-validation-l3-019",
+      "condition": "level3",
+      "source_level": 3,
+      "seed": 73019,
+      "options": {
+        "initial_state": {
+          "x": 0.0,
+          "y": 11.665174745085393,
+          "vx": 0.0,
+          "vy": -0.7735472720906651,
+          "theta": 0.0,
+          "omega": 0.0
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "curriculum-validation-l3-020",
+      "condition": "level3",
+      "source_level": 3,
+      "seed": 73020,
+      "options": {
+        "initial_state": {
+          "x": 0.0,
+          "y": 10.189520800699881,
+          "vx": 0.0,
+          "vy": -0.6575719932397519,
+          "theta": 0.0,
+          "omega": 0.0
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "curriculum-validation-l3-021",
+      "condition": "level3",
+      "source_level": 3,
+      "seed": 73021,
+      "options": {
+        "initial_state": {
+          "x": 0.0,
+          "y": 11.7282403224253,
+          "vx": 0.0,
+          "vy": -0.39854034856943943,
+          "theta": 0.0,
+          "omega": 0.0
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "curriculum-validation-l3-022",
+      "condition": "level3",
+      "source_level": 3,
+      "seed": 73022,
+      "options": {
+        "initial_state": {
+          "x": 0.0,
+          "y": 11.661669322504272,
+          "vx": 0.0,
+          "vy": -0.5333173950882215,
+          "theta": 0.0,
+          "omega": 0.0
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "curriculum-validation-l3-023",
+      "condition": "level3",
+      "source_level": 3,
+      "seed": 73023,
+      "options": {
+        "initial_state": {
+          "x": 0.0,
+          "y": 11.726753830025341,
+          "vx": 0.0,
+          "vy": -0.1101017031631718,
+          "theta": 0.0,
+          "omega": 0.0
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "curriculum-validation-l3-024",
+      "condition": "level3",
+      "source_level": 3,
+      "seed": 73024,
+      "options": {
+        "initial_state": {
+          "x": 0.0,
+          "y": 10.965110577213961,
+          "vx": 0.0,
+          "vy": -0.13603146663958998,
+          "theta": 0.0,
+          "omega": 0.0
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "curriculum-validation-l3-025",
+      "condition": "level3",
+      "source_level": 3,
+      "seed": 73025,
+      "options": {
+        "initial_state": {
+          "x": 0.0,
+          "y": 10.740331465104358,
+          "vx": 0.0,
+          "vy": -0.0015569522042576667,
+          "theta": 0.0,
+          "omega": 0.0
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "curriculum-validation-l3-026",
+      "condition": "level3",
+      "source_level": 3,
+      "seed": 73026,
+      "options": {
+        "initial_state": {
+          "x": 0.0,
+          "y": 11.484348705975709,
+          "vx": 0.0,
+          "vy": -0.09717515893860906,
+          "theta": 0.0,
+          "omega": 0.0
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "curriculum-validation-l3-027",
+      "condition": "level3",
+      "source_level": 3,
+      "seed": 73027,
+      "options": {
+        "initial_state": {
+          "x": 0.0,
+          "y": 10.113967703015948,
+          "vx": 0.0,
+          "vy": -0.7004933613040075,
+          "theta": 0.0,
+          "omega": 0.0
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "curriculum-validation-l3-028",
+      "condition": "level3",
+      "source_level": 3,
+      "seed": 73028,
+      "options": {
+        "initial_state": {
+          "x": 0.0,
+          "y": 10.33725871290442,
+          "vx": 0.0,
+          "vy": -0.8021677208896096,
+          "theta": 0.0,
+          "omega": 0.0
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "curriculum-validation-l3-029",
+      "condition": "level3",
+      "source_level": 3,
+      "seed": 73029,
+      "options": {
+        "initial_state": {
+          "x": 0.0,
+          "y": 10.863722434733676,
+          "vx": 0.0,
+          "vy": -0.8079572240669374,
+          "theta": 0.0,
+          "omega": 0.0
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "curriculum-validation-l3-030",
+      "condition": "level3",
+      "source_level": 3,
+      "seed": 73030,
+      "options": {
+        "initial_state": {
+          "x": 0.0,
+          "y": 11.2634595652694,
+          "vx": 0.0,
+          "vy": -0.6364065468745382,
+          "theta": 0.0,
+          "omega": 0.0
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "curriculum-validation-l3-031",
+      "condition": "level3",
+      "source_level": 3,
+      "seed": 73031,
+      "options": {
+        "initial_state": {
+          "x": 0.0,
+          "y": 10.862252465140628,
+          "vx": 0.0,
+          "vy": -0.9149405966634497,
+          "theta": 0.0,
+          "omega": 0.0
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "rl-validation-000",
+      "condition": "original",
+      "seed": 30000,
+      "options": {
+        "initial_state": {
+          "x": 0.0,
+          "y": 10.601266983379265,
+          "vx": 0.0,
+          "vy": -0.3844148941189751,
+          "theta": 0.0,
+          "omega": 0.0
+        },
+        "wind_force": 0.0
+      },
+      "source_level": 0
+    },
+    {
+      "id": "rl-validation-001",
+      "condition": "original",
+      "seed": 30001,
+      "options": {
+        "initial_state": {
+          "x": 0.0,
+          "y": 10.722613671694816,
+          "vx": 0.0,
+          "vy": -0.14182652037890764,
+          "theta": 0.0,
+          "omega": 0.0
+        },
+        "wind_force": 0.0
+      },
+      "source_level": 0
+    },
+    {
+      "id": "rl-validation-002",
+      "condition": "original",
+      "seed": 30002,
+      "options": {
+        "initial_state": {
+          "x": 0.0,
+          "y": 10.714354752489266,
+          "vx": 0.0,
+          "vy": -0.014261859517527564,
+          "theta": 0.0,
+          "omega": 0.0
+        },
+        "wind_force": 0.0
+      },
+      "source_level": 0
+    },
+    {
+      "id": "rl-validation-003",
+      "condition": "original",
+      "seed": 30003,
+      "options": {
+        "initial_state": {
+          "x": 0.0,
+          "y": 11.796010037452762,
+          "vx": 0.0,
+          "vy": -0.2673422022141273,
+          "theta": 0.0,
+          "omega": 0.0
+        },
+        "wind_force": 0.0
+      },
+      "source_level": 0
+    },
+    {
+      "id": "rl-validation-004",
+      "condition": "original",
+      "seed": 30004,
+      "options": {
+        "initial_state": {
+          "x": 0.0,
+          "y": 10.38141080232747,
+          "vx": 0.0,
+          "vy": -0.19579499783495968,
+          "theta": 0.0,
+          "omega": 0.0
+        },
+        "wind_force": 0.0
+      },
+      "source_level": 0
+    },
+    {
+      "id": "rl-validation-005",
+      "condition": "original",
+      "seed": 30005,
+      "options": {
+        "initial_state": {
+          "x": 0.0,
+          "y": 10.603329816135123,
+          "vx": 0.0,
+          "vy": -0.019932661778898186,
+          "theta": 0.0,
+          "omega": 0.0
+        },
+        "wind_force": 0.0
+      },
+      "source_level": 0
+    },
+    {
+      "id": "rl-validation-006",
+      "condition": "original",
+      "seed": 30006,
+      "options": {
+        "initial_state": {
+          "x": 0.0,
+          "y": 10.053062420852784,
+          "vx": 0.0,
+          "vy": -0.45647872659038125,
+          "theta": 0.0,
+          "omega": 0.0
+        },
+        "wind_force": 0.0
+      },
+      "source_level": 0
+    },
+    {
+      "id": "rl-validation-007",
+      "condition": "original",
+      "seed": 30007,
+      "options": {
+        "initial_state": {
+          "x": 0.0,
+          "y": 11.27839074373451,
+          "vx": 0.0,
+          "vy": -0.9536388741606868,
+          "theta": 0.0,
+          "omega": 0.0
+        },
+        "wind_force": 0.0
+      },
+      "source_level": 0
+    },
+    {
+      "id": "rl-validation-008",
+      "condition": "original",
+      "seed": 30008,
+      "options": {
+        "initial_state": {
+          "x": 0.0,
+          "y": 11.77969058254941,
+          "vx": 0.0,
+          "vy": -0.40988298124169,
+          "theta": 0.0,
+          "omega": 0.0
+        },
+        "wind_force": 0.0
+      },
+      "source_level": 0
+    },
+    {
+      "id": "rl-validation-009",
+      "condition": "original",
+      "seed": 30009,
+      "options": {
+        "initial_state": {
+          "x": 0.0,
+          "y": 10.423643202725652,
+          "vx": 0.0,
+          "vy": -0.5989039805184501,
+          "theta": 0.0,
+          "omega": 0.0
+        },
+        "wind_force": 0.0
+      },
+      "source_level": 0
+    },
+    {
+      "id": "rl-validation-010",
+      "condition": "original",
+      "seed": 30010,
+      "options": {
+        "initial_state": {
+          "x": 0.0,
+          "y": 11.207436050373603,
+          "vx": 0.0,
+          "vy": -0.030750757022678488,
+          "theta": 0.0,
+          "omega": 0.0
+        },
+        "wind_force": 0.0
+      },
+      "source_level": 0
+    },
+    {
+      "id": "rl-validation-011",
+      "condition": "original",
+      "seed": 30011,
+      "options": {
+        "initial_state": {
+          "x": 0.0,
+          "y": 10.562973643699785,
+          "vx": 0.0,
+          "vy": -0.5490659348554814,
+          "theta": 0.0,
+          "omega": 0.0
+        },
+        "wind_force": 0.0
+      },
+      "source_level": 0
+    },
+    {
+      "id": "rl-validation-012",
+      "condition": "original",
+      "seed": 30012,
+      "options": {
+        "initial_state": {
+          "x": 0.0,
+          "y": 11.287478562137952,
+          "vx": 0.0,
+          "vy": -0.10712635789970126,
+          "theta": 0.0,
+          "omega": 0.0
+        },
+        "wind_force": 0.0
+      },
+      "source_level": 0
+    },
+    {
+      "id": "rl-validation-013",
+      "condition": "original",
+      "seed": 30013,
+      "options": {
+        "initial_state": {
+          "x": 0.0,
+          "y": 10.1089084441278,
+          "vx": 0.0,
+          "vy": -0.36934592558982904,
+          "theta": 0.0,
+          "omega": 0.0
+        },
+        "wind_force": 0.0
+      },
+      "source_level": 0
+    },
+    {
+      "id": "rl-validation-014",
+      "condition": "original",
+      "seed": 30014,
+      "options": {
+        "initial_state": {
+          "x": 0.0,
+          "y": 11.854952407449609,
+          "vx": 0.0,
+          "vy": -0.29704176292241224,
+          "theta": 0.0,
+          "omega": 0.0
+        },
+        "wind_force": 0.0
+      },
+      "source_level": 0
+    },
+    {
+      "id": "rl-validation-015",
+      "condition": "original",
+      "seed": 30015,
+      "options": {
+        "initial_state": {
+          "x": 0.0,
+          "y": 11.128861180271976,
+          "vx": 0.0,
+          "vy": -0.4348010589138128,
+          "theta": 0.0,
+          "omega": 0.0
+        },
+        "wind_force": 0.0
+      },
+      "source_level": 0
+    },
+    {
+      "id": "rl-validation-016",
+      "condition": "original",
+      "seed": 30016,
+      "options": {
+        "initial_state": {
+          "x": -0.042253574092017444,
+          "y": 11.53227487900523,
+          "vx": 0.025916008154245863,
+          "vy": -0.28721307688999076,
+          "theta": 0.0021627586001429977,
+          "omega": 0.0
+        },
+        "wind_force": 0.0
+      },
+      "source_level": 0
+    },
+    {
+      "id": "rl-validation-017",
+      "condition": "original",
+      "seed": 30017,
+      "options": {
+        "initial_state": {
+          "x": 0.03023709372856072,
+          "y": 10.924854169270102,
+          "vx": 0.041361005044900805,
+          "vy": -0.46078978030067885,
+          "theta": 0.01954840358531667,
+          "omega": 0.0
+        },
+        "wind_force": 0.0
+      },
+      "source_level": 0
+    },
+    {
+      "id": "rl-validation-018",
+      "condition": "original",
+      "seed": 30018,
+      "options": {
+        "initial_state": {
+          "x": -0.06951464290152454,
+          "y": 11.74103478339257,
+          "vx": 0.02912318402780797,
+          "vy": -0.7344919594578964,
+          "theta": -0.002067971973476004,
+          "omega": 0.0
+        },
+        "wind_force": 0.0
+      },
+      "source_level": 0
+    },
+    {
+      "id": "rl-validation-019",
+      "condition": "original",
+      "seed": 30019,
+      "options": {
+        "initial_state": {
+          "x": 0.1812268060508706,
+          "y": 10.855224282629576,
+          "vx": -0.03906794286876402,
+          "vy": -0.04944779873400018,
+          "theta": 0.013021567352415957,
+          "omega": 0.0
+        },
+        "wind_force": 0.0
+      },
+      "source_level": 0
+    },
+    {
+      "id": "rl-validation-020",
+      "condition": "original",
+      "seed": 30020,
+      "options": {
+        "initial_state": {
+          "x": -0.09078616685094194,
+          "y": 10.65811493048462,
+          "vx": -0.009114018799710332,
+          "vy": -0.4179064169520659,
+          "theta": -0.005173267464415577,
+          "omega": 0.0
+        },
+        "wind_force": 0.0
+      },
+      "source_level": 0
+    },
+    {
+      "id": "rl-validation-021",
+      "condition": "original",
+      "seed": 30021,
+      "options": {
+        "initial_state": {
+          "x": -0.1532528470791802,
+          "y": 10.591476327687964,
+          "vx": 0.02552405702118349,
+          "vy": -0.1226877220047321,
+          "theta": -0.0012562613275836076,
+          "omega": 0.0
+        },
+        "wind_force": 0.0
+      },
+      "source_level": 0
+    },
+    {
+      "id": "rl-validation-022",
+      "condition": "original",
+      "seed": 30022,
+      "options": {
+        "initial_state": {
+          "x": -0.1400076742916958,
+          "y": 10.981923932799416,
+          "vx": 0.010520905460926567,
+          "vy": -0.20424938828568295,
+          "theta": -0.011925186284848325,
+          "omega": 0.0
+        },
+        "wind_force": 0.0
+      },
+      "source_level": 0
+    },
+    {
+      "id": "rl-validation-023",
+      "condition": "original",
+      "seed": 30023,
+      "options": {
+        "initial_state": {
+          "x": 0.09564847805056927,
+          "y": 11.769415986459292,
+          "vx": -0.018887479480367397,
+          "vy": -0.603174312714522,
+          "theta": 0.01759475718204973,
+          "omega": 0.0
+        },
+        "wind_force": 0.0
+      },
+      "source_level": 0
+    },
+    {
+      "id": "rl-validation-024",
+      "condition": "original",
+      "seed": 30024,
+      "options": {
+        "initial_state": {
+          "x": 0.14437540227074508,
+          "y": 10.378159706065292,
+          "vx": 0.03934318435507386,
+          "vy": -0.3134230724891205,
+          "theta": 0.0010618802427280816,
+          "omega": 0.0
+        },
+        "wind_force": 0.0
+      },
+      "source_level": 0
+    },
+    {
+      "id": "rl-validation-025",
+      "condition": "original",
+      "seed": 30025,
+      "options": {
+        "initial_state": {
+          "x": 0.19934862969997258,
+          "y": 10.474348277750623,
+          "vx": 0.0308270417644244,
+          "vy": -0.09701877102472178,
+          "theta": -0.010999390878802107,
+          "omega": 0.0
+        },
+        "wind_force": 0.0
+      },
+      "source_level": 0
+    },
+    {
+      "id": "rl-validation-026",
+      "condition": "original",
+      "seed": 30026,
+      "options": {
+        "initial_state": {
+          "x": -0.1600596260013238,
+          "y": 10.221155160510602,
+          "vx": 0.009831426775708786,
+          "vy": -0.5673611269243809,
+          "theta": 0.015801154395094604,
+          "omega": 0.0
+        },
+        "wind_force": 0.0
+      },
+      "source_level": 0
+    },
+    {
+      "id": "rl-validation-027",
+      "condition": "original",
+      "seed": 30027,
+      "options": {
+        "initial_state": {
+          "x": -0.0800868189057633,
+          "y": 10.397905996164946,
+          "vx": 0.019913429017668995,
+          "vy": -0.5334593300792059,
+          "theta": 0.006524974300048268,
+          "omega": 0.0
+        },
+        "wind_force": 0.0
+      },
+      "source_level": 0
+    },
+    {
+      "id": "rl-validation-028",
+      "condition": "original",
+      "seed": 30028,
+      "options": {
+        "initial_state": {
+          "x": -0.18937776053741628,
+          "y": 10.947665484161366,
+          "vx": 0.03711844179496319,
+          "vy": -0.0930066050747067,
+          "theta": -0.016737840122173255,
+          "omega": 0.0
+        },
+        "wind_force": 0.0
+      },
+      "source_level": 0
+    },
+    {
+      "id": "rl-validation-029",
+      "condition": "original",
+      "seed": 30029,
+      "options": {
+        "initial_state": {
+          "x": 0.17440009915137009,
+          "y": 11.00117466987409,
+          "vx": -0.04299282274234915,
+          "vy": -0.3089068896784021,
+          "theta": 0.0012665946358245428,
+          "omega": 0.0
+        },
+        "wind_force": 0.0
+      },
+      "source_level": 0
+    },
+    {
+      "id": "rl-validation-030",
+      "condition": "original",
+      "seed": 30030,
+      "options": {
+        "initial_state": {
+          "x": -0.014480153835806631,
+          "y": 10.316474123469664,
+          "vx": 0.030851291691056517,
+          "vy": -0.8010987048236561,
+          "theta": 0.005492639559559027,
+          "omega": 0.0
+        },
+        "wind_force": 0.0
+      },
+      "source_level": 0
+    },
+    {
+      "id": "rl-validation-031",
+      "condition": "original",
+      "seed": 30031,
+      "options": {
+        "initial_state": {
+          "x": -0.19659026706199223,
+          "y": 11.970629342438304,
+          "vx": -0.005438499767666194,
+          "vy": -0.6249168674813311,
+          "theta": -0.013766788944690106,
+          "omega": 0.0
+        },
+        "wind_force": 0.0
+      },
+      "source_level": 0
+    }
+  ]
+}

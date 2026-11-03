@@ -1,0 +1,2054 @@
+{
+  "schema_version": 1,
+  "split": "train",
+  "scenarios": [
+    {
+      "id": "rl-train-000",
+      "condition": "vertical",
+      "seed": 20000,
+      "options": {
+        "initial_state": {
+          "x": 0.0,
+          "y": 11.05357885396174,
+          "vx": 0.0,
+          "vy": -0.09800145244112768,
+          "theta": 0.0,
+          "omega": 0.0
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "rl-train-001",
+      "condition": "vertical",
+      "seed": 20001,
+      "options": {
+        "initial_state": {
+          "x": 0.0,
+          "y": 10.13837712895168,
+          "vx": 0.0,
+          "vy": -0.2053264969831078,
+          "theta": 0.0,
+          "omega": 0.0
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "rl-train-002",
+      "condition": "vertical",
+      "seed": 20002,
+      "options": {
+        "initial_state": {
+          "x": 0.0,
+          "y": 11.568323062029927,
+          "vx": 0.0,
+          "vy": -0.9782008164577981,
+          "theta": 0.0,
+          "omega": 0.0
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "rl-train-003",
+      "condition": "vertical",
+      "seed": 20003,
+      "options": {
+        "initial_state": {
+          "x": 0.0,
+          "y": 10.695097202183138,
+          "vx": 0.0,
+          "vy": -0.5868893660863924,
+          "theta": 0.0,
+          "omega": 0.0
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "rl-train-004",
+      "condition": "vertical",
+      "seed": 20004,
+      "options": {
+        "initial_state": {
+          "x": 0.0,
+          "y": 11.306167078816012,
+          "vx": 0.0,
+          "vy": -0.3590020905709891,
+          "theta": 0.0,
+          "omega": 0.0
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "rl-train-005",
+      "condition": "vertical",
+      "seed": 20005,
+      "options": {
+        "initial_state": {
+          "x": 0.0,
+          "y": 10.76799803470944,
+          "vx": 0.0,
+          "vy": -0.7086198998456191,
+          "theta": 0.0,
+          "omega": 0.0
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "rl-train-006",
+      "condition": "vertical",
+      "seed": 20006,
+      "options": {
+        "initial_state": {
+          "x": 0.0,
+          "y": 10.389247059011183,
+          "vx": 0.0,
+          "vy": -0.9292695756497494,
+          "theta": 0.0,
+          "omega": 0.0
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "rl-train-007",
+      "condition": "vertical",
+      "seed": 20007,
+      "options": {
+        "initial_state": {
+          "x": 0.0,
+          "y": 11.635101412642602,
+          "vx": 0.0,
+          "vy": -0.788322871995671,
+          "theta": 0.0,
+          "omega": 0.0
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "rl-train-008",
+      "condition": "vertical",
+      "seed": 20008,
+      "options": {
+        "initial_state": {
+          "x": 0.0,
+          "y": 11.848474254493182,
+          "vx": 0.0,
+          "vy": -0.3330801403567373,
+          "theta": 0.0,
+          "omega": 0.0
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "rl-train-009",
+      "condition": "vertical",
+      "seed": 20009,
+      "options": {
+        "initial_state": {
+          "x": 0.0,
+          "y": 10.69956913547227,
+          "vx": 0.0,
+          "vy": -0.6133932881100707,
+          "theta": 0.0,
+          "omega": 0.0
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "rl-train-010",
+      "condition": "vertical",
+      "seed": 20010,
+      "options": {
+        "initial_state": {
+          "x": 0.0,
+          "y": 11.37085018349743,
+          "vx": 0.0,
+          "vy": -0.9126640283080162,
+          "theta": 0.0,
+          "omega": 0.0
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "rl-train-011",
+      "condition": "vertical",
+      "seed": 20011,
+      "options": {
+        "initial_state": {
+          "x": 0.0,
+          "y": 10.176904977990098,
+          "vx": 0.0,
+          "vy": -0.7206897123610092,
+          "theta": 0.0,
+          "omega": 0.0
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "rl-train-012",
+      "condition": "vertical",
+      "seed": 20012,
+      "options": {
+        "initial_state": {
+          "x": 0.0,
+          "y": 10.061750350374085,
+          "vx": 0.0,
+          "vy": -0.6561960622392804,
+          "theta": 0.0,
+          "omega": 0.0
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "rl-train-013",
+      "condition": "vertical",
+      "seed": 20013,
+      "options": {
+        "initial_state": {
+          "x": 0.0,
+          "y": 11.61053705934276,
+          "vx": 0.0,
+          "vy": -0.20340491872777255,
+          "theta": 0.0,
+          "omega": 0.0
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "rl-train-014",
+      "condition": "vertical",
+      "seed": 20014,
+      "options": {
+        "initial_state": {
+          "x": 0.0,
+          "y": 11.643927656878525,
+          "vx": 0.0,
+          "vy": -0.601436903489509,
+          "theta": 0.0,
+          "omega": 0.0
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "rl-train-015",
+      "condition": "vertical",
+      "seed": 20015,
+      "options": {
+        "initial_state": {
+          "x": 0.0,
+          "y": 11.212718516623832,
+          "vx": 0.0,
+          "vy": -0.17154297130370177,
+          "theta": 0.0,
+          "omega": 0.0
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "rl-train-016",
+      "condition": "vertical",
+      "seed": 20016,
+      "options": {
+        "initial_state": {
+          "x": 0.0,
+          "y": 10.880466888832093,
+          "vx": 0.0,
+          "vy": -0.9623379320277636,
+          "theta": 0.0,
+          "omega": 0.0
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "rl-train-017",
+      "condition": "vertical",
+      "seed": 20017,
+      "options": {
+        "initial_state": {
+          "x": 0.0,
+          "y": 10.925054574983728,
+          "vx": 0.0,
+          "vy": -0.3177363839725438,
+          "theta": 0.0,
+          "omega": 0.0
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "rl-train-018",
+      "condition": "vertical",
+      "seed": 20018,
+      "options": {
+        "initial_state": {
+          "x": 0.0,
+          "y": 10.786391784438903,
+          "vx": 0.0,
+          "vy": -0.551959853132673,
+          "theta": 0.0,
+          "omega": 0.0
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "rl-train-019",
+      "condition": "vertical",
+      "seed": 20019,
+      "options": {
+        "initial_state": {
+          "x": 0.0,
+          "y": 10.215478247988536,
+          "vx": 0.0,
+          "vy": -0.6226447577747517,
+          "theta": 0.0,
+          "omega": 0.0
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "rl-train-020",
+      "condition": "vertical",
+      "seed": 20020,
+      "options": {
+        "initial_state": {
+          "x": 0.0,
+          "y": 10.743667044659071,
+          "vx": 0.0,
+          "vy": -0.44487477997334113,
+          "theta": 0.0,
+          "omega": 0.0
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "rl-train-021",
+      "condition": "vertical",
+      "seed": 20021,
+      "options": {
+        "initial_state": {
+          "x": 0.0,
+          "y": 10.426624225005687,
+          "vx": 0.0,
+          "vy": -0.6852598637392538,
+          "theta": 0.0,
+          "omega": 0.0
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "rl-train-022",
+      "condition": "vertical",
+      "seed": 20022,
+      "options": {
+        "initial_state": {
+          "x": 0.0,
+          "y": 10.927530768544717,
+          "vx": 0.0,
+          "vy": -0.23237304690771532,
+          "theta": 0.0,
+          "omega": 0.0
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "rl-train-023",
+      "condition": "vertical",
+      "seed": 20023,
+      "options": {
+        "initial_state": {
+          "x": 0.0,
+          "y": 11.581591014998615,
+          "vx": 0.0,
+          "vy": -0.19877591083750346,
+          "theta": 0.0,
+          "omega": 0.0
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "rl-train-024",
+      "condition": "vertical",
+      "seed": 20024,
+      "options": {
+        "initial_state": {
+          "x": 0.0,
+          "y": 10.038559699469644,
+          "vx": 0.0,
+          "vy": -0.1098958624290649,
+          "theta": 0.0,
+          "omega": 0.0
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "rl-train-025",
+      "condition": "vertical",
+      "seed": 20025,
+      "options": {
+        "initial_state": {
+          "x": 0.0,
+          "y": 10.93426222865471,
+          "vx": 0.0,
+          "vy": -0.8783092420170954,
+          "theta": 0.0,
+          "omega": 0.0
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "rl-train-026",
+      "condition": "vertical",
+      "seed": 20026,
+      "options": {
+        "initial_state": {
+          "x": 0.0,
+          "y": 10.657954133231502,
+          "vx": 0.0,
+          "vy": -0.4104176345912036,
+          "theta": 0.0,
+          "omega": 0.0
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "rl-train-027",
+      "condition": "vertical",
+      "seed": 20027,
+      "options": {
+        "initial_state": {
+          "x": 0.0,
+          "y": 10.91885952397039,
+          "vx": 0.0,
+          "vy": -0.48610057828542463,
+          "theta": 0.0,
+          "omega": 0.0
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "rl-train-028",
+      "condition": "vertical",
+      "seed": 20028,
+      "options": {
+        "initial_state": {
+          "x": 0.0,
+          "y": 10.360902137286548,
+          "vx": 0.0,
+          "vy": -0.33932057212301914,
+          "theta": 0.0,
+          "omega": 0.0
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "rl-train-029",
+      "condition": "vertical",
+      "seed": 20029,
+      "options": {
+        "initial_state": {
+          "x": 0.0,
+          "y": 10.287518488350639,
+          "vx": 0.0,
+          "vy": -0.8948000296646094,
+          "theta": 0.0,
+          "omega": 0.0
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "rl-train-030",
+      "condition": "vertical",
+      "seed": 20030,
+      "options": {
+        "initial_state": {
+          "x": 0.0,
+          "y": 10.72119218384469,
+          "vx": 0.0,
+          "vy": -0.44314547641859703,
+          "theta": 0.0,
+          "omega": 0.0
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "rl-train-031",
+      "condition": "vertical",
+      "seed": 20031,
+      "options": {
+        "initial_state": {
+          "x": 0.0,
+          "y": 11.550159854187385,
+          "vx": 0.0,
+          "vy": -0.3168388965502458,
+          "theta": 0.0,
+          "omega": 0.0
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "rl-train-032",
+      "condition": "vertical",
+      "seed": 20032,
+      "options": {
+        "initial_state": {
+          "x": 0.0,
+          "y": 10.66638139125701,
+          "vx": 0.0,
+          "vy": -0.7662925011353565,
+          "theta": 0.0,
+          "omega": 0.0
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "rl-train-033",
+      "condition": "vertical",
+      "seed": 20033,
+      "options": {
+        "initial_state": {
+          "x": 0.0,
+          "y": 11.250095987102105,
+          "vx": 0.0,
+          "vy": -0.7257309668118592,
+          "theta": 0.0,
+          "omega": 0.0
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "rl-train-034",
+      "condition": "vertical",
+      "seed": 20034,
+      "options": {
+        "initial_state": {
+          "x": 0.0,
+          "y": 10.000670524777451,
+          "vx": 0.0,
+          "vy": -0.5357248840130878,
+          "theta": 0.0,
+          "omega": 0.0
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "rl-train-035",
+      "condition": "vertical",
+      "seed": 20035,
+      "options": {
+        "initial_state": {
+          "x": 0.0,
+          "y": 11.276147798481377,
+          "vx": 0.0,
+          "vy": -0.7293772599155749,
+          "theta": 0.0,
+          "omega": 0.0
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "rl-train-036",
+      "condition": "vertical",
+      "seed": 20036,
+      "options": {
+        "initial_state": {
+          "x": 0.0,
+          "y": 11.460560744974263,
+          "vx": 0.0,
+          "vy": -0.03539174508537324,
+          "theta": 0.0,
+          "omega": 0.0
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "rl-train-037",
+      "condition": "vertical",
+      "seed": 20037,
+      "options": {
+        "initial_state": {
+          "x": 0.0,
+          "y": 11.98917193639539,
+          "vx": 0.0,
+          "vy": -0.6926711287030003,
+          "theta": 0.0,
+          "omega": 0.0
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "rl-train-038",
+      "condition": "vertical",
+      "seed": 20038,
+      "options": {
+        "initial_state": {
+          "x": 0.0,
+          "y": 11.654374221685567,
+          "vx": 0.0,
+          "vy": -0.8830687259399969,
+          "theta": 0.0,
+          "omega": 0.0
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "rl-train-039",
+      "condition": "vertical",
+      "seed": 20039,
+      "options": {
+        "initial_state": {
+          "x": 0.0,
+          "y": 11.700655748188057,
+          "vx": 0.0,
+          "vy": -0.47519137191672567,
+          "theta": 0.0,
+          "omega": 0.0
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "rl-train-040",
+      "condition": "vertical",
+      "seed": 20040,
+      "options": {
+        "initial_state": {
+          "x": 0.0,
+          "y": 11.722273647058513,
+          "vx": 0.0,
+          "vy": -0.5185761480666244,
+          "theta": 0.0,
+          "omega": 0.0
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "rl-train-041",
+      "condition": "vertical",
+      "seed": 20041,
+      "options": {
+        "initial_state": {
+          "x": 0.0,
+          "y": 11.797859776451794,
+          "vx": 0.0,
+          "vy": -0.13216201601174538,
+          "theta": 0.0,
+          "omega": 0.0
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "rl-train-042",
+      "condition": "vertical",
+      "seed": 20042,
+      "options": {
+        "initial_state": {
+          "x": 0.0,
+          "y": 11.531273411592013,
+          "vx": 0.0,
+          "vy": -0.7530048501712614,
+          "theta": 0.0,
+          "omega": 0.0
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "rl-train-043",
+      "condition": "vertical",
+      "seed": 20043,
+      "options": {
+        "initial_state": {
+          "x": 0.0,
+          "y": 11.153654454709006,
+          "vx": 0.0,
+          "vy": -0.5701423997881685,
+          "theta": 0.0,
+          "omega": 0.0
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "rl-train-044",
+      "condition": "vertical",
+      "seed": 20044,
+      "options": {
+        "initial_state": {
+          "x": 0.0,
+          "y": 11.133224086207598,
+          "vx": 0.0,
+          "vy": -0.7692834427825771,
+          "theta": 0.0,
+          "omega": 0.0
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "rl-train-045",
+      "condition": "vertical",
+      "seed": 20045,
+      "options": {
+        "initial_state": {
+          "x": 0.0,
+          "y": 10.239052753851333,
+          "vx": 0.0,
+          "vy": -0.7968353354987449,
+          "theta": 0.0,
+          "omega": 0.0
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "rl-train-046",
+      "condition": "vertical",
+      "seed": 20046,
+      "options": {
+        "initial_state": {
+          "x": 0.0,
+          "y": 10.441645724511787,
+          "vx": 0.0,
+          "vy": -0.7724812615768307,
+          "theta": 0.0,
+          "omega": 0.0
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "rl-train-047",
+      "condition": "vertical",
+      "seed": 20047,
+      "options": {
+        "initial_state": {
+          "x": 0.0,
+          "y": 10.812044770178213,
+          "vx": 0.0,
+          "vy": -0.896656771207143,
+          "theta": 0.0,
+          "omega": 0.0
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "rl-train-048",
+      "condition": "vertical",
+      "seed": 20048,
+      "options": {
+        "initial_state": {
+          "x": 0.0,
+          "y": 10.876891509414152,
+          "vx": 0.0,
+          "vy": -0.13348422952193084,
+          "theta": 0.0,
+          "omega": 0.0
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "rl-train-049",
+      "condition": "vertical",
+      "seed": 20049,
+      "options": {
+        "initial_state": {
+          "x": 0.0,
+          "y": 10.222948287356266,
+          "vx": 0.0,
+          "vy": -0.4294983365994073,
+          "theta": 0.0,
+          "omega": 0.0
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "rl-train-050",
+      "condition": "vertical",
+      "seed": 20050,
+      "options": {
+        "initial_state": {
+          "x": 0.0,
+          "y": 11.445573780014803,
+          "vx": 0.0,
+          "vy": -0.86613840852488,
+          "theta": 0.0,
+          "omega": 0.0
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "rl-train-051",
+      "condition": "vertical",
+      "seed": 20051,
+      "options": {
+        "initial_state": {
+          "x": 0.0,
+          "y": 10.202076208171706,
+          "vx": 0.0,
+          "vy": -0.9807372133191198,
+          "theta": 0.0,
+          "omega": 0.0
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "rl-train-052",
+      "condition": "vertical",
+      "seed": 20052,
+      "options": {
+        "initial_state": {
+          "x": 0.0,
+          "y": 11.670091009293909,
+          "vx": 0.0,
+          "vy": -0.16844047555749986,
+          "theta": 0.0,
+          "omega": 0.0
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "rl-train-053",
+      "condition": "vertical",
+      "seed": 20053,
+      "options": {
+        "initial_state": {
+          "x": 0.0,
+          "y": 11.766156629949531,
+          "vx": 0.0,
+          "vy": -0.951832465583105,
+          "theta": 0.0,
+          "omega": 0.0
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "rl-train-054",
+      "condition": "vertical",
+      "seed": 20054,
+      "options": {
+        "initial_state": {
+          "x": 0.0,
+          "y": 11.901280560210646,
+          "vx": 0.0,
+          "vy": -0.6314976025355475,
+          "theta": 0.0,
+          "omega": 0.0
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "rl-train-055",
+      "condition": "vertical",
+      "seed": 20055,
+      "options": {
+        "initial_state": {
+          "x": 0.0,
+          "y": 10.575598045597488,
+          "vx": 0.0,
+          "vy": -0.9035703874296241,
+          "theta": 0.0,
+          "omega": 0.0
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "rl-train-056",
+      "condition": "vertical",
+      "seed": 20056,
+      "options": {
+        "initial_state": {
+          "x": 0.0,
+          "y": 10.838068079393821,
+          "vx": 0.0,
+          "vy": -0.43765165949511153,
+          "theta": 0.0,
+          "omega": 0.0
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "rl-train-057",
+      "condition": "vertical",
+      "seed": 20057,
+      "options": {
+        "initial_state": {
+          "x": 0.0,
+          "y": 11.195897388460752,
+          "vx": 0.0,
+          "vy": -0.41507250224079395,
+          "theta": 0.0,
+          "omega": 0.0
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "rl-train-058",
+      "condition": "vertical",
+      "seed": 20058,
+      "options": {
+        "initial_state": {
+          "x": 0.0,
+          "y": 10.933832475614539,
+          "vx": 0.0,
+          "vy": -0.1865715805317001,
+          "theta": 0.0,
+          "omega": 0.0
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "rl-train-059",
+      "condition": "vertical",
+      "seed": 20059,
+      "options": {
+        "initial_state": {
+          "x": 0.0,
+          "y": 10.50974613659142,
+          "vx": 0.0,
+          "vy": -0.9739251906341388,
+          "theta": 0.0,
+          "omega": 0.0
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "rl-train-060",
+      "condition": "vertical",
+      "seed": 20060,
+      "options": {
+        "initial_state": {
+          "x": 0.0,
+          "y": 11.21859616868022,
+          "vx": 0.0,
+          "vy": -0.08498189362665987,
+          "theta": 0.0,
+          "omega": 0.0
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "rl-train-061",
+      "condition": "vertical",
+      "seed": 20061,
+      "options": {
+        "initial_state": {
+          "x": 0.0,
+          "y": 11.07929560154142,
+          "vx": 0.0,
+          "vy": -0.23961961795779385,
+          "theta": 0.0,
+          "omega": 0.0
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "rl-train-062",
+      "condition": "vertical",
+      "seed": 20062,
+      "options": {
+        "initial_state": {
+          "x": 0.0,
+          "y": 10.70256220803575,
+          "vx": 0.0,
+          "vy": -0.8458630711988777,
+          "theta": 0.0,
+          "omega": 0.0
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "rl-train-063",
+      "condition": "vertical",
+      "seed": 20063,
+      "options": {
+        "initial_state": {
+          "x": 0.0,
+          "y": 11.718299788940786,
+          "vx": 0.0,
+          "vy": -0.4287933631829598,
+          "theta": 0.0,
+          "omega": 0.0
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "rl-train-064",
+      "condition": "vertical",
+      "seed": 20064,
+      "options": {
+        "initial_state": {
+          "x": 0.0,
+          "y": 10.688819708115311,
+          "vx": 0.0,
+          "vy": -0.5865473383499267,
+          "theta": 0.0,
+          "omega": 0.0
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "rl-train-065",
+      "condition": "vertical",
+      "seed": 20065,
+      "options": {
+        "initial_state": {
+          "x": 0.0,
+          "y": 11.398322530038374,
+          "vx": 0.0,
+          "vy": -0.14406890912928827,
+          "theta": 0.0,
+          "omega": 0.0
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "rl-train-066",
+      "condition": "vertical",
+      "seed": 20066,
+      "options": {
+        "initial_state": {
+          "x": 0.0,
+          "y": 11.685830982935643,
+          "vx": 0.0,
+          "vy": -0.22272677399382812,
+          "theta": 0.0,
+          "omega": 0.0
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "rl-train-067",
+      "condition": "vertical",
+      "seed": 20067,
+      "options": {
+        "initial_state": {
+          "x": 0.0,
+          "y": 10.720478333511824,
+          "vx": 0.0,
+          "vy": -0.7230665116102729,
+          "theta": 0.0,
+          "omega": 0.0
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "rl-train-068",
+      "condition": "vertical",
+      "seed": 20068,
+      "options": {
+        "initial_state": {
+          "x": 0.0,
+          "y": 10.82749429501685,
+          "vx": 0.0,
+          "vy": -0.8135926521304824,
+          "theta": 0.0,
+          "omega": 0.0
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "rl-train-069",
+      "condition": "vertical",
+      "seed": 20069,
+      "options": {
+        "initial_state": {
+          "x": 0.0,
+          "y": 10.696730832782658,
+          "vx": 0.0,
+          "vy": -0.2481471515856274,
+          "theta": 0.0,
+          "omega": 0.0
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "rl-train-070",
+      "condition": "vertical",
+      "seed": 20070,
+      "options": {
+        "initial_state": {
+          "x": 0.0,
+          "y": 11.814380555494404,
+          "vx": 0.0,
+          "vy": -0.15765118608779272,
+          "theta": 0.0,
+          "omega": 0.0
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "rl-train-071",
+      "condition": "vertical",
+      "seed": 20071,
+      "options": {
+        "initial_state": {
+          "x": 0.0,
+          "y": 11.763799561724936,
+          "vx": 0.0,
+          "vy": -0.1288020650458097,
+          "theta": 0.0,
+          "omega": 0.0
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "rl-train-072",
+      "condition": "vertical",
+      "seed": 20072,
+      "options": {
+        "initial_state": {
+          "x": 0.0,
+          "y": 11.655460078541392,
+          "vx": 0.0,
+          "vy": -0.5284133844152638,
+          "theta": 0.0,
+          "omega": 0.0
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "rl-train-073",
+      "condition": "vertical",
+      "seed": 20073,
+      "options": {
+        "initial_state": {
+          "x": 0.0,
+          "y": 10.304308743549313,
+          "vx": 0.0,
+          "vy": -0.1470195784446362,
+          "theta": 0.0,
+          "omega": 0.0
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "rl-train-074",
+      "condition": "vertical",
+      "seed": 20074,
+      "options": {
+        "initial_state": {
+          "x": 0.0,
+          "y": 10.208883829963723,
+          "vx": 0.0,
+          "vy": -0.558387410733163,
+          "theta": 0.0,
+          "omega": 0.0
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "rl-train-075",
+      "condition": "vertical",
+      "seed": 20075,
+      "options": {
+        "initial_state": {
+          "x": 0.0,
+          "y": 11.070930054603641,
+          "vx": 0.0,
+          "vy": -0.5422996071386103,
+          "theta": 0.0,
+          "omega": 0.0
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "rl-train-076",
+      "condition": "vertical",
+      "seed": 20076,
+      "options": {
+        "initial_state": {
+          "x": 0.0,
+          "y": 11.693829156230427,
+          "vx": 0.0,
+          "vy": -0.8874466069167352,
+          "theta": 0.0,
+          "omega": 0.0
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "rl-train-077",
+      "condition": "vertical",
+      "seed": 20077,
+      "options": {
+        "initial_state": {
+          "x": 0.0,
+          "y": 10.931585436136809,
+          "vx": 0.0,
+          "vy": -0.00383077739244031,
+          "theta": 0.0,
+          "omega": 0.0
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "rl-train-078",
+      "condition": "vertical",
+      "seed": 20078,
+      "options": {
+        "initial_state": {
+          "x": 0.0,
+          "y": 11.938568488309498,
+          "vx": 0.0,
+          "vy": -0.13459863992540033,
+          "theta": 0.0,
+          "omega": 0.0
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "rl-train-079",
+      "condition": "vertical",
+      "seed": 20079,
+      "options": {
+        "initial_state": {
+          "x": 0.0,
+          "y": 11.917913650347318,
+          "vx": 0.0,
+          "vy": -0.041928164754176156,
+          "theta": 0.0,
+          "omega": 0.0
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "rl-train-080",
+      "condition": "vertical",
+      "seed": 20080,
+      "options": {
+        "initial_state": {
+          "x": 0.0,
+          "y": 11.84176005699145,
+          "vx": 0.0,
+          "vy": -0.5171503644457783,
+          "theta": 0.0,
+          "omega": 0.0
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "rl-train-081",
+      "condition": "vertical",
+      "seed": 20081,
+      "options": {
+        "initial_state": {
+          "x": 0.0,
+          "y": 11.515938937653297,
+          "vx": 0.0,
+          "vy": -0.032613952667361,
+          "theta": 0.0,
+          "omega": 0.0
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "rl-train-082",
+      "condition": "vertical",
+      "seed": 20082,
+      "options": {
+        "initial_state": {
+          "x": 0.0,
+          "y": 11.540515795418743,
+          "vx": 0.0,
+          "vy": -0.3744587166229706,
+          "theta": 0.0,
+          "omega": 0.0
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "rl-train-083",
+      "condition": "vertical",
+      "seed": 20083,
+      "options": {
+        "initial_state": {
+          "x": 0.0,
+          "y": 10.454023646772326,
+          "vx": 0.0,
+          "vy": -0.8674832146236987,
+          "theta": 0.0,
+          "omega": 0.0
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "rl-train-084",
+      "condition": "vertical",
+      "seed": 20084,
+      "options": {
+        "initial_state": {
+          "x": 0.0,
+          "y": 11.970364040575483,
+          "vx": 0.0,
+          "vy": -0.879365390584308,
+          "theta": 0.0,
+          "omega": 0.0
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "rl-train-085",
+      "condition": "vertical",
+      "seed": 20085,
+      "options": {
+        "initial_state": {
+          "x": 0.0,
+          "y": 10.111017852917708,
+          "vx": 0.0,
+          "vy": -0.8696380223994697,
+          "theta": 0.0,
+          "omega": 0.0
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "rl-train-086",
+      "condition": "vertical",
+      "seed": 20086,
+      "options": {
+        "initial_state": {
+          "x": 0.0,
+          "y": 11.371345333440752,
+          "vx": 0.0,
+          "vy": -0.7943561243983968,
+          "theta": 0.0,
+          "omega": 0.0
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "rl-train-087",
+      "condition": "vertical",
+      "seed": 20087,
+      "options": {
+        "initial_state": {
+          "x": 0.0,
+          "y": 11.30490925250721,
+          "vx": 0.0,
+          "vy": -0.7618173515323878,
+          "theta": 0.0,
+          "omega": 0.0
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "rl-train-088",
+      "condition": "vertical",
+      "seed": 20088,
+      "options": {
+        "initial_state": {
+          "x": 0.0,
+          "y": 10.01904530235532,
+          "vx": 0.0,
+          "vy": -0.24538944529949713,
+          "theta": 0.0,
+          "omega": 0.0
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "rl-train-089",
+      "condition": "vertical",
+      "seed": 20089,
+      "options": {
+        "initial_state": {
+          "x": 0.0,
+          "y": 11.473084381046313,
+          "vx": 0.0,
+          "vy": -0.12654541881992565,
+          "theta": 0.0,
+          "omega": 0.0
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "rl-train-090",
+      "condition": "vertical",
+      "seed": 20090,
+      "options": {
+        "initial_state": {
+          "x": 0.0,
+          "y": 10.105883343943288,
+          "vx": 0.0,
+          "vy": -0.539908909395,
+          "theta": 0.0,
+          "omega": 0.0
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "rl-train-091",
+      "condition": "vertical",
+      "seed": 20091,
+      "options": {
+        "initial_state": {
+          "x": 0.0,
+          "y": 10.884475260210914,
+          "vx": 0.0,
+          "vy": -0.9996159415834013,
+          "theta": 0.0,
+          "omega": 0.0
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "rl-train-092",
+      "condition": "vertical",
+      "seed": 20092,
+      "options": {
+        "initial_state": {
+          "x": 0.0,
+          "y": 11.232014408298415,
+          "vx": 0.0,
+          "vy": -0.04932434711945588,
+          "theta": 0.0,
+          "omega": 0.0
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "rl-train-093",
+      "condition": "vertical",
+      "seed": 20093,
+      "options": {
+        "initial_state": {
+          "x": 0.0,
+          "y": 10.110399788781235,
+          "vx": 0.0,
+          "vy": -0.901484188633487,
+          "theta": 0.0,
+          "omega": 0.0
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "rl-train-094",
+      "condition": "vertical",
+      "seed": 20094,
+      "options": {
+        "initial_state": {
+          "x": 0.0,
+          "y": 10.424850821240243,
+          "vx": 0.0,
+          "vy": -0.9090342456872109,
+          "theta": 0.0,
+          "omega": 0.0
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "rl-train-095",
+      "condition": "vertical",
+      "seed": 20095,
+      "options": {
+        "initial_state": {
+          "x": 0.0,
+          "y": 11.567522589876807,
+          "vx": 0.0,
+          "vy": -0.7416367889214741,
+          "theta": 0.0,
+          "omega": 0.0
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "rl-train-096",
+      "condition": "vertical",
+      "seed": 20096,
+      "options": {
+        "initial_state": {
+          "x": 0.0,
+          "y": 10.831661145861377,
+          "vx": 0.0,
+          "vy": -0.16474427786464685,
+          "theta": 0.0,
+          "omega": 0.0
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "rl-train-097",
+      "condition": "vertical",
+      "seed": 20097,
+      "options": {
+        "initial_state": {
+          "x": 0.0,
+          "y": 10.3892063935687,
+          "vx": 0.0,
+          "vy": -0.3057863729392226,
+          "theta": 0.0,
+          "omega": 0.0
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "rl-train-098",
+      "condition": "vertical",
+      "seed": 20098,
+      "options": {
+        "initial_state": {
+          "x": 0.0,
+          "y": 11.729171822641591,
+          "vx": 0.0,
+          "vy": -0.7102627955369881,
+          "theta": 0.0,
+          "omega": 0.0
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "rl-train-099",
+      "condition": "vertical",
+      "seed": 20099,
+      "options": {
+        "initial_state": {
+          "x": 0.0,
+          "y": 10.786954476717153,
+          "vx": 0.0,
+          "vy": -0.07836782069380321,
+          "theta": 0.0,
+          "omega": 0.0
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "rl-train-100",
+      "condition": "vertical",
+      "seed": 20100,
+      "options": {
+        "initial_state": {
+          "x": 0.0,
+          "y": 10.663221972735537,
+          "vx": 0.0,
+          "vy": -0.422560323290338,
+          "theta": 0.0,
+          "omega": 0.0
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "rl-train-101",
+      "condition": "vertical",
+      "seed": 20101,
+      "options": {
+        "initial_state": {
+          "x": 0.0,
+          "y": 10.69724447808638,
+          "vx": 0.0,
+          "vy": -0.7047326195265614,
+          "theta": 0.0,
+          "omega": 0.0
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "rl-train-102",
+      "condition": "vertical",
+      "seed": 20102,
+      "options": {
+        "initial_state": {
+          "x": 0.0,
+          "y": 11.859861741885782,
+          "vx": 0.0,
+          "vy": -0.4130925551279925,
+          "theta": 0.0,
+          "omega": 0.0
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "rl-train-103",
+      "condition": "vertical",
+      "seed": 20103,
+      "options": {
+        "initial_state": {
+          "x": 0.0,
+          "y": 10.859077859892654,
+          "vx": 0.0,
+          "vy": -0.9333951927069721,
+          "theta": 0.0,
+          "omega": 0.0
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "rl-train-104",
+      "condition": "vertical",
+      "seed": 20104,
+      "options": {
+        "initial_state": {
+          "x": 0.0,
+          "y": 10.355976419922548,
+          "vx": 0.0,
+          "vy": -0.3150815218780606,
+          "theta": 0.0,
+          "omega": 0.0
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "rl-train-105",
+      "condition": "vertical",
+      "seed": 20105,
+      "options": {
+        "initial_state": {
+          "x": 0.0,
+          "y": 11.390521665121105,
+          "vx": 0.0,
+          "vy": -0.8799166389326913,
+          "theta": 0.0,
+          "omega": 0.0
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "rl-train-106",
+      "condition": "vertical",
+      "seed": 20106,
+      "options": {
+        "initial_state": {
+          "x": 0.0,
+          "y": 11.020516913283574,
+          "vx": 0.0,
+          "vy": -0.9061520937281395,
+          "theta": 0.0,
+          "omega": 0.0
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "rl-train-107",
+      "condition": "vertical",
+      "seed": 20107,
+      "options": {
+        "initial_state": {
+          "x": 0.0,
+          "y": 10.81627462988457,
+          "vx": 0.0,
+          "vy": -0.46779765913792415,
+          "theta": 0.0,
+          "omega": 0.0
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "rl-train-108",
+      "condition": "vertical",
+      "seed": 20108,
+      "options": {
+        "initial_state": {
+          "x": 0.0,
+          "y": 11.591461047996276,
+          "vx": 0.0,
+          "vy": -0.9637244275234683,
+          "theta": 0.0,
+          "omega": 0.0
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "rl-train-109",
+      "condition": "vertical",
+      "seed": 20109,
+      "options": {
+        "initial_state": {
+          "x": 0.0,
+          "y": 11.077430938318344,
+          "vx": 0.0,
+          "vy": -0.6630845903904061,
+          "theta": 0.0,
+          "omega": 0.0
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "rl-train-110",
+      "condition": "vertical",
+      "seed": 20110,
+      "options": {
+        "initial_state": {
+          "x": 0.0,
+          "y": 11.510959707092216,
+          "vx": 0.0,
+          "vy": -0.0866854364212658,
+          "theta": 0.0,
+          "omega": 0.0
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "rl-train-111",
+      "condition": "vertical",
+      "seed": 20111,
+      "options": {
+        "initial_state": {
+          "x": 0.0,
+          "y": 10.168151077525499,
+          "vx": 0.0,
+          "vy": -0.1915605384428276,
+          "theta": 0.0,
+          "omega": 0.0
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "rl-train-112",
+      "condition": "vertical",
+      "seed": 20112,
+      "options": {
+        "initial_state": {
+          "x": 0.0,
+          "y": 11.686642185556288,
+          "vx": 0.0,
+          "vy": -0.9922726677362373,
+          "theta": 0.0,
+          "omega": 0.0
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "rl-train-113",
+      "condition": "vertical",
+      "seed": 20113,
+      "options": {
+        "initial_state": {
+          "x": 0.0,
+          "y": 11.330517517365777,
+          "vx": 0.0,
+          "vy": -0.6562994621940503,
+          "theta": 0.0,
+          "omega": 0.0
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "rl-train-114",
+      "condition": "vertical",
+      "seed": 20114,
+      "options": {
+        "initial_state": {
+          "x": 0.0,
+          "y": 10.47411794807369,
+          "vx": 0.0,
+          "vy": -0.28436999114522554,
+          "theta": 0.0,
+          "omega": 0.0
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "rl-train-115",
+      "condition": "vertical",
+      "seed": 20115,
+      "options": {
+        "initial_state": {
+          "x": 0.0,
+          "y": 11.673581353023856,
+          "vx": 0.0,
+          "vy": -0.04669509114415693,
+          "theta": 0.0,
+          "omega": 0.0
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "rl-train-116",
+      "condition": "vertical",
+      "seed": 20116,
+      "options": {
+        "initial_state": {
+          "x": 0.0,
+          "y": 11.538498144595323,
+          "vx": 0.0,
+          "vy": -0.3298653748774638,
+          "theta": 0.0,
+          "omega": 0.0
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "rl-train-117",
+      "condition": "vertical",
+      "seed": 20117,
+      "options": {
+        "initial_state": {
+          "x": 0.0,
+          "y": 11.322538733036644,
+          "vx": 0.0,
+          "vy": -0.3909574814451726,
+          "theta": 0.0,
+          "omega": 0.0
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "rl-train-118",
+      "condition": "vertical",
+      "seed": 20118,
+      "options": {
+        "initial_state": {
+          "x": 0.0,
+          "y": 11.684383909770991,
+          "vx": 0.0,
+          "vy": -0.6734875602222395,
+          "theta": 0.0,
+          "omega": 0.0
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "rl-train-119",
+      "condition": "vertical",
+      "seed": 20119,
+      "options": {
+        "initial_state": {
+          "x": 0.0,
+          "y": 11.144136196594847,
+          "vx": 0.0,
+          "vy": -0.9751636516203187,
+          "theta": 0.0,
+          "omega": 0.0
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "rl-train-120",
+      "condition": "vertical",
+      "seed": 20120,
+      "options": {
+        "initial_state": {
+          "x": 0.0,
+          "y": 10.48113303272693,
+          "vx": 0.0,
+          "vy": -0.20596942061469647,
+          "theta": 0.0,
+          "omega": 0.0
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "rl-train-121",
+      "condition": "vertical",
+      "seed": 20121,
+      "options": {
+        "initial_state": {
+          "x": 0.0,
+          "y": 11.069988340802226,
+          "vx": 0.0,
+          "vy": -0.28289342429409725,
+          "theta": 0.0,
+          "omega": 0.0
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "rl-train-122",
+      "condition": "vertical",
+      "seed": 20122,
+      "options": {
+        "initial_state": {
+          "x": 0.0,
+          "y": 11.278056907931738,
+          "vx": 0.0,
+          "vy": -0.19067779436187626,
+          "theta": 0.0,
+          "omega": 0.0
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "rl-train-123",
+      "condition": "vertical",
+      "seed": 20123,
+      "options": {
+        "initial_state": {
+          "x": 0.0,
+          "y": 10.68005189884206,
+          "vx": 0.0,
+          "vy": -0.2054193462212779,
+          "theta": 0.0,
+          "omega": 0.0
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "rl-train-124",
+      "condition": "vertical",
+      "seed": 20124,
+      "options": {
+        "initial_state": {
+          "x": 0.0,
+          "y": 10.606280958723985,
+          "vx": 0.0,
+          "vy": -0.6678943512411106,
+          "theta": 0.0,
+          "omega": 0.0
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "rl-train-125",
+      "condition": "vertical",
+      "seed": 20125,
+      "options": {
+        "initial_state": {
+          "x": 0.0,
+          "y": 11.74090690388358,
+          "vx": 0.0,
+          "vy": -0.655391084834387,
+          "theta": 0.0,
+          "omega": 0.0
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "rl-train-126",
+      "condition": "vertical",
+      "seed": 20126,
+      "options": {
+        "initial_state": {
+          "x": 0.0,
+          "y": 11.03935741310159,
+          "vx": 0.0,
+          "vy": -0.5724795178256541,
+          "theta": 0.0,
+          "omega": 0.0
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "rl-train-127",
+      "condition": "vertical",
+      "seed": 20127,
+      "options": {
+        "initial_state": {
+          "x": 0.0,
+          "y": 11.76607462061034,
+          "vx": 0.0,
+          "vy": -0.9936933635404182,
+          "theta": 0.0,
+          "omega": 0.0
+        },
+        "wind_force": 0.0
+      }
+    }
+  ]
+}

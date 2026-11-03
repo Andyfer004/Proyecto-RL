@@ -1,0 +1,57 @@
+{
+  "experiment_id": "pilot_100k_seed42_v1",
+  "reference": {
+    "environment": "ThrusterLanding-v0",
+    "package_version": "0.1.0",
+    "pid_verified": {
+      "episodes": 100,
+      "successes": 98
+    },
+    "sha256": {
+      "configs/env.json": "cf7f65a1950bc8a81a1daa380262e4555b0c78ee2f987671887ac5d44c1357f8",
+      "configs/pid.json": "842c624bf4c13d76f94eb9441f3b6a63332f03f1b9844a1ba3efecdeb7a09c1b",
+      "configs/pid_test_scenarios.json": "251d281f5dd35fcd06bca1021ce5faec11917493a2d6483d655bfe15b9d16cd8",
+      "configs/pid_validation_scenarios.json": "e3191f1b786c2a31664d8f42110d150602f921ff313bcee90f8b2b064a5ad07b",
+      "src/thruster_landing/envs/physics.py": "8f933d390846f747dabba2c9f2e0580204a7ea08cd8d5a77438bcbae1063ec80",
+      "src/thruster_landing/envs/landing.py": "fc0aaea3c7e4928f8b5c4c878e253ce4edc249797f2efea8acfa97f948387dcb",
+      "src/thruster_landing/envs/config.py": "d509f8ee3ce8e11bf9a58dac0a5c47aac96e7869e6b2d48aee1f97c82968dcbc",
+      "src/thruster_landing/envs/rewards.py": "f8e27f041f40404adc7f46682c9f1dcd39783b282ddf38d3d9519b22af45db56",
+      "artifacts/pid_test.csv": "19414ec15235f588dec513c9135d54073a1c7ffbeee0a33906ae4b8d741e5447",
+      "artifacts/pid_test.metadata.json": "341cdcef5f8ba4e93f9c0743e857410fff3026b721eac88c71d741df44cfeda8",
+      "artifacts/pid_test.summary.csv": "f974b44eee7588f03309e14dcb3ed53ce6d2857ee795e15b648d2e0261d8c9da",
+      "docs/pid_test_summary.csv": "f974b44eee7588f03309e14dcb3ed53ce6d2857ee795e15b648d2e0261d8c9da"
+    },
+    "unavailable_artifacts": []
+  },
+  "total_steps_per_algorithm": 100000,
+  "from_scratch": true,
+  "seed": 42,
+  "changes_from_smoke": {
+    "epsilon_decay_steps": [
+      8000,
+      80000
+    ],
+    "validation_frequency": [
+      5000,
+      10000
+    ],
+    "checkpoint_frequency": [
+      5000,
+      10000
+    ],
+    "detailed_validation": [
+      false,
+      true
+    ]
+  },
+  "epsilon_reason": "Mantener exploraci\u00f3n durante 80% del piloto; epsilon=0.1 desde paso 81000, sin reiniciar desde smoke",
+  "best_rule": "Mayor tasa \u00e9xito; empate menor media |x| al contacto en \u00e9xitos; sin \u00e9xitos error ausente; empate completo conserva primera validaci\u00f3n peri\u00f3dica. Baseline paso 0 excluida.",
+  "sha256": {
+    "configs/dqn_pilot.json": "701288ecf1f6d07c4c862169185a690f06e585e45d0fb54e17f57c5db0455a5d",
+    "configs/double_dqn_pilot.json": "2abbab7f0620e451c07404085431ec8c9b776a3c2c90a3b20db40abaaf8b663b",
+    "configs/rl_train_scenarios.json": "1d3ab00ffae5f08b1a5115448d08264fb0dd30a766221d2f6a8d568e65f8bdaa",
+    "configs/rl_validation_scenarios.json": "5403cbc170b98c537a5b75408acbddfda8dbabf762d0331d6a1811e23b3eca41",
+    "src/thruster_landing/train.py": "b8ce5738414cc69cfb38f103a23eaedf6574882d4e5ff2274ea0c64f23da6841",
+    "src/thruster_landing/agents/dqn.py": "f57222e5a9da7ba1cb8e9f8765c004dc65e81d541a87e6f58564173639871de0"
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "environment": "ThrusterLanding-v0",
+  "versions": {
+    "python": "3.12.12 (main, Oct  9 2025, 11:07:00) [Clang 17.0.0 (clang-1700.6.3.2)]",
+    "platform": "macOS-15.6.1-arm64-arm-64bit",
+    "thruster-landing": "0.1.0",
+    "numpy": "2.5.4",
+    "gymnasium": "1.4.0",
+    "pygame-ce": "2.5.8",
+    "pytest": "9.2.0",
+    "torch": "2.15.0",
+    "pandas": "3.1.0",
+    "matplotlib": "3.11.2"
+  },
+  "sha256": {
+    "configs/dqn.json": "5d2b5024dcc194679677aea3f0d0e8432d16d720552d2410b943f9ef1cd6e01c",
+    "configs/double_dqn.json": "050d3e737c334441e278561b7082be4ab890fff48c7a5235118ea1d79820506e",
+    "configs/rl_train_scenarios.json": "1d3ab00ffae5f08b1a5115448d08264fb0dd30a766221d2f6a8d568e65f8bdaa",
+    "configs/rl_validation_scenarios.json": "5403cbc170b98c537a5b75408acbddfda8dbabf762d0331d6a1811e23b3eca41",
+    "src/thruster_landing/agents/dqn.py": "43137f3265b7746eb24affdf1349a08dcd34c1610b7fd366a4cf46e0ef7a3db2",
+    "src/thruster_landing/agents/replay.py": "3c5e2043e83773c7b40b54a690d01e37d18dfa1b3248e22d505a73d217d92711",
+    "src/thruster_landing/train.py": "f7cc1bb7a9c256b8c40f6d0496bc8afe809080c84b00122bdd8fc02a3186c1ef",
+    "src/thruster_landing/checkpoints.py": "75529d6ae0b9e1283b768efeba383a3768c407ee37a809708cdfd515f3e1fa33",
+    "src/thruster_landing/rl_evaluation.py": "b49a113bf31a07209ef09e8a54e0a762c1b2ac9357f1b17bdb70f0f38284ffa2",
+    "src/thruster_landing/experiments.py": "8abc8a957253ee02bf2d7522e86f7ecd029d83aee964a2462efc9bc0fa7939c2",
+    "docs/rl_smoke_summary.csv": "7354fe3846f9c932024f3d57d5394ee78e26364fe57903c024f2e4148e2048bd",
+    "artifacts/dqn_smoke/episodes.csv": "6354fc3fcd477d830b43a17ecacd2179d0413e6a52975dec049b1ec2173d4cca",
+    "artifacts/dqn_smoke/updates.csv": "4487fcf64eaadf13c05c101770b220db4d975c6bb0cea894ad377076f47f9567",
+    "artifacts/dqn_smoke/validation.csv": "ceb86260ef173c2a9c109ab4c78c27bb91ab107f7860ded5258826a2c3b387b0",
+    "artifacts/dqn_smoke/metadata.json": "6d9489abf38817864c7155fdd05b590a0b9b8cb710ec553650a731d93d389685",
+    "artifacts/dqn_smoke/last.policy.pt": "c405fa25d525414c361c56f1fc320d08ed47837c1258ddf4eb8a8435ca047695",
+    "artifacts/dqn_smoke/last.resume.pt": "222116a28347d7f35bed0360c6880429c6d5cba4ca318d284ef9d01c0f709286",
+    "artifacts/double_dqn_smoke/episodes.csv": "a6727f930fece9be5f14313ae9005497ccc283efebbfb401fc2a85505ae521bf",
+    "artifacts/double_dqn_smoke/updates.csv": "30b7c31db088d09e1c5b29aab028151595c4db0a5fb954e1dc38666ad883ed75",
+    "artifacts/double_dqn_smoke/validation.csv": "9d06b007a85e0a63c0f7e57ee66fd3962ccbcb371432df1134c83f42649d08d1",
+    "artifacts/double_dqn_smoke/metadata.json": "fcd605c4f0968af113b4ea437a56cdc56c58ff63b0e5932c4fb52c8dc1959b0a",
+    "artifacts/double_dqn_smoke/last.policy.pt": "1a752d94fc9f6968d7b82f1f22c956cd4b77a6df4a86b6c3f5c5fb4218e8cb72",
+    "artifacts/double_dqn_smoke/last.resume.pt": "6394d253dbb3227017e1f1a8ff83928009c51c94115c323cf64e4325262499d2"
+  }
+}

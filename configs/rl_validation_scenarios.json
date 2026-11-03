@@ -1,0 +1,518 @@
+{
+  "schema_version": 1,
+  "split": "validation",
+  "scenarios": [
+    {
+      "id": "rl-validation-000",
+      "condition": "vertical",
+      "seed": 30000,
+      "options": {
+        "initial_state": {
+          "x": 0.0,
+          "y": 10.601266983379265,
+          "vx": 0.0,
+          "vy": -0.3844148941189751,
+          "theta": 0.0,
+          "omega": 0.0
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "rl-validation-001",
+      "condition": "vertical",
+      "seed": 30001,
+      "options": {
+        "initial_state": {
+          "x": 0.0,
+          "y": 10.722613671694816,
+          "vx": 0.0,
+          "vy": -0.14182652037890764,
+          "theta": 0.0,
+          "omega": 0.0
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "rl-validation-002",
+      "condition": "vertical",
+      "seed": 30002,
+      "options": {
+        "initial_state": {
+          "x": 0.0,
+          "y": 10.714354752489266,
+          "vx": 0.0,
+          "vy": -0.014261859517527564,
+          "theta": 0.0,
+          "omega": 0.0
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "rl-validation-003",
+      "condition": "vertical",
+      "seed": 30003,
+      "options": {
+        "initial_state": {
+          "x": 0.0,
+          "y": 11.796010037452762,
+          "vx": 0.0,
+          "vy": -0.2673422022141273,
+          "theta": 0.0,
+          "omega": 0.0
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "rl-validation-004",
+      "condition": "vertical",
+      "seed": 30004,
+      "options": {
+        "initial_state": {
+          "x": 0.0,
+          "y": 10.38141080232747,
+          "vx": 0.0,
+          "vy": -0.19579499783495968,
+          "theta": 0.0,
+          "omega": 0.0
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "rl-validation-005",
+      "condition": "vertical",
+      "seed": 30005,
+      "options": {
+        "initial_state": {
+          "x": 0.0,
+          "y": 10.603329816135123,
+          "vx": 0.0,
+          "vy": -0.019932661778898186,
+          "theta": 0.0,
+          "omega": 0.0
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "rl-validation-006",
+      "condition": "vertical",
+      "seed": 30006,
+      "options": {
+        "initial_state": {
+          "x": 0.0,
+          "y": 10.053062420852784,
+          "vx": 0.0,
+          "vy": -0.45647872659038125,
+          "theta": 0.0,
+          "omega": 0.0
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "rl-validation-007",
+      "condition": "vertical",
+      "seed": 30007,
+      "options": {
+        "initial_state": {
+          "x": 0.0,
+          "y": 11.27839074373451,
+          "vx": 0.0,
+          "vy": -0.9536388741606868,
+          "theta": 0.0,
+          "omega": 0.0
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "rl-validation-008",
+      "condition": "vertical",
+      "seed": 30008,
+      "options": {
+        "initial_state": {
+          "x": 0.0,
+          "y": 11.77969058254941,
+          "vx": 0.0,
+          "vy": -0.40988298124169,
+          "theta": 0.0,
+          "omega": 0.0
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "rl-validation-009",
+      "condition": "vertical",
+      "seed": 30009,
+      "options": {
+        "initial_state": {
+          "x": 0.0,
+          "y": 10.423643202725652,
+          "vx": 0.0,
+          "vy": -0.5989039805184501,
+          "theta": 0.0,
+          "omega": 0.0
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "rl-validation-010",
+      "condition": "vertical",
+      "seed": 30010,
+      "options": {
+        "initial_state": {
+          "x": 0.0,
+          "y": 11.207436050373603,
+          "vx": 0.0,
+          "vy": -0.030750757022678488,
+          "theta": 0.0,
+          "omega": 0.0
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "rl-validation-011",
+      "condition": "vertical",
+      "seed": 30011,
+      "options": {
+        "initial_state": {
+          "x": 0.0,
+          "y": 10.562973643699785,
+          "vx": 0.0,
+          "vy": -0.5490659348554814,
+          "theta": 0.0,
+          "omega": 0.0
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "rl-validation-012",
+      "condition": "vertical",
+      "seed": 30012,
+      "options": {
+        "initial_state": {
+          "x": 0.0,
+          "y": 11.287478562137952,
+          "vx": 0.0,
+          "vy": -0.10712635789970126,
+          "theta": 0.0,
+          "omega": 0.0
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "rl-validation-013",
+      "condition": "vertical",
+      "seed": 30013,
+      "options": {
+        "initial_state": {
+          "x": 0.0,
+          "y": 10.1089084441278,
+          "vx": 0.0,
+          "vy": -0.36934592558982904,
+          "theta": 0.0,
+          "omega": 0.0
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "rl-validation-014",
+      "condition": "vertical",
+      "seed": 30014,
+      "options": {
+        "initial_state": {
+          "x": 0.0,
+          "y": 11.854952407449609,
+          "vx": 0.0,
+          "vy": -0.29704176292241224,
+          "theta": 0.0,
+          "omega": 0.0
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "rl-validation-015",
+      "condition": "vertical",
+      "seed": 30015,
+      "options": {
+        "initial_state": {
+          "x": 0.0,
+          "y": 11.128861180271976,
+          "vx": 0.0,
+          "vy": -0.4348010589138128,
+          "theta": 0.0,
+          "omega": 0.0
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "rl-validation-016",
+      "condition": "small_offset",
+      "seed": 30016,
+      "options": {
+        "initial_state": {
+          "x": -0.042253574092017444,
+          "y": 11.53227487900523,
+          "vx": 0.025916008154245863,
+          "vy": -0.28721307688999076,
+          "theta": 0.0021627586001429977,
+          "omega": 0.0
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "rl-validation-017",
+      "condition": "small_offset",
+      "seed": 30017,
+      "options": {
+        "initial_state": {
+          "x": 0.03023709372856072,
+          "y": 10.924854169270102,
+          "vx": 0.041361005044900805,
+          "vy": -0.46078978030067885,
+          "theta": 0.01954840358531667,
+          "omega": 0.0
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "rl-validation-018",
+      "condition": "small_offset",
+      "seed": 30018,
+      "options": {
+        "initial_state": {
+          "x": -0.06951464290152454,
+          "y": 11.74103478339257,
+          "vx": 0.02912318402780797,
+          "vy": -0.7344919594578964,
+          "theta": -0.002067971973476004,
+          "omega": 0.0
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "rl-validation-019",
+      "condition": "small_offset",
+      "seed": 30019,
+      "options": {
+        "initial_state": {
+          "x": 0.1812268060508706,
+          "y": 10.855224282629576,
+          "vx": -0.03906794286876402,
+          "vy": -0.04944779873400018,
+          "theta": 0.013021567352415957,
+          "omega": 0.0
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "rl-validation-020",
+      "condition": "small_offset",
+      "seed": 30020,
+      "options": {
+        "initial_state": {
+          "x": -0.09078616685094194,
+          "y": 10.65811493048462,
+          "vx": -0.009114018799710332,
+          "vy": -0.4179064169520659,
+          "theta": -0.005173267464415577,
+          "omega": 0.0
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "rl-validation-021",
+      "condition": "small_offset",
+      "seed": 30021,
+      "options": {
+        "initial_state": {
+          "x": -0.1532528470791802,
+          "y": 10.591476327687964,
+          "vx": 0.02552405702118349,
+          "vy": -0.1226877220047321,
+          "theta": -0.0012562613275836076,
+          "omega": 0.0
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "rl-validation-022",
+      "condition": "small_offset",
+      "seed": 30022,
+      "options": {
+        "initial_state": {
+          "x": -0.1400076742916958,
+          "y": 10.981923932799416,
+          "vx": 0.010520905460926567,
+          "vy": -0.20424938828568295,
+          "theta": -0.011925186284848325,
+          "omega": 0.0
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "rl-validation-023",
+      "condition": "small_offset",
+      "seed": 30023,
+      "options": {
+        "initial_state": {
+          "x": 0.09564847805056927,
+          "y": 11.769415986459292,
+          "vx": -0.018887479480367397,
+          "vy": -0.603174312714522,
+          "theta": 0.01759475718204973,
+          "omega": 0.0
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "rl-validation-024",
+      "condition": "small_offset",
+      "seed": 30024,
+      "options": {
+        "initial_state": {
+          "x": 0.14437540227074508,
+          "y": 10.378159706065292,
+          "vx": 0.03934318435507386,
+          "vy": -0.3134230724891205,
+          "theta": 0.0010618802427280816,
+          "omega": 0.0
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "rl-validation-025",
+      "condition": "small_offset",
+      "seed": 30025,
+      "options": {
+        "initial_state": {
+          "x": 0.19934862969997258,
+          "y": 10.474348277750623,
+          "vx": 0.0308270417644244,
+          "vy": -0.09701877102472178,
+          "theta": -0.010999390878802107,
+          "omega": 0.0
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "rl-validation-026",
+      "condition": "small_offset",
+      "seed": 30026,
+      "options": {
+        "initial_state": {
+          "x": -0.1600596260013238,
+          "y": 10.221155160510602,
+          "vx": 0.009831426775708786,
+          "vy": -0.5673611269243809,
+          "theta": 0.015801154395094604,
+          "omega": 0.0
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "rl-validation-027",
+      "condition": "small_offset",
+      "seed": 30027,
+      "options": {
+        "initial_state": {
+          "x": -0.0800868189057633,
+          "y": 10.397905996164946,
+          "vx": 0.019913429017668995,
+          "vy": -0.5334593300792059,
+          "theta": 0.006524974300048268,
+          "omega": 0.0
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "rl-validation-028",
+      "condition": "small_offset",
+      "seed": 30028,
+      "options": {
+        "initial_state": {
+          "x": -0.18937776053741628,
+          "y": 10.947665484161366,
+          "vx": 0.03711844179496319,
+          "vy": -0.0930066050747067,
+          "theta": -0.016737840122173255,
+          "omega": 0.0
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "rl-validation-029",
+      "condition": "small_offset",
+      "seed": 30029,
+      "options": {
+        "initial_state": {
+          "x": 0.17440009915137009,
+          "y": 11.00117466987409,
+          "vx": -0.04299282274234915,
+          "vy": -0.3089068896784021,
+          "theta": 0.0012665946358245428,
+          "omega": 0.0
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "rl-validation-030",
+      "condition": "small_offset",
+      "seed": 30030,
+      "options": {
+        "initial_state": {
+          "x": -0.014480153835806631,
+          "y": 10.316474123469664,
+          "vx": 0.030851291691056517,
+          "vy": -0.8010987048236561,
+          "theta": 0.005492639559559027,
+          "omega": 0.0
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "rl-validation-031",
+      "condition": "small_offset",
+      "seed": 30031,
+      "options": {
+        "initial_state": {
+          "x": -0.19659026706199223,
+          "y": 11.970629342438304,
+          "vx": -0.005438499767666194,
+          "vy": -0.6249168674813311,
+          "theta": -0.013766788944690106,
+          "omega": 0.0
+        },
+        "wind_force": 0.0
+      }
+    }
+  ]
+}

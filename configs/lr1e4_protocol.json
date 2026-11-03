@@ -1,0 +1,27 @@
+{
+  "experiment_id": "lr_0p0001_seed42_100k_v1",
+  "audit": "No learning defect found in numerical/integration audit; proceed with LR-only ablation",
+  "single_training_change": {
+    "learning_rate": [
+      0.0003,
+      0.0001
+    ]
+  },
+  "from_scratch": true,
+  "seed": 42,
+  "total_steps_per_algorithm": 100000,
+  "probe": "artifacts/lr_audit_reference/fixed_probe.pt",
+  "probe_role": "same offline 64 terminal + 64 nonterminal transitions for every model/checkpoint; never inserted into replay",
+  "q_gap_definition": "Q greedy minus observed discounted return of greedy policy; not exact error vs optimal Q",
+  "telemetry_only_change": "log gradient norm after existing clipping; no change in optimizer or clipping",
+  "sha256": {
+    "configs/dqn_lr1e4.json": "f58ff5fb36a708ce860f0f9ebe60f66903710f447c65abf4ac8a74678b06ca77",
+    "configs/double_dqn_lr1e4.json": "30650d3afe16bd601eae5689554ee5958754261ca8a849b21de098d13d443e17",
+    "configs/rl_train_scenarios.json": "1d3ab00ffae5f08b1a5115448d08264fb0dd30a766221d2f6a8d568e65f8bdaa",
+    "configs/rl_validation_scenarios.json": "5403cbc170b98c537a5b75408acbddfda8dbabf762d0331d6a1811e23b3eca41",
+    "artifacts/lr_audit_reference/fixed_probe.pt": "99134e6e870f5a395e2af3925b100336792d8026ad000b9df09acaa4ef789afc",
+    "src/thruster_landing/agents/dqn.py": "61abcdea979a3f2ef5bd168f3d62af31929d94df11528dd911a273574de866ec",
+    "src/thruster_landing/train.py": "b8ce5738414cc69cfb38f103a23eaedf6574882d4e5ff2274ea0c64f23da6841",
+    "tests/test_transition_audit.py": "f3c103b6ecc175c23485928344857aa241193be8951e19e5db332df42d50e354"
+  }
+}

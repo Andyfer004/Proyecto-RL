@@ -1,0 +1,36 @@
+{
+  "experiment_id": "smoothl1_beta10_lr1e4_seed42_100k_v1",
+  "baseline": "lr_0p0001_seed42_100k_v1",
+  "single_training_change": {
+    "smooth_l1_beta": [
+      1.0,
+      10.0
+    ]
+  },
+  "loss_class": "torch.nn.SmoothL1Loss(beta=10.0, reduction=mean)",
+  "compensating_multiplier": false,
+  "not_huber_delta": true,
+  "from_scratch": true,
+  "steps_per_algorithm": 100000,
+  "seed": 42,
+  "lr": 0.0001,
+  "validation_frequency": 10000,
+  "validation_cases": 32,
+  "checkpoint_rule": "unchanged",
+  "diagnostic_sources": {
+    "A_fixed_128": "artifacts/lr_audit_reference/fixed_probe.pt",
+    "B_fixed_baseline_minibatches": "artifacts/offline_interference_v1/metadata.json: LR1e4 uniform indices and original replay",
+    "C_new_replay": "128 uniform minibatches of 64 per new final replay, separate labels and deterministic seeds",
+    "D_fixed_terminal_holdout": "previous 256 terminal holdout indices per LR1e4 baseline"
+  },
+  "sha256": {
+    "configs/dqn_beta10.json": "c1b61e6a3df86db9a0614001f2aac3636895d971446b3b9c10dbabbc674fadc6",
+    "configs/double_dqn_beta10.json": "48ec1cd1183168d6f2b20e2e7ae583647b14269fc1181ea2e6dcc28a4d34e9bb",
+    "configs/rl_train_scenarios.json": "1d3ab00ffae5f08b1a5115448d08264fb0dd30a766221d2f6a8d568e65f8bdaa",
+    "configs/rl_validation_scenarios.json": "5403cbc170b98c537a5b75408acbddfda8dbabf762d0331d6a1811e23b3eca41",
+    "src/thruster_landing/agents/dqn.py": "fc3895eeb3b021cdf4449b159e808c7a8771d4805a04905bedf7fa29bf2f77ea",
+    "src/thruster_landing/train.py": "b8ce5738414cc69cfb38f103a23eaedf6574882d4e5ff2274ea0c64f23da6841",
+    "artifacts/lr_audit_reference/fixed_probe.pt": "99134e6e870f5a395e2af3925b100336792d8026ad000b9df09acaa4ef789afc",
+    "artifacts/offline_interference_v1/metadata.json": "2765381306e02bee9fff6ca328dcb0e8dd97b7ca67056c10562b30e5e2a39c69"
+  }
+}
