@@ -1,0 +1,67 @@
+{
+  "mass": 100.0,
+  "width": 1.4,
+  "height": 1.6,
+  "foot_half_span": 0.6,
+  "foot_drop": 1.0,
+  "main_thrust": 1800.0,
+  "side_thrust": 600.0,
+  "side_arm": 0.6,
+  "gravity": 9.81,
+  "gas_capacity": 18000.0,
+  "decision_dt": 0.05,
+  "substeps": 10,
+  "max_time": 25.0,
+  "x_limit": 12.0,
+  "ceiling": 25.0,
+  "platform_half_width": 2.5,
+  "success_x": 1.5,
+  "success_vx": 0.7,
+  "success_vy": 1.0,
+  "success_angle": 0.12,
+  "success_omega": 0.25,
+  "support_height_tolerance": 0.15,
+  "wind_mean": 0.0,
+  "wind_amplitude": 80,
+  "initial_x": [
+    -1.0,
+    1.0
+  ],
+  "initial_y": [
+    10.0,
+    12.0
+  ],
+  "initial_vx": [
+    -0.2,
+    0.2
+  ],
+  "initial_vy": [
+    -1.0,
+    0.0
+  ],
+  "initial_theta": [
+    -0.08,
+    0.08
+  ],
+  "initial_omega": [
+    -0.02,
+    0.02
+  ],
+  "position_scale": 12.0,
+  "height_scale": 25.0,
+  "velocity_scale": 10.0,
+  "omega_scale": 3.0,
+  "wind_scale": 100.0,
+  "reward": {
+    "terminal_success": 100.0,
+    "terminal_failure": -100.0,
+    "progress": 2.0,
+    "horizontal_distance": 1.0,
+    "height": 0.3,
+    "speed": 0.08,
+    "angle": 0.3,
+    "angular_speed": 0.05,
+    "gas": 5.0,
+    "time": 0.2
+  }
+}
