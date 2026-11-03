@@ -1,0 +1,36 @@
+{
+  "diagnostic_id": "offline_interference_capacity_v1",
+  "environment_interactions": 0,
+  "runs": ["dqn_pilot_100k", "double_dqn_pilot_100k", "dqn_lr1e4_100k", "double_dqn_lr1e4_100k"],
+  "checkpoint": "last.resume.pt",
+  "seed": 20261102,
+  "representative_minibatches": 128,
+  "batch_size": 64,
+  "sampling": "uniform without replacement within batch; replacement across batches",
+  "shared_parameters": "two hidden Linear layers, excluding action-specific output layer",
+  "huber_beta": 1.0,
+  "supervised": {
+    "max_unique_state_action_groups": 1024,
+    "training_fraction": 0.75,
+    "updates": 500,
+    "learning_rate": 0.001,
+    "optimizer": "fresh Adam, identical diagnostic LR for all network copies",
+    "batch_size": 64,
+    "gradient_norm_limit": 10.0,
+    "target": "frozen terminal reward, no bootstrap",
+    "evaluation_frequency": 50,
+    "role": "local supervised capacity diagnostic; never a landing policy"
+  },
+  "interference": {
+    "minibatches": 32,
+    "branches": ["terminal_only", "nonterminal_only", "mixed"],
+    "optimizer_modes": ["saved_Adam_state", "fresh_Adam_state"],
+    "learning_rate": "original checkpoint learning rate",
+    "updates_per_independent_copy": 1,
+    "evaluation_set": "fixed held-out terminal state-action groups, excluded from branch minibatches",
+    "sampling": "uniform from non-held-out replay; retain first 32 batches containing both groups",
+    "group_loss": "sum of active sample losses divided by FULL minibatch size, then original clipping and Adam; no group reweighting",
+    "role": "paired one-step probes, not a training campaign"
+  },
+  "protection": "original files and weights immutable; no final-test evaluation; no beta=10 execution"
+}
