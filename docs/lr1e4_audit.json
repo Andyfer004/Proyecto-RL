@@ -1,0 +1,60 @@
+{
+  "finding": "No learning defect found; LR ablation authorized by audit outcome",
+  "numerical_gather_example": {
+    "actions": [
+      7,
+      0,
+      3
+    ],
+    "q_selected": [
+      7,
+      0,
+      3
+    ],
+    "rewards": [
+      10,
+      1,
+      -2
+    ],
+    "terminated": [
+      true,
+      false,
+      true
+    ],
+    "truncated": [
+      false,
+      true,
+      false
+    ],
+    "gamma": 0.5,
+    "target": [
+      10,
+      4.5,
+      -2
+    ],
+    "loss_huber": 3.6666666666666665,
+    "selected_q_bias_gradients": {
+      "action_7": -0.3333333333333333,
+      "action_0": -0.3333333333333333,
+      "action_3": 0.3333333333333333
+    },
+    "q_rewards_targets_dones_shape": [
+      3
+    ]
+  },
+  "reset_integration_fixture": {
+    "terminal_episodes": 6,
+    "truncated_episodes": 6,
+    "result": "all replay obs/next_obs/actions exactly matched reset and step outputs, before next reset",
+    "target_sync_steps": [
+      2,
+      4,
+      6
+    ],
+    "target_initially_synchronized": true
+  },
+  "observations": "raw float32 vector of shape (9,) identical between direct training reset and greedy evaluator for validation case 016",
+  "target_gradients": "None; target requires_grad False; hard copy checked",
+  "verification": "81 tests passed; Gymnasium checker passed; two known unbounded Box warnings",
+  "production_change": "diagnostic-only gradient norm read after existing clipping; no learning fix"
+}

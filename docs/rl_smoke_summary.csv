@@ -1,0 +1,3 @@
+algorithm,seed,environment_steps,updates,complete_training_episodes,training_successes,validation_episodes,validation_successes,validation_mean_return,wall_seconds,steps_per_second
+dqn,42,10000,2251,221,0,32,0,-100.36407889509475,5.7658779170014895,1734.3412649292513
+double_dqn,42,10000,2251,206,0,32,0,-102.079350712419,7.00178258298547,1428.2077287432894
