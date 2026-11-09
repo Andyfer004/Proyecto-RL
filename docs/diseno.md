@@ -2,8 +2,10 @@
 
 ## Convenciones y aproximaciones
 
-Modelo académico propio, sin Box2D ni código de LunarLander. No reproduce ningún
-vehículo comercial ni tecnología de Tesla. Un solo cuerpo rígido rectangular en
+La inspiración conceptual es el Tesla Roadster como vehículo con propulsores.
+El modelo físico y sus parámetros son académicos propios, sin Box2D ni código de
+LunarLander: no reproducen un vehículo comercial ni tecnología de Tesla, ni implican
+afiliación o validación por esa empresa. Un solo cuerpo rígido rectangular en
 un plano; coordenadas globales x hacia la derecha, y hacia arriba. Unidades SI:
 metros, segundos, kilogramos, newtons, radianes. Ángulo cero vertical, positivo
 antihorario. El origen global está en el centro de la plataforma y a nivel del

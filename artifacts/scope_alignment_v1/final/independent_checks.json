@@ -1,0 +1,11 @@
+{
+  "episodes_checked": 2328,
+  "same_case_observations_and_gas_for_all_methods": true,
+  "independently_confirmed_success_and_contact_flags": true,
+  "representative_ids": [
+    "test-vertical-000",
+    "complement-new_dynamics-000",
+    "complement-wind_p40-000"
+  ],
+  "representative_rule": "Fixed first IDs, no selection by reward/success"
+}

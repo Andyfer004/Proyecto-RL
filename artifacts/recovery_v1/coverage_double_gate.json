@@ -1,0 +1,8 @@
+{
+  "dqn_first": true,
+  "criterion": ">=80percent in each dev group for3consecutive online evaluations",
+  "dqn_evidence": "dqn_coverage_v2_seed42/evaluations.csv",
+  "double_started_after_dqn_evidence": true,
+  "second_seed_same_frozen_method": true,
+  "check_results_not_used_for_tuning": true
+}

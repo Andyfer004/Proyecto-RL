@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "experiment_id": "exploration_balance_reward_v1_seed42_100k_v1",
+  "status": "prepared_not_run",
+  "action_probabilities": [
+    0.35,
+    0.15,
+    0.025,
+    0.025,
+    0.35,
+    0.025,
+    0.025,
+    0.05
+  ],
+  "intervention": "Replace uniform random action choice during epsilon exploration (including warmup) with the fixed categorical distribution; greedy action unchanged. Epsilon schedule unchanged.",
+  "derivation": "Geometry/catalog only: mean local thrust 990N vs 1500N uniform, weight 981N. Zero-moment probability 0.90 vs 0.50. Symmetric left/right, all eight actions retain positive probability. No PID labels or imitation.",
+  "reward_version": "v1",
+  "env_config": "configs/env.json",
+  "seed": 42,
+  "total_steps_per_algorithm": 100000,
+  "train_manifest": "configs/level1_train_scenarios.json",
+  "validation_manifest": "configs/level1_validation_scenarios.json",
+  "validation_frequency": 10000,
+  "epsilon": "Original: warmup 1000; 1 to 0.1 over 80000 steps after warmup; 0.1 from 81000. No reset.",
+  "checkpoint_rule": "Maximum success fraction on fixed 32 level-1 validation cases, then minimum |x| among successes, then earliest. Initial excluded.",
+  "comparison": "At 50k compare to previous L1 pilot at equal budget. Beyond 50k, budget is an additional difference; uniform-exploration 100k control with identical manifests/configs is needed for isolation. Original L1 case selection was a degenerate level-choice then uniform index; the prepared flat manifest has the same distribution but not identical reset RNG draws.",
+  "evaluation": "Initial and every 10000: same 32 L1 validation, greedy/no updates. No original higher-level validation or final test.",
+  "decision": "No automatic chaining, curriculum promotion, reward change or multi-seed campaign. Training from scratch, maximum100k each, run only after explicit authorization.",
+  "predeclared_reporting": "Training and greedy validation success, contact velocities/orientation/error, failure causes, gas/duration, signed Q/TD by terminality, gradient norms, fixed-probe and new replay diagnostics, actual exploration action histogram.",
+  "interpretation": "All 157 successful PID examples outrank each failed behaviour under v1; no v2 created. This exploration prior is a hypothesis, not a validated improvement."
+}

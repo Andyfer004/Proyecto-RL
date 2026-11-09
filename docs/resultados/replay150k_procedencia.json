@@ -1,0 +1,57 @@
+{
+  "experiment_id": "replay150k_weighted_seed42_100k_v1",
+  "execution_manifest_sha256": "686eb30e6d0b0f2eeaa72fa646b3697e9aec6c3846fb10f4fd80af8c20ec8917",
+  "integrity_sha256": "dd29f94dc915014aa7109b427735a88e6d04f2605ec41f78302aad6f9c354f26",
+  "files": {
+    "docs/resultados/replay150k_resultados.csv": {
+      "source": "artifacts/replay150k_weighted_seed42_100k_v1/analysis/results.csv",
+      "sha256": "068fba532c131ca6cdce6c1fd73c396cda0274c8dfc627b63d14486fed4d39ff"
+    },
+    "docs/resultados/replay150k_retencion_exposicion.csv": {
+      "source": "artifacts/replay150k_weighted_seed42_100k_v1/analysis/progress.csv",
+      "sha256": "acd5fbd2d372d9f82051b3d660cb0c127698aa11b35c15e88bb023e9da9607ad"
+    },
+    "docs/resultados/replay150k_exposicion_por_transicion.csv": {
+      "source": "artifacts/replay150k_weighted_seed42_100k_v1/analysis/successful_transition_exposure.csv",
+      "sha256": "7204fcf278f0515f16bf53f22fdbff888383d54140b0eae3b86de20466f252ee"
+    },
+    "docs/resultados/replay150k_resultados_por_causa.csv": {
+      "source": "artifacts/replay150k_weighted_seed42_100k_v1/analysis/by_outcome.csv",
+      "sha256": "995717276412bad67767affbdf77def11ab86e8e4f6c4f322821d47cfa7d0223"
+    },
+    "docs/resultados/replay150k_tiempos.csv": {
+      "source": "artifacts/replay150k_weighted_seed42_100k_v1/analysis/timings.csv",
+      "sha256": "a7639daef94bc2d137c07796a4fee08cc87150d92858f923de5b766fd277b401"
+    },
+    "docs/resultados/replay150k_curvas.png": {
+      "source": "artifacts/replay150k_weighted_seed42_100k_v1/analysis/learning_retention.png",
+      "sha256": "ff6a6d58e533162e10b44715e01feff35003e3297b89cb16da68ee85fb3a4c8c"
+    },
+    "docs/resultados/replay150k_exposicion.png": {
+      "source": "artifacts/replay150k_weighted_seed42_100k_v1/analysis/success_exposure.png",
+      "sha256": "6204493e45c77ce2952f7e95893ab943ee452d6c88f47f1fbe04533ba2152470"
+    },
+    "docs/resultados/replay150k_q_exitos.png": {
+      "source": "artifacts/replay150k_weighted_seed42_100k_v1/analysis/fixed_success_q_td.png",
+      "sha256": "7450d8c27526ad6686014d3f06ab10a6737b3dc500e21022dfb68a1158179b6f"
+    },
+    "docs/resultados/replay150k_trayectorias.png": {
+      "source": "artifacts/replay150k_weighted_seed42_100k_v1/analysis/fixed_final_trajectories.png",
+      "sha256": "c48a3c8f9276c47e3d89fb2bb56d58616480ea6d5c09663c424c5f30e7845791"
+    },
+    "docs/resultados/replay150k_diagnostico_replays.csv": {
+      "source": "artifacts/replay150k_weighted_seed42_100k_v1/replay_diagnostics/summary.csv",
+      "sha256": "a267ae75a137ff5c758fce2bcca03a2a101de01f43a7e1b45fceeb0bb8e9dfed"
+    },
+    "docs/resultados/replay150k_q_td_fijos.csv": {
+      "source": "artifacts/replay150k_weighted_seed42_100k_v1/analysis",
+      "role": "Derived signed fixed-probe summary or actual pre-update terminal-success samples",
+      "sha256": "064e660208c35575b231b83adb9c1846f3b42ce1b2134d43c60174c6bc50e519"
+    },
+    "docs/resultados/replay150k_muestreos_terminales_exitosos.csv": {
+      "source": "artifacts/replay150k_weighted_seed42_100k_v1/analysis",
+      "role": "Derived signed fixed-probe summary or actual pre-update terminal-success samples",
+      "sha256": "dbb9f4fdcc64c2a135ddd095e273903c35b3d57acdfd38a9b6d03857f5b2b3d8"
+    }
+  }
+}

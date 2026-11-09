@@ -1,0 +1,5480 @@
+{
+  "schema_version": 1,
+  "split": "test",
+  "role": "independent_complement",
+  "origin": "Deterministic NumPy default_rng per-case seeds440000+; prescribed without evaluating any policy; no rejection by outcome",
+  "scenarios": [
+    {
+      "id": "complement-represented_l1-000",
+      "condition": "represented_l1",
+      "seed": 440000,
+      "suite": "complement",
+      "exposure": "within_assisted_initial_support",
+      "paired_wind_id": "",
+      "options": {
+        "initial_state": {
+          "x": -0.003386572324010895,
+          "y": 1.9560825624232963,
+          "vx": -0.011122176916056312,
+          "vy": -0.2736517444921439,
+          "theta": 0.007538539902737007,
+          "omega": -0.004627666060640652
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "complement-represented_l1-001",
+      "condition": "represented_l1",
+      "seed": 440001,
+      "suite": "complement",
+      "exposure": "within_assisted_initial_support",
+      "paired_wind_id": "",
+      "options": {
+        "initial_state": {
+          "x": -0.006714499541883035,
+          "y": 1.9342571734647698,
+          "vx": -0.029124477460527064,
+          "vy": -0.14355447991264808,
+          "theta": -0.009536198411774393,
+          "omega": -0.0004630609535099051
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "complement-represented_l1-002",
+      "condition": "represented_l1",
+      "seed": 440002,
+      "suite": "complement",
+      "exposure": "within_assisted_initial_support",
+      "paired_wind_id": "",
+      "options": {
+        "initial_state": {
+          "x": 0.012460765523242757,
+          "y": 1.6166153620810906,
+          "vx": -0.0066503778921218675,
+          "vy": -0.05169876461348563,
+          "theta": 0.0016057768579616739,
+          "omega": -0.0035301687366669733
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "complement-represented_l1-003",
+      "condition": "represented_l1",
+      "seed": 440003,
+      "suite": "complement",
+      "exposure": "within_assisted_initial_support",
+      "paired_wind_id": "",
+      "options": {
+        "initial_state": {
+          "x": 0.01609944553558007,
+          "y": 2.167608830253026,
+          "vx": -0.002941071861418918,
+          "vy": -0.17639869932816613,
+          "theta": 0.00025662993633035036,
+          "omega": 0.0024839547836547015
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "complement-represented_l1-004",
+      "condition": "represented_l1",
+      "seed": 440004,
+      "suite": "complement",
+      "exposure": "within_assisted_initial_support",
+      "paired_wind_id": "",
+      "options": {
+        "initial_state": {
+          "x": -0.03547401727523752,
+          "y": 2.155726114961555,
+          "vx": -0.015304495974536047,
+          "vy": -0.07241209815213229,
+          "theta": -0.006719926358316157,
+          "omega": -0.0020122952751860323
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "complement-represented_l1-005",
+      "condition": "represented_l1",
+      "seed": 440005,
+      "suite": "complement",
+      "exposure": "within_assisted_initial_support",
+      "paired_wind_id": "",
+      "options": {
+        "initial_state": {
+          "x": -0.06831541149637198,
+          "y": 2.2568872876454398,
+          "vx": -0.002397474630763401,
+          "vy": -0.16703316470113747,
+          "theta": -0.008871842899294392,
+          "omega": 0.0037720130461457524
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "complement-represented_l1-006",
+      "condition": "represented_l1",
+      "seed": 440006,
+      "suite": "complement",
+      "exposure": "within_assisted_initial_support",
+      "paired_wind_id": "",
+      "options": {
+        "initial_state": {
+          "x": 0.07948379809534659,
+          "y": 2.270242277758359,
+          "vx": 0.026457800418855672,
+          "vy": -0.2005575967687859,
+          "theta": -0.002263586807734761,
+          "omega": 0.0006312233842704684
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "complement-represented_l1-007",
+      "condition": "represented_l1",
+      "seed": 440007,
+      "suite": "complement",
+      "exposure": "within_assisted_initial_support",
+      "paired_wind_id": "",
+      "options": {
+        "initial_state": {
+          "x": 0.026333171463598506,
+          "y": 1.6224537525293905,
+          "vx": 0.016243962936836037,
+          "vy": -0.059152908062487325,
+          "theta": -0.0062141920177354384,
+          "omega": -0.0012385977788649805
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "complement-represented_l1-008",
+      "condition": "represented_l1",
+      "seed": 440008,
+      "suite": "complement",
+      "exposure": "within_assisted_initial_support",
+      "paired_wind_id": "",
+      "options": {
+        "initial_state": {
+          "x": -0.027093016001624573,
+          "y": 1.9321432895430195,
+          "vx": 0.014065760380797435,
+          "vy": -0.22876521146654463,
+          "theta": -0.00517012854076037,
+          "omega": 0.004749457368475469
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "complement-represented_l1-009",
+      "condition": "represented_l1",
+      "seed": 440009,
+      "suite": "complement",
+      "exposure": "within_assisted_initial_support",
+      "paired_wind_id": "",
+      "options": {
+        "initial_state": {
+          "x": -0.03132561328004351,
+          "y": 1.7591088572512596,
+          "vx": -0.02535146668414587,
+          "vy": -0.10219652343238086,
+          "theta": -0.0038105705866519715,
+          "omega": -0.0002643862596633939
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "complement-represented_l1-010",
+      "condition": "represented_l1",
+      "seed": 440010,
+      "suite": "complement",
+      "exposure": "within_assisted_initial_support",
+      "paired_wind_id": "",
+      "options": {
+        "initial_state": {
+          "x": 0.02822316126663693,
+          "y": 2.14712320934352,
+          "vx": -0.001975252642576888,
+          "vy": -0.0651186552908467,
+          "theta": -0.003793214715668838,
+          "omega": 0.0006096359343491542
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "complement-represented_l1-011",
+      "condition": "represented_l1",
+      "seed": 440011,
+      "suite": "complement",
+      "exposure": "within_assisted_initial_support",
+      "paired_wind_id": "",
+      "options": {
+        "initial_state": {
+          "x": -0.020995818721843553,
+          "y": 2.1712576383988758,
+          "vx": -0.005613029164440097,
+          "vy": -0.14664641691364508,
+          "theta": -0.007424916888322688,
+          "omega": -0.0018624965465929377
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "complement-represented_l1-012",
+      "condition": "represented_l1",
+      "seed": 440012,
+      "suite": "complement",
+      "exposure": "within_assisted_initial_support",
+      "paired_wind_id": "",
+      "options": {
+        "initial_state": {
+          "x": -0.017968278438537055,
+          "y": 1.7189710294658958,
+          "vx": 0.01385334312558603,
+          "vy": -0.0636337350580709,
+          "theta": -0.0077619457140462615,
+          "omega": -0.0019128952355419637
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "complement-represented_l1-013",
+      "condition": "represented_l1",
+      "seed": 440013,
+      "suite": "complement",
+      "exposure": "within_assisted_initial_support",
+      "paired_wind_id": "",
+      "options": {
+        "initial_state": {
+          "x": -0.07617123910433131,
+          "y": 1.6095017330997503,
+          "vx": 0.020154977792236295,
+          "vy": -0.08448167387353292,
+          "theta": -0.004913211819115868,
+          "omega": 0.0028026736717101253
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "complement-represented_l1-014",
+      "condition": "represented_l1",
+      "seed": 440014,
+      "suite": "complement",
+      "exposure": "within_assisted_initial_support",
+      "paired_wind_id": "",
+      "options": {
+        "initial_state": {
+          "x": -0.09241378486508703,
+          "y": 2.229593838306795,
+          "vx": -0.0023315862481814564,
+          "vy": -0.10394615567541376,
+          "theta": 0.008827379624451086,
+          "omega": 0.0005518191954837492
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "complement-represented_l1-015",
+      "condition": "represented_l1",
+      "seed": 440015,
+      "suite": "complement",
+      "exposure": "within_assisted_initial_support",
+      "paired_wind_id": "",
+      "options": {
+        "initial_state": {
+          "x": 0.09273592321960658,
+          "y": 2.276217778038108,
+          "vx": 0.0006885275543000358,
+          "vy": -0.2672544604149575,
+          "theta": -0.00947373517025482,
+          "omega": 0.004555431054742111
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "complement-represented_l1-016",
+      "condition": "represented_l1",
+      "seed": 440016,
+      "suite": "complement",
+      "exposure": "within_assisted_initial_support",
+      "paired_wind_id": "",
+      "options": {
+        "initial_state": {
+          "x": -0.0006079815583039272,
+          "y": 2.2641909013204335,
+          "vx": 0.02435106692891814,
+          "vy": -0.1426617849034101,
+          "theta": -0.0010885113963732085,
+          "omega": 0.001036786902046093
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "complement-represented_l1-017",
+      "condition": "represented_l1",
+      "seed": 440017,
+      "suite": "complement",
+      "exposure": "within_assisted_initial_support",
+      "paired_wind_id": "",
+      "options": {
+        "initial_state": {
+          "x": -0.010495511205672249,
+          "y": 2.053498016559637,
+          "vx": 0.022525997075633474,
+          "vy": -0.11040047728016295,
+          "theta": -0.007201351025179734,
+          "omega": -0.0038255118670486544
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "complement-represented_l1-018",
+      "condition": "represented_l1",
+      "seed": 440018,
+      "suite": "complement",
+      "exposure": "within_assisted_initial_support",
+      "paired_wind_id": "",
+      "options": {
+        "initial_state": {
+          "x": 0.08958592976846008,
+          "y": 1.9810706905105302,
+          "vx": 0.02834614017785587,
+          "vy": -0.05595851214878131,
+          "theta": -0.005898629663681308,
+          "omega": -0.002277596336123058
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "complement-represented_l1-019",
+      "condition": "represented_l1",
+      "seed": 440019,
+      "suite": "complement",
+      "exposure": "within_assisted_initial_support",
+      "paired_wind_id": "",
+      "options": {
+        "initial_state": {
+          "x": -0.021752806073184684,
+          "y": 1.9367004292997674,
+          "vx": 0.001065654925217161,
+          "vy": -0.248307047828462,
+          "theta": -0.006466089438700091,
+          "omega": 0.00281713228037392
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "complement-represented_l1-020",
+      "condition": "represented_l1",
+      "seed": 440020,
+      "suite": "complement",
+      "exposure": "within_assisted_initial_support",
+      "paired_wind_id": "",
+      "options": {
+        "initial_state": {
+          "x": -0.03174899309418673,
+          "y": 2.3017275917420132,
+          "vx": -0.014279642144572169,
+          "vy": -0.13490783683125973,
+          "theta": 0.0052056902406872815,
+          "omega": -0.0047442415247262205
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "complement-represented_l1-021",
+      "condition": "represented_l1",
+      "seed": 440021,
+      "suite": "complement",
+      "exposure": "within_assisted_initial_support",
+      "paired_wind_id": "",
+      "options": {
+        "initial_state": {
+          "x": 0.014475940201564863,
+          "y": 2.000394960938445,
+          "vx": -0.02641793277873346,
+          "vy": -0.22593417776424599,
+          "theta": -0.00602703591553831,
+          "omega": -0.003163141984064871
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "complement-represented_l1-022",
+      "condition": "represented_l1",
+      "seed": 440022,
+      "suite": "complement",
+      "exposure": "within_assisted_initial_support",
+      "paired_wind_id": "",
+      "options": {
+        "initial_state": {
+          "x": -0.03371118663358732,
+          "y": 1.8083014408398113,
+          "vx": 0.009329763827921623,
+          "vy": -0.1321397138931826,
+          "theta": -0.007467272844672963,
+          "omega": -0.004804592166697838
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "complement-represented_l1-023",
+      "condition": "represented_l1",
+      "seed": 440023,
+      "suite": "complement",
+      "exposure": "within_assisted_initial_support",
+      "paired_wind_id": "",
+      "options": {
+        "initial_state": {
+          "x": -0.03352712459250922,
+          "y": 1.9030182717527948,
+          "vx": 0.02805564844743545,
+          "vy": -0.29368025197948,
+          "theta": -0.005703409155488626,
+          "omega": -0.0036792210894176125
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "complement-represented_l1-024",
+      "condition": "represented_l1",
+      "seed": 440024,
+      "suite": "complement",
+      "exposure": "within_assisted_initial_support",
+      "paired_wind_id": "",
+      "options": {
+        "initial_state": {
+          "x": -0.020917850298312658,
+          "y": 2.2200482024887744,
+          "vx": 0.014259300334041405,
+          "vy": -0.1182895978002523,
+          "theta": -0.007237094585146227,
+          "omega": -0.00428920800196057
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "complement-represented_l1-025",
+      "condition": "represented_l1",
+      "seed": 440025,
+      "suite": "complement",
+      "exposure": "within_assisted_initial_support",
+      "paired_wind_id": "",
+      "options": {
+        "initial_state": {
+          "x": 0.09472302909551995,
+          "y": 1.6307998086190274,
+          "vx": -0.015770013560175263,
+          "vy": -0.28042598098990457,
+          "theta": -0.0027809319549723767,
+          "omega": 0.0033964989189330655
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "complement-represented_l1-026",
+      "condition": "represented_l1",
+      "seed": 440026,
+      "suite": "complement",
+      "exposure": "within_assisted_initial_support",
+      "paired_wind_id": "",
+      "options": {
+        "initial_state": {
+          "x": -0.008180398465414518,
+          "y": 1.7187657683963702,
+          "vx": -0.008324735986220943,
+          "vy": -0.06602661402551638,
+          "theta": 0.005286726406579318,
+          "omega": -0.003944215185811513
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "complement-represented_l1-027",
+      "condition": "represented_l1",
+      "seed": 440027,
+      "suite": "complement",
+      "exposure": "within_assisted_initial_support",
+      "paired_wind_id": "",
+      "options": {
+        "initial_state": {
+          "x": 0.0658189307385442,
+          "y": 1.8522283248389109,
+          "vx": -0.022237119616795416,
+          "vy": -0.07852736617548939,
+          "theta": -0.009618753816404207,
+          "omega": 0.00041687810213646425
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "complement-represented_l1-028",
+      "condition": "represented_l1",
+      "seed": 440028,
+      "suite": "complement",
+      "exposure": "within_assisted_initial_support",
+      "paired_wind_id": "",
+      "options": {
+        "initial_state": {
+          "x": -0.06548182924735713,
+          "y": 2.33979971188413,
+          "vx": -0.02123803433764783,
+          "vy": -0.10745795876030748,
+          "theta": -0.005869580663754878,
+          "omega": -0.004689852333716405
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "complement-represented_l1-029",
+      "condition": "represented_l1",
+      "seed": 440029,
+      "suite": "complement",
+      "exposure": "within_assisted_initial_support",
+      "paired_wind_id": "",
+      "options": {
+        "initial_state": {
+          "x": 0.049480991660646484,
+          "y": 2.395606058108637,
+          "vx": -0.026205031020895143,
+          "vy": -0.23959805327573128,
+          "theta": 0.0052259018789556945,
+          "omega": 0.0014451310472259093
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "complement-represented_l1-030",
+      "condition": "represented_l1",
+      "seed": 440030,
+      "suite": "complement",
+      "exposure": "within_assisted_initial_support",
+      "paired_wind_id": "",
+      "options": {
+        "initial_state": {
+          "x": 0.0839577633239188,
+          "y": 2.3937341955337503,
+          "vx": -0.028705860730318708,
+          "vy": -0.19723529770718765,
+          "theta": -0.0036927380637613296,
+          "omega": 0.00012137739864024999
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "complement-represented_l1-031",
+      "condition": "represented_l1",
+      "seed": 440031,
+      "suite": "complement",
+      "exposure": "within_assisted_initial_support",
+      "paired_wind_id": "",
+      "options": {
+        "initial_state": {
+          "x": 0.07227461388874253,
+          "y": 2.1409161605457374,
+          "vx": 0.018234838268958185,
+          "vy": -0.28224440341904017,
+          "theta": -0.008150498309821435,
+          "omega": 1.1739098642298274e-05
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "complement-represented_high-000",
+      "condition": "represented_high",
+      "seed": 441000,
+      "suite": "complement",
+      "exposure": "within_assisted_initial_support",
+      "paired_wind_id": "",
+      "options": {
+        "initial_state": {
+          "x": -0.2155797738616372,
+          "y": 8.934068584956979,
+          "vx": -0.0002482956008542203,
+          "vy": -0.6886067199537119,
+          "theta": 0.02554085874787185,
+          "omega": -0.004710368765862244
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "complement-represented_high-001",
+      "condition": "represented_high",
+      "seed": 441001,
+      "suite": "complement",
+      "exposure": "within_assisted_initial_support",
+      "paired_wind_id": "",
+      "options": {
+        "initial_state": {
+          "x": -0.12163234200014673,
+          "y": 12.865408576231559,
+          "vx": -0.08026891277578761,
+          "vy": -0.8031651599524721,
+          "theta": -0.0002859242347760338,
+          "omega": 0.0011530241064751435
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "complement-represented_high-002",
+      "condition": "represented_high",
+      "seed": 441002,
+      "suite": "complement",
+      "exposure": "within_assisted_initial_support",
+      "paired_wind_id": "",
+      "options": {
+        "initial_state": {
+          "x": 0.2588957402565722,
+          "y": 10.951073055908106,
+          "vx": 0.0995861400783804,
+          "vy": -0.3985905405345974,
+          "theta": 0.006354746936988293,
+          "omega": 0.0038136043823136867
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "complement-represented_high-003",
+      "condition": "represented_high",
+      "seed": 441003,
+      "suite": "complement",
+      "exposure": "within_assisted_initial_support",
+      "paired_wind_id": "",
+      "options": {
+        "initial_state": {
+          "x": -0.08252904951527058,
+          "y": 9.901656833891694,
+          "vx": 0.046218998167442155,
+          "vy": -0.03496639773658872,
+          "theta": 0.0033667357530980224,
+          "omega": 0.0033832004291275255
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "complement-represented_high-004",
+      "condition": "represented_high",
+      "seed": 441004,
+      "suite": "complement",
+      "exposure": "within_assisted_initial_support",
+      "paired_wind_id": "",
+      "options": {
+        "initial_state": {
+          "x": 0.181221032669356,
+          "y": 11.900474317619235,
+          "vx": -0.009371278483313206,
+          "vy": -0.34292879083772076,
+          "theta": 0.023198335356262367,
+          "omega": 0.004613645458692828
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "complement-represented_high-005",
+      "condition": "represented_high",
+      "seed": 441005,
+      "suite": "complement",
+      "exposure": "within_assisted_initial_support",
+      "paired_wind_id": "",
+      "options": {
+        "initial_state": {
+          "x": -0.24949922925200674,
+          "y": 8.62369267994841,
+          "vx": 0.0955292079593348,
+          "vy": -0.9145611313247177,
+          "theta": -0.0239430958520134,
+          "omega": -0.003511076956118775
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "complement-represented_high-006",
+      "condition": "represented_high",
+      "seed": 441006,
+      "suite": "complement",
+      "exposure": "within_assisted_initial_support",
+      "paired_wind_id": "",
+      "options": {
+        "initial_state": {
+          "x": 0.24165412037023756,
+          "y": 10.783235600657974,
+          "vx": 0.01650013066700995,
+          "vy": -0.18793438376915028,
+          "theta": -0.021924319692397602,
+          "omega": 0.004761202411418155
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "complement-represented_high-007",
+      "condition": "represented_high",
+      "seed": 441007,
+      "suite": "complement",
+      "exposure": "within_assisted_initial_support",
+      "paired_wind_id": "",
+      "options": {
+        "initial_state": {
+          "x": -0.17306425129678885,
+          "y": 12.764807209634117,
+          "vx": -0.058528194787806465,
+          "vy": -0.9015102566603788,
+          "theta": -0.006071453071311918,
+          "omega": -0.0018984365264953275
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "complement-represented_high-008",
+      "condition": "represented_high",
+      "seed": 441008,
+      "suite": "complement",
+      "exposure": "within_assisted_initial_support",
+      "paired_wind_id": "",
+      "options": {
+        "initial_state": {
+          "x": -0.2705425074970034,
+          "y": 11.551889363604895,
+          "vx": -0.07205815298027902,
+          "vy": -0.3936642888824323,
+          "theta": 0.017681294023132343,
+          "omega": 0.002659520594899095
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "complement-represented_high-009",
+      "condition": "represented_high",
+      "seed": 441009,
+      "suite": "complement",
+      "exposure": "within_assisted_initial_support",
+      "paired_wind_id": "",
+      "options": {
+        "initial_state": {
+          "x": 0.16880508775148909,
+          "y": 8.117935078045372,
+          "vx": 0.02521894893969936,
+          "vy": -0.3617215280321887,
+          "theta": -0.02112886110485675,
+          "omega": -0.0018055146462056426
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "complement-represented_high-010",
+      "condition": "represented_high",
+      "seed": 441010,
+      "suite": "complement",
+      "exposure": "within_assisted_initial_support",
+      "paired_wind_id": "",
+      "options": {
+        "initial_state": {
+          "x": 0.1313157962482592,
+          "y": 8.665108894324199,
+          "vx": -0.05186474361726337,
+          "vy": -0.3731185925386612,
+          "theta": 0.0007567798335812203,
+          "omega": 0.0032691518648487127
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "complement-represented_high-011",
+      "condition": "represented_high",
+      "seed": 441011,
+      "suite": "complement",
+      "exposure": "within_assisted_initial_support",
+      "paired_wind_id": "",
+      "options": {
+        "initial_state": {
+          "x": -0.2116689778460037,
+          "y": 11.793564671118656,
+          "vx": 0.022199985184941397,
+          "vy": -0.3192044354426885,
+          "theta": 0.008619858239682211,
+          "omega": 0.004366609251110755
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "complement-represented_high-012",
+      "condition": "represented_high",
+      "seed": 441012,
+      "suite": "complement",
+      "exposure": "within_assisted_initial_support",
+      "paired_wind_id": "",
+      "options": {
+        "initial_state": {
+          "x": 0.26918797178268417,
+          "y": 10.494198172727762,
+          "vx": -0.02822387156843753,
+          "vy": -0.6135835060856003,
+          "theta": -0.004213934519521882,
+          "omega": -0.004784605611798169
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "complement-represented_high-013",
+      "condition": "represented_high",
+      "seed": 441013,
+      "suite": "complement",
+      "exposure": "within_assisted_initial_support",
+      "paired_wind_id": "",
+      "options": {
+        "initial_state": {
+          "x": -0.03564614215090895,
+          "y": 10.626998184884775,
+          "vx": 0.02448698510464642,
+          "vy": -0.20247500946429742,
+          "theta": 0.017856266490567697,
+          "omega": 0.00458562821198646
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "complement-represented_high-014",
+      "condition": "represented_high",
+      "seed": 441014,
+      "suite": "complement",
+      "exposure": "within_assisted_initial_support",
+      "paired_wind_id": "",
+      "options": {
+        "initial_state": {
+          "x": -0.23731120202752615,
+          "y": 12.190903847290059,
+          "vx": -0.006044340709476615,
+          "vy": -0.008278973466898987,
+          "theta": 0.003967953860241695,
+          "omega": -0.004821855862516348
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "complement-represented_high-015",
+      "condition": "represented_high",
+      "seed": 441015,
+      "suite": "complement",
+      "exposure": "within_assisted_initial_support",
+      "paired_wind_id": "",
+      "options": {
+        "initial_state": {
+          "x": -0.1806339310702785,
+          "y": 9.709946603128508,
+          "vx": 0.05093466070191979,
+          "vy": -0.593820607030859,
+          "theta": 0.018011909166826046,
+          "omega": 0.0040764838763182355
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "complement-represented_high-016",
+      "condition": "represented_high",
+      "seed": 441016,
+      "suite": "complement",
+      "exposure": "within_assisted_initial_support",
+      "paired_wind_id": "",
+      "options": {
+        "initial_state": {
+          "x": 0.13525896441021423,
+          "y": 11.284596040736412,
+          "vx": -0.08878385867536874,
+          "vy": -0.9874429219740222,
+          "theta": -0.0012643589596428573,
+          "omega": 0.004535121771544391
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "complement-represented_high-017",
+      "condition": "represented_high",
+      "seed": 441017,
+      "suite": "complement",
+      "exposure": "within_assisted_initial_support",
+      "paired_wind_id": "",
+      "options": {
+        "initial_state": {
+          "x": 0.08785974733339368,
+          "y": 12.601369619024249,
+          "vx": -0.07707242347542938,
+          "vy": -0.9846220839015669,
+          "theta": -0.012765977953463969,
+          "omega": -0.001777551037859799
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "complement-represented_high-018",
+      "condition": "represented_high",
+      "seed": 441018,
+      "suite": "complement",
+      "exposure": "within_assisted_initial_support",
+      "paired_wind_id": "",
+      "options": {
+        "initial_state": {
+          "x": 0.01664098818268025,
+          "y": 12.136360732747912,
+          "vx": 0.08502558011111855,
+          "vy": -0.9604895251628854,
+          "theta": -0.006111327683995417,
+          "omega": 0.004236166423149472
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "complement-represented_high-019",
+      "condition": "represented_high",
+      "seed": 441019,
+      "suite": "complement",
+      "exposure": "within_assisted_initial_support",
+      "paired_wind_id": "",
+      "options": {
+        "initial_state": {
+          "x": 0.0077822808323609214,
+          "y": 8.862113625033636,
+          "vx": -0.002230365851987792,
+          "vy": -0.11318550916028469,
+          "theta": -0.01888224369398361,
+          "omega": -0.0036128999963604904
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "complement-represented_high-020",
+      "condition": "represented_high",
+      "seed": 441020,
+      "suite": "complement",
+      "exposure": "within_assisted_initial_support",
+      "paired_wind_id": "",
+      "options": {
+        "initial_state": {
+          "x": 0.24980242636567543,
+          "y": 11.620819438635035,
+          "vx": -0.026499551936840216,
+          "vy": -0.18238635973732353,
+          "theta": 0.010181245695375402,
+          "omega": 0.001022195180985842
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "complement-represented_high-021",
+      "condition": "represented_high",
+      "seed": 441021,
+      "suite": "complement",
+      "exposure": "within_assisted_initial_support",
+      "paired_wind_id": "",
+      "options": {
+        "initial_state": {
+          "x": 0.10783646702224989,
+          "y": 10.984051156891931,
+          "vx": -0.06276367541446093,
+          "vy": -0.9664961623756474,
+          "theta": 0.023504447674087242,
+          "omega": 0.003547738699642563
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "complement-represented_high-022",
+      "condition": "represented_high",
+      "seed": 441022,
+      "suite": "complement",
+      "exposure": "within_assisted_initial_support",
+      "paired_wind_id": "",
+      "options": {
+        "initial_state": {
+          "x": 0.296287744861259,
+          "y": 12.919529632874932,
+          "vx": 0.0796427533546062,
+          "vy": -0.4485145398295006,
+          "theta": -0.011275020900616921,
+          "omega": -0.002359552505037752
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "complement-represented_high-023",
+      "condition": "represented_high",
+      "seed": 441023,
+      "suite": "complement",
+      "exposure": "within_assisted_initial_support",
+      "paired_wind_id": "",
+      "options": {
+        "initial_state": {
+          "x": -0.14013928477043758,
+          "y": 8.349708022095385,
+          "vx": 0.01764398357335022,
+          "vy": -0.5037832914184251,
+          "theta": -0.0033134091428190524,
+          "omega": 0.0027504488317519936
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "complement-represented_high-024",
+      "condition": "represented_high",
+      "seed": 441024,
+      "suite": "complement",
+      "exposure": "within_assisted_initial_support",
+      "paired_wind_id": "",
+      "options": {
+        "initial_state": {
+          "x": -0.16865284522493387,
+          "y": 10.959009883243974,
+          "vx": -0.04130884870587055,
+          "vy": -0.1605019384141777,
+          "theta": -0.029477535259209733,
+          "omega": -0.001033738352962471
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "complement-represented_high-025",
+      "condition": "represented_high",
+      "seed": 441025,
+      "suite": "complement",
+      "exposure": "within_assisted_initial_support",
+      "paired_wind_id": "",
+      "options": {
+        "initial_state": {
+          "x": -0.18652898004706425,
+          "y": 9.844421198378058,
+          "vx": -0.021776476557422632,
+          "vy": -0.4102543697318283,
+          "theta": -0.01121909689619775,
+          "omega": 0.00014956727782890257
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "complement-represented_high-026",
+      "condition": "represented_high",
+      "seed": 441026,
+      "suite": "complement",
+      "exposure": "within_assisted_initial_support",
+      "paired_wind_id": "",
+      "options": {
+        "initial_state": {
+          "x": -0.23520148434535723,
+          "y": 11.87187465393518,
+          "vx": -0.05218327408097659,
+          "vy": -0.9583915298597877,
+          "theta": 0.020795279438051272,
+          "omega": 0.0035355658413399396
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "complement-represented_high-027",
+      "condition": "represented_high",
+      "seed": 441027,
+      "suite": "complement",
+      "exposure": "within_assisted_initial_support",
+      "paired_wind_id": "",
+      "options": {
+        "initial_state": {
+          "x": -0.10835255199015412,
+          "y": 9.615883768370281,
+          "vx": -0.011244423551510386,
+          "vy": -0.16279775123500662,
+          "theta": -0.01601085876956243,
+          "omega": 0.0021913672285662055
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "complement-represented_high-028",
+      "condition": "represented_high",
+      "seed": 441028,
+      "suite": "complement",
+      "exposure": "within_assisted_initial_support",
+      "paired_wind_id": "",
+      "options": {
+        "initial_state": {
+          "x": 0.03283963949167965,
+          "y": 10.783454806623784,
+          "vx": -0.02808369429514537,
+          "vy": -0.3531586450245656,
+          "theta": 0.022007604933138022,
+          "omega": 0.0015301178986211995
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "complement-represented_high-029",
+      "condition": "represented_high",
+      "seed": 441029,
+      "suite": "complement",
+      "exposure": "within_assisted_initial_support",
+      "paired_wind_id": "",
+      "options": {
+        "initial_state": {
+          "x": -0.11782332307600185,
+          "y": 8.06763673310131,
+          "vx": 0.05321077129550331,
+          "vy": -0.9177913191752418,
+          "theta": -0.0008930944899619963,
+          "omega": 0.00260592702959448
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "complement-represented_high-030",
+      "condition": "represented_high",
+      "seed": 441030,
+      "suite": "complement",
+      "exposure": "within_assisted_initial_support",
+      "paired_wind_id": "",
+      "options": {
+        "initial_state": {
+          "x": 0.15069140682586304,
+          "y": 10.801046675509115,
+          "vx": 0.047850895537385,
+          "vy": -0.8477507992830504,
+          "theta": -0.019185431186472025,
+          "omega": -0.00031273158621730415
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "complement-represented_high-031",
+      "condition": "represented_high",
+      "seed": 441031,
+      "suite": "complement",
+      "exposure": "within_assisted_initial_support",
+      "paired_wind_id": "",
+      "options": {
+        "initial_state": {
+          "x": 0.012722123123229756,
+          "y": 12.212562447649471,
+          "vx": 0.010446916401620389,
+          "vy": -0.6779937042912666,
+          "theta": 0.011197284755226284,
+          "omega": 0.0027794238890481637
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "complement-new_displacement-000",
+      "condition": "new_displacement",
+      "seed": 442000,
+      "suite": "complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "",
+      "options": {
+        "initial_state": {
+          "x": -0.8528669910060815,
+          "y": 11.202375177295187,
+          "vx": 0.09693957098503235,
+          "vy": -0.9143516874213307,
+          "theta": -0.021039314892516276,
+          "omega": -0.004850546524346525
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "complement-new_displacement-001",
+      "condition": "new_displacement",
+      "seed": 442001,
+      "suite": "complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "",
+      "options": {
+        "initial_state": {
+          "x": -1.039828743681655,
+          "y": 8.325818244428843,
+          "vx": 0.06334384359276671,
+          "vy": -0.10060216041470005,
+          "theta": -0.00581182985969181,
+          "omega": 0.0028730533924357805
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "complement-new_displacement-002",
+      "condition": "new_displacement",
+      "seed": 442002,
+      "suite": "complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "",
+      "options": {
+        "initial_state": {
+          "x": 1.3956853055493446,
+          "y": 12.159965383456845,
+          "vx": 0.0710553989368764,
+          "vy": -0.4371692255144697,
+          "theta": -0.013356846675566497,
+          "omega": 0.004933754139036287
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "complement-new_displacement-003",
+      "condition": "new_displacement",
+      "seed": 442003,
+      "suite": "complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "",
+      "options": {
+        "initial_state": {
+          "x": 1.3011635192165958,
+          "y": 9.553767128459782,
+          "vx": -0.014931159921754068,
+          "vy": -0.5046118946463171,
+          "theta": -0.02878610150674337,
+          "omega": 0.0022013287161611926
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "complement-new_displacement-004",
+      "condition": "new_displacement",
+      "seed": 442004,
+      "suite": "complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "",
+      "options": {
+        "initial_state": {
+          "x": 1.1516357209530177,
+          "y": 12.703943340266296,
+          "vx": 0.035844039595331494,
+          "vy": -0.18987678623080462,
+          "theta": -0.02319633104480816,
+          "omega": 0.002859808686650631
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "complement-new_displacement-005",
+      "condition": "new_displacement",
+      "seed": 442005,
+      "suite": "complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "",
+      "options": {
+        "initial_state": {
+          "x": -1.4024902603753622,
+          "y": 12.37044131948998,
+          "vx": -0.019027686646194877,
+          "vy": -0.5464207927692019,
+          "theta": -0.01881735093472689,
+          "omega": -0.0009639845286633053
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "complement-new_displacement-006",
+      "condition": "new_displacement",
+      "seed": 442006,
+      "suite": "complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "",
+      "options": {
+        "initial_state": {
+          "x": 0.9265986989571613,
+          "y": 8.609309576682119,
+          "vx": -0.05938990612027844,
+          "vy": -0.33321260575278644,
+          "theta": 0.0027977865799478805,
+          "omega": 0.0035104811995471954
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "complement-new_displacement-007",
+      "condition": "new_displacement",
+      "seed": 442007,
+      "suite": "complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "",
+      "options": {
+        "initial_state": {
+          "x": 1.0227678398352797,
+          "y": 11.738722984526651,
+          "vx": 0.06721360459004566,
+          "vy": -0.16727113094505963,
+          "theta": -0.004125766623332095,
+          "omega": 0.004267850956299727
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "complement-new_displacement-008",
+      "condition": "new_displacement",
+      "seed": 442008,
+      "suite": "complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "",
+      "options": {
+        "initial_state": {
+          "x": -0.8095988834114565,
+          "y": 12.50638986822245,
+          "vx": -0.07336982567839422,
+          "vy": -0.7951037116003541,
+          "theta": -0.006538303471016149,
+          "omega": 0.0048517734185394516
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "complement-new_displacement-009",
+      "condition": "new_displacement",
+      "seed": 442009,
+      "suite": "complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "",
+      "options": {
+        "initial_state": {
+          "x": 0.8956102569452165,
+          "y": 9.965674046150633,
+          "vx": 0.03341716235009447,
+          "vy": -0.15506871028628577,
+          "theta": -0.015222608909626236,
+          "omega": -0.0019080039566913354
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "complement-new_displacement-010",
+      "condition": "new_displacement",
+      "seed": 442010,
+      "suite": "complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "",
+      "options": {
+        "initial_state": {
+          "x": -0.6082086901887792,
+          "y": 9.925489858885841,
+          "vx": -0.030173087741831917,
+          "vy": -0.3421127855349918,
+          "theta": 0.016262702914031934,
+          "omega": 0.0013881690431020376
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "complement-new_displacement-011",
+      "condition": "new_displacement",
+      "seed": 442011,
+      "suite": "complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "",
+      "options": {
+        "initial_state": {
+          "x": 0.9613065358475593,
+          "y": 8.276463342850732,
+          "vx": 0.0728527802977844,
+          "vy": -0.01587917823160001,
+          "theta": 0.02981945124223621,
+          "omega": -0.000466030913849036
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "complement-new_displacement-012",
+      "condition": "new_displacement",
+      "seed": 442012,
+      "suite": "complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "",
+      "options": {
+        "initial_state": {
+          "x": 0.9547859384543693,
+          "y": 11.138833525153768,
+          "vx": 0.05326465906750895,
+          "vy": -0.255595061788335,
+          "theta": 0.018290677917499214,
+          "omega": -0.004869963788753393
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "complement-new_displacement-013",
+      "condition": "new_displacement",
+      "seed": 442013,
+      "suite": "complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "",
+      "options": {
+        "initial_state": {
+          "x": -0.8120588388610093,
+          "y": 9.962006413105618,
+          "vx": 0.006769134999801696,
+          "vy": -0.8790672452050527,
+          "theta": 0.012452026714945089,
+          "omega": 0.0011590993046914034
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "complement-new_displacement-014",
+      "condition": "new_displacement",
+      "seed": 442014,
+      "suite": "complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "",
+      "options": {
+        "initial_state": {
+          "x": 0.924454470954208,
+          "y": 8.83895486666106,
+          "vx": 0.08869988447179916,
+          "vy": -0.6142270748429274,
+          "theta": -0.016711504092859014,
+          "omega": -0.0032690871758472594
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "complement-new_displacement-015",
+      "condition": "new_displacement",
+      "seed": 442015,
+      "suite": "complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "",
+      "options": {
+        "initial_state": {
+          "x": -1.2700108119286553,
+          "y": 8.33157280662613,
+          "vx": -0.04467377714545178,
+          "vy": -0.5519559413678317,
+          "theta": 0.022406514869512662,
+          "omega": 0.0016610119400008916
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "complement-new_displacement-016",
+      "condition": "new_displacement",
+      "seed": 442016,
+      "suite": "complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "",
+      "options": {
+        "initial_state": {
+          "x": 0.6096545916940068,
+          "y": 11.748466701261735,
+          "vx": -0.044642310292426025,
+          "vy": -0.4865865821750731,
+          "theta": 0.02599200953842298,
+          "omega": 0.0017957543311113023
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "complement-new_displacement-017",
+      "condition": "new_displacement",
+      "seed": 442017,
+      "suite": "complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "",
+      "options": {
+        "initial_state": {
+          "x": 0.9942151924717697,
+          "y": 11.245205661107535,
+          "vx": -4.781941779175015e-06,
+          "vy": -0.540602326009107,
+          "theta": 0.023279471349322525,
+          "omega": -0.003925191279357027
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "complement-new_displacement-018",
+      "condition": "new_displacement",
+      "seed": 442018,
+      "suite": "complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "",
+      "options": {
+        "initial_state": {
+          "x": 1.1778019235332804,
+          "y": 10.559198978459003,
+          "vx": 0.0035953045953508234,
+          "vy": -0.6029579395737581,
+          "theta": -0.014817547687386556,
+          "omega": -0.0012989229239079702
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "complement-new_displacement-019",
+      "condition": "new_displacement",
+      "seed": 442019,
+      "suite": "complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "",
+      "options": {
+        "initial_state": {
+          "x": -1.0922822263987475,
+          "y": 9.88817038468915,
+          "vx": 0.0690371050491692,
+          "vy": -0.3355896974533408,
+          "theta": 0.009899866811989014,
+          "omega": -0.0004379999036036997
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "complement-new_displacement-020",
+      "condition": "new_displacement",
+      "seed": 442020,
+      "suite": "complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "",
+      "options": {
+        "initial_state": {
+          "x": -1.1092288402663624,
+          "y": 8.619296359456863,
+          "vx": 0.021929504978037074,
+          "vy": -0.0818978231273122,
+          "theta": 0.0031426825569349525,
+          "omega": 0.004300046324180205
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "complement-new_displacement-021",
+      "condition": "new_displacement",
+      "seed": 442021,
+      "suite": "complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "",
+      "options": {
+        "initial_state": {
+          "x": 0.8270730212764481,
+          "y": 12.412477848856383,
+          "vx": 0.016340347063307604,
+          "vy": -0.23177620529131604,
+          "theta": 0.0016975793431902074,
+          "omega": 0.003841587659134096
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "complement-new_displacement-022",
+      "condition": "new_displacement",
+      "seed": 442022,
+      "suite": "complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "",
+      "options": {
+        "initial_state": {
+          "x": 0.7422943234084756,
+          "y": 9.161863443886972,
+          "vx": 0.09054456585117075,
+          "vy": -0.6917034060084539,
+          "theta": 0.025812752281434613,
+          "omega": 0.0020347812648953446
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "complement-new_displacement-023",
+      "condition": "new_displacement",
+      "seed": 442023,
+      "suite": "complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "",
+      "options": {
+        "initial_state": {
+          "x": -1.1123417742404658,
+          "y": 10.18625168938589,
+          "vx": 0.0648205229635858,
+          "vy": -0.5017383692065507,
+          "theta": 0.02695597682866068,
+          "omega": 0.0007830268677349128
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "complement-new_displacement-024",
+      "condition": "new_displacement",
+      "seed": 442024,
+      "suite": "complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "",
+      "options": {
+        "initial_state": {
+          "x": 1.129354554509378,
+          "y": 12.335009375726555,
+          "vx": 0.06680587661021602,
+          "vy": -0.4343102164931286,
+          "theta": 0.026660053338553993,
+          "omega": -0.00039843100428059165
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "complement-new_displacement-025",
+      "condition": "new_displacement",
+      "seed": 442025,
+      "suite": "complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "",
+      "options": {
+        "initial_state": {
+          "x": -0.946633623316553,
+          "y": 12.188190720320668,
+          "vx": 0.007217725491916994,
+          "vy": -0.558165359967099,
+          "theta": -0.0044024081204134926,
+          "omega": -0.0011546483365842508
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "complement-new_displacement-026",
+      "condition": "new_displacement",
+      "seed": 442026,
+      "suite": "complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "",
+      "options": {
+        "initial_state": {
+          "x": -1.1656181153312535,
+          "y": 10.683633861265552,
+          "vx": 0.0940526289128795,
+          "vy": -0.05060833550964072,
+          "theta": 0.015275267607714957,
+          "omega": 0.001996058565387474
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "complement-new_displacement-027",
+      "condition": "new_displacement",
+      "seed": 442027,
+      "suite": "complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "",
+      "options": {
+        "initial_state": {
+          "x": -0.7101279199768141,
+          "y": 11.886715702563967,
+          "vx": 0.009128798503248459,
+          "vy": -0.4183162066762095,
+          "theta": -0.021627035415698177,
+          "omega": -0.0015265238328505716
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "complement-new_displacement-028",
+      "condition": "new_displacement",
+      "seed": 442028,
+      "suite": "complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "",
+      "options": {
+        "initial_state": {
+          "x": -1.1638211211494962,
+          "y": 12.073736042841537,
+          "vx": -0.03680748301036923,
+          "vy": -0.6781100978505131,
+          "theta": -0.0015379198946580774,
+          "omega": 0.0032096706842010404
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "complement-new_displacement-029",
+      "condition": "new_displacement",
+      "seed": 442029,
+      "suite": "complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "",
+      "options": {
+        "initial_state": {
+          "x": -0.8150822721609798,
+          "y": 8.944095794954185,
+          "vx": -0.036065603230028435,
+          "vy": -0.7368337669250156,
+          "theta": 0.00972849639036121,
+          "omega": 0.0024115198756707213
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "complement-new_displacement-030",
+      "condition": "new_displacement",
+      "seed": 442030,
+      "suite": "complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "",
+      "options": {
+        "initial_state": {
+          "x": 0.8514615876935319,
+          "y": 8.852736821042702,
+          "vx": 0.04209728589277384,
+          "vy": -0.91798714320858,
+          "theta": -0.004223055092898504,
+          "omega": -0.0008871466820728213
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "complement-new_displacement-031",
+      "condition": "new_displacement",
+      "seed": 442031,
+      "suite": "complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "",
+      "options": {
+        "initial_state": {
+          "x": 1.3204574729350924,
+          "y": 10.110925863656831,
+          "vx": -0.085304367420538,
+          "vy": -0.6002866299290476,
+          "theta": 0.02003536895501124,
+          "omega": -0.0013308414246931833
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "complement-new_dynamics-000",
+      "condition": "new_dynamics",
+      "seed": 443000,
+      "suite": "complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "",
+      "options": {
+        "initial_state": {
+          "x": 0.18462102898122026,
+          "y": 9.97659562679325,
+          "vx": -0.40262555191926364,
+          "vy": -1.556113265128462,
+          "theta": -0.10542033783271189,
+          "omega": -0.03728116431248312
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "complement-new_dynamics-001",
+      "condition": "new_dynamics",
+      "seed": 443001,
+      "suite": "complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "",
+      "options": {
+        "initial_state": {
+          "x": 0.04189561227681233,
+          "y": 11.770414664053414,
+          "vx": 0.4646503328082586,
+          "vy": -1.7237476266583434,
+          "theta": -0.07829816477049675,
+          "omega": 0.03478687292271903
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "complement-new_dynamics-002",
+      "condition": "new_dynamics",
+      "seed": 443002,
+      "suite": "complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "",
+      "options": {
+        "initial_state": {
+          "x": -0.053499652404677044,
+          "y": 8.662712278530298,
+          "vx": 0.44154152871762625,
+          "vy": -1.2817032174629932,
+          "theta": 0.08658641622522781,
+          "omega": -0.002245963896503056
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "complement-new_dynamics-003",
+      "condition": "new_dynamics",
+      "seed": 443003,
+      "suite": "complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "",
+      "options": {
+        "initial_state": {
+          "x": -0.0016679361321985553,
+          "y": 10.129321381484063,
+          "vx": -0.22937362849618845,
+          "vy": -1.6911159303030132,
+          "theta": 0.09730662527021706,
+          "omega": -0.025763337413753695
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "complement-new_dynamics-004",
+      "condition": "new_dynamics",
+      "seed": 443004,
+      "suite": "complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "",
+      "options": {
+        "initial_state": {
+          "x": 0.11274369202640044,
+          "y": 8.06469831334704,
+          "vx": -0.33689766427974144,
+          "vy": -1.6167519499540077,
+          "theta": 0.1024017470490376,
+          "omega": -0.02523751027753949
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "complement-new_dynamics-005",
+      "condition": "new_dynamics",
+      "seed": 443005,
+      "suite": "complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "",
+      "options": {
+        "initial_state": {
+          "x": 0.14579239108010417,
+          "y": 8.590447831493227,
+          "vx": 0.24423304426851775,
+          "vy": -0.9023279653897759,
+          "theta": -0.08186537436322293,
+          "omega": 0.03047187358110831
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "complement-new_dynamics-006",
+      "condition": "new_dynamics",
+      "seed": 443006,
+      "suite": "complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "",
+      "options": {
+        "initial_state": {
+          "x": -0.020597629166874108,
+          "y": 11.342815641082225,
+          "vx": -0.3957545933142807,
+          "vy": -1.6274298088545724,
+          "theta": -0.09224885736036825,
+          "omega": -0.022402170995398842
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "complement-new_dynamics-007",
+      "condition": "new_dynamics",
+      "seed": 443007,
+      "suite": "complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "",
+      "options": {
+        "initial_state": {
+          "x": -0.027648142984387336,
+          "y": 8.359765208483712,
+          "vx": -0.2732103229240396,
+          "vy": -1.682697954764031,
+          "theta": -0.10753842304810611,
+          "omega": -0.009647728650064592
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "complement-new_dynamics-008",
+      "condition": "new_dynamics",
+      "seed": 443008,
+      "suite": "complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "",
+      "options": {
+        "initial_state": {
+          "x": -0.291357480492818,
+          "y": 11.387721652262856,
+          "vx": -0.2252002541925008,
+          "vy": -1.6040705839613014,
+          "theta": -0.06417560123838212,
+          "omega": 0.04687187675668911
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "complement-new_dynamics-009",
+      "condition": "new_dynamics",
+      "seed": 443009,
+      "suite": "complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "",
+      "options": {
+        "initial_state": {
+          "x": 0.18596865705526502,
+          "y": 9.451251653614474,
+          "vx": -0.46783405291465935,
+          "vy": -1.2369140031771164,
+          "theta": 0.10772841269292226,
+          "omega": -0.015765274978559098
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "complement-new_dynamics-010",
+      "condition": "new_dynamics",
+      "seed": 443010,
+      "suite": "complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "",
+      "options": {
+        "initial_state": {
+          "x": 0.1612788226346859,
+          "y": 12.828745294970266,
+          "vx": 0.2044630962484133,
+          "vy": -1.2006555184040444,
+          "theta": -0.11482218880536349,
+          "omega": 0.04647335698836474
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "complement-new_dynamics-011",
+      "condition": "new_dynamics",
+      "seed": 443011,
+      "suite": "complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "",
+      "options": {
+        "initial_state": {
+          "x": -0.10664447388991179,
+          "y": 12.614253846461775,
+          "vx": 0.35420043769374393,
+          "vy": -1.4228560033542053,
+          "theta": -0.06503610852214413,
+          "omega": 0.0020714417660184004
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "complement-new_dynamics-012",
+      "condition": "new_dynamics",
+      "seed": 443012,
+      "suite": "complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "",
+      "options": {
+        "initial_state": {
+          "x": -0.14488831169725394,
+          "y": 11.657652499399756,
+          "vx": -0.3939716139798715,
+          "vy": -1.0020444108701883,
+          "theta": -0.09828071571716751,
+          "omega": 0.020617820545952893
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "complement-new_dynamics-013",
+      "condition": "new_dynamics",
+      "seed": 443013,
+      "suite": "complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "",
+      "options": {
+        "initial_state": {
+          "x": -0.009336468267138543,
+          "y": 9.465984282952704,
+          "vx": -0.49900811322855704,
+          "vy": -1.4881583303346002,
+          "theta": 0.07062580095180875,
+          "omega": 0.011567679485944171
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "complement-new_dynamics-014",
+      "condition": "new_dynamics",
+      "seed": 443014,
+      "suite": "complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "",
+      "options": {
+        "initial_state": {
+          "x": 0.12918443540540564,
+          "y": 10.220890758417763,
+          "vx": 0.2204731842614667,
+          "vy": -1.6574130455133727,
+          "theta": -0.06861801634950891,
+          "omega": 0.019485776084286855
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "complement-new_dynamics-015",
+      "condition": "new_dynamics",
+      "seed": 443015,
+      "suite": "complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "",
+      "options": {
+        "initial_state": {
+          "x": 0.1870268807559907,
+          "y": 11.984931351413389,
+          "vx": 0.2339105791526144,
+          "vy": -0.9828856315434772,
+          "theta": -0.08388368080200545,
+          "omega": -0.008582485754417292
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "complement-new_dynamics-016",
+      "condition": "new_dynamics",
+      "seed": 443016,
+      "suite": "complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "",
+      "options": {
+        "initial_state": {
+          "x": -0.15455187589816977,
+          "y": 10.343828998449979,
+          "vx": -0.32863537710784463,
+          "vy": -0.9441694778320303,
+          "theta": -0.09855787167213509,
+          "omega": -0.029344422130655124
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "complement-new_dynamics-017",
+      "condition": "new_dynamics",
+      "seed": 443017,
+      "suite": "complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "",
+      "options": {
+        "initial_state": {
+          "x": -0.18047259991253356,
+          "y": 10.534376043283439,
+          "vx": 0.2808934229673709,
+          "vy": -0.8151041476766936,
+          "theta": -0.09042994432871264,
+          "omega": 0.041419304265690564
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "complement-new_dynamics-018",
+      "condition": "new_dynamics",
+      "seed": 443018,
+      "suite": "complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "",
+      "options": {
+        "initial_state": {
+          "x": -0.03490094839730604,
+          "y": 8.917792527947054,
+          "vx": -0.3159096187068622,
+          "vy": -1.7643063004180193,
+          "theta": 0.10952905946574479,
+          "omega": -0.011312666331351418
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "complement-new_dynamics-019",
+      "condition": "new_dynamics",
+      "seed": 443019,
+      "suite": "complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "",
+      "options": {
+        "initial_state": {
+          "x": 0.26049766762957116,
+          "y": 9.012525667942459,
+          "vx": -0.2049443317914276,
+          "vy": -1.7779155762446928,
+          "theta": 0.063969569092576,
+          "omega": 0.04562199375962578
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "complement-new_dynamics-020",
+      "condition": "new_dynamics",
+      "seed": 443020,
+      "suite": "complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "",
+      "options": {
+        "initial_state": {
+          "x": -0.0377903679145065,
+          "y": 12.594609861405454,
+          "vx": 0.24426950310122142,
+          "vy": -1.786390048754681,
+          "theta": 0.0902205168686712,
+          "omega": -0.002133225296436381
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "complement-new_dynamics-021",
+      "condition": "new_dynamics",
+      "seed": 443021,
+      "suite": "complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "",
+      "options": {
+        "initial_state": {
+          "x": -0.07941922464164992,
+          "y": 12.771165005528774,
+          "vx": 0.4729540193684871,
+          "vy": -1.5852813117127802,
+          "theta": 0.08267646483951327,
+          "omega": 0.0070692275561039745
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "complement-new_dynamics-022",
+      "condition": "new_dynamics",
+      "seed": 443022,
+      "suite": "complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "",
+      "options": {
+        "initial_state": {
+          "x": 0.27834103895660195,
+          "y": 9.337484141098802,
+          "vx": 0.32585068908619036,
+          "vy": -0.9367635811124218,
+          "theta": -0.09355709420638819,
+          "omega": 0.021289956059125814
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "complement-new_dynamics-023",
+      "condition": "new_dynamics",
+      "seed": 443023,
+      "suite": "complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "",
+      "options": {
+        "initial_state": {
+          "x": -0.08813208653204063,
+          "y": 10.646097052620005,
+          "vx": 0.26886634655313174,
+          "vy": -1.5496471004699823,
+          "theta": -0.10059844243047943,
+          "omega": 0.04681229933047664
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "complement-new_dynamics-024",
+      "condition": "new_dynamics",
+      "seed": 443024,
+      "suite": "complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "",
+      "options": {
+        "initial_state": {
+          "x": -0.046718221196337485,
+          "y": 9.831582950140726,
+          "vx": -0.22752091418977932,
+          "vy": -0.847171404552835,
+          "theta": -0.08217341900552182,
+          "omega": 0.027530161837250544
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "complement-new_dynamics-025",
+      "condition": "new_dynamics",
+      "seed": 443025,
+      "suite": "complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "",
+      "options": {
+        "initial_state": {
+          "x": 0.09101836450878724,
+          "y": 9.714307157392518,
+          "vx": 0.3369699303126995,
+          "vy": -0.8203361232135571,
+          "theta": 0.10886358629640451,
+          "omega": 0.039652936220960694
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "complement-new_dynamics-026",
+      "condition": "new_dynamics",
+      "seed": 443026,
+      "suite": "complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "",
+      "options": {
+        "initial_state": {
+          "x": -0.1028870757689181,
+          "y": 12.574384405376017,
+          "vx": 0.2505008027376391,
+          "vy": -1.0687912407247575,
+          "theta": 0.09852408300115569,
+          "omega": 0.04742180482161219
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "complement-new_dynamics-027",
+      "condition": "new_dynamics",
+      "seed": 443027,
+      "suite": "complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "",
+      "options": {
+        "initial_state": {
+          "x": -0.2552368321626425,
+          "y": 8.458975549870104,
+          "vx": 0.31621864680251865,
+          "vy": -0.8078715753970513,
+          "theta": 0.08567856641237023,
+          "omega": 0.02847129585222019
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "complement-new_dynamics-028",
+      "condition": "new_dynamics",
+      "seed": 443028,
+      "suite": "complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "",
+      "options": {
+        "initial_state": {
+          "x": -0.10904548330082438,
+          "y": 8.813239936008724,
+          "vx": 0.4982199206600676,
+          "vy": -1.6204229033008786,
+          "theta": 0.10579465040298232,
+          "omega": 0.026629976744589046
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "complement-new_dynamics-029",
+      "condition": "new_dynamics",
+      "seed": 443029,
+      "suite": "complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "",
+      "options": {
+        "initial_state": {
+          "x": -0.1557971766326571,
+          "y": 12.451115668053005,
+          "vx": 0.31063843259149204,
+          "vy": -1.3853040404673442,
+          "theta": 0.09396743936091499,
+          "omega": 0.03263302079390941
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "complement-new_dynamics-030",
+      "condition": "new_dynamics",
+      "seed": 443030,
+      "suite": "complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "",
+      "options": {
+        "initial_state": {
+          "x": 0.16998943493782687,
+          "y": 9.280685080638396,
+          "vx": 0.3451411972338853,
+          "vy": -0.969071767054765,
+          "theta": -0.11719529433104975,
+          "omega": -0.015529488699560902
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "complement-new_dynamics-031",
+      "condition": "new_dynamics",
+      "seed": 443031,
+      "suite": "complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "",
+      "options": {
+        "initial_state": {
+          "x": -0.2908958121201127,
+          "y": 10.503570101859214,
+          "vx": -0.49582316390095116,
+          "vy": -1.799779370856581,
+          "theta": -0.1027366491453104,
+          "omega": 0.006899821203340462
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "complement-wind_control-000",
+      "condition": "wind_control",
+      "seed": 444000,
+      "suite": "complement",
+      "exposure": "within_assisted_initial_support",
+      "paired_wind_id": "wind-base-000",
+      "options": {
+        "initial_state": {
+          "x": -0.26971235363392976,
+          "y": 8.776127725858233,
+          "vx": -0.026808071090951714,
+          "vy": -0.46701208948444384,
+          "theta": -0.020301470038270642,
+          "omega": -0.0008105445438594672
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "complement-wind_m20-000",
+      "condition": "wind_m20",
+      "seed": 544000,
+      "suite": "complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "wind-base-000",
+      "options": {
+        "initial_state": {
+          "x": -0.26971235363392976,
+          "y": 8.776127725858233,
+          "vx": -0.026808071090951714,
+          "vy": -0.46701208948444384,
+          "theta": -0.020301470038270642,
+          "omega": -0.0008105445438594672
+        },
+        "wind_force": -20.0
+      }
+    },
+    {
+      "id": "complement-wind_p20-000",
+      "condition": "wind_p20",
+      "seed": 644000,
+      "suite": "complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "wind-base-000",
+      "options": {
+        "initial_state": {
+          "x": -0.26971235363392976,
+          "y": 8.776127725858233,
+          "vx": -0.026808071090951714,
+          "vy": -0.46701208948444384,
+          "theta": -0.020301470038270642,
+          "omega": -0.0008105445438594672
+        },
+        "wind_force": 20.0
+      }
+    },
+    {
+      "id": "complement-wind_m40-000",
+      "condition": "wind_m40",
+      "seed": 744000,
+      "suite": "complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "wind-base-000",
+      "options": {
+        "initial_state": {
+          "x": -0.26971235363392976,
+          "y": 8.776127725858233,
+          "vx": -0.026808071090951714,
+          "vy": -0.46701208948444384,
+          "theta": -0.020301470038270642,
+          "omega": -0.0008105445438594672
+        },
+        "wind_force": -40.0
+      }
+    },
+    {
+      "id": "complement-wind_p40-000",
+      "condition": "wind_p40",
+      "seed": 844000,
+      "suite": "complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "wind-base-000",
+      "options": {
+        "initial_state": {
+          "x": -0.26971235363392976,
+          "y": 8.776127725858233,
+          "vx": -0.026808071090951714,
+          "vy": -0.46701208948444384,
+          "theta": -0.020301470038270642,
+          "omega": -0.0008105445438594672
+        },
+        "wind_force": 40.0
+      }
+    },
+    {
+      "id": "complement-wind_control-001",
+      "condition": "wind_control",
+      "seed": 444001,
+      "suite": "complement",
+      "exposure": "within_assisted_initial_support",
+      "paired_wind_id": "wind-base-001",
+      "options": {
+        "initial_state": {
+          "x": 0.027620432209557833,
+          "y": 10.854844029401333,
+          "vx": -0.009977257465884537,
+          "vy": -0.8189942283079654,
+          "theta": -0.006008909176706491,
+          "omega": -0.002770372827777118
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "complement-wind_m20-001",
+      "condition": "wind_m20",
+      "seed": 544001,
+      "suite": "complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "wind-base-001",
+      "options": {
+        "initial_state": {
+          "x": 0.027620432209557833,
+          "y": 10.854844029401333,
+          "vx": -0.009977257465884537,
+          "vy": -0.8189942283079654,
+          "theta": -0.006008909176706491,
+          "omega": -0.002770372827777118
+        },
+        "wind_force": -20.0
+      }
+    },
+    {
+      "id": "complement-wind_p20-001",
+      "condition": "wind_p20",
+      "seed": 644001,
+      "suite": "complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "wind-base-001",
+      "options": {
+        "initial_state": {
+          "x": 0.027620432209557833,
+          "y": 10.854844029401333,
+          "vx": -0.009977257465884537,
+          "vy": -0.8189942283079654,
+          "theta": -0.006008909176706491,
+          "omega": -0.002770372827777118
+        },
+        "wind_force": 20.0
+      }
+    },
+    {
+      "id": "complement-wind_m40-001",
+      "condition": "wind_m40",
+      "seed": 744001,
+      "suite": "complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "wind-base-001",
+      "options": {
+        "initial_state": {
+          "x": 0.027620432209557833,
+          "y": 10.854844029401333,
+          "vx": -0.009977257465884537,
+          "vy": -0.8189942283079654,
+          "theta": -0.006008909176706491,
+          "omega": -0.002770372827777118
+        },
+        "wind_force": -40.0
+      }
+    },
+    {
+      "id": "complement-wind_p40-001",
+      "condition": "wind_p40",
+      "seed": 844001,
+      "suite": "complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "wind-base-001",
+      "options": {
+        "initial_state": {
+          "x": 0.027620432209557833,
+          "y": 10.854844029401333,
+          "vx": -0.009977257465884537,
+          "vy": -0.8189942283079654,
+          "theta": -0.006008909176706491,
+          "omega": -0.002770372827777118
+        },
+        "wind_force": 40.0
+      }
+    },
+    {
+      "id": "complement-wind_control-002",
+      "condition": "wind_control",
+      "seed": 444002,
+      "suite": "complement",
+      "exposure": "within_assisted_initial_support",
+      "paired_wind_id": "wind-base-002",
+      "options": {
+        "initial_state": {
+          "x": 0.1737133299552274,
+          "y": 12.318041888113433,
+          "vx": -0.07007177258127813,
+          "vy": -0.6416015122296542,
+          "theta": -0.004335266801927207,
+          "omega": -0.0049713754353555096
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "complement-wind_m20-002",
+      "condition": "wind_m20",
+      "seed": 544002,
+      "suite": "complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "wind-base-002",
+      "options": {
+        "initial_state": {
+          "x": 0.1737133299552274,
+          "y": 12.318041888113433,
+          "vx": -0.07007177258127813,
+          "vy": -0.6416015122296542,
+          "theta": -0.004335266801927207,
+          "omega": -0.0049713754353555096
+        },
+        "wind_force": -20.0
+      }
+    },
+    {
+      "id": "complement-wind_p20-002",
+      "condition": "wind_p20",
+      "seed": 644002,
+      "suite": "complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "wind-base-002",
+      "options": {
+        "initial_state": {
+          "x": 0.1737133299552274,
+          "y": 12.318041888113433,
+          "vx": -0.07007177258127813,
+          "vy": -0.6416015122296542,
+          "theta": -0.004335266801927207,
+          "omega": -0.0049713754353555096
+        },
+        "wind_force": 20.0
+      }
+    },
+    {
+      "id": "complement-wind_m40-002",
+      "condition": "wind_m40",
+      "seed": 744002,
+      "suite": "complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "wind-base-002",
+      "options": {
+        "initial_state": {
+          "x": 0.1737133299552274,
+          "y": 12.318041888113433,
+          "vx": -0.07007177258127813,
+          "vy": -0.6416015122296542,
+          "theta": -0.004335266801927207,
+          "omega": -0.0049713754353555096
+        },
+        "wind_force": -40.0
+      }
+    },
+    {
+      "id": "complement-wind_p40-002",
+      "condition": "wind_p40",
+      "seed": 844002,
+      "suite": "complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "wind-base-002",
+      "options": {
+        "initial_state": {
+          "x": 0.1737133299552274,
+          "y": 12.318041888113433,
+          "vx": -0.07007177258127813,
+          "vy": -0.6416015122296542,
+          "theta": -0.004335266801927207,
+          "omega": -0.0049713754353555096
+        },
+        "wind_force": 40.0
+      }
+    },
+    {
+      "id": "complement-wind_control-003",
+      "condition": "wind_control",
+      "seed": 444003,
+      "suite": "complement",
+      "exposure": "within_assisted_initial_support",
+      "paired_wind_id": "wind-base-003",
+      "options": {
+        "initial_state": {
+          "x": -0.14315031526013536,
+          "y": 8.548602672330604,
+          "vx": 0.08562478653559252,
+          "vy": -0.2086308517330382,
+          "theta": -0.01810785981809332,
+          "omega": -0.0001650494200348196
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "complement-wind_m20-003",
+      "condition": "wind_m20",
+      "seed": 544003,
+      "suite": "complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "wind-base-003",
+      "options": {
+        "initial_state": {
+          "x": -0.14315031526013536,
+          "y": 8.548602672330604,
+          "vx": 0.08562478653559252,
+          "vy": -0.2086308517330382,
+          "theta": -0.01810785981809332,
+          "omega": -0.0001650494200348196
+        },
+        "wind_force": -20.0
+      }
+    },
+    {
+      "id": "complement-wind_p20-003",
+      "condition": "wind_p20",
+      "seed": 644003,
+      "suite": "complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "wind-base-003",
+      "options": {
+        "initial_state": {
+          "x": -0.14315031526013536,
+          "y": 8.548602672330604,
+          "vx": 0.08562478653559252,
+          "vy": -0.2086308517330382,
+          "theta": -0.01810785981809332,
+          "omega": -0.0001650494200348196
+        },
+        "wind_force": 20.0
+      }
+    },
+    {
+      "id": "complement-wind_m40-003",
+      "condition": "wind_m40",
+      "seed": 744003,
+      "suite": "complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "wind-base-003",
+      "options": {
+        "initial_state": {
+          "x": -0.14315031526013536,
+          "y": 8.548602672330604,
+          "vx": 0.08562478653559252,
+          "vy": -0.2086308517330382,
+          "theta": -0.01810785981809332,
+          "omega": -0.0001650494200348196
+        },
+        "wind_force": -40.0
+      }
+    },
+    {
+      "id": "complement-wind_p40-003",
+      "condition": "wind_p40",
+      "seed": 844003,
+      "suite": "complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "wind-base-003",
+      "options": {
+        "initial_state": {
+          "x": -0.14315031526013536,
+          "y": 8.548602672330604,
+          "vx": 0.08562478653559252,
+          "vy": -0.2086308517330382,
+          "theta": -0.01810785981809332,
+          "omega": -0.0001650494200348196
+        },
+        "wind_force": 40.0
+      }
+    },
+    {
+      "id": "complement-wind_control-004",
+      "condition": "wind_control",
+      "seed": 444004,
+      "suite": "complement",
+      "exposure": "within_assisted_initial_support",
+      "paired_wind_id": "wind-base-004",
+      "options": {
+        "initial_state": {
+          "x": 0.06116441106496542,
+          "y": 9.346435302701533,
+          "vx": -0.05029724569330907,
+          "vy": -0.2200225590188205,
+          "theta": 0.001695365610502746,
+          "omega": 0.002587199265435981
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "complement-wind_m20-004",
+      "condition": "wind_m20",
+      "seed": 544004,
+      "suite": "complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "wind-base-004",
+      "options": {
+        "initial_state": {
+          "x": 0.06116441106496542,
+          "y": 9.346435302701533,
+          "vx": -0.05029724569330907,
+          "vy": -0.2200225590188205,
+          "theta": 0.001695365610502746,
+          "omega": 0.002587199265435981
+        },
+        "wind_force": -20.0
+      }
+    },
+    {
+      "id": "complement-wind_p20-004",
+      "condition": "wind_p20",
+      "seed": 644004,
+      "suite": "complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "wind-base-004",
+      "options": {
+        "initial_state": {
+          "x": 0.06116441106496542,
+          "y": 9.346435302701533,
+          "vx": -0.05029724569330907,
+          "vy": -0.2200225590188205,
+          "theta": 0.001695365610502746,
+          "omega": 0.002587199265435981
+        },
+        "wind_force": 20.0
+      }
+    },
+    {
+      "id": "complement-wind_m40-004",
+      "condition": "wind_m40",
+      "seed": 744004,
+      "suite": "complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "wind-base-004",
+      "options": {
+        "initial_state": {
+          "x": 0.06116441106496542,
+          "y": 9.346435302701533,
+          "vx": -0.05029724569330907,
+          "vy": -0.2200225590188205,
+          "theta": 0.001695365610502746,
+          "omega": 0.002587199265435981
+        },
+        "wind_force": -40.0
+      }
+    },
+    {
+      "id": "complement-wind_p40-004",
+      "condition": "wind_p40",
+      "seed": 844004,
+      "suite": "complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "wind-base-004",
+      "options": {
+        "initial_state": {
+          "x": 0.06116441106496542,
+          "y": 9.346435302701533,
+          "vx": -0.05029724569330907,
+          "vy": -0.2200225590188205,
+          "theta": 0.001695365610502746,
+          "omega": 0.002587199265435981
+        },
+        "wind_force": 40.0
+      }
+    },
+    {
+      "id": "complement-wind_control-005",
+      "condition": "wind_control",
+      "seed": 444005,
+      "suite": "complement",
+      "exposure": "within_assisted_initial_support",
+      "paired_wind_id": "wind-base-005",
+      "options": {
+        "initial_state": {
+          "x": 0.25431916851472197,
+          "y": 8.691124915629333,
+          "vx": -0.04642599492719238,
+          "vy": -0.299967338565143,
+          "theta": -0.02638696350219871,
+          "omega": 0.0022484696577295396
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "complement-wind_m20-005",
+      "condition": "wind_m20",
+      "seed": 544005,
+      "suite": "complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "wind-base-005",
+      "options": {
+        "initial_state": {
+          "x": 0.25431916851472197,
+          "y": 8.691124915629333,
+          "vx": -0.04642599492719238,
+          "vy": -0.299967338565143,
+          "theta": -0.02638696350219871,
+          "omega": 0.0022484696577295396
+        },
+        "wind_force": -20.0
+      }
+    },
+    {
+      "id": "complement-wind_p20-005",
+      "condition": "wind_p20",
+      "seed": 644005,
+      "suite": "complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "wind-base-005",
+      "options": {
+        "initial_state": {
+          "x": 0.25431916851472197,
+          "y": 8.691124915629333,
+          "vx": -0.04642599492719238,
+          "vy": -0.299967338565143,
+          "theta": -0.02638696350219871,
+          "omega": 0.0022484696577295396
+        },
+        "wind_force": 20.0
+      }
+    },
+    {
+      "id": "complement-wind_m40-005",
+      "condition": "wind_m40",
+      "seed": 744005,
+      "suite": "complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "wind-base-005",
+      "options": {
+        "initial_state": {
+          "x": 0.25431916851472197,
+          "y": 8.691124915629333,
+          "vx": -0.04642599492719238,
+          "vy": -0.299967338565143,
+          "theta": -0.02638696350219871,
+          "omega": 0.0022484696577295396
+        },
+        "wind_force": -40.0
+      }
+    },
+    {
+      "id": "complement-wind_p40-005",
+      "condition": "wind_p40",
+      "seed": 844005,
+      "suite": "complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "wind-base-005",
+      "options": {
+        "initial_state": {
+          "x": 0.25431916851472197,
+          "y": 8.691124915629333,
+          "vx": -0.04642599492719238,
+          "vy": -0.299967338565143,
+          "theta": -0.02638696350219871,
+          "omega": 0.0022484696577295396
+        },
+        "wind_force": 40.0
+      }
+    },
+    {
+      "id": "complement-wind_control-006",
+      "condition": "wind_control",
+      "seed": 444006,
+      "suite": "complement",
+      "exposure": "within_assisted_initial_support",
+      "paired_wind_id": "wind-base-006",
+      "options": {
+        "initial_state": {
+          "x": -0.18892893983336542,
+          "y": 9.496852024115656,
+          "vx": -0.0067492476319990675,
+          "vy": -0.9990848406005881,
+          "theta": -0.002430898267345278,
+          "omega": 0.002767327493567783
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "complement-wind_m20-006",
+      "condition": "wind_m20",
+      "seed": 544006,
+      "suite": "complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "wind-base-006",
+      "options": {
+        "initial_state": {
+          "x": -0.18892893983336542,
+          "y": 9.496852024115656,
+          "vx": -0.0067492476319990675,
+          "vy": -0.9990848406005881,
+          "theta": -0.002430898267345278,
+          "omega": 0.002767327493567783
+        },
+        "wind_force": -20.0
+      }
+    },
+    {
+      "id": "complement-wind_p20-006",
+      "condition": "wind_p20",
+      "seed": 644006,
+      "suite": "complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "wind-base-006",
+      "options": {
+        "initial_state": {
+          "x": -0.18892893983336542,
+          "y": 9.496852024115656,
+          "vx": -0.0067492476319990675,
+          "vy": -0.9990848406005881,
+          "theta": -0.002430898267345278,
+          "omega": 0.002767327493567783
+        },
+        "wind_force": 20.0
+      }
+    },
+    {
+      "id": "complement-wind_m40-006",
+      "condition": "wind_m40",
+      "seed": 744006,
+      "suite": "complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "wind-base-006",
+      "options": {
+        "initial_state": {
+          "x": -0.18892893983336542,
+          "y": 9.496852024115656,
+          "vx": -0.0067492476319990675,
+          "vy": -0.9990848406005881,
+          "theta": -0.002430898267345278,
+          "omega": 0.002767327493567783
+        },
+        "wind_force": -40.0
+      }
+    },
+    {
+      "id": "complement-wind_p40-006",
+      "condition": "wind_p40",
+      "seed": 844006,
+      "suite": "complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "wind-base-006",
+      "options": {
+        "initial_state": {
+          "x": -0.18892893983336542,
+          "y": 9.496852024115656,
+          "vx": -0.0067492476319990675,
+          "vy": -0.9990848406005881,
+          "theta": -0.002430898267345278,
+          "omega": 0.002767327493567783
+        },
+        "wind_force": 40.0
+      }
+    },
+    {
+      "id": "complement-wind_control-007",
+      "condition": "wind_control",
+      "seed": 444007,
+      "suite": "complement",
+      "exposure": "within_assisted_initial_support",
+      "paired_wind_id": "wind-base-007",
+      "options": {
+        "initial_state": {
+          "x": -0.012687122296213604,
+          "y": 10.875929179132346,
+          "vx": -0.05524098004054337,
+          "vy": -0.4094819988752204,
+          "theta": 0.020000650549324393,
+          "omega": -0.0009547476585118753
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "complement-wind_m20-007",
+      "condition": "wind_m20",
+      "seed": 544007,
+      "suite": "complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "wind-base-007",
+      "options": {
+        "initial_state": {
+          "x": -0.012687122296213604,
+          "y": 10.875929179132346,
+          "vx": -0.05524098004054337,
+          "vy": -0.4094819988752204,
+          "theta": 0.020000650549324393,
+          "omega": -0.0009547476585118753
+        },
+        "wind_force": -20.0
+      }
+    },
+    {
+      "id": "complement-wind_p20-007",
+      "condition": "wind_p20",
+      "seed": 644007,
+      "suite": "complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "wind-base-007",
+      "options": {
+        "initial_state": {
+          "x": -0.012687122296213604,
+          "y": 10.875929179132346,
+          "vx": -0.05524098004054337,
+          "vy": -0.4094819988752204,
+          "theta": 0.020000650549324393,
+          "omega": -0.0009547476585118753
+        },
+        "wind_force": 20.0
+      }
+    },
+    {
+      "id": "complement-wind_m40-007",
+      "condition": "wind_m40",
+      "seed": 744007,
+      "suite": "complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "wind-base-007",
+      "options": {
+        "initial_state": {
+          "x": -0.012687122296213604,
+          "y": 10.875929179132346,
+          "vx": -0.05524098004054337,
+          "vy": -0.4094819988752204,
+          "theta": 0.020000650549324393,
+          "omega": -0.0009547476585118753
+        },
+        "wind_force": -40.0
+      }
+    },
+    {
+      "id": "complement-wind_p40-007",
+      "condition": "wind_p40",
+      "seed": 844007,
+      "suite": "complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "wind-base-007",
+      "options": {
+        "initial_state": {
+          "x": -0.012687122296213604,
+          "y": 10.875929179132346,
+          "vx": -0.05524098004054337,
+          "vy": -0.4094819988752204,
+          "theta": 0.020000650549324393,
+          "omega": -0.0009547476585118753
+        },
+        "wind_force": 40.0
+      }
+    },
+    {
+      "id": "complement-wind_control-008",
+      "condition": "wind_control",
+      "seed": 444008,
+      "suite": "complement",
+      "exposure": "within_assisted_initial_support",
+      "paired_wind_id": "wind-base-008",
+      "options": {
+        "initial_state": {
+          "x": -0.18463971195738835,
+          "y": 10.168514076620587,
+          "vx": 0.004391096265822614,
+          "vy": -0.12277902933089624,
+          "theta": 0.025429117714561567,
+          "omega": 0.003819039485572964
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "complement-wind_m20-008",
+      "condition": "wind_m20",
+      "seed": 544008,
+      "suite": "complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "wind-base-008",
+      "options": {
+        "initial_state": {
+          "x": -0.18463971195738835,
+          "y": 10.168514076620587,
+          "vx": 0.004391096265822614,
+          "vy": -0.12277902933089624,
+          "theta": 0.025429117714561567,
+          "omega": 0.003819039485572964
+        },
+        "wind_force": -20.0
+      }
+    },
+    {
+      "id": "complement-wind_p20-008",
+      "condition": "wind_p20",
+      "seed": 644008,
+      "suite": "complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "wind-base-008",
+      "options": {
+        "initial_state": {
+          "x": -0.18463971195738835,
+          "y": 10.168514076620587,
+          "vx": 0.004391096265822614,
+          "vy": -0.12277902933089624,
+          "theta": 0.025429117714561567,
+          "omega": 0.003819039485572964
+        },
+        "wind_force": 20.0
+      }
+    },
+    {
+      "id": "complement-wind_m40-008",
+      "condition": "wind_m40",
+      "seed": 744008,
+      "suite": "complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "wind-base-008",
+      "options": {
+        "initial_state": {
+          "x": -0.18463971195738835,
+          "y": 10.168514076620587,
+          "vx": 0.004391096265822614,
+          "vy": -0.12277902933089624,
+          "theta": 0.025429117714561567,
+          "omega": 0.003819039485572964
+        },
+        "wind_force": -40.0
+      }
+    },
+    {
+      "id": "complement-wind_p40-008",
+      "condition": "wind_p40",
+      "seed": 844008,
+      "suite": "complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "wind-base-008",
+      "options": {
+        "initial_state": {
+          "x": -0.18463971195738835,
+          "y": 10.168514076620587,
+          "vx": 0.004391096265822614,
+          "vy": -0.12277902933089624,
+          "theta": 0.025429117714561567,
+          "omega": 0.003819039485572964
+        },
+        "wind_force": 40.0
+      }
+    },
+    {
+      "id": "complement-wind_control-009",
+      "condition": "wind_control",
+      "seed": 444009,
+      "suite": "complement",
+      "exposure": "within_assisted_initial_support",
+      "paired_wind_id": "wind-base-009",
+      "options": {
+        "initial_state": {
+          "x": -0.2604272925651059,
+          "y": 8.590110795640589,
+          "vx": -0.0855619088030538,
+          "vy": -0.2568644070269095,
+          "theta": -0.003980047144964846,
+          "omega": -0.0005450136652530857
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "complement-wind_m20-009",
+      "condition": "wind_m20",
+      "seed": 544009,
+      "suite": "complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "wind-base-009",
+      "options": {
+        "initial_state": {
+          "x": -0.2604272925651059,
+          "y": 8.590110795640589,
+          "vx": -0.0855619088030538,
+          "vy": -0.2568644070269095,
+          "theta": -0.003980047144964846,
+          "omega": -0.0005450136652530857
+        },
+        "wind_force": -20.0
+      }
+    },
+    {
+      "id": "complement-wind_p20-009",
+      "condition": "wind_p20",
+      "seed": 644009,
+      "suite": "complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "wind-base-009",
+      "options": {
+        "initial_state": {
+          "x": -0.2604272925651059,
+          "y": 8.590110795640589,
+          "vx": -0.0855619088030538,
+          "vy": -0.2568644070269095,
+          "theta": -0.003980047144964846,
+          "omega": -0.0005450136652530857
+        },
+        "wind_force": 20.0
+      }
+    },
+    {
+      "id": "complement-wind_m40-009",
+      "condition": "wind_m40",
+      "seed": 744009,
+      "suite": "complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "wind-base-009",
+      "options": {
+        "initial_state": {
+          "x": -0.2604272925651059,
+          "y": 8.590110795640589,
+          "vx": -0.0855619088030538,
+          "vy": -0.2568644070269095,
+          "theta": -0.003980047144964846,
+          "omega": -0.0005450136652530857
+        },
+        "wind_force": -40.0
+      }
+    },
+    {
+      "id": "complement-wind_p40-009",
+      "condition": "wind_p40",
+      "seed": 844009,
+      "suite": "complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "wind-base-009",
+      "options": {
+        "initial_state": {
+          "x": -0.2604272925651059,
+          "y": 8.590110795640589,
+          "vx": -0.0855619088030538,
+          "vy": -0.2568644070269095,
+          "theta": -0.003980047144964846,
+          "omega": -0.0005450136652530857
+        },
+        "wind_force": 40.0
+      }
+    },
+    {
+      "id": "complement-wind_control-010",
+      "condition": "wind_control",
+      "seed": 444010,
+      "suite": "complement",
+      "exposure": "within_assisted_initial_support",
+      "paired_wind_id": "wind-base-010",
+      "options": {
+        "initial_state": {
+          "x": 0.2524444476416877,
+          "y": 11.273524972635204,
+          "vx": -0.005146477187405196,
+          "vy": -0.7617806864838043,
+          "theta": 0.013574051113397911,
+          "omega": -0.003375082055140254
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "complement-wind_m20-010",
+      "condition": "wind_m20",
+      "seed": 544010,
+      "suite": "complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "wind-base-010",
+      "options": {
+        "initial_state": {
+          "x": 0.2524444476416877,
+          "y": 11.273524972635204,
+          "vx": -0.005146477187405196,
+          "vy": -0.7617806864838043,
+          "theta": 0.013574051113397911,
+          "omega": -0.003375082055140254
+        },
+        "wind_force": -20.0
+      }
+    },
+    {
+      "id": "complement-wind_p20-010",
+      "condition": "wind_p20",
+      "seed": 644010,
+      "suite": "complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "wind-base-010",
+      "options": {
+        "initial_state": {
+          "x": 0.2524444476416877,
+          "y": 11.273524972635204,
+          "vx": -0.005146477187405196,
+          "vy": -0.7617806864838043,
+          "theta": 0.013574051113397911,
+          "omega": -0.003375082055140254
+        },
+        "wind_force": 20.0
+      }
+    },
+    {
+      "id": "complement-wind_m40-010",
+      "condition": "wind_m40",
+      "seed": 744010,
+      "suite": "complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "wind-base-010",
+      "options": {
+        "initial_state": {
+          "x": 0.2524444476416877,
+          "y": 11.273524972635204,
+          "vx": -0.005146477187405196,
+          "vy": -0.7617806864838043,
+          "theta": 0.013574051113397911,
+          "omega": -0.003375082055140254
+        },
+        "wind_force": -40.0
+      }
+    },
+    {
+      "id": "complement-wind_p40-010",
+      "condition": "wind_p40",
+      "seed": 844010,
+      "suite": "complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "wind-base-010",
+      "options": {
+        "initial_state": {
+          "x": 0.2524444476416877,
+          "y": 11.273524972635204,
+          "vx": -0.005146477187405196,
+          "vy": -0.7617806864838043,
+          "theta": 0.013574051113397911,
+          "omega": -0.003375082055140254
+        },
+        "wind_force": 40.0
+      }
+    },
+    {
+      "id": "complement-wind_control-011",
+      "condition": "wind_control",
+      "seed": 444011,
+      "suite": "complement",
+      "exposure": "within_assisted_initial_support",
+      "paired_wind_id": "wind-base-011",
+      "options": {
+        "initial_state": {
+          "x": -0.07844523301219498,
+          "y": 9.112151916277188,
+          "vx": 0.03608869127487957,
+          "vy": -0.7334256379945376,
+          "theta": 0.010710758068615047,
+          "omega": 0.0014776395651057207
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "complement-wind_m20-011",
+      "condition": "wind_m20",
+      "seed": 544011,
+      "suite": "complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "wind-base-011",
+      "options": {
+        "initial_state": {
+          "x": -0.07844523301219498,
+          "y": 9.112151916277188,
+          "vx": 0.03608869127487957,
+          "vy": -0.7334256379945376,
+          "theta": 0.010710758068615047,
+          "omega": 0.0014776395651057207
+        },
+        "wind_force": -20.0
+      }
+    },
+    {
+      "id": "complement-wind_p20-011",
+      "condition": "wind_p20",
+      "seed": 644011,
+      "suite": "complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "wind-base-011",
+      "options": {
+        "initial_state": {
+          "x": -0.07844523301219498,
+          "y": 9.112151916277188,
+          "vx": 0.03608869127487957,
+          "vy": -0.7334256379945376,
+          "theta": 0.010710758068615047,
+          "omega": 0.0014776395651057207
+        },
+        "wind_force": 20.0
+      }
+    },
+    {
+      "id": "complement-wind_m40-011",
+      "condition": "wind_m40",
+      "seed": 744011,
+      "suite": "complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "wind-base-011",
+      "options": {
+        "initial_state": {
+          "x": -0.07844523301219498,
+          "y": 9.112151916277188,
+          "vx": 0.03608869127487957,
+          "vy": -0.7334256379945376,
+          "theta": 0.010710758068615047,
+          "omega": 0.0014776395651057207
+        },
+        "wind_force": -40.0
+      }
+    },
+    {
+      "id": "complement-wind_p40-011",
+      "condition": "wind_p40",
+      "seed": 844011,
+      "suite": "complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "wind-base-011",
+      "options": {
+        "initial_state": {
+          "x": -0.07844523301219498,
+          "y": 9.112151916277188,
+          "vx": 0.03608869127487957,
+          "vy": -0.7334256379945376,
+          "theta": 0.010710758068615047,
+          "omega": 0.0014776395651057207
+        },
+        "wind_force": 40.0
+      }
+    },
+    {
+      "id": "complement-wind_control-012",
+      "condition": "wind_control",
+      "seed": 444012,
+      "suite": "complement",
+      "exposure": "within_assisted_initial_support",
+      "paired_wind_id": "wind-base-012",
+      "options": {
+        "initial_state": {
+          "x": -0.03347838026150824,
+          "y": 9.106358365848745,
+          "vx": 0.01883419126889916,
+          "vy": -0.8822381346364331,
+          "theta": 0.008402278917986481,
+          "omega": 0.0041615507664482885
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "complement-wind_m20-012",
+      "condition": "wind_m20",
+      "seed": 544012,
+      "suite": "complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "wind-base-012",
+      "options": {
+        "initial_state": {
+          "x": -0.03347838026150824,
+          "y": 9.106358365848745,
+          "vx": 0.01883419126889916,
+          "vy": -0.8822381346364331,
+          "theta": 0.008402278917986481,
+          "omega": 0.0041615507664482885
+        },
+        "wind_force": -20.0
+      }
+    },
+    {
+      "id": "complement-wind_p20-012",
+      "condition": "wind_p20",
+      "seed": 644012,
+      "suite": "complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "wind-base-012",
+      "options": {
+        "initial_state": {
+          "x": -0.03347838026150824,
+          "y": 9.106358365848745,
+          "vx": 0.01883419126889916,
+          "vy": -0.8822381346364331,
+          "theta": 0.008402278917986481,
+          "omega": 0.0041615507664482885
+        },
+        "wind_force": 20.0
+      }
+    },
+    {
+      "id": "complement-wind_m40-012",
+      "condition": "wind_m40",
+      "seed": 744012,
+      "suite": "complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "wind-base-012",
+      "options": {
+        "initial_state": {
+          "x": -0.03347838026150824,
+          "y": 9.106358365848745,
+          "vx": 0.01883419126889916,
+          "vy": -0.8822381346364331,
+          "theta": 0.008402278917986481,
+          "omega": 0.0041615507664482885
+        },
+        "wind_force": -40.0
+      }
+    },
+    {
+      "id": "complement-wind_p40-012",
+      "condition": "wind_p40",
+      "seed": 844012,
+      "suite": "complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "wind-base-012",
+      "options": {
+        "initial_state": {
+          "x": -0.03347838026150824,
+          "y": 9.106358365848745,
+          "vx": 0.01883419126889916,
+          "vy": -0.8822381346364331,
+          "theta": 0.008402278917986481,
+          "omega": 0.0041615507664482885
+        },
+        "wind_force": 40.0
+      }
+    },
+    {
+      "id": "complement-wind_control-013",
+      "condition": "wind_control",
+      "seed": 444013,
+      "suite": "complement",
+      "exposure": "within_assisted_initial_support",
+      "paired_wind_id": "wind-base-013",
+      "options": {
+        "initial_state": {
+          "x": -0.18785339470764081,
+          "y": 8.491364755878898,
+          "vx": 0.08153365530742629,
+          "vy": -0.9522970615308942,
+          "theta": -0.01952534203484394,
+          "omega": -0.0016169806521328812
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "complement-wind_m20-013",
+      "condition": "wind_m20",
+      "seed": 544013,
+      "suite": "complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "wind-base-013",
+      "options": {
+        "initial_state": {
+          "x": -0.18785339470764081,
+          "y": 8.491364755878898,
+          "vx": 0.08153365530742629,
+          "vy": -0.9522970615308942,
+          "theta": -0.01952534203484394,
+          "omega": -0.0016169806521328812
+        },
+        "wind_force": -20.0
+      }
+    },
+    {
+      "id": "complement-wind_p20-013",
+      "condition": "wind_p20",
+      "seed": 644013,
+      "suite": "complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "wind-base-013",
+      "options": {
+        "initial_state": {
+          "x": -0.18785339470764081,
+          "y": 8.491364755878898,
+          "vx": 0.08153365530742629,
+          "vy": -0.9522970615308942,
+          "theta": -0.01952534203484394,
+          "omega": -0.0016169806521328812
+        },
+        "wind_force": 20.0
+      }
+    },
+    {
+      "id": "complement-wind_m40-013",
+      "condition": "wind_m40",
+      "seed": 744013,
+      "suite": "complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "wind-base-013",
+      "options": {
+        "initial_state": {
+          "x": -0.18785339470764081,
+          "y": 8.491364755878898,
+          "vx": 0.08153365530742629,
+          "vy": -0.9522970615308942,
+          "theta": -0.01952534203484394,
+          "omega": -0.0016169806521328812
+        },
+        "wind_force": -40.0
+      }
+    },
+    {
+      "id": "complement-wind_p40-013",
+      "condition": "wind_p40",
+      "seed": 844013,
+      "suite": "complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "wind-base-013",
+      "options": {
+        "initial_state": {
+          "x": -0.18785339470764081,
+          "y": 8.491364755878898,
+          "vx": 0.08153365530742629,
+          "vy": -0.9522970615308942,
+          "theta": -0.01952534203484394,
+          "omega": -0.0016169806521328812
+        },
+        "wind_force": 40.0
+      }
+    },
+    {
+      "id": "complement-wind_control-014",
+      "condition": "wind_control",
+      "seed": 444014,
+      "suite": "complement",
+      "exposure": "within_assisted_initial_support",
+      "paired_wind_id": "wind-base-014",
+      "options": {
+        "initial_state": {
+          "x": 0.001171035230657269,
+          "y": 8.202039498439074,
+          "vx": -0.05904537377588102,
+          "vy": -0.5788204101989535,
+          "theta": 0.008333677277369769,
+          "omega": -0.0016896087046919196
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "complement-wind_m20-014",
+      "condition": "wind_m20",
+      "seed": 544014,
+      "suite": "complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "wind-base-014",
+      "options": {
+        "initial_state": {
+          "x": 0.001171035230657269,
+          "y": 8.202039498439074,
+          "vx": -0.05904537377588102,
+          "vy": -0.5788204101989535,
+          "theta": 0.008333677277369769,
+          "omega": -0.0016896087046919196
+        },
+        "wind_force": -20.0
+      }
+    },
+    {
+      "id": "complement-wind_p20-014",
+      "condition": "wind_p20",
+      "seed": 644014,
+      "suite": "complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "wind-base-014",
+      "options": {
+        "initial_state": {
+          "x": 0.001171035230657269,
+          "y": 8.202039498439074,
+          "vx": -0.05904537377588102,
+          "vy": -0.5788204101989535,
+          "theta": 0.008333677277369769,
+          "omega": -0.0016896087046919196
+        },
+        "wind_force": 20.0
+      }
+    },
+    {
+      "id": "complement-wind_m40-014",
+      "condition": "wind_m40",
+      "seed": 744014,
+      "suite": "complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "wind-base-014",
+      "options": {
+        "initial_state": {
+          "x": 0.001171035230657269,
+          "y": 8.202039498439074,
+          "vx": -0.05904537377588102,
+          "vy": -0.5788204101989535,
+          "theta": 0.008333677277369769,
+          "omega": -0.0016896087046919196
+        },
+        "wind_force": -40.0
+      }
+    },
+    {
+      "id": "complement-wind_p40-014",
+      "condition": "wind_p40",
+      "seed": 844014,
+      "suite": "complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "wind-base-014",
+      "options": {
+        "initial_state": {
+          "x": 0.001171035230657269,
+          "y": 8.202039498439074,
+          "vx": -0.05904537377588102,
+          "vy": -0.5788204101989535,
+          "theta": 0.008333677277369769,
+          "omega": -0.0016896087046919196
+        },
+        "wind_force": 40.0
+      }
+    },
+    {
+      "id": "complement-wind_control-015",
+      "condition": "wind_control",
+      "seed": 444015,
+      "suite": "complement",
+      "exposure": "within_assisted_initial_support",
+      "paired_wind_id": "wind-base-015",
+      "options": {
+        "initial_state": {
+          "x": 0.17272384219082726,
+          "y": 10.587855414086299,
+          "vx": 0.01504137454939667,
+          "vy": -0.9850301528022378,
+          "theta": 0.006904285494265334,
+          "omega": -0.00454906396301416
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "complement-wind_m20-015",
+      "condition": "wind_m20",
+      "seed": 544015,
+      "suite": "complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "wind-base-015",
+      "options": {
+        "initial_state": {
+          "x": 0.17272384219082726,
+          "y": 10.587855414086299,
+          "vx": 0.01504137454939667,
+          "vy": -0.9850301528022378,
+          "theta": 0.006904285494265334,
+          "omega": -0.00454906396301416
+        },
+        "wind_force": -20.0
+      }
+    },
+    {
+      "id": "complement-wind_p20-015",
+      "condition": "wind_p20",
+      "seed": 644015,
+      "suite": "complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "wind-base-015",
+      "options": {
+        "initial_state": {
+          "x": 0.17272384219082726,
+          "y": 10.587855414086299,
+          "vx": 0.01504137454939667,
+          "vy": -0.9850301528022378,
+          "theta": 0.006904285494265334,
+          "omega": -0.00454906396301416
+        },
+        "wind_force": 20.0
+      }
+    },
+    {
+      "id": "complement-wind_m40-015",
+      "condition": "wind_m40",
+      "seed": 744015,
+      "suite": "complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "wind-base-015",
+      "options": {
+        "initial_state": {
+          "x": 0.17272384219082726,
+          "y": 10.587855414086299,
+          "vx": 0.01504137454939667,
+          "vy": -0.9850301528022378,
+          "theta": 0.006904285494265334,
+          "omega": -0.00454906396301416
+        },
+        "wind_force": -40.0
+      }
+    },
+    {
+      "id": "complement-wind_p40-015",
+      "condition": "wind_p40",
+      "seed": 844015,
+      "suite": "complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "wind-base-015",
+      "options": {
+        "initial_state": {
+          "x": 0.17272384219082726,
+          "y": 10.587855414086299,
+          "vx": 0.01504137454939667,
+          "vy": -0.9850301528022378,
+          "theta": 0.006904285494265334,
+          "omega": -0.00454906396301416
+        },
+        "wind_force": 40.0
+      }
+    },
+    {
+      "id": "complement-wind_control-016",
+      "condition": "wind_control",
+      "seed": 444016,
+      "suite": "complement",
+      "exposure": "within_assisted_initial_support",
+      "paired_wind_id": "wind-base-016",
+      "options": {
+        "initial_state": {
+          "x": -0.22285911070625367,
+          "y": 8.574384496925076,
+          "vx": 0.08032969354101363,
+          "vy": -0.785195028280469,
+          "theta": -0.025513715714662363,
+          "omega": 0.0039869975705459065
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "complement-wind_m20-016",
+      "condition": "wind_m20",
+      "seed": 544016,
+      "suite": "complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "wind-base-016",
+      "options": {
+        "initial_state": {
+          "x": -0.22285911070625367,
+          "y": 8.574384496925076,
+          "vx": 0.08032969354101363,
+          "vy": -0.785195028280469,
+          "theta": -0.025513715714662363,
+          "omega": 0.0039869975705459065
+        },
+        "wind_force": -20.0
+      }
+    },
+    {
+      "id": "complement-wind_p20-016",
+      "condition": "wind_p20",
+      "seed": 644016,
+      "suite": "complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "wind-base-016",
+      "options": {
+        "initial_state": {
+          "x": -0.22285911070625367,
+          "y": 8.574384496925076,
+          "vx": 0.08032969354101363,
+          "vy": -0.785195028280469,
+          "theta": -0.025513715714662363,
+          "omega": 0.0039869975705459065
+        },
+        "wind_force": 20.0
+      }
+    },
+    {
+      "id": "complement-wind_m40-016",
+      "condition": "wind_m40",
+      "seed": 744016,
+      "suite": "complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "wind-base-016",
+      "options": {
+        "initial_state": {
+          "x": -0.22285911070625367,
+          "y": 8.574384496925076,
+          "vx": 0.08032969354101363,
+          "vy": -0.785195028280469,
+          "theta": -0.025513715714662363,
+          "omega": 0.0039869975705459065
+        },
+        "wind_force": -40.0
+      }
+    },
+    {
+      "id": "complement-wind_p40-016",
+      "condition": "wind_p40",
+      "seed": 844016,
+      "suite": "complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "wind-base-016",
+      "options": {
+        "initial_state": {
+          "x": -0.22285911070625367,
+          "y": 8.574384496925076,
+          "vx": 0.08032969354101363,
+          "vy": -0.785195028280469,
+          "theta": -0.025513715714662363,
+          "omega": 0.0039869975705459065
+        },
+        "wind_force": 40.0
+      }
+    },
+    {
+      "id": "complement-wind_control-017",
+      "condition": "wind_control",
+      "seed": 444017,
+      "suite": "complement",
+      "exposure": "within_assisted_initial_support",
+      "paired_wind_id": "wind-base-017",
+      "options": {
+        "initial_state": {
+          "x": -0.2977431548677491,
+          "y": 11.085177545425825,
+          "vx": -0.001838090887762811,
+          "vy": -0.6846325121353634,
+          "theta": -0.02034695926755105,
+          "omega": -0.004877541289920183
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "complement-wind_m20-017",
+      "condition": "wind_m20",
+      "seed": 544017,
+      "suite": "complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "wind-base-017",
+      "options": {
+        "initial_state": {
+          "x": -0.2977431548677491,
+          "y": 11.085177545425825,
+          "vx": -0.001838090887762811,
+          "vy": -0.6846325121353634,
+          "theta": -0.02034695926755105,
+          "omega": -0.004877541289920183
+        },
+        "wind_force": -20.0
+      }
+    },
+    {
+      "id": "complement-wind_p20-017",
+      "condition": "wind_p20",
+      "seed": 644017,
+      "suite": "complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "wind-base-017",
+      "options": {
+        "initial_state": {
+          "x": -0.2977431548677491,
+          "y": 11.085177545425825,
+          "vx": -0.001838090887762811,
+          "vy": -0.6846325121353634,
+          "theta": -0.02034695926755105,
+          "omega": -0.004877541289920183
+        },
+        "wind_force": 20.0
+      }
+    },
+    {
+      "id": "complement-wind_m40-017",
+      "condition": "wind_m40",
+      "seed": 744017,
+      "suite": "complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "wind-base-017",
+      "options": {
+        "initial_state": {
+          "x": -0.2977431548677491,
+          "y": 11.085177545425825,
+          "vx": -0.001838090887762811,
+          "vy": -0.6846325121353634,
+          "theta": -0.02034695926755105,
+          "omega": -0.004877541289920183
+        },
+        "wind_force": -40.0
+      }
+    },
+    {
+      "id": "complement-wind_p40-017",
+      "condition": "wind_p40",
+      "seed": 844017,
+      "suite": "complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "wind-base-017",
+      "options": {
+        "initial_state": {
+          "x": -0.2977431548677491,
+          "y": 11.085177545425825,
+          "vx": -0.001838090887762811,
+          "vy": -0.6846325121353634,
+          "theta": -0.02034695926755105,
+          "omega": -0.004877541289920183
+        },
+        "wind_force": 40.0
+      }
+    },
+    {
+      "id": "complement-wind_control-018",
+      "condition": "wind_control",
+      "seed": 444018,
+      "suite": "complement",
+      "exposure": "within_assisted_initial_support",
+      "paired_wind_id": "wind-base-018",
+      "options": {
+        "initial_state": {
+          "x": -0.2831587915167983,
+          "y": 8.362135461109006,
+          "vx": 0.07999103470510707,
+          "vy": -0.8451829542064044,
+          "theta": -0.004500438474074852,
+          "omega": -0.002433405406512742
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "complement-wind_m20-018",
+      "condition": "wind_m20",
+      "seed": 544018,
+      "suite": "complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "wind-base-018",
+      "options": {
+        "initial_state": {
+          "x": -0.2831587915167983,
+          "y": 8.362135461109006,
+          "vx": 0.07999103470510707,
+          "vy": -0.8451829542064044,
+          "theta": -0.004500438474074852,
+          "omega": -0.002433405406512742
+        },
+        "wind_force": -20.0
+      }
+    },
+    {
+      "id": "complement-wind_p20-018",
+      "condition": "wind_p20",
+      "seed": 644018,
+      "suite": "complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "wind-base-018",
+      "options": {
+        "initial_state": {
+          "x": -0.2831587915167983,
+          "y": 8.362135461109006,
+          "vx": 0.07999103470510707,
+          "vy": -0.8451829542064044,
+          "theta": -0.004500438474074852,
+          "omega": -0.002433405406512742
+        },
+        "wind_force": 20.0
+      }
+    },
+    {
+      "id": "complement-wind_m40-018",
+      "condition": "wind_m40",
+      "seed": 744018,
+      "suite": "complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "wind-base-018",
+      "options": {
+        "initial_state": {
+          "x": -0.2831587915167983,
+          "y": 8.362135461109006,
+          "vx": 0.07999103470510707,
+          "vy": -0.8451829542064044,
+          "theta": -0.004500438474074852,
+          "omega": -0.002433405406512742
+        },
+        "wind_force": -40.0
+      }
+    },
+    {
+      "id": "complement-wind_p40-018",
+      "condition": "wind_p40",
+      "seed": 844018,
+      "suite": "complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "wind-base-018",
+      "options": {
+        "initial_state": {
+          "x": -0.2831587915167983,
+          "y": 8.362135461109006,
+          "vx": 0.07999103470510707,
+          "vy": -0.8451829542064044,
+          "theta": -0.004500438474074852,
+          "omega": -0.002433405406512742
+        },
+        "wind_force": 40.0
+      }
+    },
+    {
+      "id": "complement-wind_control-019",
+      "condition": "wind_control",
+      "seed": 444019,
+      "suite": "complement",
+      "exposure": "within_assisted_initial_support",
+      "paired_wind_id": "wind-base-019",
+      "options": {
+        "initial_state": {
+          "x": 0.07471998001165998,
+          "y": 12.854233049397289,
+          "vx": -0.037925140170353644,
+          "vy": -0.11676776037405145,
+          "theta": -0.00023483266012500393,
+          "omega": -0.00044094255227692503
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "complement-wind_m20-019",
+      "condition": "wind_m20",
+      "seed": 544019,
+      "suite": "complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "wind-base-019",
+      "options": {
+        "initial_state": {
+          "x": 0.07471998001165998,
+          "y": 12.854233049397289,
+          "vx": -0.037925140170353644,
+          "vy": -0.11676776037405145,
+          "theta": -0.00023483266012500393,
+          "omega": -0.00044094255227692503
+        },
+        "wind_force": -20.0
+      }
+    },
+    {
+      "id": "complement-wind_p20-019",
+      "condition": "wind_p20",
+      "seed": 644019,
+      "suite": "complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "wind-base-019",
+      "options": {
+        "initial_state": {
+          "x": 0.07471998001165998,
+          "y": 12.854233049397289,
+          "vx": -0.037925140170353644,
+          "vy": -0.11676776037405145,
+          "theta": -0.00023483266012500393,
+          "omega": -0.00044094255227692503
+        },
+        "wind_force": 20.0
+      }
+    },
+    {
+      "id": "complement-wind_m40-019",
+      "condition": "wind_m40",
+      "seed": 744019,
+      "suite": "complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "wind-base-019",
+      "options": {
+        "initial_state": {
+          "x": 0.07471998001165998,
+          "y": 12.854233049397289,
+          "vx": -0.037925140170353644,
+          "vy": -0.11676776037405145,
+          "theta": -0.00023483266012500393,
+          "omega": -0.00044094255227692503
+        },
+        "wind_force": -40.0
+      }
+    },
+    {
+      "id": "complement-wind_p40-019",
+      "condition": "wind_p40",
+      "seed": 844019,
+      "suite": "complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "wind-base-019",
+      "options": {
+        "initial_state": {
+          "x": 0.07471998001165998,
+          "y": 12.854233049397289,
+          "vx": -0.037925140170353644,
+          "vy": -0.11676776037405145,
+          "theta": -0.00023483266012500393,
+          "omega": -0.00044094255227692503
+        },
+        "wind_force": 40.0
+      }
+    },
+    {
+      "id": "complement-wind_control-020",
+      "condition": "wind_control",
+      "seed": 444020,
+      "suite": "complement",
+      "exposure": "within_assisted_initial_support",
+      "paired_wind_id": "wind-base-020",
+      "options": {
+        "initial_state": {
+          "x": 0.24265409383540365,
+          "y": 9.775523813857019,
+          "vx": 0.04575095407812473,
+          "vy": -0.9755966962931188,
+          "theta": -0.013172126984257043,
+          "omega": 0.0042664837698652
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "complement-wind_m20-020",
+      "condition": "wind_m20",
+      "seed": 544020,
+      "suite": "complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "wind-base-020",
+      "options": {
+        "initial_state": {
+          "x": 0.24265409383540365,
+          "y": 9.775523813857019,
+          "vx": 0.04575095407812473,
+          "vy": -0.9755966962931188,
+          "theta": -0.013172126984257043,
+          "omega": 0.0042664837698652
+        },
+        "wind_force": -20.0
+      }
+    },
+    {
+      "id": "complement-wind_p20-020",
+      "condition": "wind_p20",
+      "seed": 644020,
+      "suite": "complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "wind-base-020",
+      "options": {
+        "initial_state": {
+          "x": 0.24265409383540365,
+          "y": 9.775523813857019,
+          "vx": 0.04575095407812473,
+          "vy": -0.9755966962931188,
+          "theta": -0.013172126984257043,
+          "omega": 0.0042664837698652
+        },
+        "wind_force": 20.0
+      }
+    },
+    {
+      "id": "complement-wind_m40-020",
+      "condition": "wind_m40",
+      "seed": 744020,
+      "suite": "complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "wind-base-020",
+      "options": {
+        "initial_state": {
+          "x": 0.24265409383540365,
+          "y": 9.775523813857019,
+          "vx": 0.04575095407812473,
+          "vy": -0.9755966962931188,
+          "theta": -0.013172126984257043,
+          "omega": 0.0042664837698652
+        },
+        "wind_force": -40.0
+      }
+    },
+    {
+      "id": "complement-wind_p40-020",
+      "condition": "wind_p40",
+      "seed": 844020,
+      "suite": "complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "wind-base-020",
+      "options": {
+        "initial_state": {
+          "x": 0.24265409383540365,
+          "y": 9.775523813857019,
+          "vx": 0.04575095407812473,
+          "vy": -0.9755966962931188,
+          "theta": -0.013172126984257043,
+          "omega": 0.0042664837698652
+        },
+        "wind_force": 40.0
+      }
+    },
+    {
+      "id": "complement-wind_control-021",
+      "condition": "wind_control",
+      "seed": 444021,
+      "suite": "complement",
+      "exposure": "within_assisted_initial_support",
+      "paired_wind_id": "wind-base-021",
+      "options": {
+        "initial_state": {
+          "x": -0.2502981002416019,
+          "y": 12.13158003140214,
+          "vx": 0.03337974885322286,
+          "vy": -0.9632241750370083,
+          "theta": 0.02600700643430207,
+          "omega": 0.0024950814506052342
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "complement-wind_m20-021",
+      "condition": "wind_m20",
+      "seed": 544021,
+      "suite": "complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "wind-base-021",
+      "options": {
+        "initial_state": {
+          "x": -0.2502981002416019,
+          "y": 12.13158003140214,
+          "vx": 0.03337974885322286,
+          "vy": -0.9632241750370083,
+          "theta": 0.02600700643430207,
+          "omega": 0.0024950814506052342
+        },
+        "wind_force": -20.0
+      }
+    },
+    {
+      "id": "complement-wind_p20-021",
+      "condition": "wind_p20",
+      "seed": 644021,
+      "suite": "complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "wind-base-021",
+      "options": {
+        "initial_state": {
+          "x": -0.2502981002416019,
+          "y": 12.13158003140214,
+          "vx": 0.03337974885322286,
+          "vy": -0.9632241750370083,
+          "theta": 0.02600700643430207,
+          "omega": 0.0024950814506052342
+        },
+        "wind_force": 20.0
+      }
+    },
+    {
+      "id": "complement-wind_m40-021",
+      "condition": "wind_m40",
+      "seed": 744021,
+      "suite": "complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "wind-base-021",
+      "options": {
+        "initial_state": {
+          "x": -0.2502981002416019,
+          "y": 12.13158003140214,
+          "vx": 0.03337974885322286,
+          "vy": -0.9632241750370083,
+          "theta": 0.02600700643430207,
+          "omega": 0.0024950814506052342
+        },
+        "wind_force": -40.0
+      }
+    },
+    {
+      "id": "complement-wind_p40-021",
+      "condition": "wind_p40",
+      "seed": 844021,
+      "suite": "complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "wind-base-021",
+      "options": {
+        "initial_state": {
+          "x": -0.2502981002416019,
+          "y": 12.13158003140214,
+          "vx": 0.03337974885322286,
+          "vy": -0.9632241750370083,
+          "theta": 0.02600700643430207,
+          "omega": 0.0024950814506052342
+        },
+        "wind_force": 40.0
+      }
+    },
+    {
+      "id": "complement-wind_control-022",
+      "condition": "wind_control",
+      "seed": 444022,
+      "suite": "complement",
+      "exposure": "within_assisted_initial_support",
+      "paired_wind_id": "wind-base-022",
+      "options": {
+        "initial_state": {
+          "x": 0.002844626369000247,
+          "y": 8.257992913207481,
+          "vx": -0.0894752329892517,
+          "vy": -0.6892035147934192,
+          "theta": 0.008152872782269144,
+          "omega": 0.0013018619235663743
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "complement-wind_m20-022",
+      "condition": "wind_m20",
+      "seed": 544022,
+      "suite": "complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "wind-base-022",
+      "options": {
+        "initial_state": {
+          "x": 0.002844626369000247,
+          "y": 8.257992913207481,
+          "vx": -0.0894752329892517,
+          "vy": -0.6892035147934192,
+          "theta": 0.008152872782269144,
+          "omega": 0.0013018619235663743
+        },
+        "wind_force": -20.0
+      }
+    },
+    {
+      "id": "complement-wind_p20-022",
+      "condition": "wind_p20",
+      "seed": 644022,
+      "suite": "complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "wind-base-022",
+      "options": {
+        "initial_state": {
+          "x": 0.002844626369000247,
+          "y": 8.257992913207481,
+          "vx": -0.0894752329892517,
+          "vy": -0.6892035147934192,
+          "theta": 0.008152872782269144,
+          "omega": 0.0013018619235663743
+        },
+        "wind_force": 20.0
+      }
+    },
+    {
+      "id": "complement-wind_m40-022",
+      "condition": "wind_m40",
+      "seed": 744022,
+      "suite": "complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "wind-base-022",
+      "options": {
+        "initial_state": {
+          "x": 0.002844626369000247,
+          "y": 8.257992913207481,
+          "vx": -0.0894752329892517,
+          "vy": -0.6892035147934192,
+          "theta": 0.008152872782269144,
+          "omega": 0.0013018619235663743
+        },
+        "wind_force": -40.0
+      }
+    },
+    {
+      "id": "complement-wind_p40-022",
+      "condition": "wind_p40",
+      "seed": 844022,
+      "suite": "complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "wind-base-022",
+      "options": {
+        "initial_state": {
+          "x": 0.002844626369000247,
+          "y": 8.257992913207481,
+          "vx": -0.0894752329892517,
+          "vy": -0.6892035147934192,
+          "theta": 0.008152872782269144,
+          "omega": 0.0013018619235663743
+        },
+        "wind_force": 40.0
+      }
+    },
+    {
+      "id": "complement-wind_control-023",
+      "condition": "wind_control",
+      "seed": 444023,
+      "suite": "complement",
+      "exposure": "within_assisted_initial_support",
+      "paired_wind_id": "wind-base-023",
+      "options": {
+        "initial_state": {
+          "x": 0.038248865937929796,
+          "y": 11.996243470501732,
+          "vx": -0.09676232866322963,
+          "vy": -0.12392049191243504,
+          "theta": -0.011345134702886474,
+          "omega": -0.004558458659336449
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "complement-wind_m20-023",
+      "condition": "wind_m20",
+      "seed": 544023,
+      "suite": "complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "wind-base-023",
+      "options": {
+        "initial_state": {
+          "x": 0.038248865937929796,
+          "y": 11.996243470501732,
+          "vx": -0.09676232866322963,
+          "vy": -0.12392049191243504,
+          "theta": -0.011345134702886474,
+          "omega": -0.004558458659336449
+        },
+        "wind_force": -20.0
+      }
+    },
+    {
+      "id": "complement-wind_p20-023",
+      "condition": "wind_p20",
+      "seed": 644023,
+      "suite": "complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "wind-base-023",
+      "options": {
+        "initial_state": {
+          "x": 0.038248865937929796,
+          "y": 11.996243470501732,
+          "vx": -0.09676232866322963,
+          "vy": -0.12392049191243504,
+          "theta": -0.011345134702886474,
+          "omega": -0.004558458659336449
+        },
+        "wind_force": 20.0
+      }
+    },
+    {
+      "id": "complement-wind_m40-023",
+      "condition": "wind_m40",
+      "seed": 744023,
+      "suite": "complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "wind-base-023",
+      "options": {
+        "initial_state": {
+          "x": 0.038248865937929796,
+          "y": 11.996243470501732,
+          "vx": -0.09676232866322963,
+          "vy": -0.12392049191243504,
+          "theta": -0.011345134702886474,
+          "omega": -0.004558458659336449
+        },
+        "wind_force": -40.0
+      }
+    },
+    {
+      "id": "complement-wind_p40-023",
+      "condition": "wind_p40",
+      "seed": 844023,
+      "suite": "complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "wind-base-023",
+      "options": {
+        "initial_state": {
+          "x": 0.038248865937929796,
+          "y": 11.996243470501732,
+          "vx": -0.09676232866322963,
+          "vy": -0.12392049191243504,
+          "theta": -0.011345134702886474,
+          "omega": -0.004558458659336449
+        },
+        "wind_force": 40.0
+      }
+    },
+    {
+      "id": "complement-wind_control-024",
+      "condition": "wind_control",
+      "seed": 444024,
+      "suite": "complement",
+      "exposure": "within_assisted_initial_support",
+      "paired_wind_id": "wind-base-024",
+      "options": {
+        "initial_state": {
+          "x": 0.01091922042048985,
+          "y": 10.25752612375275,
+          "vx": -0.061875794152912666,
+          "vy": -0.42674769709446947,
+          "theta": -0.029347348798369137,
+          "omega": 0.0014300688510506666
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "complement-wind_m20-024",
+      "condition": "wind_m20",
+      "seed": 544024,
+      "suite": "complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "wind-base-024",
+      "options": {
+        "initial_state": {
+          "x": 0.01091922042048985,
+          "y": 10.25752612375275,
+          "vx": -0.061875794152912666,
+          "vy": -0.42674769709446947,
+          "theta": -0.029347348798369137,
+          "omega": 0.0014300688510506666
+        },
+        "wind_force": -20.0
+      }
+    },
+    {
+      "id": "complement-wind_p20-024",
+      "condition": "wind_p20",
+      "seed": 644024,
+      "suite": "complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "wind-base-024",
+      "options": {
+        "initial_state": {
+          "x": 0.01091922042048985,
+          "y": 10.25752612375275,
+          "vx": -0.061875794152912666,
+          "vy": -0.42674769709446947,
+          "theta": -0.029347348798369137,
+          "omega": 0.0014300688510506666
+        },
+        "wind_force": 20.0
+      }
+    },
+    {
+      "id": "complement-wind_m40-024",
+      "condition": "wind_m40",
+      "seed": 744024,
+      "suite": "complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "wind-base-024",
+      "options": {
+        "initial_state": {
+          "x": 0.01091922042048985,
+          "y": 10.25752612375275,
+          "vx": -0.061875794152912666,
+          "vy": -0.42674769709446947,
+          "theta": -0.029347348798369137,
+          "omega": 0.0014300688510506666
+        },
+        "wind_force": -40.0
+      }
+    },
+    {
+      "id": "complement-wind_p40-024",
+      "condition": "wind_p40",
+      "seed": 844024,
+      "suite": "complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "wind-base-024",
+      "options": {
+        "initial_state": {
+          "x": 0.01091922042048985,
+          "y": 10.25752612375275,
+          "vx": -0.061875794152912666,
+          "vy": -0.42674769709446947,
+          "theta": -0.029347348798369137,
+          "omega": 0.0014300688510506666
+        },
+        "wind_force": 40.0
+      }
+    },
+    {
+      "id": "complement-wind_control-025",
+      "condition": "wind_control",
+      "seed": 444025,
+      "suite": "complement",
+      "exposure": "within_assisted_initial_support",
+      "paired_wind_id": "wind-base-025",
+      "options": {
+        "initial_state": {
+          "x": 0.17832924299225344,
+          "y": 11.834698185991034,
+          "vx": 0.07335290857125425,
+          "vy": -0.7004881600474526,
+          "theta": 0.01709194492319633,
+          "omega": -0.0006648944582158889
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "complement-wind_m20-025",
+      "condition": "wind_m20",
+      "seed": 544025,
+      "suite": "complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "wind-base-025",
+      "options": {
+        "initial_state": {
+          "x": 0.17832924299225344,
+          "y": 11.834698185991034,
+          "vx": 0.07335290857125425,
+          "vy": -0.7004881600474526,
+          "theta": 0.01709194492319633,
+          "omega": -0.0006648944582158889
+        },
+        "wind_force": -20.0
+      }
+    },
+    {
+      "id": "complement-wind_p20-025",
+      "condition": "wind_p20",
+      "seed": 644025,
+      "suite": "complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "wind-base-025",
+      "options": {
+        "initial_state": {
+          "x": 0.17832924299225344,
+          "y": 11.834698185991034,
+          "vx": 0.07335290857125425,
+          "vy": -0.7004881600474526,
+          "theta": 0.01709194492319633,
+          "omega": -0.0006648944582158889
+        },
+        "wind_force": 20.0
+      }
+    },
+    {
+      "id": "complement-wind_m40-025",
+      "condition": "wind_m40",
+      "seed": 744025,
+      "suite": "complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "wind-base-025",
+      "options": {
+        "initial_state": {
+          "x": 0.17832924299225344,
+          "y": 11.834698185991034,
+          "vx": 0.07335290857125425,
+          "vy": -0.7004881600474526,
+          "theta": 0.01709194492319633,
+          "omega": -0.0006648944582158889
+        },
+        "wind_force": -40.0
+      }
+    },
+    {
+      "id": "complement-wind_p40-025",
+      "condition": "wind_p40",
+      "seed": 844025,
+      "suite": "complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "wind-base-025",
+      "options": {
+        "initial_state": {
+          "x": 0.17832924299225344,
+          "y": 11.834698185991034,
+          "vx": 0.07335290857125425,
+          "vy": -0.7004881600474526,
+          "theta": 0.01709194492319633,
+          "omega": -0.0006648944582158889
+        },
+        "wind_force": 40.0
+      }
+    },
+    {
+      "id": "complement-wind_control-026",
+      "condition": "wind_control",
+      "seed": 444026,
+      "suite": "complement",
+      "exposure": "within_assisted_initial_support",
+      "paired_wind_id": "wind-base-026",
+      "options": {
+        "initial_state": {
+          "x": 0.2532849725146988,
+          "y": 10.253234634299218,
+          "vx": -0.06767853645698696,
+          "vy": -0.37694523098776445,
+          "theta": 0.011703793408250483,
+          "omega": -0.004527974462125827
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "complement-wind_m20-026",
+      "condition": "wind_m20",
+      "seed": 544026,
+      "suite": "complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "wind-base-026",
+      "options": {
+        "initial_state": {
+          "x": 0.2532849725146988,
+          "y": 10.253234634299218,
+          "vx": -0.06767853645698696,
+          "vy": -0.37694523098776445,
+          "theta": 0.011703793408250483,
+          "omega": -0.004527974462125827
+        },
+        "wind_force": -20.0
+      }
+    },
+    {
+      "id": "complement-wind_p20-026",
+      "condition": "wind_p20",
+      "seed": 644026,
+      "suite": "complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "wind-base-026",
+      "options": {
+        "initial_state": {
+          "x": 0.2532849725146988,
+          "y": 10.253234634299218,
+          "vx": -0.06767853645698696,
+          "vy": -0.37694523098776445,
+          "theta": 0.011703793408250483,
+          "omega": -0.004527974462125827
+        },
+        "wind_force": 20.0
+      }
+    },
+    {
+      "id": "complement-wind_m40-026",
+      "condition": "wind_m40",
+      "seed": 744026,
+      "suite": "complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "wind-base-026",
+      "options": {
+        "initial_state": {
+          "x": 0.2532849725146988,
+          "y": 10.253234634299218,
+          "vx": -0.06767853645698696,
+          "vy": -0.37694523098776445,
+          "theta": 0.011703793408250483,
+          "omega": -0.004527974462125827
+        },
+        "wind_force": -40.0
+      }
+    },
+    {
+      "id": "complement-wind_p40-026",
+      "condition": "wind_p40",
+      "seed": 844026,
+      "suite": "complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "wind-base-026",
+      "options": {
+        "initial_state": {
+          "x": 0.2532849725146988,
+          "y": 10.253234634299218,
+          "vx": -0.06767853645698696,
+          "vy": -0.37694523098776445,
+          "theta": 0.011703793408250483,
+          "omega": -0.004527974462125827
+        },
+        "wind_force": 40.0
+      }
+    },
+    {
+      "id": "complement-wind_control-027",
+      "condition": "wind_control",
+      "seed": 444027,
+      "suite": "complement",
+      "exposure": "within_assisted_initial_support",
+      "paired_wind_id": "wind-base-027",
+      "options": {
+        "initial_state": {
+          "x": -0.2987989335933116,
+          "y": 9.785928545059186,
+          "vx": -0.013774850569017017,
+          "vy": -0.1984743412505322,
+          "theta": -0.003590125516858851,
+          "omega": -0.002974736205143763
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "complement-wind_m20-027",
+      "condition": "wind_m20",
+      "seed": 544027,
+      "suite": "complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "wind-base-027",
+      "options": {
+        "initial_state": {
+          "x": -0.2987989335933116,
+          "y": 9.785928545059186,
+          "vx": -0.013774850569017017,
+          "vy": -0.1984743412505322,
+          "theta": -0.003590125516858851,
+          "omega": -0.002974736205143763
+        },
+        "wind_force": -20.0
+      }
+    },
+    {
+      "id": "complement-wind_p20-027",
+      "condition": "wind_p20",
+      "seed": 644027,
+      "suite": "complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "wind-base-027",
+      "options": {
+        "initial_state": {
+          "x": -0.2987989335933116,
+          "y": 9.785928545059186,
+          "vx": -0.013774850569017017,
+          "vy": -0.1984743412505322,
+          "theta": -0.003590125516858851,
+          "omega": -0.002974736205143763
+        },
+        "wind_force": 20.0
+      }
+    },
+    {
+      "id": "complement-wind_m40-027",
+      "condition": "wind_m40",
+      "seed": 744027,
+      "suite": "complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "wind-base-027",
+      "options": {
+        "initial_state": {
+          "x": -0.2987989335933116,
+          "y": 9.785928545059186,
+          "vx": -0.013774850569017017,
+          "vy": -0.1984743412505322,
+          "theta": -0.003590125516858851,
+          "omega": -0.002974736205143763
+        },
+        "wind_force": -40.0
+      }
+    },
+    {
+      "id": "complement-wind_p40-027",
+      "condition": "wind_p40",
+      "seed": 844027,
+      "suite": "complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "wind-base-027",
+      "options": {
+        "initial_state": {
+          "x": -0.2987989335933116,
+          "y": 9.785928545059186,
+          "vx": -0.013774850569017017,
+          "vy": -0.1984743412505322,
+          "theta": -0.003590125516858851,
+          "omega": -0.002974736205143763
+        },
+        "wind_force": 40.0
+      }
+    },
+    {
+      "id": "complement-wind_control-028",
+      "condition": "wind_control",
+      "seed": 444028,
+      "suite": "complement",
+      "exposure": "within_assisted_initial_support",
+      "paired_wind_id": "wind-base-028",
+      "options": {
+        "initial_state": {
+          "x": -0.19177959694781035,
+          "y": 8.84406098201737,
+          "vx": -0.06648880385951952,
+          "vy": -0.9510986432288778,
+          "theta": 0.020597397428497748,
+          "omega": 0.00014886991833998775
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "complement-wind_m20-028",
+      "condition": "wind_m20",
+      "seed": 544028,
+      "suite": "complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "wind-base-028",
+      "options": {
+        "initial_state": {
+          "x": -0.19177959694781035,
+          "y": 8.84406098201737,
+          "vx": -0.06648880385951952,
+          "vy": -0.9510986432288778,
+          "theta": 0.020597397428497748,
+          "omega": 0.00014886991833998775
+        },
+        "wind_force": -20.0
+      }
+    },
+    {
+      "id": "complement-wind_p20-028",
+      "condition": "wind_p20",
+      "seed": 644028,
+      "suite": "complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "wind-base-028",
+      "options": {
+        "initial_state": {
+          "x": -0.19177959694781035,
+          "y": 8.84406098201737,
+          "vx": -0.06648880385951952,
+          "vy": -0.9510986432288778,
+          "theta": 0.020597397428497748,
+          "omega": 0.00014886991833998775
+        },
+        "wind_force": 20.0
+      }
+    },
+    {
+      "id": "complement-wind_m40-028",
+      "condition": "wind_m40",
+      "seed": 744028,
+      "suite": "complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "wind-base-028",
+      "options": {
+        "initial_state": {
+          "x": -0.19177959694781035,
+          "y": 8.84406098201737,
+          "vx": -0.06648880385951952,
+          "vy": -0.9510986432288778,
+          "theta": 0.020597397428497748,
+          "omega": 0.00014886991833998775
+        },
+        "wind_force": -40.0
+      }
+    },
+    {
+      "id": "complement-wind_p40-028",
+      "condition": "wind_p40",
+      "seed": 844028,
+      "suite": "complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "wind-base-028",
+      "options": {
+        "initial_state": {
+          "x": -0.19177959694781035,
+          "y": 8.84406098201737,
+          "vx": -0.06648880385951952,
+          "vy": -0.9510986432288778,
+          "theta": 0.020597397428497748,
+          "omega": 0.00014886991833998775
+        },
+        "wind_force": 40.0
+      }
+    },
+    {
+      "id": "complement-wind_control-029",
+      "condition": "wind_control",
+      "seed": 444029,
+      "suite": "complement",
+      "exposure": "within_assisted_initial_support",
+      "paired_wind_id": "wind-base-029",
+      "options": {
+        "initial_state": {
+          "x": -0.10816109353103906,
+          "y": 12.362424008674102,
+          "vx": 0.0013046077651203136,
+          "vy": -0.3151856421589062,
+          "theta": -0.009936391427141644,
+          "omega": 0.002998386952845066
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "complement-wind_m20-029",
+      "condition": "wind_m20",
+      "seed": 544029,
+      "suite": "complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "wind-base-029",
+      "options": {
+        "initial_state": {
+          "x": -0.10816109353103906,
+          "y": 12.362424008674102,
+          "vx": 0.0013046077651203136,
+          "vy": -0.3151856421589062,
+          "theta": -0.009936391427141644,
+          "omega": 0.002998386952845066
+        },
+        "wind_force": -20.0
+      }
+    },
+    {
+      "id": "complement-wind_p20-029",
+      "condition": "wind_p20",
+      "seed": 644029,
+      "suite": "complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "wind-base-029",
+      "options": {
+        "initial_state": {
+          "x": -0.10816109353103906,
+          "y": 12.362424008674102,
+          "vx": 0.0013046077651203136,
+          "vy": -0.3151856421589062,
+          "theta": -0.009936391427141644,
+          "omega": 0.002998386952845066
+        },
+        "wind_force": 20.0
+      }
+    },
+    {
+      "id": "complement-wind_m40-029",
+      "condition": "wind_m40",
+      "seed": 744029,
+      "suite": "complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "wind-base-029",
+      "options": {
+        "initial_state": {
+          "x": -0.10816109353103906,
+          "y": 12.362424008674102,
+          "vx": 0.0013046077651203136,
+          "vy": -0.3151856421589062,
+          "theta": -0.009936391427141644,
+          "omega": 0.002998386952845066
+        },
+        "wind_force": -40.0
+      }
+    },
+    {
+      "id": "complement-wind_p40-029",
+      "condition": "wind_p40",
+      "seed": 844029,
+      "suite": "complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "wind-base-029",
+      "options": {
+        "initial_state": {
+          "x": -0.10816109353103906,
+          "y": 12.362424008674102,
+          "vx": 0.0013046077651203136,
+          "vy": -0.3151856421589062,
+          "theta": -0.009936391427141644,
+          "omega": 0.002998386952845066
+        },
+        "wind_force": 40.0
+      }
+    },
+    {
+      "id": "complement-wind_control-030",
+      "condition": "wind_control",
+      "seed": 444030,
+      "suite": "complement",
+      "exposure": "within_assisted_initial_support",
+      "paired_wind_id": "wind-base-030",
+      "options": {
+        "initial_state": {
+          "x": 0.14340541831292705,
+          "y": 9.756895055086925,
+          "vx": 0.0725450273060652,
+          "vy": -0.7447273384808354,
+          "theta": -0.028095060117995677,
+          "omega": -0.004491339397793879
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "complement-wind_m20-030",
+      "condition": "wind_m20",
+      "seed": 544030,
+      "suite": "complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "wind-base-030",
+      "options": {
+        "initial_state": {
+          "x": 0.14340541831292705,
+          "y": 9.756895055086925,
+          "vx": 0.0725450273060652,
+          "vy": -0.7447273384808354,
+          "theta": -0.028095060117995677,
+          "omega": -0.004491339397793879
+        },
+        "wind_force": -20.0
+      }
+    },
+    {
+      "id": "complement-wind_p20-030",
+      "condition": "wind_p20",
+      "seed": 644030,
+      "suite": "complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "wind-base-030",
+      "options": {
+        "initial_state": {
+          "x": 0.14340541831292705,
+          "y": 9.756895055086925,
+          "vx": 0.0725450273060652,
+          "vy": -0.7447273384808354,
+          "theta": -0.028095060117995677,
+          "omega": -0.004491339397793879
+        },
+        "wind_force": 20.0
+      }
+    },
+    {
+      "id": "complement-wind_m40-030",
+      "condition": "wind_m40",
+      "seed": 744030,
+      "suite": "complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "wind-base-030",
+      "options": {
+        "initial_state": {
+          "x": 0.14340541831292705,
+          "y": 9.756895055086925,
+          "vx": 0.0725450273060652,
+          "vy": -0.7447273384808354,
+          "theta": -0.028095060117995677,
+          "omega": -0.004491339397793879
+        },
+        "wind_force": -40.0
+      }
+    },
+    {
+      "id": "complement-wind_p40-030",
+      "condition": "wind_p40",
+      "seed": 844030,
+      "suite": "complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "wind-base-030",
+      "options": {
+        "initial_state": {
+          "x": 0.14340541831292705,
+          "y": 9.756895055086925,
+          "vx": 0.0725450273060652,
+          "vy": -0.7447273384808354,
+          "theta": -0.028095060117995677,
+          "omega": -0.004491339397793879
+        },
+        "wind_force": 40.0
+      }
+    },
+    {
+      "id": "complement-wind_control-031",
+      "condition": "wind_control",
+      "seed": 444031,
+      "suite": "complement",
+      "exposure": "within_assisted_initial_support",
+      "paired_wind_id": "wind-base-031",
+      "options": {
+        "initial_state": {
+          "x": 0.24938821631308786,
+          "y": 12.861752002416788,
+          "vx": 0.04124567211682639,
+          "vy": -0.5527335011291151,
+          "theta": 0.011621498069549789,
+          "omega": -0.0004917542957004462
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "complement-wind_m20-031",
+      "condition": "wind_m20",
+      "seed": 544031,
+      "suite": "complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "wind-base-031",
+      "options": {
+        "initial_state": {
+          "x": 0.24938821631308786,
+          "y": 12.861752002416788,
+          "vx": 0.04124567211682639,
+          "vy": -0.5527335011291151,
+          "theta": 0.011621498069549789,
+          "omega": -0.0004917542957004462
+        },
+        "wind_force": -20.0
+      }
+    },
+    {
+      "id": "complement-wind_p20-031",
+      "condition": "wind_p20",
+      "seed": 644031,
+      "suite": "complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "wind-base-031",
+      "options": {
+        "initial_state": {
+          "x": 0.24938821631308786,
+          "y": 12.861752002416788,
+          "vx": 0.04124567211682639,
+          "vy": -0.5527335011291151,
+          "theta": 0.011621498069549789,
+          "omega": -0.0004917542957004462
+        },
+        "wind_force": 20.0
+      }
+    },
+    {
+      "id": "complement-wind_m40-031",
+      "condition": "wind_m40",
+      "seed": 744031,
+      "suite": "complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "wind-base-031",
+      "options": {
+        "initial_state": {
+          "x": 0.24938821631308786,
+          "y": 12.861752002416788,
+          "vx": 0.04124567211682639,
+          "vy": -0.5527335011291151,
+          "theta": 0.011621498069549789,
+          "omega": -0.0004917542957004462
+        },
+        "wind_force": -40.0
+      }
+    },
+    {
+      "id": "complement-wind_p40-031",
+      "condition": "wind_p40",
+      "seed": 844031,
+      "suite": "complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "wind-base-031",
+      "options": {
+        "initial_state": {
+          "x": 0.24938821631308786,
+          "y": 12.861752002416788,
+          "vx": 0.04124567211682639,
+          "vy": -0.5527335011291151,
+          "theta": 0.011621498069549789,
+          "omega": -0.0004917542957004462
+        },
+        "wind_force": 40.0
+      }
+    }
+  ]
+}

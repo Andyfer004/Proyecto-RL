@@ -32,6 +32,10 @@ def evaluate(agent, env_config, manifest, render=False, trace=False):
             observation, info = env.reset(seed=scenario["seed"], options=scenario["options"])
             initial, total, steps = info["state"], 0.0, 0
             parts = {}
+            discounted = 0.0
+            max_height = info["state"]["y"]
+            gas_empty = False
+            first_gas_empty = None
             if trace:
                 traces.append({"scenario_id": scenario["id"], "condition": scenario["condition"],
                                "time": 0.0, **initial, "action": "", "outcome": "flying"})
@@ -42,6 +46,11 @@ def evaluate(agent, env_config, manifest, render=False, trace=False):
                 observation, reward, terminated, truncated, info = env.step(action)
                 total += reward
                 steps += 1
+                discounted += getattr(agent.config, 'gamma', .99) ** (steps - 1) * reward
+                max_height = max(max_height, info["state"]["y"])
+                if info["state"]["gas"] <= 1e-8:
+                    gas_empty = True
+                    if first_gas_empty is None: first_gas_empty = info["time"]
                 for key, value in info["reward_components"].items():
                     parts[key] = parts.get(key, 0.0) + float(value)
                 if trace:
@@ -49,7 +58,10 @@ def evaluate(agent, env_config, manifest, render=False, trace=False):
                                    "time": info["time"], **info["state"], "action": action, "outcome": info["outcome"]})
                 if terminated or truncated:
                     row = episode_metrics(info, initial, total, steps, scenario, agent.config.algorithm, manifest["split"])
-                    row.update(terminated=terminated, truncated=truncated)
+                    from .training_telemetry import outcome_details
+                    row.update(terminated=terminated, truncated=truncated, source_level=scenario.get("source_level", 0),
+                               discounted_return=discounted,max_center_height_m=max_height,first_gas_empty_s=first_gas_empty,
+                               **{**outcome_details(info,env),"gas_exhausted":gas_empty})
                     row.update({"reward_" + key: value for key, value in parts.items()})
                     rows.append(row)
                     break

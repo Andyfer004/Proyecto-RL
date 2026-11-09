@@ -1,0 +1,27 @@
+{
+  "python": "3.12.12 (main, Oct  9 2025, 11:07:00) [Clang 17.0.0 (clang-1700.6.3.2)]",
+  "platform": "macOS-15.6.1-arm64-arm-64bit",
+  "torch": "2.15.0",
+  "numpy": "2.5.4",
+  "gymnasium": "1.4.0",
+  "device": "cpu",
+  "git_head": "27f42e7a84e6d8d3bea69745479a5949209879cc",
+  "working_tree_was_dirty_before_intervention": true,
+  "sha256": {
+    "scripts/evaluate_recovery.py": "44177f1b8c41908c372b54b7c6625a97bda58a86011cf3d6dc96e7eef90e9a23",
+    "scripts/run_recovery.py": "42bc1995fa9de59333d07763f7efac348a4e299b1896e68bc66f93801e666b12",
+    "scripts/collect_recovery_demos.py": "364f65c1cc11a56c0c249133eb94366039fba9bcba890890066ef5d391160818",
+    "scripts/report_recovery_coverage.py": "8a612f62f628ebdf696450e9dec6a5d11cc34cce39bcbb83978edaad9e244dc9",
+    "scripts/benchmark_recovery_cartpole.py": "f15088bd7b9ea9923a72d023f5b0c7262f645fccd224f79a027ed4e95f682926",
+    "scripts/audit_recovery.py": "c5f6ed8d404eea360e1e04624021ed828dc2b5625a61885427b0bfcfd07913a3",
+    "scripts/check_recovery_env.py": "2ef4d0dfe6a474d7bc4e00097190b98582fbd7b576d3f5e9b8f78680d60aee90",
+    "scripts/recovery_pytest_budget.py": "7970e023fe7c9d1678ae8192e97c351a09efe73610a7817c97c73a6440611ba6",
+    "scripts/train_recovery.py": "6919bb19c4d1f360a014564cfd92b8325f7dfb2118a001eb30a6cee6bb0920c4",
+    "scripts/report_recovery.py": "3100a655e70bb202f78cf70f0b9c6c5aa7ecdd22db3968dbef4c6d26f374d882",
+    "scripts/run_recovery_coverage.py": "20c9ac0e09abfff722bcf2200a300c7dacdaabb552f4ece29a133ba62f3fd774",
+    "src/thruster_landing/recovery_budget.py": "9d79a2cd6c8bb6ea1c2f57ef2c06add97c38710777fd9b81146dcde1260744dd",
+    "src/thruster_landing/recovery_agent.py": "f0866394ea44bd1a52479a1ad2c322b4013a193eec268dbfce66a43524e2c562",
+    "src/thruster_landing/recovery_evaluation.py": "6cd1c86919f1fea732a8824ce80cdc42d7dd4bb0252aa09e4e99fc57254a129c",
+    "tests/test_recovery.py": "0091c4841ad6155eaaf0e40b4fd90ac7a4fa9ad1dac533564c98c6c7a2e5340e"
+  }
+}

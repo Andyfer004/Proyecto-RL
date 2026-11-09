@@ -1,0 +1,49 @@
+{
+  "experiment_id": "replay150k_weighted_seed42_100k_v1",
+  "seed": 42,
+  "methods": [
+    "weighted_variant"
+  ],
+  "algorithms": [
+    "dqn",
+    "double_dqn"
+  ],
+  "steps_per_run": 100000,
+  "start": "All four runs from scratch; no extension of old curriculum checkpoints. Same flat level1 scenario selector and RNG seed142 for all runs.",
+  "train_manifest": "configs/level1_train_scenarios.json",
+  "validation_manifest": "configs/curriculum_validation_scenarios.json",
+  "validation_selection_level": 1,
+  "validation_frequency": 10000,
+  "export_all_validations": true,
+  "decision_logging": true,
+  "uniform_probabilities": [
+    0.125,
+    0.125,
+    0.125,
+    0.125,
+    0.125,
+    0.125,
+    0.125,
+    0.125
+  ],
+  "weighted_probabilities": [
+    0.35,
+    0.15,
+    0.025,
+    0.025,
+    0.35,
+    0.025,
+    0.025,
+    0.05
+  ],
+  "epsilon": "Unchanged: warmup1000; epsilon1 to0.1 over80000 steps after warmup; floor0.1 from81000. Per-decision Bernoulli gate.",
+  "state_dependency": "Exploration distribution independent of observation and history, freshly sampled each decision. Greedy argmax depends on observation. No persistence, no extra policy state or replay state.",
+  "data_sources": "Physical catalog only; no PID decisions, demonstrations, future information or test data. Training only existing128 L1 cases.",
+  "validation": "Initial and every10k: greedy existing128 reserved cases (32 each L1/L2/L3/original), no update or RNG consumption. No final test.",
+  "checkpoint_rule": "L1 max success fraction, then min mean absolute x of successful landings, then earliest; initial excluded.",
+  "comparison": "Only replay capacity changes from the weighted 50k-capacity reference. Both algorithms fresh;100k each. Verify exact prefix through50000 before continuing. Passive exposure labels never affect sampling.",
+  "telemetry": "Record mode from actual sampled gate, not from equality to argmax. Diagnostic labels never influence decisions. Histograms by mode, first success, retained successful terminal transitions, gas-empty and contact state.",
+  "other_changes": false,
+  "replay_capacity_audit": true,
+  "capacity": 150000
+}

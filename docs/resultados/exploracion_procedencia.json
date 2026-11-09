@@ -1,0 +1,65 @@
+{
+  "experiment_id": "exploration_comparison_level1_seed42_100k_v1",
+  "execution_manifest_sha256": "6d5ca6da81a6a50994c4368bbf10a1b83c8c161a4bc40b0b7f5d7a73b312af2d",
+  "integrity_sha256": "2d07763e2bdb8e7b0eeb750df298068d3683634c11e6c6fea9f55cd89fdcae03",
+  "files": {
+    "docs/resultados/exploracion_resultados.csv": {
+      "source": "artifacts/exploration_comparison_level1_seed42_100k_v1/report/results.csv",
+      "sha256": "419e6772469dd2d204d2a620d32ad7d1ae251012bffee154a69122d7eb11daf4"
+    },
+    "docs/resultados/exploracion_validacion.csv": {
+      "source": "artifacts/exploration_comparison_level1_seed42_100k_v1/report/validation_progress.csv",
+      "sha256": "a4fe673fa20fe81d26c550ee955845d9b0da3bbd85568d4f155ca8bc8856896d"
+    },
+    "docs/resultados/exploracion_presupuesto_igual.csv": {
+      "source": "artifacts/exploration_comparison_level1_seed42_100k_v1/report/matched_budget.csv",
+      "sha256": "00d6280f75dc49b5e14102427cbbc2c08b945a163ca9aceced39a18d5da7d125"
+    },
+    "docs/resultados/exploracion_exitos_entrenamiento.csv": {
+      "source": "artifacts/exploration_comparison_level1_seed42_100k_v1/report/training_successes.csv",
+      "sha256": "1a78b34511f1a92bb9d59eb6e6bb4d54a80bc556d40ee9a276e99281e682593f"
+    },
+    "docs/resultados/exploracion_contactos.csv": {
+      "source": "artifacts/exploration_comparison_level1_seed42_100k_v1/report/contact_metrics.csv",
+      "sha256": "44fc22553c92532eba694b2b99114b840f83f05b2056a5ae2a42e7d80987f925"
+    },
+    "docs/resultados/exploracion_resultados_por_causa.csv": {
+      "source": "artifacts/exploration_comparison_level1_seed42_100k_v1/report/by_outcome.csv",
+      "sha256": "e010a4e5a464b5e54a519edaab6202e703084d0deda1887a010fee5d24c4c5e0"
+    },
+    "docs/resultados/exploracion_tiempos.csv": {
+      "source": "artifacts/exploration_comparison_level1_seed42_100k_v1/report/timings.csv",
+      "sha256": "f6016e37bd11b3641590ed1cf8f4425fa42c47fb4121568fe90e58b3b9be0e52"
+    },
+    "docs/resultados/exploracion_curvas.png": {
+      "source": "artifacts/exploration_comparison_level1_seed42_100k_v1/report/learning_curves.png",
+      "sha256": "f51c34523ddb16b64448865924c89be6ed037881a3fec8648d567123513c089c"
+    },
+    "docs/resultados/exploracion_trayectorias.png": {
+      "source": "artifacts/exploration_comparison_level1_seed42_100k_v1/report/fixed_final_trajectories.png",
+      "sha256": "4f96da64297be9e3d7081fc2112e3e624ed5abdb41da55ccf357d4a0eda4e68c"
+    },
+    "docs/resultados/exploracion_estados.png": {
+      "source": "artifacts/exploration_comparison_level1_seed42_100k_v1/report/fixed_final_states.png",
+      "sha256": "a38225ad8aea1ecbc139ba716efcb9e9f26d07025e8553f72e40f5606efd383d"
+    },
+    "docs/resultados/exploracion_ejemplos_entrenamiento.png": {
+      "source": "artifacts/exploration_comparison_level1_seed42_100k_v1/report/first_training_success_and_failure.png",
+      "sha256": "e5dcd510860630921750da55dee45837c56c7f718d53844816979dabaa6b0d97"
+    },
+    "docs/resultados/exploracion_acciones.csv": {
+      "source": "artifacts/exploration_comparison_level1_seed42_100k_v1/report/action_frequencies.csv",
+      "filter": "scope=='training'",
+      "sha256": "b4c1830d2c02ab304815d87361b1745fb49d7acfff9faabc4f29cf20b71b9f81"
+    },
+    "docs/resultados/exploracion_q_td.csv": {
+      "source": "artifacts/exploration_comparison_level1_seed42_100k_v1/diagnostics/summary.csv",
+      "sha256": "61614b6a86c5cab8df362e2e87735fb67bade27f805b4d168c5699293cd84fb3"
+    },
+    "docs/resultados/exploracion_gradientes.csv": {
+      "source": "artifacts/exploration_comparison_level1_seed42_100k_v1/diagnostics/gradients.csv",
+      "filter": "Own replay per model, aggregate128 minibatches, cosine from batches.csv",
+      "sha256": "75b9e1941f174851a336381ee6fa8aa34f2b79162a9580191a0ffb8e61586a60"
+    }
+  }
+}

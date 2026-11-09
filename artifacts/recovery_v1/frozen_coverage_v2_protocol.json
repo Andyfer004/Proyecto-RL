@@ -1,0 +1,10 @@
+{
+  "sha256": {
+    "configs/recovery_v2_train_scenarios.json": "f4743eadff8a67e9552ce1db3a2a849207da0b9bae60968d14ff7e6ee076c77a",
+    "configs/recovery_v2_development_scenarios.json": "c0950b9522e71443e89852efc4b164c7ed28734fad7b46e4ef96b4043b01ce8f",
+    "configs/recovery_v2_check_scenarios.json": "2205d8fe4efafed13785eeec496ec00f4ee7642919d271f14d28b0f183b82b31",
+    "configs/recovery_assisted_v2.json": "8d139aaeb84cedefee959b338c2f3e7415f8960775e45a2b26418790b162fa4d"
+  },
+  "reason": "Second/final intervention: original validation0/32 and height outside first teacher support. New agent from scratch; no reuse/tuning of v1 check set. Same losses/observation mapping/hyperparameters; only train support changes plus matching grouped development goal.",
+  "goal": ">=80percent EACH group in3consecutive online dev evaluations; new check locked until policy useful."
+}

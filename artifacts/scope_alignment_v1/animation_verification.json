@@ -1,0 +1,32 @@
+{
+  "replay_from_saved_states": true,
+  "new_environment_steps": 0,
+  "SDL_driver": "dummy",
+  "real_keyboard_verified": false,
+  "animations": [
+    {
+      "file": "artifacts/scope_alignment_v1/final/dqn_assisted42.complement-wind_p40-000.gif",
+      "frames": 53,
+      "size": [
+        630,
+        560
+      ]
+    },
+    {
+      "file": "artifacts/scope_alignment_v1/final/double_assisted42.complement-wind_p40-000.gif",
+      "frames": 53,
+      "size": [
+        630,
+        560
+      ]
+    },
+    {
+      "file": "artifacts/scope_alignment_v1/final/pid.complement-wind_p40-000.gif",
+      "frames": 55,
+      "size": [
+        630,
+        560
+      ]
+    }
+  ]
+}

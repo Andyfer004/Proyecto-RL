@@ -1,3 +1,5 @@
+> Estado entregable actual: [informe_final.md](informe_final.md), [evaluacion_alcance.md](evaluacion_alcance.md) y [demostracion.md](demostracion.md). Lo que sigue conserva el registro histórico de cada etapa; sus afirmaciones de pendientes o versiones se refieren a esas fechas.
+
 # Verificación ejecutada — 2 de noviembre de 2026
 
 > Archivo técnico de una etapa del proyecto. Las rutas `artifacts/` citadas son

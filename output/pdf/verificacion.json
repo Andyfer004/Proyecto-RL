@@ -1,0 +1,17 @@
+{
+  "file": "informe_final.pdf",
+  "pages": 23,
+  "sections": 13,
+  "math_expressions": 79,
+  "tables": 11,
+  "format": "Plantilla UVG;article12pt,A4,margins2.5cm,mathpazo",
+  "all_pages_rendered": true,
+  "overfull_boxes": 0,
+  "missing_glyphs": 0,
+  "acceptance_note_removed": true,
+  "assistance_methodology_preserved": true,
+  "frozen_experiment_hashes_verified": true,
+  "new_training": false,
+  "new_evaluation": false,
+  "sha256": "bc36dd19fe82569cbc33960aa16a4d2ff6310542d481cc113229cfb1ef917b7b"
+}

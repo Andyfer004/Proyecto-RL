@@ -1,0 +1,10 @@
+{
+  "sha256": {
+    "configs/recovery_train_scenarios.json": "c4025ba241cf5033d177c7009a1dea94116d8141142be2185779e73cc9b00975",
+    "configs/recovery_development_scenarios.json": "b1234a715e64a6953827a83fca39acdb8fd90deebb59cd58a328cf5d59b23290",
+    "configs/recovery_check_scenarios.json": "c24e44aa53d39c3687f09640e81dcb03460100ddd85f05a46291fd048010f7e3",
+    "configs/recovery_assisted_v1.json": "184b56408489d180a88dc7838ecfb73809e9504f151d8defc52492f0459d1c78"
+  },
+  "development": "Fixed before any candidate training.64cases threshold80percent for3successive online validations at10k intervals. Check64 locked until useful policy; no tuning after check results.",
+  "candidate": "Intervention1: demonstration-assisted DQN, no PER; DQN first; Double DQN only after evidence; optional secondseed if budget."
+}

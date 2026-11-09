@@ -1,0 +1,18 @@
+{
+  "checkpoint": "artifacts/recovery_v1/dqn_assisted_seed43/last.policy.pt",
+  "checkpoint_metadata": {
+    "phase": "online",
+    "aspirational_goal": true,
+    "streak": 3,
+    "assisted": true,
+    "teacher_actions_at_eval": false
+  },
+  "manifest": "configs/recovery_development_scenarios.json",
+  "loaded_online_steps": 30000,
+  "assisted": true,
+  "teacher_calls": 0,
+  "exploration": false,
+  "updates_during_evaluation": 0,
+  "successes": 54,
+  "episodes": 64
+}

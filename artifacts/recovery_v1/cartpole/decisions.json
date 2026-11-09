@@ -1,0 +1,31 @@
+{
+  "project_config": {
+    "algorithm": "dqn",
+    "seed": 42,
+    "device": "cpu",
+    "learning_rate": 0.0003,
+    "gamma": 0.99,
+    "buffer_capacity": 10000,
+    "batch_size": 128,
+    "learning_starts": 1000,
+    "train_frequency": 1,
+    "target_update_frequency": 500,
+    "epsilon_start": 0.9,
+    "epsilon_end": 0.01,
+    "epsilon_decay_steps": 10000,
+    "total_steps": 50000,
+    "validation_frequency": 5000,
+    "checkpoint_frequency": 5000,
+    "log_frequency": 100,
+    "gradient_norm_limit": 10.0,
+    "hidden_sizes": [
+      128,
+      128
+    ],
+    "torch_threads": 1,
+    "detailed_validation": false,
+    "smooth_l1_beta": 1.0
+  },
+  "reference": "Independent adaptation of https://docs.pytorch.org/tutorials/intermediate/reinforcement_q_learning.html ; AdamW amsgrad3e-4, soft tau.005, exponential epsilon2500; no shared learner/replay/target functions.",
+  "train_budget_per_method": 50000
+}

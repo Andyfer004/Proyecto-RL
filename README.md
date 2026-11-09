@@ -1,136 +1,99 @@
-# Thruster Landing
+# Thruster Landing — versión entregable 1
 
-Proyecto universitario de control de aterrizaje de un cuerpo rígido **2D**, con
-propulsores discretos y gas limitado. Incluye física propia, entorno Gymnasium,
-renderizado, PID en cascada y agentes DQN/Double DQN. No es una adaptación de
-LunarLander ni un modelo de vuelo 3D.
+[**Abrir el informe completo en PDF (23 páginas)**](output/pdf/informe_final.pdf)
 
-El PID obtuvo **31/32 en validación y 98/100 en la prueba reservada documentada**.
-Los pilotos RL **no demostraron aterrizajes**, ni en entrenamiento ni en
-validación. No se ejecutó la prueba final RL ni una campaña de varias semillas.
-Las tasas PID y RL pertenecen a manifiestos distintos y no permiten afirmar
-superioridad mediante una comparación directa.
+Simulador académico propio **2D** de estabilización y aterrizaje con propulsores discretos, gas limitado y viento horizontal. La inspiración Tesla Roadster es conceptual: física y parámetros son propios, sin equivalencia comercial, hardware ni extensión a 3D.
+
+El [informe final técnico y matemático](docs/informe_final.md) explica dinámica, PID, recompensa, DQN/Double DQN, demostraciones, protocolo y límites. La [matriz de trazabilidad](docs/trazabilidad_alcance.md) contrasta el alcance original con evidencia real. La [demostración](docs/demostracion.md) y su [galería offline](docs/demostracion.html) reproducen estados guardados, sin entrenar ni reevaluar.
+
+## Resultados congelados
+
+| Método principal | Reservados | Complementarios |
+|---|---:|---:|
+| PID puro | 98/100 | 287/288 |
+| DQN asistido por demostraciones PID | 96/100 | 275/288 |
+| Double DQN asistido por demostraciones PID | 94/100 | 266/288 |
+| DQN desde cero, checkpoint seleccionado | 0/100 | 0/288 |
+| Double DQN desde cero, checkpoint seleccionado | 0/100 | 0/288 |
+
+Las políticas funcionales combinan **imitación y TD**; durante inferencia actúa exclusivamente la red. **No se aisló el beneficio de las actualizaciones TD frente a la imitación por sí sola**. La asistencia es una ampliación metodológica adicional al enfoque inicial. PID tuvo mayor éxito entre los métodos principales. No se demostró adaptación automática, superioridad general ni menor coste computacional de las redes.
+
+Se conservaron 100 casos reservados y 288 complementarios independientes con altura, desplazamiento, inclinación, velocidades y viento. El PID ya había sido evaluado en los 100 históricos. La segunda semilla DQN asistida dio 100/100 y 277/288; no se eligió retrospectivamente como candidata principal ni equivale a una campaña equilibrada de semillas. El [informe experimental](docs/evaluacion_alcance.md) incluye todos los grupos, causas de fallo y consumo sobre éxitos/fracasos y pares comunes.
+
+**La prueba final ya fue ejecutada y los modelos están congelados.** Este cierre no añade entrenamiento ni reajustes. Cualquier intervención posterior exige otro experimento y evaluación independiente.
 
 ## Instalación
 
-Desde la raíz, con Python 3.12 (entorno verificado: 3.12.12, CPU):
+Desde la raíz del proyecto, con Python3.12 (entorno verificado3.12.12, macOS arm 64, CPU):
 
-```bash
+```sh
 python3.12 -m venv .venv
 source .venv/bin/activate
 python -m pip install -e '.[dev,render,rl,analysis]'
-python -m pytest
-python scripts/check_env.py
 python -m pip check
 ```
 
-Para simulación y PID sin gráficos basta `python -m pip install -e '.[dev]'`.
-`render` instala pygame-ce; `rl`, PyTorch; `analysis`, Pandas y Matplotlib.
-No instales pygame y pygame-ce simultáneamente. El paquete admite Python
-3.11–3.14; solo se verificó 3.12. Las versiones exactas del entorno local están en
-[configs/requirements-stage3.txt](configs/requirements-stage3.txt):
+Las versiones de la evidencia están fijadas en [requirements-stage3.txt](configs/requirements-stage3.txt): PyTorch2.15.0, NumPy2.5.4, Gymnasium1.4.0, pandas3.1.0, Matplotlib3.11.2, pygame-ce2.5.8 y Pillow13.0.0. Para reproducir ese entorno compatible:
 
-```bash
+```sh
 python -m pip install -r configs/requirements-stage3.txt
 python -m pip install --no-deps -e .
 ```
 
-## Simulador y PID
+El paquete declara Python3.11–3.14; solo se verificó3.12. El modo básico sin redes/gráficos necesita únicamente dependencias base; la entrega completa usa los extras anteriores. No instalar pygame y pygame-ce simultáneamente.
 
-Estos comandos funcionan sin checkpoints ni resultados previos:
+## Demostración sin entrenamiento
 
-```bash
-python scripts/play.py --controller random --episodes 10 --seed 42 --output artifacts/random_new.csv
-python scripts/play.py --controller random --config configs/env_wind.json --episodes 10 --seed 42 --output artifacts/wind_new.csv
-python scripts/play.py --controller pid --config configs/env.json --pid-config configs/pid.json --scenarios configs/pid_validation_scenarios.json --trace --output artifacts/pid_validation_new.csv
-python scripts/plot_pid.py artifacts/pid_validation_new.csv
-python scripts/play.py --controller pid --pid-config configs/pid.json --scenarios configs/pid_validation_scenarios.json --episodes 3 --render --output artifacts/pid_visual_new.csv
-python scripts/play.py --controller manual --episodes 3 --output artifacts/manual_new.csv
+1. Abrir `docs/demostracion.html` directamente en un navegador: usa GIF locales y figuras ya guardadas.
+2. Comprobar que el clon incluye la evidencia pública, sus hashes y las cifras, sin simular ni optimizar:
+
+```sh
+.venv/bin/python scripts/verify_repository.py
 ```
 
-Sin `--render` se ejecuta sin gráficos; el modo manual requiere ventana y teclado.
-También está disponible `thruster-play`. Espacio activa el propulsor central;
-izquierda/derecha inclinan; combinadas con espacio activan central y lateral;
-ambas flechas activan los laterales y arriba todos. Esc o cerrar interrumpe sin
-contar el episodio incompleto. No se verificó interacción con teclado físico.
+3. Opcionalmente, reconstruir tablas/figuras o GIF desde CSV, sin nuevos pasos físicos:
 
-Los manifiestos fijan semillas y estados; sin `--episodes` se ejecutan todos los
-casos. `--trace` añade estados y consignas por paso; se generan resumen y metadatos.
-Usa rutas nuevas: la ejecución visual puede sobrescribir una salida existente.
-La prueba PID documentada usa `configs/pid_test_scenarios.json`, separado del
-ajuste; no lo uses para retocar parámetros y afirmar otra prueba independiente.
-El [informe PID](docs/pid.md) detalla reproducción, ecuaciones y limitaciones.
-
-## Entrenamiento y evaluación RL
-
-Ejemplos para una ejecución futura desde cero; **no se han ejecutado nuevos
-experimentos al preparar esta publicación**. Los directorios deben ser nuevos.
-Los comandos de evaluación usan el checkpoint creado por el entrenamiento del
-mismo bloque; no dependen de pesos incluidos en GitHub.
-
-```bash
-python scripts/train.py --config configs/dqn.json --output artifacts/dqn_new
-python scripts/train.py --config configs/double_dqn.json --output artifacts/double_dqn_new
-python scripts/evaluate.py --checkpoint artifacts/dqn_new/last.policy.pt --scenarios configs/rl_validation_scenarios.json --trace --output artifacts/dqn_new_validation.csv
-python scripts/plot_training.py artifacts/dqn_new artifacts/double_dqn_new --output artifacts/new_curves.png
-python scripts/play.py --controller dqn --checkpoint artifacts/dqn_new/last.policy.pt --scenarios configs/rl_validation_scenarios.json --episodes 3 --render --output artifacts/dqn_new_visual.csv
+```sh
+.venv/bin/python scripts/report_scope.py
+.venv/bin/python scripts/animate_scope.py
 ```
 
-Los configs básicos fijan 10 000 pasos por algoritmo, semilla 42, CPU y MLP
-128/128. Hay escenarios separados para entrenamiento y validación; los scripts
-RL bloquean la prueba final. Se comprueba la referencia física/PID mediante hashes.
-`.policy.pt` sirve para inferencia; `.resume.pt` contiene Adam, replay, RNG y el
-episodio vivo. Para reanudar con presupuesto **total** de 20 000 pasos:
+Las animaciones RGB se exportaron bajo SDL dummy. El script congelado asigna ese driver por defecto incluso con `--human`; por ello ese comando solo no certifica ventana real. La incidencia y una opción de driver explícito están en [demostracion.md](docs/demostracion.md). Teclado/ventana reales siguen sin verificarse.
 
-```bash
-python scripts/train.py --config configs/dqn.json --resume artifacts/dqn_new/last.resume.pt --total-steps 20000 --output artifacts/dqn_continued
+## Entrega y reproducción
+
+La guía [entrega/README.md](entrega/README.md) describe contenido y pendientes. Para construir el ZIP local con fuentes, configuraciones, informe, CSV, GIF y modelos seleccionados:
+
+```sh
+.venv/bin/python scripts/build_delivery.py
 ```
 
-Las configuraciones de pilotos, ablaciones y currículo se conservan en `configs/`.
-Los diagnósticos offline que leen replays históricos requieren artefactos locales
-excluidos; no son necesarios para ejecutar el simulador, PID o entrenar desde cero.
-Consulta [DQN/Double DQN](docs/dqn.md) y [los protocolos](configs/README.md).
+Salida: `artifacts/delivery_v1/proyecto_rl_entrega_v1.zip`, con manifiesto SHA-256 interno y checksum del ZIP. El repositorio incluye una selección explícita de modelos de inferencia, CSV, trazas, GIF y metadatos congelados, inventariada en [publicacion_manifest.json](entrega/publicacion_manifest.json). Por tanto, un clon permite abrir la demostración y verificar la evaluación sin entrenar ni descargar pesos aparte. `artifacts/` permanece ignorado por defecto para resultados nuevos; solo se versiona esa selección. Los replays, checkpoints de reanudación, datos docentes binarios regenerables y resto del historial bruto quedan locales. El ZIP también incluye el PDF actual y su LaTeX.
 
-## Estado actual y limitaciones
+Los comandos históricos de entrenamiento permanecen en [dqn.md](docs/dqn.md) y [recuperacion_agente.md](docs/recuperacion_agente.md), pero no forman parte de esta demostración ni autorizan reajustes sobre prueba final. Los checkpoints asistidos son de inferencia, sin estado completo para reanudación fiel.
 
-| Evaluación documentada | Pasos por agente | Resultado |
-|---|---:|---|
-| PID, validación de ajuste | No aplica | 31/32 aterrizajes |
-| PID, prueba reservada | No aplica | **98/100**; dos fallos por velocidad angular |
-| DQN y Double DQN, integración | 10 000 | Ambos 0/32 en validación final |
-| Piloto con exploración más lenta | 100 000 | Ambos 0/32; salidas por techo |
-| Ablación LR=0.0001 | 100 000 | Ambos 0/32; persiste deriva de Q |
-| Ablación SmoothL1 beta=10 | 100 000 | Ambos 0/32; mejora numérica sin aterrizajes |
-| Currículo, parada tras nivel 1 | 50 000 | Ambos 0/128 finales: 32 por nivel más 32 originales |
+## Verificación y límites
 
-Todos los experimentos RL usan una sola semilla (42). Los puntos repetidos de
-validación no son muestras independientes. El currículo no entrenó niveles 2/3;
-su validación sí los inspeccionó. La mejora de loss/Q no demuestra control exitoso.
-La selección compacta y el resumen de intentos fallidos están en
-[docs/resultados/](docs/resultados/README.md); los informes técnicos conservan los
-diagnósticos. Las cifras se contrastaron con CSV y metadatos locales existentes.
+La última suite completa registrada aprobó 118 pruebas y el checker Gymnasium fue válido, con dos advertencias conocidas por Box de límites infinitos. El cierre actual verifica hashes,2328 episodios finales, contadores CE/TD, cifras emparejadas, ejemplos matemáticos y rutas, sin repetir entrenamiento/evaluación. `pip check` no detectó incompatibilidades. No se confunden estas verificaciones con garantías de estabilidad o validación real.
 
-El simulador mantiene masa/inercia constantes, gas como impulso disponible,
-viento constante observable, integración en subpasos y contacto terminal sin
-asentamiento. Vehículo de 100 kg, empujes 1800/600/600 N y gas de 18 000 N·s;
-decisiones a 20 Hz y física a 200 Hz. Los resultados no garantizan generalización
-fuera de los rangos evaluados. La campaña comparativa completa queda pendiente.
+La física usa masa/inercia constantes, presupuesto de impulso en N·s, observación ideal, viento constante y primer contacto terminal sin rebote ni asentamiento. Se evaluaron ocho acciones a 20 Hz,100kg, empujes 1800/600/600N y 18000N·s. Las limitaciones y el número desigual de semillas están descritos en el informe, sin tratarlos como problemas resueltos.
 
-## Estructura del proyecto
+## Organización
 
-- `src/thruster_landing/envs/`: física, recompensa, Gymnasium y renderizado.
-- `src/thruster_landing/agents/`: PID, replay, DQN y Double DQN.
-- `src/thruster_landing/`: entrenamiento, currículo, evaluación y diagnósticos.
-- `configs/`: parámetros, escenarios, protocolos, versiones y referencias históricas.
-- `scripts/`: ejecución, entrenamiento, evaluación, gráficas y comprobaciones.
-- `tests/`: física, API, controladores, renderizado, aprendizaje y reanudación.
-- `docs/`: [diseño](docs/diseno.md), [metodología](docs/metodologia.md),
-  [resultados](docs/resultados.md) y [verificaciones](docs/verificacion.md).
-- `docs/resultados/`: tablas pequeñas y figuras seleccionadas publicadas.
-- `artifacts/`: registros completos, checkpoints y trazas **solo locales**, ignorados.
+- `src/thruster_landing/envs/`: física, geometría, recompensa, entorno y renderer propios.
+- `src/thruster_landing/agents/`: PID, replay y DQN/Double DQN desde cero.
+- `src/thruster_landing/recovery_agent.py`: variante asistida explícitamente identificada.
+- `configs/`: parámetros, manifiestos, protocolos y referencias congeladas.
+- `scripts/`: ejecución, evaluación, diagnóstico y cierre de entrega.
+- `tests/`: pruebas de física, contrato, controladores, aprendizaje y persistencia.
+- `docs/`: informe final, demostración, trazabilidad e informes históricos.
+- `docs/resultados/`: tablas/figuras seleccionadas; los archivos `alcance_*` pertenecen al protocolo final.
+- `artifacts/scope_alignment_v1/`: prueba final, modelos y trazas congelados.
+- `artifacts/recovery_v1/`: desarrollo asistido y evidencias previas.
+- `entrega/`: instrucciones de distribución y pendientes explícitos.
 
-Los manifiestos `configs/reference*.json` y `curriculum_execution_manifest.json`
-son registros de auditoría local, no listas de archivos incluidos: conservan hashes
-históricos y pueden mencionar artefactos ausentes del clon. No se publican pesos,
-replays, logs completos, videos, conversaciones, credenciales ni datos privados.
-Se conserva código y documentación útil independientemente de asistencia de IA.
+El [historial de resultados](docs/resultados/README.md) conserva también los intentos fallidos: smoke, pilotos, LR, beta, currículo, exploración ponderada y replay 150k. Esos registros no se reescriben como éxitos asistidos.
+
+## Qué se publicó
+
+[Entrega versionada](entrega/REPOSITORIO.md) detalla los archivos y los comandos para una copia limpia. Los resultados de nuevas ejecuciones y borradores siguen excluidos mediante `.gitignore`. La publicación conserva los hashes del protocolo final; no añade entrenamiento ni evaluaciones finales.

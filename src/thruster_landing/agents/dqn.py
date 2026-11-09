@@ -114,7 +114,9 @@ class DQNAgent:
 
     def act(self, observation, explore=True):
         if explore and (self.env_steps < self.config.learning_starts or self.rng.random() < self.epsilon):
+            self.last_selection_mode = "exploration"
             return int(self.rng.integers(self.action_count))
+        self.last_selection_mode = "exploitation" if explore else "evaluation"
         was_training = self.online.training
         self.online.eval()
         with torch.inference_mode():
@@ -136,6 +138,9 @@ class DQNAgent:
             next_online = self.online(batch["next_observations"]) if c.algorithm == "double_dqn" else next_target
             targets = compute_targets(batch["rewards"], batch["terminated"], next_online, next_target,
                                       c.gamma, c.algorithm == "double_dqn")
+        observer = getattr(self, "learning_observer", None)
+        if observer is not None:
+            observer.record(self.env_steps, self.replay.last_sample_indices, q, targets)
         loss = self.loss_function(q, targets)
         if not torch.isfinite(loss):
             raise FloatingPointError("Loss no finita")

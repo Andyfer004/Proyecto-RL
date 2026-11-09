@@ -49,3 +49,8 @@ Thumbs.db
 /conversations/
 /prompts/
 /transcripts/
+# Maquetación y borradores locales
+/tmp/
+/output/
+# La selección pública de modelos/resultados/PDF se agrega explícitamente
+# y se inventaría en entrega/publicacion_manifest.json.

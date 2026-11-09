@@ -1,0 +1,18 @@
+{
+  "checkpoint": "artifacts/recovery_v1/dqn_coverage_v2_seed43/best.policy.pt",
+  "checkpoint_metadata": {
+    "phase": "online",
+    "online_steps": 30000,
+    "development_success_rate": 0.9921875,
+    "assisted": true,
+    "teacher_actions_at_eval": false
+  },
+  "manifest": "configs/recovery_v2_check_scenarios.json",
+  "loaded_online_steps": 30000,
+  "assisted": true,
+  "teacher_calls": 0,
+  "exploration": false,
+  "updates_during_evaluation": 0,
+  "successes": 125,
+  "episodes": 128
+}

@@ -1,2 +1,8 @@
-# Preservar bytes de los CSV: los manifiestos históricos verifican sus SHA-256.
-*.csv -text whitespace=cr-at-eol
+# Mantener hashes del protocolo al clonar en distintos sistemas.
+* text=auto eol=lf
+*.pt binary
+*.png binary
+*.gif binary
+*.pdf binary
+*.zip binary
+*.woff2 binary

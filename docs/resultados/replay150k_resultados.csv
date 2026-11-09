@@ -1,0 +1,5 @@
+algorithm,capacity,training_episodes,training_successes,first_success_step,retained_success_terminal,retained_success_episode_transitions,terminal_success_draws,success_episode_draws,terminal_updates,success_episode_updates,draws_before_outcome,draws_after_outcome,level1_successes,level1_n,original_successes,original_n,level2_successes,level2_n,level3_successes,level3_n
+dqn,50000,1058,3,2324.0,0,0,102,1948,102,1786,2,1946,0,32,0,32,0,32,0,32
+dqn,150000,1187,3,2324.0,3,56,132,2400,132,2229,2,2398,0,32,0,32,0,32,0,32
+double_dqn,50000,997,0,,0,0,0,0,0,0,0,0,0,32,0,32,0,32,0,32
+double_dqn,150000,1067,0,,0,0,0,0,0,0,0,0,0,32,0,32,0,32,0,32

@@ -1,0 +1,550 @@
+{
+  "schema_version": 1,
+  "split": "validation",
+  "scenarios": [
+    {
+      "id": "curriculum-validation-l1-000",
+      "condition": "level1",
+      "source_level": 1,
+      "seed": 71000,
+      "options": {
+        "initial_state": {
+          "x": 0.009496846478239963,
+          "y": 1.642915791708713,
+          "vx": 0.019726755299285602,
+          "vy": -0.09928366192705393,
+          "theta": 0.008425917049465959,
+          "omega": -0.0007254040331875378
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "curriculum-validation-l1-001",
+      "condition": "level1",
+      "source_level": 1,
+      "seed": 71001,
+      "options": {
+        "initial_state": {
+          "x": -0.04103064219128061,
+          "y": 1.6528535300430973,
+          "vx": -0.012069039500593712,
+          "vy": -0.056739109677838545,
+          "theta": -0.0062613559913024044,
+          "omega": -0.0039034232784335324
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "curriculum-validation-l1-002",
+      "condition": "level1",
+      "source_level": 1,
+      "seed": 71002,
+      "options": {
+        "initial_state": {
+          "x": -0.057006820397367534,
+          "y": 2.0631222824889526,
+          "vx": -0.0061853237498798765,
+          "vy": -0.13339187911400596,
+          "theta": 0.00954499282113423,
+          "omega": -0.00024371280077512103
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "curriculum-validation-l1-003",
+      "condition": "level1",
+      "source_level": 1,
+      "seed": 71003,
+      "options": {
+        "initial_state": {
+          "x": -0.016573300315028995,
+          "y": 2.075587811197029,
+          "vx": -0.0027081618014494066,
+          "vy": -0.06422056824366473,
+          "theta": 0.007414646547406374,
+          "omega": 0.0018863354925605803
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "curriculum-validation-l1-004",
+      "condition": "level1",
+      "source_level": 1,
+      "seed": 71004,
+      "options": {
+        "initial_state": {
+          "x": 0.057440421522618995,
+          "y": 1.706308971914734,
+          "vx": 0.023920894349285,
+          "vy": -0.0933020333397761,
+          "theta": -0.0008086220478240947,
+          "omega": -0.00021568708151358472
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "curriculum-validation-l1-005",
+      "condition": "level1",
+      "source_level": 1,
+      "seed": 71005,
+      "options": {
+        "initial_state": {
+          "x": 0.08939740506976941,
+          "y": 1.6129676535873556,
+          "vx": 0.01685623027918086,
+          "vy": -0.21271226448230038,
+          "theta": -0.005567423660318867,
+          "omega": -0.0008476983261539573
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "curriculum-validation-l1-006",
+      "condition": "level1",
+      "source_level": 1,
+      "seed": 71006,
+      "options": {
+        "initial_state": {
+          "x": 0.01211964454125163,
+          "y": 2.131550138240826,
+          "vx": -0.003274409059509391,
+          "vy": -0.08787679135136767,
+          "theta": 0.0033655656665389413,
+          "omega": -0.0027551493809131245
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "curriculum-validation-l1-007",
+      "condition": "level1",
+      "source_level": 1,
+      "seed": 71007,
+      "options": {
+        "initial_state": {
+          "x": -0.003247205439517198,
+          "y": 2.1390131893644355,
+          "vx": 0.007906579231927438,
+          "vy": -0.09721881592491802,
+          "theta": 0.007655979065814827,
+          "omega": 0.002741491416001186
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "curriculum-validation-l1-008",
+      "condition": "level1",
+      "source_level": 1,
+      "seed": 71008,
+      "options": {
+        "initial_state": {
+          "x": -0.054933546492488786,
+          "y": 2.2446007106162673,
+          "vx": 0.009931803346971503,
+          "vy": -0.14331438445957737,
+          "theta": 0.0061853527050659916,
+          "omega": 0.004324773392118386
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "curriculum-validation-l1-009",
+      "condition": "level1",
+      "source_level": 1,
+      "seed": 71009,
+      "options": {
+        "initial_state": {
+          "x": -0.007364645708568718,
+          "y": 1.804476401664061,
+          "vx": -0.007054490957328987,
+          "vy": -0.1420274157273301,
+          "theta": 0.007452223582513411,
+          "omega": -0.00016817636870053999
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "curriculum-validation-l1-010",
+      "condition": "level1",
+      "source_level": 1,
+      "seed": 71010,
+      "options": {
+        "initial_state": {
+          "x": 0.04815937035014209,
+          "y": 2.1550769235258493,
+          "vx": 0.02356830317731071,
+          "vy": -0.2868441153528118,
+          "theta": -0.009234729340681534,
+          "omega": -0.0012051440355612508
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "curriculum-validation-l1-011",
+      "condition": "level1",
+      "source_level": 1,
+      "seed": 71011,
+      "options": {
+        "initial_state": {
+          "x": 0.01326331854558398,
+          "y": 1.9999451150499805,
+          "vx": 0.007157072785736296,
+          "vy": -0.11977058158848125,
+          "theta": 0.005687086095790919,
+          "omega": 0.0012706366041364558
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "curriculum-validation-l1-012",
+      "condition": "level1",
+      "source_level": 1,
+      "seed": 71012,
+      "options": {
+        "initial_state": {
+          "x": 0.08180309305939569,
+          "y": 2.197361320994299,
+          "vx": -0.023234080933105923,
+          "vy": -0.12670108030506003,
+          "theta": -0.007825230414305485,
+          "omega": 0.0027285522034558806
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "curriculum-validation-l1-013",
+      "condition": "level1",
+      "source_level": 1,
+      "seed": 71013,
+      "options": {
+        "initial_state": {
+          "x": -0.02858669192666781,
+          "y": 2.3861673975237427,
+          "vx": -0.008901776977014398,
+          "vy": -0.2142930257799867,
+          "theta": 0.0008816499179049143,
+          "omega": 0.0005133214956488464
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "curriculum-validation-l1-014",
+      "condition": "level1",
+      "source_level": 1,
+      "seed": 71014,
+      "options": {
+        "initial_state": {
+          "x": 0.09130213474278935,
+          "y": 1.6785945942948863,
+          "vx": -0.0006756549412180112,
+          "vy": -0.2831983282570171,
+          "theta": 0.009789082104647547,
+          "omega": 0.0023852131137649703
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "curriculum-validation-l1-015",
+      "condition": "level1",
+      "source_level": 1,
+      "seed": 71015,
+      "options": {
+        "initial_state": {
+          "x": 0.06338987910416254,
+          "y": 1.8193904367983411,
+          "vx": 0.025509241669742007,
+          "vy": -0.270099502528196,
+          "theta": 0.004757887787124762,
+          "omega": -0.0030707877223762193
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "curriculum-validation-l1-016",
+      "condition": "level1",
+      "source_level": 1,
+      "seed": 71016,
+      "options": {
+        "initial_state": {
+          "x": 0.07391652689916704,
+          "y": 1.8384026879958502,
+          "vx": -0.02627766093470871,
+          "vy": -0.263980611013608,
+          "theta": 0.005385912947500209,
+          "omega": -0.0015101196483475522
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "curriculum-validation-l1-017",
+      "condition": "level1",
+      "source_level": 1,
+      "seed": 71017,
+      "options": {
+        "initial_state": {
+          "x": -0.007386460560403952,
+          "y": 1.7364487342328028,
+          "vx": -0.01417253412284407,
+          "vy": -0.10594049633437413,
+          "theta": 0.002276470753652917,
+          "omega": -0.0036265923426267764
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "curriculum-validation-l1-018",
+      "condition": "level1",
+      "source_level": 1,
+      "seed": 71018,
+      "options": {
+        "initial_state": {
+          "x": 0.09268931800753362,
+          "y": 1.951098244316389,
+          "vx": 0.021680757107305427,
+          "vy": -0.11214080712943691,
+          "theta": -0.006703448606062672,
+          "omega": 3.116228233803753e-05
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "curriculum-validation-l1-019",
+      "condition": "level1",
+      "source_level": 1,
+      "seed": 71019,
+      "options": {
+        "initial_state": {
+          "x": -0.07009546674841116,
+          "y": 2.2464620626714535,
+          "vx": 0.009065494024728738,
+          "vy": -0.08768629043073112,
+          "theta": -0.007048098547270676,
+          "omega": 0.0012620587065112477
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "curriculum-validation-l1-020",
+      "condition": "level1",
+      "source_level": 1,
+      "seed": 71020,
+      "options": {
+        "initial_state": {
+          "x": -0.08757550244740911,
+          "y": 2.209056984231512,
+          "vx": 0.026692080638495957,
+          "vy": -0.062318645120673144,
+          "theta": -0.0011815569485148325,
+          "omega": -0.0023633786184709973
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "curriculum-validation-l1-021",
+      "condition": "level1",
+      "source_level": 1,
+      "seed": 71021,
+      "options": {
+        "initial_state": {
+          "x": -0.005280806963494667,
+          "y": 2.234432883289017,
+          "vx": 0.017549908185921358,
+          "vy": -0.20028307800334988,
+          "theta": -0.006927560348133679,
+          "omega": 0.0021253195106635835
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "curriculum-validation-l1-022",
+      "condition": "level1",
+      "source_level": 1,
+      "seed": 71022,
+      "options": {
+        "initial_state": {
+          "x": -0.018820464726955557,
+          "y": 2.371024862660823,
+          "vx": -0.01316882694036089,
+          "vy": -0.2826784041966679,
+          "theta": 0.005344810547708121,
+          "omega": 0.002999310109860183
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "curriculum-validation-l1-023",
+      "condition": "level1",
+      "source_level": 1,
+      "seed": 71023,
+      "options": {
+        "initial_state": {
+          "x": 0.07270948026664313,
+          "y": 1.749827401474339,
+          "vx": 0.01970648953992767,
+          "vy": -0.20397887364155212,
+          "theta": 0.005884601563309129,
+          "omega": 0.004245966885603881
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "curriculum-validation-l1-024",
+      "condition": "level1",
+      "source_level": 1,
+      "seed": 71024,
+      "options": {
+        "initial_state": {
+          "x": 0.0878757246504443,
+          "y": 2.3268015537504203,
+          "vx": 0.016643581969023564,
+          "vy": -0.15954406706133953,
+          "theta": 0.008575931222781106,
+          "omega": -0.0017010663241166424
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "curriculum-validation-l1-025",
+      "condition": "level1",
+      "source_level": 1,
+      "seed": 71025,
+      "options": {
+        "initial_state": {
+          "x": -0.01568293608545468,
+          "y": 2.021910655709496,
+          "vx": 0.006451410521672071,
+          "vy": -0.08708105996813076,
+          "theta": 0.0008045087627197822,
+          "omega": -0.001388294970226035
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "curriculum-validation-l1-026",
+      "condition": "level1",
+      "source_level": 1,
+      "seed": 71026,
+      "options": {
+        "initial_state": {
+          "x": 0.0953762187934994,
+          "y": 2.326356864404103,
+          "vx": -0.006473663196202321,
+          "vy": -0.20045858830498964,
+          "theta": -0.004154339802635449,
+          "omega": 0.0038709723515398223
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "curriculum-validation-l1-027",
+      "condition": "level1",
+      "source_level": 1,
+      "seed": 71027,
+      "options": {
+        "initial_state": {
+          "x": 0.033635209266425915,
+          "y": 2.3294840815087854,
+          "vx": -0.001781789029877898,
+          "vy": -0.2701021348556723,
+          "theta": 0.0012680138389776908,
+          "omega": -0.0030393527706979663
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "curriculum-validation-l1-028",
+      "condition": "level1",
+      "source_level": 1,
+      "seed": 71028,
+      "options": {
+        "initial_state": {
+          "x": -0.05076170068240722,
+          "y": 1.7866372591969422,
+          "vx": 0.014802596500747644,
+          "vy": -0.25199195788974876,
+          "theta": -0.008873097674613034,
+          "omega": 0.003242843179489956
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "curriculum-validation-l1-029",
+      "condition": "level1",
+      "source_level": 1,
+      "seed": 71029,
+      "options": {
+        "initial_state": {
+          "x": -0.03584592683201968,
+          "y": 1.8427813425766744,
+          "vx": -0.005905481923536759,
+          "vy": -0.21452116357734805,
+          "theta": -0.0019379298059850393,
+          "omega": -0.0003753562457290427
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "curriculum-validation-l1-030",
+      "condition": "level1",
+      "source_level": 1,
+      "seed": 71030,
+      "options": {
+        "initial_state": {
+          "x": -0.0017819951961498993,
+          "y": 1.7039450135275942,
+          "vx": 0.004380802582988452,
+          "vy": -0.0660514917624817,
+          "theta": -0.0038822563371683815,
+          "omega": 0.00427916580942276
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "curriculum-validation-l1-031",
+      "condition": "level1",
+      "source_level": 1,
+      "seed": 71031,
+      "options": {
+        "initial_state": {
+          "x": -0.027958064365568025,
+          "y": 1.8923063616204079,
+          "vx": 0.022289964733557596,
+          "vy": -0.20477057812143726,
+          "theta": 0.0019442702032706504,
+          "omega": 0.003310029954710463
+        },
+        "wind_force": 0.0
+      }
+    }
+  ]
+}

@@ -51,3 +51,5 @@ a 300 000 pasos, pero la ejecución real se detuvo a 50 000 por agente según
 niveles 2/3 ni se ejecutó prueba final RL. Evidencia pública compacta en
 [docs/resultados](../docs/resultados/README.md); los diagnósticos históricos
 necesitan checkpoints/replays locales que no se distribuyen.
+
+El protocolo de evaluación común `scope_final_v1_protocol.json` congela checkpoints, parámetros, código y manifiestos por SHA-256. `scope_final_v1_complement.json` añade288 casos de prueba independientes a los100 reservados de `pid_test_scenarios.json`; no los reemplaza. Ya fue ejecutado, sin entrenamiento/reajustes. No editarlo para volver a declarar independencia. Origen, soporte de entrenamiento, viento y resultados en `docs/evaluacion_alcance.md`.

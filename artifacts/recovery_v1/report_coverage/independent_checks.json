@@ -1,0 +1,11 @@
+{
+  "episodes": 864,
+  "all_success_and_contact_flags_independently_confirmed": true,
+  "thresholds_unchanged": true,
+  "representative_ids": [
+    "coverage-v2-check-0000",
+    "coverage-v2-check-0001",
+    "coverage-v2-check-0029"
+  ],
+  "selection": "Grouped development only; check never used to select or tune."
+}

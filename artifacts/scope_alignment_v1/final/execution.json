@@ -1,0 +1,71 @@
+{
+  "protocol_sha256": "0bca192c53e99e2eece418ae9c0c802031f34b357a1a1d4a6ab4ad5effb24db3",
+  "completed_at_utc": "2026-11-04T18:19:29.795165+00:00",
+  "wall_seconds": 82.98288241700357,
+  "episodes": 2328,
+  "environment_steps": 242465,
+  "training_updates": 0,
+  "checkpoints_changed": false,
+  "methods": [
+    {
+      "method": "pid",
+      "episodes": 388,
+      "environment_steps": 45696,
+      "neural_only": false,
+      "teacher_queries": null,
+      "updates_during_evaluation": 0,
+      "exploration": false,
+      "agent_state_unchanged": false
+    },
+    {
+      "method": "dqn_assisted42",
+      "episodes": 388,
+      "environment_steps": 45196,
+      "neural_only": true,
+      "teacher_queries": 0,
+      "updates_during_evaluation": 0,
+      "exploration": false,
+      "agent_state_unchanged": true
+    },
+    {
+      "method": "double_assisted42",
+      "episodes": 388,
+      "environment_steps": 44901,
+      "neural_only": true,
+      "teacher_queries": 0,
+      "updates_during_evaluation": 0,
+      "exploration": false,
+      "agent_state_unchanged": true
+    },
+    {
+      "method": "dqn_assisted43",
+      "episodes": 388,
+      "environment_steps": 46496,
+      "neural_only": true,
+      "teacher_queries": 0,
+      "updates_during_evaluation": 0,
+      "exploration": false,
+      "agent_state_unchanged": true
+    },
+    {
+      "method": "dqn_scratch",
+      "episodes": 388,
+      "environment_steps": 48805,
+      "neural_only": true,
+      "teacher_queries": 0,
+      "updates_during_evaluation": 0,
+      "exploration": false,
+      "agent_state_unchanged": true
+    },
+    {
+      "method": "double_dqn_scratch",
+      "episodes": 388,
+      "environment_steps": 11371,
+      "neural_only": true,
+      "teacher_queries": 0,
+      "updates_during_evaluation": 0,
+      "exploration": false,
+      "agent_state_unchanged": true
+    }
+  ]
+}

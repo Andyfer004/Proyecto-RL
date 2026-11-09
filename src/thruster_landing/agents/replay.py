@@ -35,6 +35,7 @@ class ReplayBuffer:
         if not 0 < batch_size <= self.size:
             raise ValueError("No hay suficientes transiciones para el minibatch")
         indices = self.rng.choice(self.size, batch_size, replace=False)
+        self.last_sample_indices = indices.copy()  # Diagnostic only; no additional RNG draws.
         return {key: torch.as_tensor(array[indices], device=device) for key, array in self.arrays.items()}
 
     def state_dict(self):

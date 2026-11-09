@@ -1,0 +1,7 @@
+{
+  "https://www.nature.com/articles/nature14236": "Original DQN: preserve replay, target network and Bellman target; not a claim of successful landing.",
+  "https://docs.pytorch.org/tutorials/intermediate/reinforcement_q_learning.html": "Independent CartPole tutorial-style reference: separate deque, optimizer, targets and soft updates; adapted headlessly with shared budget and explicit RNG.",
+  "https://gymnasium.farama.org/tutorials/gymnasium_basics/handling_time_limits/": "Distinguish physical termination from external truncation, identify missing clock for a finite-horizon interpretation; no unsupported attribution of observed failures to timeouts.",
+  "https://arxiv.org/abs/1704.03732": "Motivates combining demonstrations, TD, supervised margin and n-step targets; our version uses fixed stratification, CE warmstart and no PER, so not exact DQfD.",
+  "https://arxiv.org/abs/1509.06461": "Double DQN: principal network selects, target evaluates. Transfer only after DQN showed useful greedy behaviour."
+}

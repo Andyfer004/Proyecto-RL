@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Thruster Landing — demostración entregable</title>
+<style>
+:root{color-scheme:dark;font-family:system-ui,sans-serif;background:#111827;color:#e5e7eb}body{max-width:1240px;margin:auto;padding:30px}h1{font-size:2rem}p{line-height:1.6;max-width:1000px}a{color:#93c5fd}.notice{padding:16px;background:#1f2937;border-left:4px solid #fbbf24}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:18px;margin:24px 0}.card{background:#1f2937;padding:16px;border-radius:10px}.card img{width:100%;height:auto;border-radius:5px}.card h2{font-size:1.1rem}button{padding:8px 14px;background:#334155;color:white;border:1px solid #64748b;border-radius:6px;cursor:pointer}.figure{width:100%;height:auto;background:white;border-radius:8px}small{display:block;line-height:1.6;color:#cbd5e1}table{border-collapse:collapse;margin:16px 0;width:100%}td,th{text-align:left;padding:10px;border-bottom:1px solid #475569}
+</style></head><body>
+<h1>Aterrizaje 2D: evidencia congelada</h1>
+<p>Simulador académico propio, inspirado conceptualmente en Tesla Roadster. Animaciones de estados guardados: este documento no ejecuta física, entrenamiento ni evaluación nueva.</p>
+<p class="notice"><strong>Metodología:</strong> DQN y Double DQN asistidos por demostraciones PID combinan imitación y TD. Durante evaluación solo actúa la red. La asistencia es una ampliación metodológica adicional. No se aisló el beneficio de TD frente a imitación sola.</p>
+<div class="grid">
+<section class="card"><h2>PID puro</h2><img src="../artifacts/scope_alignment_v1/final/pid.complement-wind_p40-000.gif" alt="PID en el primer caso complementario de demostración con viento de más40 N"><p>Consignas y asignación discreta con memoria interna.</p></section>
+<section class="card"><h2>DQN asistido, semilla42</h2><img src="../artifacts/scope_alignment_v1/final/dqn_assisted42.complement-wind_p40-000.gif" alt="Red DQN asistida en el mismo escenario de más40 N"><p>Argmax de la red, sin profesor ni exploración.</p></section>
+<section class="card"><h2>Double DQN asistido, semilla42</h2><img src="../artifacts/scope_alignment_v1/final/double_assisted42.complement-wind_p40-000.gif" alt="Red Double DQN asistida en el mismo escenario de más40 N"><p>Mismas condiciones, gas, acciones y criterios.</p></section>
+</div>
+<button id="restart" type="button">Reiniciar animaciones</button>
+<small>Primer ID predefinido complement-wind_p40-000. Los GIF no están sincronizados como un ensayo de latencia; son ejemplos, no selección de mejores resultados. La leyenda de teclado pertenece al renderer original: no acredita interacción real. Regeneración RGB bajo SDL dummy.</small>
+<table><thead><tr><th>Método</th><th>100 casos reservados</th><th>288 complementarios</th></tr></thead><tbody>
+<tr><td>PID</td><td>98/100</td><td>287/288</td></tr><tr><td>DQN asistido42</td><td>96/100</td><td>275/288</td></tr><tr><td>Double asistido42</td><td>94/100</td><td>266/288</td></tr><tr><td>DQN / Double desde cero, cada uno</td><td>0/100</td><td>0/288</td></tr></tbody></table>
+<h2>Todos los grupos, sin ocultar fallos</h2><img class="figure" src="resultados/alcance_exitos.png" alt="Tasas de éxito por cada grupo predefinido para los seis métodos">
+<h2>Trayectorias, incluidos baselines fallidos</h2><img class="figure" src="../artifacts/scope_alignment_v1/final/representative_trajectories.png" alt="Trayectorias y orientación de cinco métodos en tres primeros IDs predefinidos">
+<p><a href="informe_final.md">Informe matemático y experimental</a> · <a href="trazabilidad_alcance.md">Matriz de alcance</a> · <a href="demostracion.md">Guion de exposición</a></p>
+<p>PID fue más consistente que los métodos principales en esta ejecución. No se demostró superioridad general, adaptación automática o menor coste computacional de las redes. El consumo se compara separando éxitos de fracasos.</p>
+<script>
+document.getElementById('restart').addEventListener('click',()=>{document.querySelectorAll('.card img').forEach(img=>{const original=img.getAttribute('src').split('?')[0];img.src=original+'?replay='+Date.now();});});
+</script></body></html>

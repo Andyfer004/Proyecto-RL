@@ -1,0 +1,202 @@
+{
+  "start_epoch": 1793766483.751243,
+  "deadline_epoch": 1793773683.751243,
+  "wall_limit_seconds": 7200,
+  "step_limit": 5000000,
+  "actual_steps": 828266,
+  "reserved_initial_review_seconds": 600,
+  "stages": [
+    {
+      "stage": "system_audit_reproduction",
+      "steps": 206,
+      "wall_seconds": 1.316882848739624
+    },
+    {
+      "stage": "CartPole_project",
+      "steps": 61406,
+      "wall_seconds": 31.959789991378784
+    },
+    {
+      "stage": "CartPole_tutorial_reference",
+      "steps": 74098,
+      "wall_seconds": 37.232499837875366
+    },
+    {
+      "stage": "intervention1_PID_training_demonstrations",
+      "steps": 47043,
+      "wall_seconds": 19.332173109054565
+    },
+    {
+      "stage": "intervention1_dqn_seed42",
+      "steps": 45121,
+      "wall_seconds": 33.90253686904907
+    },
+    {
+      "stage": "loaded_check_loaded_dqn_development",
+      "steps": 2990,
+      "wall_seconds": 1.0082981586456299
+    },
+    {
+      "stage": "loaded_check_loaded_dqn_check",
+      "steps": 2885,
+      "wall_seconds": 0.9681782722473145
+    },
+    {
+      "stage": "loaded_check_loaded_dqn_original",
+      "steps": 1298,
+      "wall_seconds": 0.4478318691253662
+    },
+    {
+      "stage": "intervention1_double_dqn_seed42",
+      "steps": 45182,
+      "wall_seconds": 35.42555093765259
+    },
+    {
+      "stage": "intervention1_dqn_seed43",
+      "steps": 45185,
+      "wall_seconds": 42.860899209976196
+    },
+    {
+      "stage": "loaded_check_loaded_double42_development",
+      "steps": 3127,
+      "wall_seconds": 1.0481669902801514
+    },
+    {
+      "stage": "loaded_check_loaded_double42_check",
+      "steps": 3151,
+      "wall_seconds": 1.0402390956878662
+    },
+    {
+      "stage": "loaded_check_loaded_double42_original",
+      "steps": 1258,
+      "wall_seconds": 0.448803186416626
+    },
+    {
+      "stage": "loaded_check_loaded_dqn43_development",
+      "steps": 3173,
+      "wall_seconds": 1.0419361591339111
+    },
+    {
+      "stage": "loaded_check_loaded_dqn43_check",
+      "steps": 3057,
+      "wall_seconds": 1.0304548740386963
+    },
+    {
+      "stage": "loaded_check_loaded_dqn43_original",
+      "steps": 1256,
+      "wall_seconds": 0.44841504096984863
+    },
+    {
+      "stage": "verification_pytest_environment_steps",
+      "steps": 22658,
+      "wall_seconds": 12.2569420337677
+    },
+    {
+      "stage": "loaded_check_loaded_primary_matched",
+      "steps": 41,
+      "wall_seconds": 0.025941848754882812
+    },
+    {
+      "stage": "official_gymnasium_checker",
+      "steps": 5,
+      "wall_seconds": 0.006048917770385742
+    },
+    {
+      "stage": "verification_pytest_environment_steps",
+      "steps": 0,
+      "wall_seconds": 2.265307903289795
+    },
+    {
+      "stage": "verification_pytest_environment_steps",
+      "steps": 22658,
+      "wall_seconds": 12.502210140228271
+    },
+    {
+      "stage": "assisted_dqn_coverage_v2_PID_training_demonstrations",
+      "steps": 87099,
+      "wall_seconds": 36.580010175704956
+    },
+    {
+      "stage": "assisted_dqn_coverage_v2_dqn_seed42",
+      "steps": 84929,
+      "wall_seconds": 46.62110495567322
+    },
+    {
+      "stage": "loaded_check_loaded_coverage42_check",
+      "steps": 10656,
+      "wall_seconds": 3.370136022567749
+    },
+    {
+      "stage": "loaded_check_loaded_coverage42_original",
+      "steps": 4119,
+      "wall_seconds": 1.298081874847412
+    },
+    {
+      "stage": "loaded_check_loaded_coverage42_development",
+      "steps": 10720,
+      "wall_seconds": 3.420525074005127
+    },
+    {
+      "stage": "assisted_dqn_coverage_v2_double_dqn_seed42",
+      "steps": 85035,
+      "wall_seconds": 50.704216957092285
+    },
+    {
+      "stage": "assisted_dqn_coverage_v2_dqn_seed43",
+      "steps": 84753,
+      "wall_seconds": 49.40558576583862
+    },
+    {
+      "stage": "loaded_check_loaded_coverage_double42_development",
+      "steps": 11051,
+      "wall_seconds": 3.4678330421447754
+    },
+    {
+      "stage": "loaded_check_loaded_coverage_double42_check",
+      "steps": 11013,
+      "wall_seconds": 3.4421491622924805
+    },
+    {
+      "stage": "loaded_check_loaded_coverage_double42_original",
+      "steps": 4119,
+      "wall_seconds": 1.3228189945220947
+    },
+    {
+      "stage": "loaded_check_loaded_coverage43_development",
+      "steps": 11073,
+      "wall_seconds": 3.4109318256378174
+    },
+    {
+      "stage": "loaded_check_loaded_coverage43_check",
+      "steps": 11026,
+      "wall_seconds": 3.5651581287384033
+    },
+    {
+      "stage": "loaded_check_loaded_coverage43_original",
+      "steps": 4217,
+      "wall_seconds": 1.3405697345733643
+    },
+    {
+      "stage": "verification_pytest_environment_steps",
+      "steps": 22658,
+      "wall_seconds": 11.352903842926025
+    }
+  ],
+  "interventions": [
+    {
+      "id": 1,
+      "method": "assisted_dqn_v1",
+      "reason": "Success coverage and action preservation; landing-scaled inputs; permanent train-only teacher data; nstep credit. Frozen before candidate training."
+    },
+    {
+      "id": 2,
+      "method": "assisted_dqn_coverage_v2",
+      "reason": "Original validation zero transfer; broaden train demonstration support. Frozen v1 candidate/check unchanged. No further intervention permitted."
+    }
+  ],
+  "last_progress_epoch": 1793769441.045089,
+  "status": "complete",
+  "finished_epoch": 1793769516.754952,
+  "conservative_elapsed_seconds": 3033.0037088394165,
+  "measured_stage_seconds": 455.871132850647
+}

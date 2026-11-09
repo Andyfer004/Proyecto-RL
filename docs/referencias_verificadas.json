@@ -1,0 +1,41 @@
+{
+  "checked_on": "2026-11-04",
+  "sources": [
+    {
+      "author": "Mnih et al.",
+      "url": "https://storage.googleapis.com/deepmind-media/dqn/DQNNaturePaper.pdf",
+      "status": "article PDF inspected",
+      "decision": "Replay and target network; own MLP/state adaptation"
+    },
+    {
+      "author": "van Hasselt et al.",
+      "url": "https://arxiv.org/html/1509.06461v3",
+      "status": "article HTML inspected",
+      "decision": "Separate next action selection and target evaluation"
+    },
+    {
+      "author": "Hester et al.",
+      "url": "https://arxiv.org/html/1704.03732v4",
+      "status": "article HTML inspected",
+      "decision": "Demonstration/margin/nstep precedent; not exact algorithm here"
+    },
+    {
+      "author": "PyTorch2.15",
+      "url": "https://docs.pytorch.org/docs/2.15/generated/torch.nn.SmoothL1Loss.html",
+      "status": "official definition inspected",
+      "decision": "Exact SmoothL1 beta scaling"
+    },
+    {
+      "author": "Gymnasium",
+      "url": "https://gymnasium.farama.org/tutorials/gymnasium_basics/handling_time_limits/",
+      "status": "official documentation inspected",
+      "decision": "Termination/truncation mask and horizon caveat"
+    },
+    {
+      "author": "Astrom and Murray",
+      "url": "https://www.cds.caltech.edu/~murray/FBS/Chapter_10_-_PID_Control.html",
+      "status": "author chapter search-index content verified; full PDF direct fetch timed out",
+      "decision": "PID context; concrete conditional integration derived from inspected project code"
+    }
+  ]
+}

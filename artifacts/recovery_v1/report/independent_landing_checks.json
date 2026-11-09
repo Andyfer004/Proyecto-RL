@@ -1,0 +1,7 @@
+{
+  "checked_loaded_episode_results": 480,
+  "all_geometry_and_kinematic_success_flags_match": true,
+  "thresholds_unchanged": true,
+  "candidate_source": "dqn_assisted_seed42/best.policy.pt",
+  "candidate_selected_only_by_development": true
+}

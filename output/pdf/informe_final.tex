@@ -1,0 +1,891 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[provide=*,spanish]{babel}
+\usepackage{amsmath,amsfonts,amssymb}
+\usepackage{geometry}
+\usepackage{hyperref}
+\usepackage{enumitem}
+\usepackage{microtype}
+\usepackage{mathpazo}
+\usepackage{xcolor,graphicx,booktabs,longtable,array,colortbl,adjustbox,pdflscape}
+\usepackage{needspace,fvextra,xurl}
+\geometry{margin=2.5cm}
+\hypersetup{colorlinks=true,linkcolor=blue,urlcolor=blue,citecolor=blue}
+\hypersetup{pdftitle={Control de aterrizaje de un vehículo 2D},pdfauthor={Andy Fuentes; Diederich Solís; Diego Linares},pdfsubject={CC3104 - Aprendizaje por Refuerzo; informe final}}
+\setlist[itemize]{itemsep=2pt,topsep=4pt}
+\setlist[enumerate]{itemsep=4pt,topsep=4pt}
+\definecolor{Accent}{rgb}{0,0,1}
+\definecolor{Pale}{gray}{0.95}
+\setcounter{secnumdepth}{2}
+\setcounter{tocdepth}{2}
+\setlength{\emergencystretch}{3em}
+\sloppy
+\DefineVerbatimEnvironment{CodeBlock}{Verbatim}{fontsize=\footnotesize,breaklines=true,breakanywhere=true}
+\begin{document}
+%-------------------- CARÁTULA --------------------
+\hypersetup{pageanchor=false}
+\begin{titlepage}
+  \centering
+  \vspace*{2cm}
+  {\LARGE\textbf{Universidad del Valle de Guatemala}}\\[0.5cm]
+  {\Large Facultad de Ingeniería}\\[1.5cm]
+  {\Huge\textbf{Control de aterrizaje\\ de un vehículo 2D}}\\[0.5cm]
+  {\Large\textbf{Informe final}}\\[0.4cm]
+  {\Large\textbf{CC3104 -- Aprendizaje por Refuerzo}}\\[2cm]
+  \textbf{Integrantes:}\\[0.3cm]
+  Andy Fuentes --- 22944\\
+  Diederich Solís --- 22952\\
+  Diego Linares --- 221256\\[2cm]
+  \textbf{Fecha: 4 de noviembre de 2026}
+  \vfill
+\end{titlepage}
+\hypersetup{pageanchor=true}
+\pagenumbering{arabic}
+\tableofcontents
+\clearpage
+\textbf{Informe técnico,\allowbreak{} matemático y experimental de la versión entregable - 4 de noviembre de 2026.}
+
+
+Estado: modelos y evaluación final congelados. Este cierre amplía la documentación y verifica archivos existentes; no incorpora entrenamientos ni reajustes posteriores a la prueba. La propuesta original permanece como contrato de alcance. Las demostraciones PID se incorporaron como una \textbf{ampliación metodológica adicional} para estudiar políticas asistidas,\allowbreak{} conservando por separado los baselines desde cero.
+
+
+
+\needspace{6\baselineskip}
+\section{Resumen}
+Se construyó un simulador físico propio de cuerpo rígido plano,\allowbreak{} con propulsor principal,\allowbreak{} dos propulsores laterales binarios,\allowbreak{} gravedad,\allowbreak{} viento horizontal y presupuesto limitado de impulso. Se implementaron PID en cascada y agentes DQN/\allowbreak{}Double DQN con replay y red objetivo. Los experimentos desde cero no produjeron aterrizajes greedy funcionales con los checkpoints finalmente evaluados. Una variante asistida,\allowbreak{} que combina imitación de trayectorias PID y aprendizaje por diferencia temporal $TD$,\allowbreak{} sí produjo políticas neuronales capaces de aterrizar sin consultar al PID durante inferencia.
+
+
+La evaluación común conservó 100 escenarios reservados y añadió 288 casos complementarios independientes. PID obtuvo \textbf{98/\allowbreak{}100 y 287/\allowbreak{}288}; DQN asistido,\allowbreak{} \textbf{96/\allowbreak{}100 y 275/\allowbreak{}288}; Double DQN asistido,\allowbreak{} \textbf{94/\allowbreak{}100 y 266/\allowbreak{}288}. Ambos baselines desde cero obtuvieron cero éxitos en ambos conjuntos. La semilla adicional DQN asistida obtuvo 100/\allowbreak{}100 y 277/\allowbreak{}288,\allowbreak{} sin reemplazar después de la prueba a la candidata principal.
+
+
+PID fue la solución más consistente entre los métodos principales en esta ejecución. El entrenamiento asistido ofrece una política aprendida funcional en los casos medidos,\allowbreak{} pero no demuestra superioridad general,\allowbreak{} adaptación automática ni beneficio causal de TD. \textbf{No se aisló el beneficio de las actualizaciones TD frente a la imitación por sí sola}.
+
+
+
+\needspace{6\baselineskip}
+\section{Problema,\allowbreak{} justificación y pregunta de investigación}
+El problema consiste en llevar un vehículo inicialmente en vuelo hasta una plataforma fija,\allowbreak{} limitando desplazamiento,\allowbreak{} velocidad de impacto,\allowbreak{} inclinación,\allowbreak{} giro y consumo. Actuar sobre el empuje modifica simultáneamente traslación,\allowbreak{} rotación y recursos disponibles; el catálogo discreto exige secuencias de activación precisas,\allowbreak{} especialmente antes del contacto.
+
+
+La inspiración conceptual es el Tesla Roadster como vehículo con propulsores. La masa,\allowbreak{} geometría,\allowbreak{} fuerzas y dinámica son \textbf{académicas propias},\allowbreak{} sin equivalencia exacta con un vehículo Tesla ni validación de tecnología comercial. No se modela un automóvil real ni se afirma afiliación con Tesla.
+
+
+La pregunta original es: \textbf{\textquestiondown{}cómo se comparan DQN y Double DQN con un PID en consistencia,\allowbreak{} precisión y consumo,\allowbreak{} bajo condiciones iniciales y viento comunes?} La investigación requiere conservar también resultados negativos: una menor loss o un valor Q más pequeño no implica aterrizaje,\allowbreak{} y terminar antes en impacto no significa mayor eficiencia.
+
+
+
+\needspace{6\baselineskip}
+\section{Objetivos y alcance}
+El objetivo general es desarrollar y evaluar controladores de estabilización y aterrizaje con recursos limitados. Los objetivos específicos materializados son: construir el simulador verificable; formular observaciones,\allowbreak{} acciones y recompensa; implementar PID/\allowbreak{}DQN/\allowbreak{}Double DQN; registrar episodios reproducibles; comparar métodos sobre casos comunes; visualizar y documentar resultados y límites.
+
+
+El alcance es 2D: un solo cuerpo rígido,\allowbreak{} plataforma fija,\allowbreak{} gravedad uniforme,\allowbreak{} propulsores discretos,\allowbreak{} viento horizontal constante durante el episodio,\allowbreak{} gas abstracto,\allowbreak{} ejecución sin gráficos y animación. Se excluyen 3D,\allowbreak{} hardware,\allowbreak{} aerodinámica detallada,\allowbreak{} navegación,\allowbreak{} plataformas móviles,\allowbreak{} múltiples vehículos y validación real. La \textcolor{Accent}{matriz de trazabilidad} distingue cumplimiento técnico,\allowbreak{} evidencia y pendientes.
+
+
+La asistencia se añadió al constatar el fracaso de las políticas desde cero. Se mantienen ambas familias identificadas; no se reetiquetan los resultados asistidos como aprendizaje autónomo desde cero.
+
+
+
+\needspace{6\baselineskip}
+\section{Fundamentos matemáticos y diseño del simulador}
+
+\needspace{6\baselineskip}
+\subsection{Estado,\allowbreak{} unidades y variables observables}
+Se usan coordenadas globales $x$ hacia la derecha y $y$ hacia arriba,\allowbreak{} con plataforma centrada en $x=0$,\allowbreak{} suelo $y=0$,\allowbreak{} ángulo \ensuremath{\theta} positivo antihorario y \ensuremath{\theta}=0 vertical. El estado físico es
+
+
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}$\displaystyle s=(x,y,v_x,v_y,\theta,\omega,G),\qquad W=\text{fuerza horizontal de viento}.$\end{adjustbox}\end{center}
+
+
+
+Posición en m,\allowbreak{} velocidades en m/\allowbreak{}s,\allowbreak{} \ensuremath{\theta} en rad,\allowbreak{} \ensuremath{\omega} en rad/\allowbreak{}s,\allowbreak{} $G$ en N\ensuremath{\cdot}s,\allowbreak{} $W$ en N. El simulador mantiene además reloj,\allowbreak{} estado de finalización y RNG,\allowbreak{} que no son entradas adicionales de la red.
+
+
+La observación float32 realmente utilizada es
+
+
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}$\displaystyle o=\left[\frac{x}{12},\frac{y-1}{25},\frac{v_x}{10},\frac{v_y}{10},
+\sin\theta,\cos\theta,\frac{\omega}{3},\frac{G}{18000},\frac{W}{100}\right].$\end{adjustbox}\end{center}
+
+
+
+La red asistida recibe una transformación fija de esas mismas nueve variables:
+
+
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}$\displaystyle f(o)=\left[\frac{x}{1.5},\frac{y-1}{2},\frac{v_x}{0.7},\frac{v_y}{1},
+\frac{\sin\theta}{0.12},\cos\theta,\frac{\omega}{0.25},\frac{G}{18000},\frac{W}{100}\right].$\end{adjustbox}\end{center}
+
+
+
+No se recortan valores a [-1,\allowbreak{}1]; las escalas no son límites físicos. La transformación es invertible respecto al vector original,\allowbreak{} salvo redondeo float32,\allowbreak{} y no añade información. Posición,\allowbreak{} velocidades,\allowbreak{} ángulo,\allowbreak{} giro,\allowbreak{} gas y viento son ideales,\allowbreak{} sin ruido sensorial. La red no recibe acciones PID,\allowbreak{} integrales del profesor,\allowbreak{} recompensa futura,\allowbreak{} geometría futura ni tiempo restante. En la evaluación común PID recibe el mismo Box decodificado a SI,\allowbreak{} incluido \ensuremath{\theta}=atan2(sin\ensuremath{\theta},\allowbreak{}cos\ensuremath{\theta}); sus integrales son memoria propia del controlador.
+
+
+Código: \textcolor{Accent}{\nolinkurl{landing._observation}},\allowbreak{} \textcolor{Accent}{\nolinkurl{landing_features}},\allowbreak{} \textcolor{Accent}{\nolinkurl{decode_observation}}.
+
+
+
+\needspace{6\baselineskip}
+\subsection{Geometría,\allowbreak{} fuerzas y momentos}
+Parámetros de \textcolor{Accent}{\nolinkurl{env.json}}: masa $m=100\,\mathrm{kg}$,\allowbreak{} ancho $b=1.4\,\mathrm m$,\allowbreak{} altura $h=1.6\,\mathrm m$,\allowbreak{} gravedad $g=9.81\,\mathrm{m/s^2}$. La inercia de rectángulo uniforme es
+
+
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}$\displaystyle I=\frac{m(b^2+h^2)}{12}=37.6666667\,\mathrm{kg\,m^2}.$\end{adjustbox}\end{center}
+
+
+
+Los apoyos locales son (-0.6,\allowbreak{}-1) y (0.6,\allowbreak{}-1) m; las esquinas del cuerpo,\allowbreak{} (\ensuremath{\pm}0.7,\allowbreak{}\ensuremath{\pm}0.8) m. El centro en reposo vertical está a $y=1$ m. Cada punto local $p_i^B$ se transforma mediante
+
+
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}$\displaystyle p_i=\begin{bmatrix}x\\y\end{bmatrix}+R(\theta)p_i^B,
+\qquad R(\theta)=\begin{bmatrix}\cos\theta&-\sin\theta\\\sin\theta&\cos\theta\end{bmatrix}.$\end{adjustbox}\end{center}
+
+
+
+Las posiciones de los propulsores respecto al centro son $r_M=(0,-0.8)$,\allowbreak{} $r_L=(-0.6,-0.8)$,\allowbreak{} $r_R=(0.6,-0.8)$ m. Sus fuerzas locales son $F_M^B=(0,1800)$,\allowbreak{} $F_L^B=F_R^B=(0,600)$ N. Son laterales por ubicación: \textbf{no generan directamente empuje horizontal local}; el desplazamiento horizontal procede de inclinar el vehículo.
+
+
+Para activaciones $u_i\in\{0,1\}$,\allowbreak{}
+
+
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}$\displaystyle F_T=R(\theta)\sum_i u_i F_i^B,\qquad
+\tau=\sum_i u_i(r_{i,x}F_{i,y}^B-r_{i,y}F_{i,x}^B).$\end{adjustbox}\end{center}
+
+
+
+Los momentos son 0,\allowbreak{} -360 y +360 N\ensuremath{\cdot}m respectivamente. Las aceleraciones son
+
+
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}$\displaystyle \dot v=\frac{F_T+(W,-mg)}m,\qquad \dot\omega=\frac\tau I,\qquad
+\dot x=v_x,\ \dot y=v_y,\ \dot\theta=\omega.$\end{adjustbox}\end{center}
+
+
+
+Para \ensuremath{\theta}>0,\allowbreak{} $F_{T,x}=-F_T^B\sin\theta<0$: inclinar a la izquierda produce aceleración hacia la izquierda. El viento se aplica al centro de masa,\allowbreak{} sin momento. Se fija al reset o se sortea uniforme alrededor de media/\allowbreak{}amplitud configuradas,\allowbreak{} y permanece constante todo el episodio.
+
+
+
+\needspace{6\baselineskip}
+\subsection{Catálogo,\allowbreak{} integración y consumo}
+\begingroup
+\setlength{\tabcolsep}{3pt}
+\renewcommand{\arraystretch}{1.35}
+\fontsize{9.1}{11.8}\selectfont
+\begin{longtable}{>{\raggedright\arraybackslash}p{0.3200\dimexpr\linewidth-24pt\relax}>{\raggedright\arraybackslash}p{0.2267\dimexpr\linewidth-24pt\relax}>{\raggedright\arraybackslash}p{0.2267\dimexpr\linewidth-24pt\relax}>{\raggedright\arraybackslash}p{0.2267\dimexpr\linewidth-24pt\relax}}
+\toprule
+\rowcolor{Pale}Acción & Principal/\allowbreak{}izquierdo/\allowbreak{}derecho & Empuje local N & Momento N\ensuremath{\cdot}m \\
+\midrule
+\endfirsthead
+\toprule
+\rowcolor{Pale}Acción & Principal/\allowbreak{}izquierdo/\allowbreak{}derecho & Empuje local N & Momento N\ensuremath{\cdot}m \\
+\midrule
+\endhead
+\bottomrule\endfoot
+0 & 000 & 0 & 0 \\
+1 & 100 & 1800 & 0 \\
+2 & 010 & 600 & -360 \\
+3 & 001 & 600 & +360 \\
+4 & 011 & 1200 & 0 \\
+5 & 110 & 2400 & -360 \\
+6 & 101 & 2400 & +360 \\
+7 & 111 & 3000 & 0 \\
+\end{longtable}
+\endgroup
+Una decisión dura \ensuremath{\Delta}t=0.05 s (20 Hz),\allowbreak{} con diez subpasos de \ensuremath{\delta}t=0.005 s. La fuerza global se recalcula al principio del subpaso y se mantiene congelada dentro de él:
+
+
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}$\displaystyle p^+=p+v\delta t+\tfrac12 a\delta t^2,\quad v^+=v+a\delta t,$\end{adjustbox}\end{center}
+
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}$\displaystyle \theta^+=\theta+\omega\delta t+\tfrac12\alpha\delta t^2,\quad
+\omega^+=\omega+\alpha\delta t.$\end{adjustbox}\end{center}
+
+
+
+Después se lleva \ensuremath{\theta} a [-\ensuremath{\pi},\allowbreak{}\ensuremath{\pi}). No es RK4 ni un integrador exacto cuando cambia la orientación durante el subpaso. La auditoría RK4 independiente es una referencia de verificación,\allowbreak{} no la implementación del entorno.
+
+
+La tasa de consumo es $q(a)=\sum_i u_i\|F_i^B\|$,\allowbreak{} en N. El presupuesto disminuye en $q\delta t$,\allowbreak{} en N\ensuremath{\cdot}s. Si no alcanza,\allowbreak{} se integra empuje durante $\delta t_b=\min(\delta t,G/q)$ y luego caída libre durante el resto; para q=0 no hay combustión. Se corta consumo en el instante de contacto localizado. El gasto es impulso escalar sumado,\allowbreak{} sin cancelar fuerzas ni momentos: \textbf{18000 N\ensuremath{\cdot}s no son 18000 kg de gas}. No se modelan presión,\allowbreak{} caudal o velocidad de escape; masa e inercia permanecen constantes aunque disminuya G. Es una aproximación,\allowbreak{} no una conservación física de masa de combustible.
+
+
+La autoridad vertical máxima es $3000/100-9.81=20.19\,\mathrm{m/s^2}$. Un pulso lateral completo cambia \ensuremath{\omega} en $360(0.05)/I=0.477876\,\mathrm{rad/s}$,\allowbreak{} superior al umbral de contacto0.25: se requieren pulsos compensatorios o cortados por contacto. Esta cuantización ayuda a interpretar fallos angulares; no prueba que el catálogo impida aterrizar.
+
+
+Código: \textcolor{Accent}{\nolinkurl{physics.py}},\allowbreak{} \nolinkurl{wrench},\allowbreak{} \nolinkurl{geometry},\allowbreak{} \nolinkurl{_segment},\allowbreak{} \nolinkurl{integrate}.
+
+
+
+\needspace{6\baselineskip}
+\subsection{Contacto,\allowbreak{} éxito y terminación}
+El primer punto geométrico que cruza $y\le0$ termina el episodio. El cruce se detecta en extremos de subpasos y se localiza con 35 bisecciones. No se simula rebote,\allowbreak{} fricción ni asentamiento posterior. Sea $p_{L/R}$ cada apoyo y $p_{B,j}$ las esquinas. El éxito requiere simultáneamente:
+
+
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}$\displaystyle \min_j p_{B,j,y}>10^{-6},\quad |p_{L,x}|,|p_{R,x}|\le2.5,
+\quad \max(p_{L,y},p_{R,y})\le0.15,$\end{adjustbox}\end{center}
+
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}$\displaystyle |x|\le1.5,\quad |v_x|\le0.7,\quad -1\le v_y\le0,
+\quad |\theta|\le0.12,\quad |\omega|\le0.25.$\end{adjustbox}\end{center}
+
+
+
+Las unidades son m,\allowbreak{} m/\allowbreak{}s,\allowbreak{} rad y rad/\allowbreak{}s según variable. Primero se distingue contacto de cuerpo,\allowbreak{} después apoyo fuera de plataforma y finalmente incumplimiento cinemático. Cualquier punto que salga de \ensuremath{\vert}x\ensuremath{\vert}<12 m o supere y<25 m causa salida del área. Éxito,\allowbreak{} contacto inválido,\allowbreak{} cuerpo,\allowbreak{} plataforma fallida y salida son \nolinkurl{terminated}. A25 s,\allowbreak{} sin evento físico,\allowbreak{} \nolinkurl{time_limit} es \nolinkurl{truncated}. Gas cero no termina por sí solo. Un contacto coincidente con el límite tiene prioridad física.
+
+
+La bisección no es un detector continuo garantizado para rotaciones extremas que cruzan y regresan dentro del subpaso. El informe no presenta esa limitación como resuelta. Código: \nolinkurl{landing._boundary},\allowbreak{} \nolinkurl{_contact_outcome},\allowbreak{} \nolinkurl{step}.
+
+
+
+\needspace{6\baselineskip}
+\section{PID en cascada}
+La función concreta de \textcolor{Accent}{\nolinkurl{PIDLoop.update}} usa derivada de la \textbf{medición},\allowbreak{} no diferencia del error de consigna. Con error $e_k=r_k-z_k$,\allowbreak{} contribución integral $J_k$,\allowbreak{} aporte externo f y límites L/\allowbreak{}U:
+
+
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}$\displaystyle \widetilde J=\operatorname{clip}(J_{k-1}+k_i e_k\Delta t,-J_{max},J_{max}),
+\qquad b=f+k_p e_k-k_d\dot z_k.$\end{adjustbox}\end{center}
+
+
+
+Se conserva $J_k=J_{k-1}$ si $b+\widetilde J>U\land e_k>0$,\allowbreak{} o $b+\widetilde J<L\land e_k<0$; en otro caso $J_k=\widetilde J$. La salida es $\operatorname{clip}(b+J_k,L,U)$. Es integración condicional con cota,\allowbreak{} no back-calculation ni garantía de estabilidad después de asignar acciones. Los fundamentos P/\allowbreak{}I/\allowbreak{}D y saturación se contextualizan en \href{https://www.cds.caltech.edu/~murray/books/AM08/pdf/fbs-author_29Mar19.pdf}{Åström y Murray}; las ecuaciones anteriores describen específicamente el código propio.
+
+
+Las integrales están en unidades de salida: aceleración lineal en lazos de velocidad y angular en orientación. $J_{max}=5$ en cada lazo. Se reinician por episodio; con gas agotado el controlador reinicia y devuelve apagado. La aceleración estimada es diferencia de velocidades/\allowbreak{}\ensuremath{\Delta}t,\allowbreak{} cero en la primera decisión. Las derivadas horizontal y vertical configuradas son \textbf{cero}; en orientación se usa la \ensuremath{\omega} medida con $k_d=16\,\mathrm{s^{-1}}$,\allowbreak{} sin filtro derivativo adicional.
+
+
+Las ganancias concretas también fijan unidades: en horizontal/\allowbreak{}vertical el error es m/\allowbreak{}s y la salida m/\allowbreak{}s\textsuperscript{2}; en orientación son rad y rad/\allowbreak{}s\textsuperscript{2}. La derivada es de la medición correspondiente.
+
+
+\begingroup
+\setlength{\tabcolsep}{3pt}
+\renewcommand{\arraystretch}{1.35}
+\fontsize{9.1}{11.8}\selectfont
+\begin{longtable}{>{\raggedright\arraybackslash}p{0.3200\dimexpr\linewidth-24pt\relax}>{\raggedright\arraybackslash}p{0.2267\dimexpr\linewidth-24pt\relax}>{\raggedright\arraybackslash}p{0.2267\dimexpr\linewidth-24pt\relax}>{\raggedright\arraybackslash}p{0.2267\dimexpr\linewidth-24pt\relax}}
+\toprule
+\rowcolor{Pale}Lazo & kp & ki & kd \\
+\midrule
+\endfirsthead
+\toprule
+\rowcolor{Pale}Lazo & kp & ki & kd \\
+\midrule
+\endhead
+\bottomrule\endfoot
+Velocidad horizontal & 1.5 s\textsuperscript{-1} & 0.05 s\textsuperscript{-2} & 0,\allowbreak{} adimensional \\
+Velocidad vertical & 4 s\textsuperscript{-1} & 2 s\textsuperscript{-2} & 0,\allowbreak{} adimensional \\
+Orientación & 80 s\textsuperscript{-2} & 0 s\textsuperscript{-3} & 16 s\textsuperscript{-1} \\
+\end{longtable}
+\endgroup
+
+\needspace{6\baselineskip}
+\subsection{Cascada horizontal y orientación}
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}$\displaystyle v_x^*=\operatorname{clip}(-0.5x,-1,1)\ \mathrm{m/s},$\end{adjustbox}\end{center}
+
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}$\displaystyle a_x^*=\operatorname{PID}_{(1.5,0.05,0)}(v_x^*-v_x,\dot v_x;[-2,2]).$\end{adjustbox}\end{center}
+
+
+
+La fuerza solicitada es (F\_x\textasciicircum{}\emph{=m a\_x\textasciicircum{}}-W). La compensación usa viento observable,\allowbreak{} no una estimación futura. Después de obtener $F_y^*$ del lazo vertical:
+
+
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}$\displaystyle H=\max(0,y-1),\quad
+\theta_{lim}=0.04+(0.2-0.04)\min(1,H/3),$\end{adjustbox}\end{center}
+
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}$\displaystyle \theta^*=\operatorname{clip}\left[-\operatorname{atan2}(F_x^*,\max(F_y^*,0.1)),
+-\theta_{lim},\theta_{lim}\right].$\end{adjustbox}\end{center}
+
+
+
+El error angular se envuelve a [-\ensuremath{\pi},\allowbreak{}\ensuremath{\pi}). Se solicita
+
+
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}$\displaystyle \alpha^*=\operatorname{PID}_{(80,0,16)}(\operatorname{wrap}(\theta^*-\theta),\omega;
+[-360/I,360/I]),\qquad \tau^*=I\alpha^*.$\end{adjustbox}\end{center}
+
+
+
+Así,\allowbreak{} para desplazar a la derecha se solicita inclinación negativa. Cerca del suelo se reduce la inclinación permitida,\allowbreak{} priorizando contacto nivelado.
+
+
+
+\needspace{6\baselineskip}
+\subsection{Descenso y gravedad}
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}$\displaystyle v_y^*=-\min\left(2,\sqrt{0.4^2+2(0.8)H}\right)\ \mathrm{m/s},$\end{adjustbox}\end{center}
+
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}$\displaystyle a_y^*=\operatorname{PID}_{(4,2,0)}\left(v_y^*-v_y,\dot v_y;
+[-g,3000\max(0,\cos\theta)/m-g]\right),$\end{adjustbox}\end{center}
+
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}$\displaystyle F_y^*=m(g+a_y^*).$\end{adjustbox}\end{center}
+
+
+
+La expresión de velocidad combina descenso rápido lejos del suelo y frenado cerca del contacto. El término $mg$ compensa gravedad \textbf{fuera de} \nolinkurl{PIDLoop.update}; no hay un término adicional de feedforward no declarado en esos lazos. Las ganancias y límites provienen de \textcolor{Accent}{\nolinkurl{pid.json}},\allowbreak{} no de un reajuste con prueba final.
+
+
+
+\needspace{6\baselineskip}
+\subsection{Asignación discreta}
+Para cada acción se calcula su fuerza global $F_a$,\allowbreak{} momento \ensuremath{\tau}\_a y tasa q\_a a la orientación actual. Su fracción útil durante una decisión es $\lambda_a=\min(1,G/(q_a\Delta t))$,\allowbreak{} o1 si q\_a=0. Se elige el menor índice en empate que minimiza
+
+
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}$\displaystyle a^*=\arg\min_a\left[
+0.5\left(\frac{\lambda_a F_{a,x}-F_x^*}{3000}\right)^2+
+\left(\frac{\lambda_a F_{a,y}-F_y^*}{3000}\right)^2+
+4\left(\frac{\lambda_a\tau_a-\tau^*}{360}\right)^2\right].$\end{adjustbox}\end{center}
+
+
+
+Las diferencias de fuerza y momento se normalizan por autoridad nominal para que no dependan de unidades incompatibles. Es una aproximación instantánea a la fuerza/\allowbreak{}momento medios,\allowbreak{} no optimización de una trayectoria futura; no incluye la rotación posterior al calcular el score. PID devuelve un índice existente y no escribe el estado físico.
+
+
+
+\needspace{6\baselineskip}
+\section{Aprendizaje: formulación e implementación}
+
+\needspace{6\baselineskip}
+\subsection{MDP,\allowbreak{} retorno y recompensa exacta}
+Se plantea un MDP con estado físico continuo incluyendo W,\allowbreak{} acciones discretas,\allowbreak{} transición física determinista una vez fijado el estado y recompensa r. La red aproxima (Q(o,\allowbreak{}a)),\allowbreak{} valor esperado del retorno descontado tras elegir a y continuar la política. Para un episodio de T decisiones:
+
+
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}$\displaystyle R=\sum_{k=0}^{T-1}r_k,\qquad R_\gamma=\sum_{k=0}^{T-1}\gamma^k r_k,\quad \gamma=0.99.$\end{adjustbox}\end{center}
+
+
+
+El descuento es por decisión,\allowbreak{} incluso cuando el último paso dura menos de 0.05 s por contacto; no se sustituye por $\gamma^{\Delta t/0.05}$. La observación ideal describe las variables físicas,\allowbreak{} con redondeo float32. El reloj no se entrega:25 s se interpreta como corte externo de recolección. Si fuera un horizonte finito intrínseco del objetivo,\allowbreak{} faltaría tiempo restante para esa formulación Markov. Esta distinción y la máscara de bootstrap siguen el tratamiento de \href{https://gymnasium.farama.org/tutorials/gymnasium_basics/handling_time_limits/}{Gymnasium}.
+
+
+\textcolor{Accent}{\nolinkurl{rewards.py}} implementa,\allowbreak{} usando el estado posterior s',\allowbreak{} duración real \ensuremath{\delta} del paso y consumo \ensuremath{\Delta}G:
+
+
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}$\displaystyle \Phi(s)=-\frac{|x|}{12}-0.3\frac{\max(0,y-1)}{25},$\end{adjustbox}\end{center}
+
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}$\displaystyle \begin{aligned}r={}&r_{term}+2[\Phi(s')-\Phi(s)]
+\\ &-0.08\delta\frac{\sqrt{v_x'^2+v_y'^2}}{10}
+-\delta\left(0.3\frac{|\theta'|}{\pi}+0.05\frac{|\omega'|}{3}\right)
+\\ &-5\frac{\Delta G}{18000}-0.2\delta.\end{aligned}$\end{adjustbox}\end{center}
+
+
+
+$r_{term}=100$ en éxito,\allowbreak{} -100 en terminación física fallida,\allowbreak{}0 en vuelo o límite temporal. No se usan etiquetas PID dentro de esta recompensa. Los pesos están en \nolinkurl{env.json}; las salidas del área también reciben -100. El término de progreso es diferencia de potencial \textbf{sin gamma}: no se afirma invariancia de política por shaping potencial descontado. Los costes de tiempo/\allowbreak{}velocidad/\allowbreak{}orientación se multiplican por duración; progreso y consumo no se multiplican otra vez por \ensuremath{\delta}. A20 Hz el coste temporal ordinario es -0.01 por decisión y -0.2 por segundo.
+
+
+La auditoría de recompensa mostró que aterrizajes PID concretos obtenían más retorno que cuatro conductas fallidas emparejadas. No garantiza que todo el objetivo esté bien diseñado. El descuento puede atenuar una penalización de fracaso retrasado y las señales intermedias fueron débiles; no se cambiaron tras observar la prueba final.
+
+
+
+\needspace{6\baselineskip}
+\subsection{DQN y Double DQN desde cero}
+La MLP es9\ensuremath{\rightarrow}128 ReLU\ensuremath{\rightarrow}128 ReLU\ensuremath{\rightarrow}8,\allowbreak{} con 18824 parámetros por red. La salida no es una probabilidad ni una activación física continua: se selecciona una de ocho acciones por argmax. Se usa Adam,\allowbreak{} clipping de norma global 10,\allowbreak{} replay circular y red objetivo congelada entre copias. La referencia DQN original combina experiencias almacenadas y red objetivo; el proyecto usa MLP y observaciones de estado,\allowbreak{} no imágenes ni la arquitectura de Atari. Véase \href{https://storage.googleapis.com/deepmind-media/dqn/DQNNaturePaper.pdf}{Mnih et al.}.
+
+
+Con principal $Q_\psi$,\allowbreak{} objetivo $Q_{\bar\psi}$ y d=1 solo para terminal físico:
+
+
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}$\displaystyle y_{DQN}=r+\gamma(1-d)\max_b Q_{\bar\psi}(o',b),$\end{adjustbox}\end{center}
+
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}$\displaystyle b^*=\arg\max_b Q_\psi(o',b),\qquad
+y_{Double}=r+\gamma(1-d)Q_{\bar\psi}(o',b^*).$\end{adjustbox}\end{center}
+
+
+
+DQN usa objetivo para selección y evaluación; Double separa ambos papeles,\allowbreak{} como en \href{https://arxiv.org/html/1509.06461v3}{van Hasselt,\allowbreak{} Guez y Silver}. Ambos targets se calculan sin gradientes; la objetivo no recibe gradientes. Con \nolinkurl{terminated=True},\allowbreak{} y=r; \nolinkurl{truncated=True} conserva bootstrap desde la última observación real,\allowbreak{} nunca la del próximo reset. Ejemplo independiente: recompensas1,\allowbreak{} gamma0.9,\allowbreak{} principal siguiente[2,\allowbreak{}4],\allowbreak{} objetivo[5,\allowbreak{}1]. DQN da5.5; Double da1.9; si es terminal ambos dan1. Esto distingue algoritmos,\allowbreak{} no predice su éxito en aterrizajes.
+
+
+La pérdida con residuo $e=Q-y$ es \href{https://docs.pytorch.org/docs/2.15/generated/torch.nn.SmoothL1Loss.html}{SmoothL1 de PyTorch}:
+
+
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}$\displaystyle \ell_\beta(e)=\begin{cases}e^2/(2\beta),&|e|<\beta,\\|e|-\beta/2,&|e|\ge\beta.\end{cases}$\end{adjustbox}\end{center}
+
+
+
+Su gradiente respecto a Q es e/\allowbreak{}\ensuremath{\beta} en región cuadrática y sign(e) fuera. Los pilotos iniciales usaron beta1; la ablación beta 10 redujo gradientes para residuos menores que 10 y mantuvo saturación de magnitud1. No equivale a \nolinkurl{HuberLoss(delta=10)} sin dividir por 10,\allowbreak{} ni simplemente a dar más peso a errores grandes. La menor loss entre betas diferentes no demuestra mejor control.
+
+
+Los baselines finalmente evaluados corresponden a los pilotos uniformes de 100000 interacciones por algoritmo: LR0.0003,\allowbreak{} gamma0.99,\allowbreak{} buffer 50000,\allowbreak{} batch 64,\allowbreak{} aprendizaje desde 1000 pasos,\allowbreak{} actualización cada4,\allowbreak{} copia objetivo cada 500 pasos,\allowbreak{} beta1,\allowbreak{} misma MLP. Se conservan todos sus intentos y checkpoints; el mejor de validación quedó en 10000 por empate a cero éxitos. No se reemplazó por un checkpoint escogido con prueba final.
+
+
+Código: \textcolor{Accent}{\nolinkurl{agents/dqn.py}},\allowbreak{} \textcolor{Accent}{\nolinkurl{agents/replay.py}},\allowbreak{} \nolinkurl{checkpoints.py}.
+
+
+
+\needspace{6\baselineskip}
+\subsection{Exploración realmente ensayada}
+La selección estándar es $P(a|o)=\epsilon p(a)+(1-\epsilon)\mathbf1[a=\arg\max Q(o,\cdot)]$,\allowbreak{} con p(a)=1/\allowbreak{}8. En los primeros 1000 pasos de los baselines toda selección es exploratoria. Después:
+
+
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}$\displaystyle \epsilon(k)=1-0.9\operatorname{clip}\left(\frac{k-1000}{80000},0,1\right).$\end{adjustbox}\end{center}
+
+
+
+El valor se mantiene en 0.1 al terminar la rampa. El smoke inicial usó 8000 pasos de descenso de epsilon (\nolinkurl{configs/dqn.json}),\allowbreak{} frente a 80000 del piloto (\nolinkurl{configs/dqn_pilot.json}); ambos empiezan con 1000 de exploración. No se mezclan esos presupuestos.
+
+
+La variante ponderada posterior usó,\allowbreak{} en orden0..7,\allowbreak{} p=[0.35,\allowbreak{}0.15,\allowbreak{}0.025,\allowbreak{}0.025,\allowbreak{}0.35,\allowbreak{}0.025,\allowbreak{}0.025,\allowbreak{}0.05],\allowbreak{} con el mismo esquema epsilon. Es una distribución fija independiente del estado,\allowbreak{} sin persistencia de fases,\allowbreak{} decisiones PID o memoria de acciones anteriores. Todas las acciones tienen probabilidad positiva. Se utilizó en la comparación de exploración y replay 150k,\allowbreak{} no en los baselines uniformes seleccionados ni en la candidata asistida final. Las políticas asistidas usan exploración \textbf{uniforme epsilon0.05 fijo} después del preentrenamiento; en evaluación todas las redes actúan sin explorar.
+
+
+
+\needspace{6\baselineskip}
+\subsection{Obtención y selección de demostraciones}
+\textcolor{Accent}{\nolinkurl{collect_recovery_demos.py}} ejecutó el PID congelado,\allowbreak{} reiniciado por episodio,\allowbreak{} en los primeros 1024 escenarios nuevos de entrenamiento de cada versión. \textbf{Sí hubo consultas PID por paso durante esta generación docente}: el profesor leyó estado actual SI y viento; se almacenaron observación float32,\allowbreak{} acción,\allowbreak{} recompensa,\allowbreak{} siguiente observación y terminal. No se le entregó información futura. Sus integrales internas no se añaden a la observación del alumno,\allowbreak{} de modo que la MLP no tiene garantizada una réplica exacta del profesor con memoria.
+
+
+\begingroup
+\setlength{\tabcolsep}{3pt}
+\renewcommand{\arraystretch}{1.35}
+\fontsize{9.1}{11.8}\selectfont
+\begin{longtable}{>{\raggedright\arraybackslash}p{0.3000\dimexpr\linewidth-36pt\relax}>{\raggedright\arraybackslash}p{0.1400\dimexpr\linewidth-36pt\relax}>{\raggedright\arraybackslash}p{0.1400\dimexpr\linewidth-36pt\relax}>{\raggedright\arraybackslash}p{0.1400\dimexpr\linewidth-36pt\relax}>{\raggedright\arraybackslash}p{0.1400\dimexpr\linewidth-36pt\relax}>{\raggedright\arraybackslash}p{0.1400\dimexpr\linewidth-36pt\relax}}
+\toprule
+\rowcolor{Pale}Versión & Episodios PID & Éxitos retenidos & Pasos físicos ejecutados & Transiciones retenidas & Ajuste /\allowbreak{} holdout de etiquetas \\
+\midrule
+\endfirsthead
+\toprule
+\rowcolor{Pale}Versión & Episodios PID & Éxitos retenidos & Pasos físicos ejecutados & Transiciones retenidas & Ajuste /\allowbreak{} holdout de etiquetas \\
+\midrule
+\endhead
+\bottomrule\endfoot
+L1 v1 & 1024 & 1022 & 47043 & 46954 & 40998 /\allowbreak{} 5956 \\
+Cobertura v2 & 1024 & 1005 & 87099 & 84882 & 78968 /\allowbreak{} 5914 \\
+\end{longtable}
+\endgroup
+Se conservaron únicamente episodios exitosos. Esto sesga deliberadamente el conjunto docente hacia acciones de trayectorias exitosas,\allowbreak{} sin cambiar los criterios físicos. Episodios de índice divisible por 8 se excluyen de muestreo docente. Por el entrelazado bajo/\allowbreak{}alto de v2,\allowbreak{} ese holdout interno contiene solo L1; sus estados iniciales siguen en el pool online. Por ello mide imitación de etiquetas retenidas,\allowbreak{} no generalización independiente de todos los estados/\allowbreak{}alturas. Desarrollo,\allowbreak{} comprobación y prueba permanecen separados.
+
+
+La segunda versión generó nuevas demostraciones en entrenamiento de altura ampliada. Durante recolección online del alumno \textbf{no se consultó nuevamente al PID} para etiquetar decisiones o corregirlo. El PID usado como método de evaluación es una referencia separada. No se implementó DAgger ni se presenta la variante como reproducción exacta de DQfD. \href{https://arxiv.org/html/1704.03732v4}{Hester et al.} aporta el antecedente de mezclar margen,\allowbreak{} demostraciones y TD; aquí se usan etapas CE,\allowbreak{} mezcla fija,\allowbreak{} sin replay priorizado ni regularización L2 explícita de aquel método.
+
+
+
+\needspace{6\baselineskip}
+\subsection{Etapas y pérdidas del entrenamiento asistido}
+No hubo una única pérdida aplicada desde el primer update:
+
+
+**Etapa A,\allowbreak{} imitación sola:**10000 actualizaciones,\allowbreak{} batch 256 de demostraciones elegibles con reemplazo. Se minimiza entropía cruzada sobre los ocho valores de salida tratados como logits:
+
+
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}$\displaystyle L_{CE}=-\mathbb E_E\log\frac{\exp Q_\psi(f(o),a_E)}{\sum_b\exp Q_\psi(f(o),b)}.$\end{adjustbox}\end{center}
+
+
+
+Esto enseña elección de acción,\allowbreak{} no calibración de retornos Q. Solo el checkpoint de esta fase se clasifica como imitación sola. Se evaluó en desarrollo,\allowbreak{} no como método separado en la prueba final.
+
+
+**Etapa B,\allowbreak{} TD y margen offline:**10000 actualizaciones,\allowbreak{} batch 128 exclusivamente docente. Para una ventana n<=10 que nunca cruza el episodio:
+
+
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}$\displaystyle y_n=\sum_{j=0}^{n-1}\gamma^j r_{t+j}+
+\gamma^n(1-d_{t+n})V_{\bar\psi}(o_{t+n}),$\end{adjustbox}\end{center}
+
+
+
+con V seleccionado como DQN/\allowbreak{}Double respectivamente. Son retornos de conducta docente con bootstrap; no hay corrección por importancia ni garantía de estimar exactamente Q óptimo. El margen es
+
+
+
+\begin{center}\begin{adjustbox}{max width=\linewidth}$\displaystyle L_M=\mathbb E_E\left[\max_b\{Q_\psi(f(o),b)+0.8\mathbf1[b\ne a_E]\}
+-Q_\psi(f(o),a_E)\right].$\end{adjustbox}\end{center}
+
+
+
+La pérdida aplicada es $L=L_1+L_n+4L_M$,\allowbreak{} donde L1 y Ln son medias SmoothL1 beta 10 para targets de uno y n pasos. El target no recibe gradientes. No se continúa CE en esta etapa.
+
+
+\textbf{Etapa C,\allowbreak{} TD y margen online:} se conserva red,\allowbreak{} Adam y demostraciones permanentes,\allowbreak{} con replay propio 50000. Batch128:64 demostraciones con reemplazo y 64 transiciones online uniformes \textbf{sin reemplazo dentro del batch}. L1 usa las 128 muestras; Ln y LM solo las 64 docentes. No es muestreo uniforme del conjunto unido ni prioridad adaptativa. Se actualiza cada4 decisiones desde un replay con al menos 128 muestras; LR0.0003,\allowbreak{} clip 10,\allowbreak{} gamma0.99 y beta 10. La objetivo se copia después de CE,\allowbreak{} cada 500 updates offline y cada 500 decisiones online: son frecuencias en unidades distintas.
+
+
+Tope150000 pasos online,\allowbreak{} validación cada 10000. Parada predefinida: tres evaluaciones consecutivas >=80\% por grupo,\allowbreak{} y al menos 30000 pasos. Los tres candidatos pararon a 30000. Mejor checkpoint por máxima tasa mínima entre grupos,\allowbreak{} empate por menor error horizontal de éxitos,\allowbreak{} exclusivamente en desarrollo.
+
+
+\begingroup
+\setlength{\tabcolsep}{3pt}
+\renewcommand{\arraystretch}{1.35}
+\fontsize{9.1}{11.8}\selectfont
+\begin{longtable}{>{\raggedright\arraybackslash}p{0.3000\dimexpr\linewidth-36pt\relax}>{\raggedright\arraybackslash}p{0.1400\dimexpr\linewidth-36pt\relax}>{\raggedright\arraybackslash}p{0.1400\dimexpr\linewidth-36pt\relax}>{\raggedright\arraybackslash}p{0.1400\dimexpr\linewidth-36pt\relax}>{\raggedright\arraybackslash}p{0.1400\dimexpr\linewidth-36pt\relax}>{\raggedright\arraybackslash}p{0.1400\dimexpr\linewidth-36pt\relax}}
+\toprule
+\rowcolor{Pale}Candidata cargada & CE & TD+margen offline & TD+margen online & Total updates & Pasos online del checkpoint \\
+\midrule
+\endfirsthead
+\toprule
+\rowcolor{Pale}Candidata cargada & CE & TD+margen offline & TD+margen online & Total updates & Pasos online del checkpoint \\
+\midrule
+\endhead
+\bottomrule\endfoot
+DQN asistido 42 & 10000 & 10000 & 4969 & 24969 & 20000 \\
+Double asistido 42 & 10000 & 10000 & 7469 & 27469 & 30000 \\
+DQN asistido 43 & 10000 & 10000 & 7469 & 27469 & 30000 \\
+\end{longtable}
+\endgroup
+Los contadores cargados y los \nolinkurl{metrics.csv} con pérdidas TD/\allowbreak{}n-step no nulas respaldan que las candidatas recibieron TD. Durante inferencia solo se necesita la red y su transformación fija; no demostraciones,\allowbreak{} replay,\allowbreak{} optimizador ni profesor. Los checkpoints asistidos incluyen algunos de esos estados auxiliares pero no todo lo necesario para reanudar fielmente: no se anuncia una capacidad de resume inexistente.
+
+
+
+\needspace{6\baselineskip}
+\section{Protocolo experimental y trazabilidad}
+
+\needspace{6\baselineskip}
+\subsection{Desarrollo,\allowbreak{} cobertura y conjuntos}
+La primera intervención asistida congeló 2048 casos de entrenamiento L1,\allowbreak{}64 de desarrollo y 64 de comprobación: x\ensuremath{\pm}0.1 m,\allowbreak{} y 1.6-2.4 m,\allowbreak{} vx\ensuremath{\pm}0.03 m/\allowbreak{}s,\allowbreak{} vy[-0.3,\allowbreak{}-0.05] m/\allowbreak{}s,\allowbreak{} theta\ensuremath{\pm}0.01 rad,\allowbreak{} omega\ensuremath{\pm}0.005 rad/\allowbreak{}s,\allowbreak{} sin viento. La candidata DQN consiguió 64/\allowbreak{}64 en comprobación L1 y 0/\allowbreak{}32 en validación original desde mayor altura. Esa falta de transferencia motivó la segunda y última intervención.
+
+
+V2 creó 2048 casos nuevos de entrenamiento,\allowbreak{}128 de desarrollo y 128 de comprobación,\allowbreak{} sin reutilizar identidades. Mezcla50\% L1 y 50\% soporte alto: x\ensuremath{\pm}0.3 m,\allowbreak{} y 8-13 m,\allowbreak{} vx\ensuremath{\pm}0.1 m/\allowbreak{}s,\allowbreak{} vy[-1,\allowbreak{}0] m/\allowbreak{}s,\allowbreak{} theta\ensuremath{\pm}0.03 rad,\allowbreak{} omega\ensuremath{\pm}0.005 rad/\allowbreak{}s,\allowbreak{} sin viento. La etiqueta \nolinkurl{original} de sus manifiestos significa soporte alto de diseño,\allowbreak{} no copia de los 32 casos originales de validación. No se entrenó con viento. Las pérdidas/\allowbreak{}escalas/\allowbreak{}hiperparámetros v2 se mantuvieron respecto a v1; cambiaron cobertura y protocolo agrupado.
+
+
+Cada candidato se evaluó greedy cada 10000 pasos. Los tres cumplieron >=80\% por grupo durante tres evaluaciones consecutivas; el desarrollo es herramienta de selección,\allowbreak{} no prueba final ni evidencia suficiente de generalización. La comprobación v2 cargada dio 124/\allowbreak{}128,\allowbreak{}125/\allowbreak{}128 y 125/\allowbreak{}128. No se reajustaron después las políticas con esas comprobaciones.
+
+
+
+\needspace{6\baselineskip}
+\subsection{Congelación y prueba común}
+\textcolor{Accent}{\nolinkurl{scope_final_v1_protocol.json}} registra hashes de código,\allowbreak{} física,\allowbreak{} PID,\allowbreak{} manifiestos,\allowbreak{} metadatos y checkpoints seleccionados por desarrollo. Se conservaron copias de pesos en \nolinkurl{artifacts/scope_alignment_v1/frozen_models/}. No hubo entrenamiento ni elección posterior durante prueba.
+
+
+Los100 casos de \textcolor{Accent}{\nolinkurl{pid_test_scenarios.json}} no se reemplazaron:25 verticales,\allowbreak{}25 con desplazamiento,\allowbreak{}25 con inclinación y 25 con viento. El PID ya había sido evaluado ahí históricamente: \textbf{no es una prueba virgen para PID}. Fue la primera evaluación neural en esos casos. El complemento se generó sin filtrar por resultado de políticas y se comprobó disjunto de manifiestos anteriores por semillas y estados.
+
+
+\begingroup
+\setlength{\tabcolsep}{3pt}
+\renewcommand{\arraystretch}{1.35}
+\fontsize{9.1}{11.8}\selectfont
+\begin{longtable}{>{\raggedright\arraybackslash}p{0.3200\dimexpr\linewidth-18pt\relax}>{\raggedright\arraybackslash}p{0.3400\dimexpr\linewidth-18pt\relax}>{\raggedright\arraybackslash}p{0.3400\dimexpr\linewidth-18pt\relax}}
+\toprule
+\rowcolor{Pale}Complemento,\allowbreak{} casos por método & Condiciones iniciales /\allowbreak{} viento & Exposición asistida \\
+\midrule
+\endfirsthead
+\toprule
+\rowcolor{Pale}Complemento,\allowbreak{} casos por método & Condiciones iniciales /\allowbreak{} viento & Exposición asistida \\
+\midrule
+\endhead
+\bottomrule\endfoot
+L1,\allowbreak{}32 & Rangos L1 anteriores & Soporte inicial representado,\allowbreak{} identidades nuevas \\
+Alto,\allowbreak{}32 & Rangos altos anteriores & Soporte inicial representado,\allowbreak{} identidades nuevas \\
+Desplazamiento nuevo,\allowbreak{}32 & Alto salvo abs(x) entre0.6 y 1.5 m,\allowbreak{} ambos signos & Fuera del rango de x inicial de entrenamiento \\
+Dinámica nueva,\allowbreak{}32 & Alto salvo abs(theta)0.06-0.12 rad,\allowbreak{} abs(vx)0.2-0.5 m/\allowbreak{}s,\allowbreak{} vy[-1.8,\allowbreak{}-0.8] m/\allowbreak{}s,\allowbreak{} omega\ensuremath{\pm}0.05 rad/\allowbreak{}s & Inclinación y velocidades nuevas \\
+Control de viento y cuatro vientos,\allowbreak{}5\ensuremath{\times}32 & Mismos32 estados altos,\allowbreak{} W=0,\allowbreak{}-20,\allowbreak{}+20,\allowbreak{}-40,\allowbreak{}+40 N & Control representado; viento distinto de cero nuevo \\
+\end{longtable}
+\endgroup
+Son288 complementarios,\allowbreak{}388 casos por método y seis métodos incluyendo sensibilidad de semilla 43:2328 episodios. El soporte de los baselines desde cero era más estrecho: descensos centrados verticales desde 10-12 m,\allowbreak{} sin viento. «Representado» describe rangos iniciales,\allowbreak{} no cobertura garantizada de todas las trayectorias.
+
+
+A40 N el equilibrio ideal de viento requiere inclinación atan(40/\allowbreak{}981)=0.04075 rad y fuerza 981.82 N,\allowbreak{} por debajo de 3000 N y del umbral angular0.12 rad. Hay separación inicial suficiente en los grupos altos para el frenado vertical ideal. Son cotas de autoridad,\allowbreak{} no prueba de alcanzabilidad completa ni motivo para descartar fallos observados.
+
+
+
+\needspace{6\baselineskip}
+\subsection{Igualdad de evaluación y métricas}
+Todos reciben la misma información física disponible,\allowbreak{} estado inicial,\allowbreak{} viento,\allowbreak{} gas inicial 18000 N\ensuremath{\cdot}s,\allowbreak{} catálogo,\allowbreak{} período,\allowbreak{} geometría y umbrales. Las redes no exploran ni aprenden. Se bloquean consultas PID durante episodios neuronales y se compara antes/\allowbreak{}después red principal,\allowbreak{} objetivo,\allowbreak{} optimizador,\allowbreak{} replay,\allowbreak{} contadores y RNG. Para PID se reinicia memoria cada episodio. La revisión independiente recalcula apoyos y criterios sin llamar a la función de éxito del entorno.
+
+
+Éxito es la proporción de episodios que satisfacen todos los criterios al primer contacto. Se conservan causa,\allowbreak{} retorno,\allowbreak{} duración,\allowbreak{} consumo,\allowbreak{} estado final y,\allowbreak{} solo si existe contacto,\allowbreak{} velocidades,\allowbreak{} inclinación,\allowbreak{} giro y distancia horizontal. Los episodios sin contacto no tienen métricas de aterrizaje; ausencia no se reemplaza por 0. El consumo se presenta separado por éxitos/\allowbreak{}fracasos y,\allowbreak{} para comparación fina,\allowbreak{} en pares desde el mismo estado donde ambos métodos aterrizan.
+
+
+Variar escenarios con una red fija mide sensibilidad a condiciones; variar semilla de entrenamiento produce otra red. Los388 episodios de una red \textbf{no son 388 entrenamientos independientes}. La semilla 43 comparte datos docentes y no convierte la evaluación en campaña equilibrada de varias semillas. No se ejecutaron pruebas de significación ni se afirma superioridad poblacional.
+
+
+
+\needspace{6\baselineskip}
+\section{Resultados y discusión}
+Las tablas siguientes se cotejan con \nolinkurl{artifacts/scope_alignment_v1/final/episodes.csv},\allowbreak{} \nolinkurl{summary.csv},\allowbreak{} \nolinkurl{failures.csv} y pares. No son resultados de nuevas ejecuciones en este cierre.
+
+
+\begingroup
+\setlength{\tabcolsep}{3pt}
+\renewcommand{\arraystretch}{1.35}
+\fontsize{9.1}{11.8}\selectfont
+\begin{longtable}{>{\raggedright\arraybackslash}p{0.3200\dimexpr\linewidth-18pt\relax}>{\raggedright\arraybackslash}p{0.3400\dimexpr\linewidth-18pt\relax}>{\raggedright\arraybackslash}p{0.3400\dimexpr\linewidth-18pt\relax}}
+\toprule
+\rowcolor{Pale}Método & Reservados & Complementarios \\
+\midrule
+\endfirsthead
+\toprule
+\rowcolor{Pale}Método & Reservados & Complementarios \\
+\midrule
+\endhead
+\bottomrule\endfoot
+PID & 98/\allowbreak{}100 & 287/\allowbreak{}288 \\
+DQN asistido 42 & 96/\allowbreak{}100 & 275/\allowbreak{}288 \\
+Double asistido 42 & 94/\allowbreak{}100 & 266/\allowbreak{}288 \\
+DQN asistido 43,\allowbreak{} sensibilidad & 100/\allowbreak{}100 & 277/\allowbreak{}288 \\
+DQN desde cero & 0/\allowbreak{}100 & 0/\allowbreak{}288 \\
+Double desde cero & 0/\allowbreak{}100 & 0/\allowbreak{}288 \\
+\end{longtable}
+\endgroup
+\begingroup
+\setlength{\tabcolsep}{3pt}
+\renewcommand{\arraystretch}{1.35}
+\fontsize{9.1}{11.8}\selectfont
+\begin{longtable}{>{\raggedright\arraybackslash}p{0.3000\dimexpr\linewidth-36pt\relax}>{\raggedright\arraybackslash}p{0.1400\dimexpr\linewidth-36pt\relax}>{\raggedright\arraybackslash}p{0.1400\dimexpr\linewidth-36pt\relax}>{\raggedright\arraybackslash}p{0.1400\dimexpr\linewidth-36pt\relax}>{\raggedright\arraybackslash}p{0.1400\dimexpr\linewidth-36pt\relax}>{\raggedright\arraybackslash}p{0.1400\dimexpr\linewidth-36pt\relax}}
+\toprule
+\rowcolor{Pale}Grupo (n por método) & PID & DQN asistido 42 & Double asistido 42 & DQN43 & Baselines DQN/\allowbreak{}Double \\
+\midrule
+\endfirsthead
+\toprule
+\rowcolor{Pale}Grupo (n por método) & PID & DQN asistido 42 & Double asistido 42 & DQN43 & Baselines DQN/\allowbreak{}Double \\
+\midrule
+\endhead
+\bottomrule\endfoot
+reserved: vertical (25) & 25 & 25 & 25 & 25 & 0 /\allowbreak{} 0 \\
+reserved: offset (25) & 24 & 23 & 23 & 25 & 0 /\allowbreak{} 0 \\
+reserved: tilted (25) & 24 & 24 & 25 & 25 & 0 /\allowbreak{} 0 \\
+reserved: wind (25) & 25 & 24 & 21 & 25 & 0 /\allowbreak{} 0 \\
+complement: represented\_l1 (32) & 32 & 28 & 28 & 29 & 0 /\allowbreak{} 0 \\
+complement: represented\_high (32) & 31 & 32 & 28 & 31 & 0 /\allowbreak{} 0 \\
+complement: new\_displacement (32) & 32 & 30 & 28 & 32 & 0 /\allowbreak{} 0 \\
+complement: new\_dynamics (32) & 32 & 31 & 29 & 29 & 0 /\allowbreak{} 0 \\
+complement: wind\_control (32) & 32 & 31 & 31 & 32 & 0 /\allowbreak{} 0 \\
+complement: wind\_m20 (32) & 32 & 31 & 31 & 32 & 0 /\allowbreak{} 0 \\
+complement: wind\_p20 (32) & 32 & 31 & 31 & 31 & 0 /\allowbreak{} 0 \\
+complement: wind\_m40 (32) & 32 & 29 & 28 & 30 & 0 /\allowbreak{} 0 \\
+complement: wind\_p40 (32) & 32 & 32 & 32 & 31 & 0 /\allowbreak{} 0 \\
+\end{longtable}
+\endgroup
+
+\begin{figure}[htbp]\centering
+\includegraphics[width=\linewidth]{figuras/exitos_pdf.pdf}
+\caption{Éxito en cada condición,\allowbreak{} todos los métodos}\end{figure}
+
+
+
+Los fallos no se excluyeron de las tasas. Se alcanzaron aterrizajes asistidos también en viento y condiciones nuevas,\allowbreak{} pero con fallos residuales: no se afirma robustez garantizada. En el barrido emparejado -40 N reduce éxitos respecto a calma en 2 casos DQN42 y 3 Double42; +40 N añade uno respecto a sus controles de 31/\allowbreak{}32. El signo favorable en esta muestra no demuestra una ventaja física o general de un sentido del viento.
+
+
+
+\needspace{6\baselineskip}
+\subsection{Causas,\allowbreak{} velocidades,\allowbreak{} orientación y precisión}
+\begingroup
+\setlength{\tabcolsep}{3pt}
+\renewcommand{\arraystretch}{1.35}
+\fontsize{9.1}{11.8}\selectfont
+\begin{longtable}{>{\raggedright\arraybackslash}p{0.3000\dimexpr\linewidth-48pt\relax}>{\raggedright\arraybackslash}p{0.1000\dimexpr\linewidth-48pt\relax}>{\raggedright\arraybackslash}p{0.1000\dimexpr\linewidth-48pt\relax}>{\raggedright\arraybackslash}p{0.1000\dimexpr\linewidth-48pt\relax}>{\raggedright\arraybackslash}p{0.1000\dimexpr\linewidth-48pt\relax}>{\raggedright\arraybackslash}p{0.1000\dimexpr\linewidth-48pt\relax}>{\raggedright\arraybackslash}p{0.1000\dimexpr\linewidth-48pt\relax}>{\raggedright\arraybackslash}p{0.1000\dimexpr\linewidth-48pt\relax}}
+\toprule
+\rowcolor{Pale}Método & Éxitos & Inválido & Cuerpo & Plata\-forma fallida & Techo & Salida lateral & Tiempo \\
+\midrule
+\endfirsthead
+\toprule
+\rowcolor{Pale}Método & Éxitos & Inválido & Cuerpo & Plata\-forma fallida & Techo & Salida lateral & Tiempo \\
+\midrule
+\endhead
+\bottomrule\endfoot
+PID & 385 & 3 & 0 & 0 & 0 & 0 & 0 \\
+DQN asistido 42 & 371 & 17 & 0 & 0 & 0 & 0 & 0 \\
+Double asistido 42 & 360 & 27 & 1 & 0 & 0 & 0 & 0 \\
+DQN asistido 43,\allowbreak{} sensibilidad & 377 & 11 & 0 & 0 & 0 & 0 & 0 \\
+DQN desde cero & 0 & 47 & 193 & 43 & 99 & 6 & 0 \\
+Double desde cero & 0 & 29 & 262 & 97 & 0 & 0 & 0 \\
+\end{longtable}
+\endgroup
+Todos los fallos DQN asistido 42 (17),\allowbreak{} DQN asistido 43 (11) y PID (3) incumplen el límite de velocidad angular. En Double42 hay 22 fallos únicamente por omega,\allowbreak{} otros cinco contactos inválidos con incumplimientos adicionales y un contacto del cuerpo. La cuantización de 0.477876 rad/\allowbreak{}s por pulso completo es consistente con la dificultad angular; no se concluye causalidad única ni se relaja el umbral.
+
+
+\begin{landscape}
+\begingroup
+\setlength{\tabcolsep}{3pt}
+\renewcommand{\arraystretch}{1.35}
+\fontsize{10.5}{13.5}\selectfont
+\begin{longtable}{>{\raggedright\arraybackslash}p{0.2500\dimexpr\linewidth-54pt\relax}>{\raggedright\arraybackslash}p{0.0938\dimexpr\linewidth-54pt\relax}>{\raggedright\arraybackslash}p{0.0938\dimexpr\linewidth-54pt\relax}>{\raggedright\arraybackslash}p{0.0938\dimexpr\linewidth-54pt\relax}>{\raggedright\arraybackslash}p{0.0938\dimexpr\linewidth-54pt\relax}>{\raggedright\arraybackslash}p{0.0938\dimexpr\linewidth-54pt\relax}>{\raggedright\arraybackslash}p{0.0938\dimexpr\linewidth-54pt\relax}>{\raggedright\arraybackslash}p{0.0938\dimexpr\linewidth-54pt\relax}>{\raggedright\arraybackslash}p{0.0938\dimexpr\linewidth-54pt\relax}}
+\toprule
+\rowcolor{Pale}Método /\allowbreak{} resultado & n /\allowbreak{} contactos & Gas N\ensuremath{\cdot}s & Duración s & Media abs(vx) m/\allowbreak{}s & vy m/\allowbreak{}s & Media abs(theta) rad & Media abs(omega) rad/\allowbreak{}s & Error x m \\
+\midrule
+\endfirsthead
+\toprule
+\rowcolor{Pale}Método /\allowbreak{} resultado & n /\allowbreak{} contactos & Gas N\ensuremath{\cdot}s & Duración s & Media abs(vx) m/\allowbreak{}s & vy m/\allowbreak{}s & Media abs(theta) rad & Media abs(omega) rad/\allowbreak{}s & Error x m \\
+\midrule
+\endhead
+\bottomrule\endfoot
+PID /\allowbreak{} éxito & 385 /\allowbreak{} 385 & 5762.4 & 5.859 & 0.099 & -0.474 & 0.017 & 0.010 & 0.106 \\
+PID /\allowbreak{} fracaso & 3 /\allowbreak{} 3 & 6521.0 & 6.609 & 0.158 & -0.435 & 0.005 & 0.470 & 0.006 \\
+DQN asistido 42 /\allowbreak{} éxito & 371 /\allowbreak{} 371 & 5737.2 & 5.834 & 0.090 & -0.488 & 0.019 & 0.007 & 0.149 \\
+DQN asistido 42 /\allowbreak{} fracaso & 17 /\allowbreak{} 17 & 4961.2 & 5.045 & 0.220 & -0.402 & 0.020 & 0.451 & 0.189 \\
+Double asistido 42 /\allowbreak{} éxito & 360 /\allowbreak{} 360 & 5731.5 & 5.821 & 0.094 & -0.461 & 0.020 & 0.007 & 0.152 \\
+Double asistido 42 /\allowbreak{} fracaso & 28 /\allowbreak{} 28 & 4919.9 & 4.995 & 0.415 & -1.383 & 0.134 & 0.571 & 0.440 \\
+DQN asistido 43,\allowbreak{} sensibilidad /\allowbreak{} éxito & 377 /\allowbreak{} 377 & 5896.5 & 5.994 & 0.092 & -0.457 & 0.019 & 0.008 & 0.138 \\
+DQN asistido 43,\allowbreak{} sensibilidad /\allowbreak{} fracaso & 11 /\allowbreak{} 11 & 4988.7 & 5.045 & 0.177 & -0.377 & 0.025 & 0.412 & 0.220 \\
+DQN desde cero /\allowbreak{} fracaso & 388 /\allowbreak{} 283 & 6066.7 & 6.266 & 1.698 & -15.209 & 1.637 & 6.636 & 3.044 \\
+Double desde cero /\allowbreak{} fracaso & 388 /\allowbreak{} 388 & 879.5 & 1.440 & 1.767 & -12.872 & 1.596 & 13.473 & 1.824 \\
+\end{longtable}
+\endgroup
+\end{landscape}
+Las medias se condicionan a resultado y usan solo contactos para velocidades/\allowbreak{}orientación/\allowbreak{}precisión. Los105 episodios sin contacto del baseline DQN no entran en esas métricas. Un impacto del cuerpo sí tiene estado al contacto,\allowbreak{} pero nunca se etiqueta como aterrizaje. \nolinkurl{summary.csv} conserva además medianas,\allowbreak{} percentiles 90 absolutos y desgloses por grupo,\allowbreak{} resultado y causa.
+
+
+
+\begin{figure}[htbp]\centering
+\includegraphics[width=\linewidth]{figuras/contacto_pdf.pdf}
+\caption{Velocidades al contacto y consumo separado por resultado}\end{figure}
+
+
+
+
+\needspace{6\baselineskip}
+\subsection{Consumo en casos comunes}
+Entre368 casos resueltos tanto por DQN42 como por PID,\allowbreak{} DQN consume en media 65.56 N\ensuremath{\cdot}s menos,\allowbreak{} con0.0431 m más de error horizontal. En357 pares Double42/\allowbreak{}PID,\allowbreak{} Double consume 63.27 N\ensuremath{\cdot}s menos y presenta0.0482 m más de error. Es un intercambio descriptivo sobre el subconjunto de éxitos comunes,\allowbreak{} no una superioridad global. El consumo cercano a 879.5 N\ensuremath{\cdot}s del baseline Double,\allowbreak{} que termina siempre en fracaso,\allowbreak{} \textbf{no es eficiencia de aterrizaje}.
+
+
+Los conjuntos de éxitos no emparejados difieren,\allowbreak{} por lo que sus medias no son directamente intercambiables. Las pequeñas diferencias de consumo tampoco prueban menor coste de cómputo: no se hizo un benchmark equilibrado de latencia/\allowbreak{}controladores ni de hardware.
+
+
+
+\needspace{6\baselineskip}
+\subsection{Hallazgos y explicación de la asistencia}
+\begingroup
+\setlength{\tabcolsep}{3pt}
+\renewcommand{\arraystretch}{1.35}
+\fontsize{9.1}{11.8}\selectfont
+\begin{longtable}{>{\raggedright\arraybackslash}p{0.3200\dimexpr\linewidth-18pt\relax}>{\raggedright\arraybackslash}p{0.3400\dimexpr\linewidth-18pt\relax}>{\raggedright\arraybackslash}p{0.3400\dimexpr\linewidth-18pt\relax}}
+\toprule
+\rowcolor{Pale}Afirmación & Evidencia & Interpretación y límite \\
+\midrule
+\endfirsthead
+\toprule
+\rowcolor{Pale}Afirmación & Evidencia & Interpretación y límite \\
+\midrule
+\endhead
+\bottomrule\endfoot
+Explorar desde cero produjo muy pocos aterrizajes & Variante ponderada DQN:3 éxitos en pasos 2324,\allowbreak{}4257,\allowbreak{}23468; Double0; políticas greedy0 & Descubrir un éxito exploratorio no implica reproducirlo sin azar \\
+Retener éxitos no bastó & Buffer150k conservó3 terminales y 56 transiciones de episodios exitosos,\allowbreak{} muestreadas 132 y 2400 veces; greedy0 & La mera retención no explica toda la dificultad; exposición no garantiza aprovechamiento \\
+La imitación proporciona elecciones útiles & CE v2 dio 119/\allowbreak{}128 en desarrollo para cada semilla/\allowbreak{}algoritmo & Es evidencia funcional supervisada,\allowbreak{} no prueba de aporte TD \\
+La cobertura de altura importó en los intentos ejecutados & V1 asistida:0/\allowbreak{}32 originales; v2:32/\allowbreak{}32 DQN42,\allowbreak{}30/\allowbreak{}32 Double42 y 32/\allowbreak{}32 DQN43 & La mejora acompaña un cambio explícito de soporte; no garantiza generalización universal \\
+La metodología asistida produjo controladores utilizables en los conjuntos medidos & Resultados finales de las tablas & Cambiaron también escalas,\allowbreak{} pérdidas,\allowbreak{} exploración,\allowbreak{} batch y presupuestos frente a baselines; no atribuir todo exclusivamente a demostraciones \\
+\end{longtable}
+\endgroup
+Es razonable \textbf{hipotetizar} que el frenado vertical y los pulsos compensatorios de orientación forman secuencias difíciles de descubrir y preservar con señales intermedias débiles. La asistencia aporta ejemplos de acciones útiles y un margen que protege su orden frente a otras acciones. El n-step está diseñado para propagar recompensas dentro de trayectorias docentes. Sin ablaciones aisladas no se sabe cuánto contribuyó cada mecanismo,\allowbreak{} ni si la mejora sería igual con otros profesores o cobertura.
+
+
+La auditoría física contrastó ocho acciones con RK4 independiente y caída libre analítica; no encontró un defecto que explicara el fracaso RL. Un contraste CartPole mostró aprendizaje parcial del DQN propio y mejor estabilidad en una referencia de tutorial,\allowbreak{} con configuraciones distintas. Esto descarta algunas sospechas,\allowbreak{} pero pasar pruebas o aprender CartPole no certifica todo el sistema ni establece la causa única de los fallos de aterrizaje.
+
+
+\textbf{No se aisló el beneficio de las actualizaciones TD frente a la imitación por sí sola}. Las cifras de CE en desarrollo no constituyen una comparación final de imitación sola: sus checkpoints no se evaluaron como nueva familia en el conjunto final y no se ejecutó esa comparación después de consumirlo.
+
+
+
+\needspace{6\baselineskip}
+\section{\textquestiondown{}Por qué no utilizar solamente PID?}
+PID es una solución válida y tuvo mayor éxito que las candidatas principales en las evaluaciones realizadas. Si el único requisito fuera controlar este simulador bajo estas condiciones,\allowbreak{} sus resultados respaldan mantenerlo como referencia práctica. No se necesita afirmar una ventaja neural para justificar ese resultado.
+
+
+El objetivo académico incluye estudiar y comparar aprendizaje por refuerzo. La red proporciona una política aprendida a partir del estado cuyo comportamiento se puede investigar,\allowbreak{} contrastar y analizar bajo condiciones comunes. Eso justifica el experimento,\allowbreak{} \textbf{no} una sustitución automática del PID ni una afirmación de adaptación,\allowbreak{} ahorro o superioridad no medida. Una política congelada no se adapta a una dinámica nueva por ser una red neuronal.
+
+
+\begingroup
+\setlength{\tabcolsep}{3pt}
+\renewcommand{\arraystretch}{1.35}
+\fontsize{9.1}{11.8}\selectfont
+\begin{longtable}{>{\raggedright\arraybackslash}p{0.2400\dimexpr\linewidth-30pt\relax}>{\raggedright\arraybackslash}p{0.1900\dimexpr\linewidth-30pt\relax}>{\raggedright\arraybackslash}p{0.1900\dimexpr\linewidth-30pt\relax}>{\raggedright\arraybackslash}p{0.1900\dimexpr\linewidth-30pt\relax}>{\raggedright\arraybackslash}p{0.1900\dimexpr\linewidth-30pt\relax}}
+\toprule
+\rowcolor{Pale}Aspecto & PID puro & Imitación sola & DQN/\allowbreak{}Double desde cero & DQN/\allowbreak{}Double asistidos por PID \\
+\midrule
+\endfirsthead
+\toprule
+\rowcolor{Pale}Aspecto & PID puro & Imitación sola & DQN/\allowbreak{}Double desde cero & DQN/\allowbreak{}Double asistidos por PID \\
+\midrule
+\endhead
+\bottomrule\endfoot
+Conocimiento necesario & Estructura de la cascada,\allowbreak{} signos,\allowbreak{} escalas,\allowbreak{} autoridad y ganancias & Profesor y representación de observación & MDP,\allowbreak{} recompensa,\allowbreak{} acciones e hiperparámetros & Los anteriores más generación/\allowbreak{}selección docente y mezcla de pérdidas \\
+Datos & Estado actual e historial interno; validación para ajuste & Pares observación-acción PID de entrenamiento & Transiciones propias con recompensas & Demostraciones permanentes y replay propio \\
+Entrenamiento & Sin optimización de red; ajuste de ganancias & Entropía cruzada en fase A & TD con replay y objetivo & CE inicial; después TD1/\allowbreak{}n-step y margen \\
+Inferencia & Cascada y búsqueda entre8 acciones,\allowbreak{} con memoria & Argmax MLP & Argmax MLP & Argmax MLP,\allowbreak{} sin profesor \\
+Interpretabilidad & Errores,\allowbreak{} consignas,\allowbreak{} saturaciones y score inspeccionables & Acción aprendida,\allowbreak{} menos trazable & Q aproximado y política,\allowbreak{} menos interpretables & Igual limitación,\allowbreak{} más dependencia de datos/\allowbreak{}pérdidas \\
+Resultado comprobado & 98/\allowbreak{}100 y 287/\allowbreak{}288 & 119/\allowbreak{}128 desarrollo v2; sin comparación final independiente & 0/\allowbreak{}100 y 0/\allowbreak{}288 por baseline seleccionado & 96/\allowbreak{}100 y 275/\allowbreak{}288 DQN;94/\allowbreak{}100 y 266/\allowbreak{}288 Double \\
+Limitaciones principales & Cuantización,\allowbreak{} ajuste local,\allowbreak{} sin garantía global & Distribución/\allowbreak{}errores del profesor; memoria no observada & Exploración,\allowbreak{} crédito,\allowbreak{} inestabilidad y presupuesto ensayado & Calidad/\allowbreak{}cobertura docente; contribuciones no aisladas \\
+\end{longtable}
+\endgroup
+Adaptarse mejor a nuevas dinámicas,\allowbreak{} gastar menos en general,\allowbreak{} requerir menos cómputo o superar al PID son posibilidades de investigación que necesitan pruebas nuevas. Aquí no son ventajas demostradas. La red tampoco contiene aprendizaje online durante la evaluación o la animación.
+
+
+
+\needspace{6\baselineskip}
+\section{Limitaciones}
+\begin{enumerate}
+\item \textbf{Física simplificada:} movimiento2D,\allowbreak{} cuerpo rígido,\allowbreak{} masa/\allowbreak{}inercia constantes,\allowbreak{} sin aerodinámica detallada,\allowbreak{} rebote,\allowbreak{} fricción ni asentamiento. Sin validación de vehículo real; parámetros académicos sin equivalencia exacta Tesla.
+\item \textbf{Observación ideal:} estado y viento disponibles sin ruido,\allowbreak{} fallos sensoriales ni latencia. Tiempo restante no observado; el horizonte se interpreta como corte externo.
+\item \textbf{Viento limitado:} fuerza constante en centro de masa; complemento hasta\ensuremath{\pm}40 N y reservado con valores concretos predefinidos. No se ensayaron ráfagas,\allowbreak{} momentos de viento ni procesos ocultos.
+\item \textbf{Cuantización:} ocho acciones y 20 Hz pueden producir giros mayores que el umbral al contacto. El detector por subpasos no tiene garantías para trayectorias extremas que cruzan y vuelven en un subpaso.
+\item \textbf{Datos docentes:} éxitos seleccionados,\allowbreak{} cobertura limitada,\allowbreak{} PID con memoria interna ausente de la entrada MLP. El holdout docente v2 contiene solo L1 y no es un conjunto independiente de resets online.
+\item \textbf{Comparación experimental:} una semilla principal por algoritmo,\allowbreak{} una adicional DQN con demostraciones compartidas; datos,\allowbreak{} configuraciones y presupuestos distintos entre familias. Los baselines evaluados son checkpoints concretos de los pilotos uniformes,\allowbreak{} no la mejor política posible de cada algoritmo.
+\item \textbf{Atribución:} contribución TD no aislada frente a imitación; no hay garantías de convergencia,\allowbreak{} estabilidad,\allowbreak{} optimalidad o generalización.
+\item \textbf{Reserva:} el PID ya había sido evaluado en los 100 casos históricos; la independencia común se refuerza con el complemento,\allowbreak{} sin borrar esa exposición previa. La prueba final ya se consumió.
+\item \textbf{Ejecución y entrega:} verificación gráfica bajo SDL dummy,\allowbreak{} no interacción humana real. \nolinkurl{animate_scope.py} congelado usa \nolinkurl{setdefault('SDL_VIDEODRIVER','dummy')} incluso con \nolinkurl{--human} si no existe driver explícito; por ello ese comando no certifica una ventana real. Se registra esta incidencia de demostración,\allowbreak{} sin alterar el evaluador,\allowbreak{} los resultados ni el script congelado.
+\item \textbf{Persistencia:} checkpoints asistidos de inferencia no permiten reanudación fiel por falta de replay y todo el estado de RNG/\allowbreak{}entorno. Versiones y rutas deben respetarse para verificar hashes.\end{enumerate}
+
+
+\needspace{6\baselineskip}
+\section{Conclusiones y trabajo futuro}
+Se implementó y verificó el alcance técnico2D: dinámica propia,\allowbreak{} propulsores discretos,\allowbreak{} observaciones,\allowbreak{} recursos,\allowbreak{} controladores,\allowbreak{} perturbaciones,\allowbreak{} métricas,\allowbreak{} animación y reporte. PID mostró mayor consistencia que los candidatos primarios. Los baselines desde cero no aterrizaron en la comparación final; esa limitación se conserva,\allowbreak{} sin cambiar recompensa ni umbrales para producir éxitos.
+
+
+La ampliación asistida produjo políticas funcionales con inferencia exclusivamente neuronal y TD efectivamente ejecutado,\allowbreak{} pero no permite atribuir a TD una mejora sobre imitación. Esta asistencia se presenta como un componente adicional de la investigación y se distingue del aprendizaje desde cero. La comparación sirve para estudiar compromisos entre consistencia,\allowbreak{} precisión y consumo en este simulador,\allowbreak{} sin extrapolar a hardware ni afirmar superioridad general.
+
+
+Trabajo futuro,\allowbreak{} \textbf{no ejecutado ni autorizado automáticamente por este informe}: diseñar una comparación controlada imitación/\allowbreak{}TD sobre un nuevo conjunto independiente; equilibrar varias semillas y generación docente; estudiar perturbaciones/\allowbreak{}ruido y cuantización con protocolo nuevo; verificar interacción gráfica local. Cualquier cambio de dinámica,\allowbreak{} recompensa,\allowbreak{} representación o entrenamiento será otro experimento y necesitará otra evaluación independiente. No se reutilizará la prueba consumida para reajustar y declarar de nuevo generalización.
+
+
+
+\needspace{6\baselineskip}
+\section{Referencias primarias y relación con la implementación}
+Se contrastaron fuentes primarias y documentación oficial durante este cierre. Los artículos DQN/\allowbreak{}Double/\allowbreak{}Demonstrations y las páginas PyTorch/\allowbreak{}Gymnasium se pudieron consultar; para el libro PID se verificó el contenido indexado del capítulo del autor,\allowbreak{} pero la descarga integral del PDF agotó el tiempo de conexión. Se registra esa limitación de acceso,\allowbreak{} sin afirmar una lectura integral inexistente. Las ecuaciones particulares,\allowbreak{} constantes y métricas proceden del código/\allowbreak{}CSV citados,\allowbreak{} no se completan por analogía con estos trabajos.
+
+
+\begin{itemize}
+\item \textbf{Åström,\allowbreak{} K. J.; Murray,\allowbreak{} R. M.} \emph{Feedback Systems: An Introduction for Scientists and Engineers},\allowbreak{} material de los autores,\allowbreak{} versión 2019. \href{https://www.cds.caltech.edu/~murray/books/AM08/pdf/fbs-author_29Mar19.pdf}{Texto alojado por el autor},\allowbreak{} \href{https://www.cds.caltech.edu/~murray/FBS/Chapter_10_-_PID_Control.html}{índice del capítulo PID}. Marco P/\allowbreak{}I/\allowbreak{}D y saturación; el anti-windup condicional propio se describe desde código,\allowbreak{} sin atribuir una copia exacta del esquema del libro.
+\item \textbf{Mnih,\allowbreak{} V. et al. (2015).} \emph{Human-level control through deep reinforcement learning}. Nature518,\allowbreak{}529-533. DOI10.1038/\allowbreak{}nature 14236. \href{https://storage.googleapis.com/deepmind-media/dqn/DQNNaturePaper.pdf}{Artículo original alojado por DeepMind}. Replay y red objetivo DQN; no se extrapolan sus resultados de Atari al vehículo.
+\item \textbf{van Hasselt,\allowbreak{} H.; Guez,\allowbreak{} A.; Silver,\allowbreak{} D. (2015/\allowbreak{}2016).} \emph{Deep Reinforcement Learning with Double Q-learning},\allowbreak{} AAAI2016; arXiv1509.06461. \href{https://arxiv.org/html/1509.06461v3}{Artículo original}. Separación selección/\allowbreak{}evaluación del target; no implica mejor desempeño en todo entorno.
+\item \textbf{Hester,\allowbreak{} T. et al. (2017/\allowbreak{}2018).} \emph{Deep Q-learning from Demonstrations},\allowbreak{} AAAI2018; arXiv1704.03732. \href{https://arxiv.org/html/1704.03732v4}{Artículo original}. Antecedente de combinación supervisión/\allowbreak{}TD/\allowbreak{}multietapa. El proyecto no implementa su PER,\allowbreak{} regularización ni protocolo exacto y no se denomina DQfD.
+\item \textbf{PyTorch2.15.} \href{https://docs.pytorch.org/docs/2.15/generated/torch.nn.SmoothL1Loss.html}{SmoothL1Loss}. Definición de beta,\allowbreak{} reducción y diferencia de escala con Huber.
+\item \textbf{Farama Foundation /\allowbreak{} Gymnasium1.4.} \href{https://gymnasium.farama.org/tutorials/gymnasium_basics/handling_time_limits/}{Handling Time Limits}. Terminación/\allowbreak{}truncamiento y bootstrap; la clasificación de salidas físicas del proyecto está fijada por su propio entorno.\end{itemize}
+
+
+\needspace{6\baselineskip}
+\section{Guía de reproducción y mapa de entrega}
+La entrada principal es \textcolor{Accent}{README}. \textcolor{Accent}{demostracion.md} ofrece un guion sin entrenamiento y una galería offline de GIF. \textcolor{Accent}{evaluacion\_alcance.md} conserva protocolo/\allowbreak{}resultados; \textcolor{Accent}{trazabilidad\_alcance.md},\allowbreak{} contrato y pendientes. Los informes anteriores son historia experimental y no sustituyen este estado final.
+
+
+Desde raíz,\allowbreak{} con Python3.12 y dependencias instaladas según README:
+
+
+
+\begin{CodeBlock}
+# Verificar hashes y cifras existentes; no simula, no aprende y no reevalúa.
+.venv/bin/python scripts/verify_delivery.py
+
+# Reconstruir únicamente tablas/figuras de los CSV congelados existentes.
+.venv/bin/python scripts/report_scope.py
+
+# Abrir docs/demostracion.html en navegador: solo GIF locales, sin simulación.
+# Regenerar los GIF desde estados guardados, sin pasos nuevos de entorno.
+.venv/bin/python scripts/animate_scope.py
+
+# Empaquetar fuentes, configuraciones, informe, evidencia y modelos seleccionados.
+.venv/bin/python scripts/build_delivery.py
+\end{CodeBlock}
+
+El protocolo ofrece \nolinkurl{evaluate_scope.py --output NUEVA_RUTA} para reproducción numérica exacta,\allowbreak{} pero \textbf{no se volvió a ejecutar la prueba en este cierre}; no debe usarse para ajustar parámetros. Los comandos históricos de entrenamiento se conservan en sus informes y no forman parte de la demostración o verificación de entrega.
+
+
+La última suite completa disponible pasó 118 pruebas y el checker fue válido; las dos advertencias conocidas del Box se conservan. Este cierre no relanza la suite completa porque incluye pruebas con optimización de agentes: se utiliza verificación documental/\allowbreak{}numérica de solo lectura y \nolinkurl{pip check}. No se confunden esas comprobaciones con un entrenamiento nuevo ni con certificación de hardware.
+
+
+\end{document}

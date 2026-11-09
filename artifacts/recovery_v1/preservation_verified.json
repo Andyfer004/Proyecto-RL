@@ -1,0 +1,10 @@
+{
+  "previous_files_checked": 1118,
+  "all_unchanged": true,
+  "frozen_protocols_checked": [
+    "frozen_development_protocol.json",
+    "frozen_coverage_v2_protocol.json"
+  ],
+  "final_test_evaluations": 0,
+  "physics_reward_actions_thresholds_PID_unchanged": true
+}

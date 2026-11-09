@@ -1,0 +1,2183 @@
+{
+  "schema_version": 1,
+  "split": "validation",
+  "role": "development",
+  "scenarios": [
+    {
+      "id": "coverage-v2-development-0000",
+      "condition": "level1",
+      "source_level": 1,
+      "seed": 320000,
+      "options": {
+        "initial_state": {
+          "x": 0.01294455179762537,
+          "y": 2.064275098737427,
+          "vx": 0.013078052458252021,
+          "vy": -0.290060240833302,
+          "theta": 0.009983598519513068,
+          "omega": 0.0014766743017160877
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "coverage-v2-development-0001",
+      "condition": "original",
+      "source_level": 3,
+      "seed": 320001,
+      "options": {
+        "initial_state": {
+          "x": 0.01782831822602968,
+          "y": 12.46108441028255,
+          "vx": -0.06099018000608754,
+          "vy": -0.4125340989251973,
+          "theta": 0.016358175035708775,
+          "omega": 0.0036954971319212637
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "coverage-v2-development-0002",
+      "condition": "level1",
+      "source_level": 1,
+      "seed": 320002,
+      "options": {
+        "initial_state": {
+          "x": -0.09659848183835824,
+          "y": 2.0725150553902267,
+          "vx": 0.0009073122296394498,
+          "vy": -0.13799388184635739,
+          "theta": -0.0005300543772935362,
+          "omega": 0.001575065771114269
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "coverage-v2-development-0003",
+      "condition": "original",
+      "source_level": 3,
+      "seed": 320003,
+      "options": {
+        "initial_state": {
+          "x": 0.2078821380186037,
+          "y": 11.517134351653587,
+          "vx": 0.09115468089338817,
+          "vy": -0.757386815911266,
+          "theta": -0.028798837162080763,
+          "omega": -0.0021226199237303245
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "coverage-v2-development-0004",
+      "condition": "level1",
+      "source_level": 1,
+      "seed": 320004,
+      "options": {
+        "initial_state": {
+          "x": 0.07634210111603175,
+          "y": 2.1687554765519232,
+          "vx": -0.020625083045564922,
+          "vy": -0.29911229208646456,
+          "theta": 0.001531841732800816,
+          "omega": 0.0013465830660692002
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "coverage-v2-development-0005",
+      "condition": "original",
+      "source_level": 3,
+      "seed": 320005,
+      "options": {
+        "initial_state": {
+          "x": 0.161087999810681,
+          "y": 9.13100074246899,
+          "vx": -0.09926925448983648,
+          "vy": -0.8195452741453897,
+          "theta": 0.024625200589640562,
+          "omega": -0.0007440808702515712
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "coverage-v2-development-0006",
+      "condition": "level1",
+      "source_level": 1,
+      "seed": 320006,
+      "options": {
+        "initial_state": {
+          "x": -0.0656810781847531,
+          "y": 1.8752780597545489,
+          "vx": 0.02331518721988435,
+          "vy": -0.2562498550316309,
+          "theta": 0.0012460266081026484,
+          "omega": 0.00014220501176154032
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "coverage-v2-development-0007",
+      "condition": "original",
+      "source_level": 3,
+      "seed": 320007,
+      "options": {
+        "initial_state": {
+          "x": -0.07277836049797157,
+          "y": 10.89783298744782,
+          "vx": -0.06638440333048017,
+          "vy": -0.5882797804846537,
+          "theta": -0.010288173285237864,
+          "omega": -0.003200639036242756
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "coverage-v2-development-0008",
+      "condition": "level1",
+      "source_level": 1,
+      "seed": 320008,
+      "options": {
+        "initial_state": {
+          "x": -0.05833503178461866,
+          "y": 2.2966478872697635,
+          "vx": -0.008705923893953948,
+          "vy": -0.21655013927998149,
+          "theta": 0.008346290774764118,
+          "omega": 0.0030461516525043244
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "coverage-v2-development-0009",
+      "condition": "original",
+      "source_level": 3,
+      "seed": 320009,
+      "options": {
+        "initial_state": {
+          "x": 0.059827353746854856,
+          "y": 10.024538052172032,
+          "vx": 0.0024893369327477766,
+          "vy": -0.33639120534725886,
+          "theta": 0.008726259450476169,
+          "omega": 0.003669272544422193
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "coverage-v2-development-0010",
+      "condition": "level1",
+      "source_level": 1,
+      "seed": 320010,
+      "options": {
+        "initial_state": {
+          "x": 0.07149563634298806,
+          "y": 1.64670395892139,
+          "vx": -0.02326704179297744,
+          "vy": -0.295487506394354,
+          "theta": -0.007989260086765503,
+          "omega": -0.0022947701553137434
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "coverage-v2-development-0011",
+      "condition": "original",
+      "source_level": 3,
+      "seed": 320011,
+      "options": {
+        "initial_state": {
+          "x": 0.2472618982460279,
+          "y": 10.69584237554216,
+          "vx": 0.04469163711132851,
+          "vy": -0.08584188137160886,
+          "theta": -0.010770251600486497,
+          "omega": -0.00134189761004898
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "coverage-v2-development-0012",
+      "condition": "level1",
+      "source_level": 1,
+      "seed": 320012,
+      "options": {
+        "initial_state": {
+          "x": -0.07032695136801104,
+          "y": 1.8236660925789419,
+          "vx": 0.010370990773696543,
+          "vy": -0.06093533402210621,
+          "theta": 0.009528027529161402,
+          "omega": -0.004809378013347179
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "coverage-v2-development-0013",
+      "condition": "original",
+      "source_level": 3,
+      "seed": 320013,
+      "options": {
+        "initial_state": {
+          "x": 0.28306986700005465,
+          "y": 8.820151601104516,
+          "vx": -0.08114607800237875,
+          "vy": -0.38968082648654767,
+          "theta": 0.022960799497100545,
+          "omega": 0.004063627419114655
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "coverage-v2-development-0014",
+      "condition": "level1",
+      "source_level": 1,
+      "seed": 320014,
+      "options": {
+        "initial_state": {
+          "x": 0.060533577084338534,
+          "y": 1.825874181942899,
+          "vx": 0.017437519705784485,
+          "vy": -0.14322281301415424,
+          "theta": 0.0024921386544785175,
+          "omega": -0.0009075763313330687
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "coverage-v2-development-0015",
+      "condition": "original",
+      "source_level": 3,
+      "seed": 320015,
+      "options": {
+        "initial_state": {
+          "x": -0.2641620793157777,
+          "y": 9.490640149774318,
+          "vx": -0.024842304198227062,
+          "vy": -0.1357495474767696,
+          "theta": -0.014083650577255108,
+          "omega": 0.0027735870918636054
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "coverage-v2-development-0016",
+      "condition": "level1",
+      "source_level": 1,
+      "seed": 320016,
+      "options": {
+        "initial_state": {
+          "x": -0.04546753842730709,
+          "y": 2.3378652976540826,
+          "vx": -0.025108782454618655,
+          "vy": -0.0741773774181978,
+          "theta": 0.007702356789518852,
+          "omega": 0.0003494374268752498
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "coverage-v2-development-0017",
+      "condition": "original",
+      "source_level": 3,
+      "seed": 320017,
+      "options": {
+        "initial_state": {
+          "x": -0.007331345886885398,
+          "y": 8.652571101594534,
+          "vx": -0.03140538538490789,
+          "vy": -0.6853632465491226,
+          "theta": 0.0007644968576854039,
+          "omega": 0.0038321659544475186
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "coverage-v2-development-0018",
+      "condition": "level1",
+      "source_level": 1,
+      "seed": 320018,
+      "options": {
+        "initial_state": {
+          "x": -0.011847695959994643,
+          "y": 2.1012433790194733,
+          "vx": -0.02773407996304935,
+          "vy": -0.23185487632043797,
+          "theta": 0.005551108206061619,
+          "omega": -0.0044247402685208
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "coverage-v2-development-0019",
+      "condition": "original",
+      "source_level": 3,
+      "seed": 320019,
+      "options": {
+        "initial_state": {
+          "x": -0.10398005285958445,
+          "y": 9.124285262082841,
+          "vx": 0.09189352563091265,
+          "vy": -0.40180309416859883,
+          "theta": -0.025424008509382517,
+          "omega": 0.0026640713729763356
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "coverage-v2-development-0020",
+      "condition": "level1",
+      "source_level": 1,
+      "seed": 320020,
+      "options": {
+        "initial_state": {
+          "x": 0.04489583091903104,
+          "y": 1.9138407420707526,
+          "vx": 0.005178291203823824,
+          "vy": -0.14304129250532882,
+          "theta": 0.007198419997934713,
+          "omega": 0.0015339155116402736
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "coverage-v2-development-0021",
+      "condition": "original",
+      "source_level": 3,
+      "seed": 320021,
+      "options": {
+        "initial_state": {
+          "x": 0.04320040469653952,
+          "y": 8.050888550916223,
+          "vx": 0.038922737209327464,
+          "vy": -0.07448686700694085,
+          "theta": 0.01974752254129631,
+          "omega": 0.0032667296689082403
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "coverage-v2-development-0022",
+      "condition": "level1",
+      "source_level": 1,
+      "seed": 320022,
+      "options": {
+        "initial_state": {
+          "x": -0.09136192509064818,
+          "y": 2.273451817967763,
+          "vx": 0.0017297488672793036,
+          "vy": -0.2158381308367578,
+          "theta": -0.004030072084066813,
+          "omega": -0.0005587913647561538
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "coverage-v2-development-0023",
+      "condition": "original",
+      "source_level": 3,
+      "seed": 320023,
+      "options": {
+        "initial_state": {
+          "x": 0.10143287801215961,
+          "y": 8.75706653770097,
+          "vx": -0.006787986304033034,
+          "vy": -0.032097426431418774,
+          "theta": -0.007009218823482774,
+          "omega": 0.004563808265914975
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "coverage-v2-development-0024",
+      "condition": "level1",
+      "source_level": 1,
+      "seed": 320024,
+      "options": {
+        "initial_state": {
+          "x": -0.09654211115582204,
+          "y": 1.937488175717517,
+          "vx": 0.026674959829235265,
+          "vy": -0.06501923642067325,
+          "theta": -0.004208124817620109,
+          "omega": 0.0032029086659702967
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "coverage-v2-development-0025",
+      "condition": "original",
+      "source_level": 3,
+      "seed": 320025,
+      "options": {
+        "initial_state": {
+          "x": -0.22888361119405287,
+          "y": 9.892702999181864,
+          "vx": -0.027549537224048782,
+          "vy": -0.9558164667697625,
+          "theta": 0.022077346396238165,
+          "omega": 0.0009104963342533612
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "coverage-v2-development-0026",
+      "condition": "level1",
+      "source_level": 1,
+      "seed": 320026,
+      "options": {
+        "initial_state": {
+          "x": 0.05664441708082107,
+          "y": 2.2033317948778777,
+          "vx": -0.0007640504611790178,
+          "vy": -0.13953462080541823,
+          "theta": 0.003918386409170696,
+          "omega": -0.002666794928786984
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "coverage-v2-development-0027",
+      "condition": "original",
+      "source_level": 3,
+      "seed": 320027,
+      "options": {
+        "initial_state": {
+          "x": 0.29357673250462585,
+          "y": 10.900098533380287,
+          "vx": -0.018951740274244934,
+          "vy": -0.429765708570512,
+          "theta": -0.024702687260484746,
+          "omega": 0.004478496112898919
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "coverage-v2-development-0028",
+      "condition": "level1",
+      "source_level": 1,
+      "seed": 320028,
+      "options": {
+        "initial_state": {
+          "x": 0.06094078030368477,
+          "y": 1.6853357495806907,
+          "vx": -0.01001249673772583,
+          "vy": -0.08005616455671974,
+          "theta": -0.0026640635724349783,
+          "omega": -0.003672887863674159
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "coverage-v2-development-0029",
+      "condition": "original",
+      "source_level": 3,
+      "seed": 320029,
+      "options": {
+        "initial_state": {
+          "x": 0.10531693250782492,
+          "y": 9.977652228977542,
+          "vx": -0.04735544042104818,
+          "vy": -0.8586729474903682,
+          "theta": 0.010623137340451488,
+          "omega": 0.002331880089285874
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "coverage-v2-development-0030",
+      "condition": "level1",
+      "source_level": 1,
+      "seed": 320030,
+      "options": {
+        "initial_state": {
+          "x": -0.041592779060557784,
+          "y": 1.67913636222727,
+          "vx": 0.019191045353181866,
+          "vy": -0.22266807543705405,
+          "theta": -0.0017227439399924549,
+          "omega": 0.0037385270197586996
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "coverage-v2-development-0031",
+      "condition": "original",
+      "source_level": 3,
+      "seed": 320031,
+      "options": {
+        "initial_state": {
+          "x": 0.037477560944931355,
+          "y": 12.65947678216178,
+          "vx": 0.02726466651573758,
+          "vy": -0.426423762278594,
+          "theta": -0.0034094002492966965,
+          "omega": -0.002360955156830913
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "coverage-v2-development-0032",
+      "condition": "level1",
+      "source_level": 1,
+      "seed": 320032,
+      "options": {
+        "initial_state": {
+          "x": -0.022554746297049788,
+          "y": 2.0143472999865293,
+          "vx": 0.0015308994428421506,
+          "vy": -0.12998310695794843,
+          "theta": -0.0022835300754559017,
+          "omega": -0.0013197763069144775
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "coverage-v2-development-0033",
+      "condition": "original",
+      "source_level": 3,
+      "seed": 320033,
+      "options": {
+        "initial_state": {
+          "x": -0.23194365844120055,
+          "y": 12.7700882099726,
+          "vx": -0.013879123756326207,
+          "vy": -0.46298525452953476,
+          "theta": -0.018144428109958755,
+          "omega": -0.004771660332461124
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "coverage-v2-development-0034",
+      "condition": "level1",
+      "source_level": 1,
+      "seed": 320034,
+      "options": {
+        "initial_state": {
+          "x": -0.04038623302467592,
+          "y": 1.8097141179074654,
+          "vx": -0.012057786193764788,
+          "vy": -0.2450832037100669,
+          "theta": 0.007388185013790281,
+          "omega": -0.0032180878113765034
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "coverage-v2-development-0035",
+      "condition": "original",
+      "source_level": 3,
+      "seed": 320035,
+      "options": {
+        "initial_state": {
+          "x": 0.0539683457412065,
+          "y": 12.440163242104067,
+          "vx": 0.02412348115473724,
+          "vy": -0.8724385338867147,
+          "theta": 0.023898552727047908,
+          "omega": 0.0010443852798399157
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "coverage-v2-development-0036",
+      "condition": "level1",
+      "source_level": 1,
+      "seed": 320036,
+      "options": {
+        "initial_state": {
+          "x": 0.07398965715504646,
+          "y": 2.128696289338713,
+          "vx": 0.02508409178089462,
+          "vy": -0.1536514197390173,
+          "theta": 0.00927994177756057,
+          "omega": -0.003947677245841865
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "coverage-v2-development-0037",
+      "condition": "original",
+      "source_level": 3,
+      "seed": 320037,
+      "options": {
+        "initial_state": {
+          "x": -0.014456732269851735,
+          "y": 11.703122260420745,
+          "vx": 0.05385383909917492,
+          "vy": -0.7332383627351778,
+          "theta": -7.843645679794786e-06,
+          "omega": -0.0024828017392540336
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "coverage-v2-development-0038",
+      "condition": "level1",
+      "source_level": 1,
+      "seed": 320038,
+      "options": {
+        "initial_state": {
+          "x": -0.011008508692313025,
+          "y": 2.2319665501986754,
+          "vx": 0.009354660079540063,
+          "vy": -0.05475710099758305,
+          "theta": -0.0028388328298566304,
+          "omega": -0.0029829421575215363
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "coverage-v2-development-0039",
+      "condition": "original",
+      "source_level": 3,
+      "seed": 320039,
+      "options": {
+        "initial_state": {
+          "x": 0.1368178047645782,
+          "y": 12.01032600646985,
+          "vx": 0.043101158205338753,
+          "vy": -0.10858452294637266,
+          "theta": 0.01821865590368862,
+          "omega": 0.0032294279467143094
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "coverage-v2-development-0040",
+      "condition": "level1",
+      "source_level": 1,
+      "seed": 320040,
+      "options": {
+        "initial_state": {
+          "x": 0.06101714012721156,
+          "y": 1.8863339037519253,
+          "vx": 0.018421526266285425,
+          "vy": -0.13327856996572912,
+          "theta": 0.006445460931873945,
+          "omega": 0.0041765672398723554
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "coverage-v2-development-0041",
+      "condition": "original",
+      "source_level": 3,
+      "seed": 320041,
+      "options": {
+        "initial_state": {
+          "x": 0.18342745441542205,
+          "y": 9.313387178049009,
+          "vx": 0.018983652627140635,
+          "vy": -0.08482495827232261,
+          "theta": 0.021924756849858142,
+          "omega": 0.0031464412535622435
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "coverage-v2-development-0042",
+      "condition": "level1",
+      "source_level": 1,
+      "seed": 320042,
+      "options": {
+        "initial_state": {
+          "x": -0.057998954085726286,
+          "y": 2.224626387678591,
+          "vx": -0.0034046646186648476,
+          "vy": -0.2391320805956896,
+          "theta": -0.006544177993495446,
+          "omega": 0.004653584833985405
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "coverage-v2-development-0043",
+      "condition": "original",
+      "source_level": 3,
+      "seed": 320043,
+      "options": {
+        "initial_state": {
+          "x": 0.19839372747468517,
+          "y": 12.964536415821884,
+          "vx": -0.047579116115811386,
+          "vy": -0.44865380720047665,
+          "theta": -0.0005093622533744013,
+          "omega": -0.0014769962260991775
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "coverage-v2-development-0044",
+      "condition": "level1",
+      "source_level": 1,
+      "seed": 320044,
+      "options": {
+        "initial_state": {
+          "x": 0.037450203942563376,
+          "y": 2.34608445558483,
+          "vx": 0.017130542942392017,
+          "vy": -0.18971074872381297,
+          "theta": -0.0016113204216002463,
+          "omega": 0.0038573534753524844
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "coverage-v2-development-0045",
+      "condition": "original",
+      "source_level": 3,
+      "seed": 320045,
+      "options": {
+        "initial_state": {
+          "x": 0.23175073966956297,
+          "y": 10.700393560627331,
+          "vx": 0.010638901795311396,
+          "vy": -0.7080566013403012,
+          "theta": 0.01753242474182019,
+          "omega": 0.0004702316164761955
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "coverage-v2-development-0046",
+      "condition": "level1",
+      "source_level": 1,
+      "seed": 320046,
+      "options": {
+        "initial_state": {
+          "x": -0.0286286234826451,
+          "y": 2.160990092149505,
+          "vx": 0.0064853037719727075,
+          "vy": -0.12809365436811854,
+          "theta": -0.006666716764001735,
+          "omega": -0.0013405549626850565
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "coverage-v2-development-0047",
+      "condition": "original",
+      "source_level": 3,
+      "seed": 320047,
+      "options": {
+        "initial_state": {
+          "x": -0.21482612449460683,
+          "y": 10.987656530934334,
+          "vx": -0.04968380755064579,
+          "vy": -0.5773676645994021,
+          "theta": -0.015045477107147258,
+          "omega": -0.0007150862307881522
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "coverage-v2-development-0048",
+      "condition": "level1",
+      "source_level": 1,
+      "seed": 320048,
+      "options": {
+        "initial_state": {
+          "x": 0.03625243707597919,
+          "y": 1.6462302423205029,
+          "vx": -0.012780305911887585,
+          "vy": -0.05497646505501938,
+          "theta": -0.003524297330483912,
+          "omega": -0.0016476650883267042
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "coverage-v2-development-0049",
+      "condition": "original",
+      "source_level": 3,
+      "seed": 320049,
+      "options": {
+        "initial_state": {
+          "x": 0.24887122975189568,
+          "y": 12.111123443463983,
+          "vx": 0.037295340466670115,
+          "vy": -0.9679278056914886,
+          "theta": -0.00890848731192178,
+          "omega": 0.0032431480759715515
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "coverage-v2-development-0050",
+      "condition": "level1",
+      "source_level": 1,
+      "seed": 320050,
+      "options": {
+        "initial_state": {
+          "x": 0.061962592142482766,
+          "y": 2.3574313373579345,
+          "vx": -0.025959353829830886,
+          "vy": -0.11945080060727123,
+          "theta": -0.0020478257112174526,
+          "omega": -0.004647579167390498
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "coverage-v2-development-0051",
+      "condition": "original",
+      "source_level": 3,
+      "seed": 320051,
+      "options": {
+        "initial_state": {
+          "x": 0.1363945617298197,
+          "y": 12.911758449310524,
+          "vx": -0.08921775833215305,
+          "vy": -0.7919270446757367,
+          "theta": 0.022892917376601346,
+          "omega": -0.003062403278414342
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "coverage-v2-development-0052",
+      "condition": "level1",
+      "source_level": 1,
+      "seed": 320052,
+      "options": {
+        "initial_state": {
+          "x": 0.019184299608870515,
+          "y": 1.6915367018519734,
+          "vx": 0.018030221267501086,
+          "vy": -0.112938748083181,
+          "theta": -0.0018585530407927498,
+          "omega": 0.0019693868018528515
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "coverage-v2-development-0053",
+      "condition": "original",
+      "source_level": 3,
+      "seed": 320053,
+      "options": {
+        "initial_state": {
+          "x": -0.03380670910402175,
+          "y": 9.829167065705184,
+          "vx": 0.04467557204513424,
+          "vy": -0.0324373390757241,
+          "theta": -0.01761922489076596,
+          "omega": 0.0036314740011448477
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "coverage-v2-development-0054",
+      "condition": "level1",
+      "source_level": 1,
+      "seed": 320054,
+      "options": {
+        "initial_state": {
+          "x": -0.09751376110821369,
+          "y": 1.976835909351463,
+          "vx": 0.0002470979247592075,
+          "vy": -0.18375704820775893,
+          "theta": 0.007135010628939085,
+          "omega": 0.0031537364521104882
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "coverage-v2-development-0055",
+      "condition": "original",
+      "source_level": 3,
+      "seed": 320055,
+      "options": {
+        "initial_state": {
+          "x": 0.06664207058183158,
+          "y": 11.694928544570164,
+          "vx": -0.07520382867082834,
+          "vy": -0.2046160544185761,
+          "theta": 0.021797962449885067,
+          "omega": 0.003268640394373299
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "coverage-v2-development-0056",
+      "condition": "level1",
+      "source_level": 1,
+      "seed": 320056,
+      "options": {
+        "initial_state": {
+          "x": 0.043767407650686166,
+          "y": 1.8412988558280405,
+          "vx": 0.010261145296573269,
+          "vy": -0.0994734204753116,
+          "theta": 0.004194061381728109,
+          "omega": 0.003711646099271879
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "coverage-v2-development-0057",
+      "condition": "original",
+      "source_level": 3,
+      "seed": 320057,
+      "options": {
+        "initial_state": {
+          "x": -0.15729260311938456,
+          "y": 10.740419223474214,
+          "vx": -0.07402932884163542,
+          "vy": -0.6893624677326621,
+          "theta": -0.006674041382833804,
+          "omega": 0.004512741258980272
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "coverage-v2-development-0058",
+      "condition": "level1",
+      "source_level": 1,
+      "seed": 320058,
+      "options": {
+        "initial_state": {
+          "x": -0.06494542891674489,
+          "y": 1.8541377251513675,
+          "vx": -0.0010470364960690382,
+          "vy": -0.27612687082418896,
+          "theta": -0.00480390227026603,
+          "omega": -0.0041922637339852535
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "coverage-v2-development-0059",
+      "condition": "original",
+      "source_level": 3,
+      "seed": 320059,
+      "options": {
+        "initial_state": {
+          "x": 0.22616303683691494,
+          "y": 12.503071053022833,
+          "vx": 0.048816756505812124,
+          "vy": -0.455257713323969,
+          "theta": 0.021083139804048592,
+          "omega": -0.0035246488782049957
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "coverage-v2-development-0060",
+      "condition": "level1",
+      "source_level": 1,
+      "seed": 320060,
+      "options": {
+        "initial_state": {
+          "x": 0.08339184345416972,
+          "y": 2.327531272281318,
+          "vx": 0.026375026929879666,
+          "vy": -0.21745366809361397,
+          "theta": 0.004786641813356336,
+          "omega": 0.0007151138409379953
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "coverage-v2-development-0061",
+      "condition": "original",
+      "source_level": 3,
+      "seed": 320061,
+      "options": {
+        "initial_state": {
+          "x": 0.04639502928547803,
+          "y": 8.055361336978043,
+          "vx": 0.04372264477319683,
+          "vy": -0.10979701580850432,
+          "theta": 0.008772734696350983,
+          "omega": 5.153749269484309e-05
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "coverage-v2-development-0062",
+      "condition": "level1",
+      "source_level": 1,
+      "seed": 320062,
+      "options": {
+        "initial_state": {
+          "x": -0.025930493831983183,
+          "y": 2.0953646520655593,
+          "vx": 0.001012321945186978,
+          "vy": -0.2980066655034507,
+          "theta": 0.0017948994249219698,
+          "omega": 0.0028359586552752615
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "coverage-v2-development-0063",
+      "condition": "original",
+      "source_level": 3,
+      "seed": 320063,
+      "options": {
+        "initial_state": {
+          "x": 0.15751716604653845,
+          "y": 10.249999665714228,
+          "vx": 0.069484825526263,
+          "vy": -0.9987760400931003,
+          "theta": -0.016611192323527826,
+          "omega": -0.004389817863510003
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "coverage-v2-development-0064",
+      "condition": "level1",
+      "source_level": 1,
+      "seed": 320064,
+      "options": {
+        "initial_state": {
+          "x": -0.04876516293872251,
+          "y": 1.9216813490876223,
+          "vx": -0.02158095175967346,
+          "vy": -0.21492252846103646,
+          "theta": -0.004392489867902869,
+          "omega": 0.00453392828279877
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "coverage-v2-development-0065",
+      "condition": "original",
+      "source_level": 3,
+      "seed": 320065,
+      "options": {
+        "initial_state": {
+          "x": -0.0733839039297276,
+          "y": 9.101811006865564,
+          "vx": 0.0329641796790743,
+          "vy": -0.7461531569683242,
+          "theta": -0.017302589803200718,
+          "omega": 0.0003217841341021199
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "coverage-v2-development-0066",
+      "condition": "level1",
+      "source_level": 1,
+      "seed": 320066,
+      "options": {
+        "initial_state": {
+          "x": 0.002738929398400836,
+          "y": 2.0291186915027275,
+          "vx": 0.024851980483245002,
+          "vy": -0.10944940929520605,
+          "theta": 0.005591032822146298,
+          "omega": 0.002132832708216417
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "coverage-v2-development-0067",
+      "condition": "original",
+      "source_level": 3,
+      "seed": 320067,
+      "options": {
+        "initial_state": {
+          "x": 0.10462475561851038,
+          "y": 12.927053290013491,
+          "vx": -0.032388826246955695,
+          "vy": -0.6360740924107471,
+          "theta": 0.0021805753968160203,
+          "omega": -0.0021614719952969
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "coverage-v2-development-0068",
+      "condition": "level1",
+      "source_level": 1,
+      "seed": 320068,
+      "options": {
+        "initial_state": {
+          "x": 0.021903492354839085,
+          "y": 2.3725273611547366,
+          "vx": -0.0057352074440291025,
+          "vy": -0.1346480438854546,
+          "theta": -0.001827866615968561,
+          "omega": 0.0008401993956203557
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "coverage-v2-development-0069",
+      "condition": "original",
+      "source_level": 3,
+      "seed": 320069,
+      "options": {
+        "initial_state": {
+          "x": -0.039948468283012614,
+          "y": 12.36112319732945,
+          "vx": -0.06026083218769196,
+          "vy": -0.9901633879845037,
+          "theta": -0.026871500372591266,
+          "omega": 0.0010107755253049788
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "coverage-v2-development-0070",
+      "condition": "level1",
+      "source_level": 1,
+      "seed": 320070,
+      "options": {
+        "initial_state": {
+          "x": -0.05130772134208721,
+          "y": 1.682844875673822,
+          "vx": -0.003951369417420718,
+          "vy": -0.28476230322304474,
+          "theta": -0.0041175769906164564,
+          "omega": -0.0012044376335840724
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "coverage-v2-development-0071",
+      "condition": "original",
+      "source_level": 3,
+      "seed": 320071,
+      "options": {
+        "initial_state": {
+          "x": 0.20338738622955024,
+          "y": 12.974551624457419,
+          "vx": 0.04258289046100075,
+          "vy": -0.26623870703037866,
+          "theta": 0.0008653462929012856,
+          "omega": 3.938890290860364e-05
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "coverage-v2-development-0072",
+      "condition": "level1",
+      "source_level": 1,
+      "seed": 320072,
+      "options": {
+        "initial_state": {
+          "x": -0.03371453487657392,
+          "y": 1.8713943458834106,
+          "vx": 0.02355781115391172,
+          "vy": -0.17068595604341222,
+          "theta": -0.001788963643353627,
+          "omega": 0.003466786930065423
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "coverage-v2-development-0073",
+      "condition": "original",
+      "source_level": 3,
+      "seed": 320073,
+      "options": {
+        "initial_state": {
+          "x": -0.22216241922734395,
+          "y": 10.414543131449754,
+          "vx": 0.03264562779150273,
+          "vy": -0.1303751304947116,
+          "theta": -0.02691096844714631,
+          "omega": -0.0024690152113916496
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "coverage-v2-development-0074",
+      "condition": "level1",
+      "source_level": 1,
+      "seed": 320074,
+      "options": {
+        "initial_state": {
+          "x": 0.07866503552233856,
+          "y": 2.1740240923682115,
+          "vx": -0.00038281072617267985,
+          "vy": -0.14291335262718247,
+          "theta": 0.0055395699855656354,
+          "omega": -0.001993850921367525
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "coverage-v2-development-0075",
+      "condition": "original",
+      "source_level": 3,
+      "seed": 320075,
+      "options": {
+        "initial_state": {
+          "x": -0.12189988161379545,
+          "y": 9.684790547253083,
+          "vx": -0.044724185650784065,
+          "vy": -0.5564680050793285,
+          "theta": -0.010507396589251714,
+          "omega": -0.004187747435079994
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "coverage-v2-development-0076",
+      "condition": "level1",
+      "source_level": 1,
+      "seed": 320076,
+      "options": {
+        "initial_state": {
+          "x": 0.0993084740745066,
+          "y": 2.264896675986864,
+          "vx": 0.011333726857754823,
+          "vy": -0.15628543986844065,
+          "theta": 0.008248034176951222,
+          "omega": -0.0016438660016649686
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "coverage-v2-development-0077",
+      "condition": "original",
+      "source_level": 3,
+      "seed": 320077,
+      "options": {
+        "initial_state": {
+          "x": -0.20395473906286338,
+          "y": 10.73750632245983,
+          "vx": 0.060489853863086834,
+          "vy": -0.021415416883889038,
+          "theta": -0.0018394626703312044,
+          "omega": -0.003228754763532169
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "coverage-v2-development-0078",
+      "condition": "level1",
+      "source_level": 1,
+      "seed": 320078,
+      "options": {
+        "initial_state": {
+          "x": -0.0049517015200034155,
+          "y": 1.7937425540121674,
+          "vx": 0.008365637285300195,
+          "vy": -0.17729517917298263,
+          "theta": -0.006558845334695785,
+          "omega": -0.0011505463237090373
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "coverage-v2-development-0079",
+      "condition": "original",
+      "source_level": 3,
+      "seed": 320079,
+      "options": {
+        "initial_state": {
+          "x": -0.22148451796819874,
+          "y": 9.699154043958767,
+          "vx": -0.08951506878312221,
+          "vy": -0.6187124400401428,
+          "theta": 0.027402035270245123,
+          "omega": -0.002665483797300057
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "coverage-v2-development-0080",
+      "condition": "level1",
+      "source_level": 1,
+      "seed": 320080,
+      "options": {
+        "initial_state": {
+          "x": 0.0484402992498969,
+          "y": 1.8505617728224222,
+          "vx": -0.028789438362130607,
+          "vy": -0.29107957541965024,
+          "theta": 0.0006825838831554254,
+          "omega": 0.0010026793185891948
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "coverage-v2-development-0081",
+      "condition": "original",
+      "source_level": 3,
+      "seed": 320081,
+      "options": {
+        "initial_state": {
+          "x": -0.20662041517116086,
+          "y": 12.610360011317974,
+          "vx": -0.003090721673221486,
+          "vy": -0.4913596353668116,
+          "theta": -0.02399415712733035,
+          "omega": 0.0006157509478469459
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "coverage-v2-development-0082",
+      "condition": "level1",
+      "source_level": 1,
+      "seed": 320082,
+      "options": {
+        "initial_state": {
+          "x": -0.08018984465905121,
+          "y": 1.7388349815650666,
+          "vx": 0.024385019392043097,
+          "vy": -0.29716852375851177,
+          "theta": -0.001527058151575762,
+          "omega": -0.0017841369321441125
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "coverage-v2-development-0083",
+      "condition": "original",
+      "source_level": 3,
+      "seed": 320083,
+      "options": {
+        "initial_state": {
+          "x": 0.0666705064112254,
+          "y": 11.512958822889676,
+          "vx": 0.08536284918637647,
+          "vy": -0.2543442508485718,
+          "theta": -0.017638097515173336,
+          "omega": 0.0013955459330148412
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "coverage-v2-development-0084",
+      "condition": "level1",
+      "source_level": 1,
+      "seed": 320084,
+      "options": {
+        "initial_state": {
+          "x": 0.014698053630456865,
+          "y": 2.287072244537214,
+          "vx": -0.015471420710568238,
+          "vy": -0.258486759551916,
+          "theta": -0.00310537112401579,
+          "omega": 0.001200991334390924
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "coverage-v2-development-0085",
+      "condition": "original",
+      "source_level": 3,
+      "seed": 320085,
+      "options": {
+        "initial_state": {
+          "x": -0.17859406805410508,
+          "y": 8.821952747070029,
+          "vx": -0.05266896967927231,
+          "vy": -0.5463110137427278,
+          "theta": 0.026438716641768514,
+          "omega": 0.004248781811305348
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "coverage-v2-development-0086",
+      "condition": "level1",
+      "source_level": 1,
+      "seed": 320086,
+      "options": {
+        "initial_state": {
+          "x": -0.006441629769358581,
+          "y": 1.6946158390275632,
+          "vx": 0.014342818441430101,
+          "vy": -0.2904965280440265,
+          "theta": 0.00034659316507642315,
+          "omega": 0.0018497533428228174
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "coverage-v2-development-0087",
+      "condition": "original",
+      "source_level": 3,
+      "seed": 320087,
+      "options": {
+        "initial_state": {
+          "x": 0.22631326980774547,
+          "y": 11.919131493905596,
+          "vx": -0.028971317833157473,
+          "vy": -0.06925780693229822,
+          "theta": -0.023671805829788815,
+          "omega": -0.002199161680222318
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "coverage-v2-development-0088",
+      "condition": "level1",
+      "source_level": 1,
+      "seed": 320088,
+      "options": {
+        "initial_state": {
+          "x": 0.0757423477431048,
+          "y": 1.698127260373599,
+          "vx": 0.021697938097089583,
+          "vy": -0.08764988853843445,
+          "theta": -0.0037518155463026307,
+          "omega": 0.0010024567375001348
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "coverage-v2-development-0089",
+      "condition": "original",
+      "source_level": 3,
+      "seed": 320089,
+      "options": {
+        "initial_state": {
+          "x": 0.007075166276297251,
+          "y": 9.971706296807188,
+          "vx": -0.0005542482431140528,
+          "vy": -0.3749955629519035,
+          "theta": 0.023360438703386763,
+          "omega": 0.004175580290635508
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "coverage-v2-development-0090",
+      "condition": "level1",
+      "source_level": 1,
+      "seed": 320090,
+      "options": {
+        "initial_state": {
+          "x": -0.05856959717390345,
+          "y": 1.9899754423437934,
+          "vx": -0.022345131271016092,
+          "vy": -0.11121833461544761,
+          "theta": -0.003136465526822301,
+          "omega": -0.002473648210375391
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "coverage-v2-development-0091",
+      "condition": "original",
+      "source_level": 3,
+      "seed": 320091,
+      "options": {
+        "initial_state": {
+          "x": 0.0937465741381356,
+          "y": 11.729076320643255,
+          "vx": 0.08747139963545268,
+          "vy": -0.10587891780557057,
+          "theta": -0.01585676760530605,
+          "omega": -0.0006150547912877358
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "coverage-v2-development-0092",
+      "condition": "level1",
+      "source_level": 1,
+      "seed": 320092,
+      "options": {
+        "initial_state": {
+          "x": 0.04804078148814264,
+          "y": 1.6933871616611418,
+          "vx": -0.010519243702291728,
+          "vy": -0.18272818861865936,
+          "theta": -0.005259264335884269,
+          "omega": -0.0033500530168113817
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "coverage-v2-development-0093",
+      "condition": "original",
+      "source_level": 3,
+      "seed": 320093,
+      "options": {
+        "initial_state": {
+          "x": -0.10595722743612723,
+          "y": 8.595836104136572,
+          "vx": 0.06557292747404522,
+          "vy": -0.8922032058862859,
+          "theta": -0.014647885330842983,
+          "omega": 0.0028516121883882272
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "coverage-v2-development-0094",
+      "condition": "level1",
+      "source_level": 1,
+      "seed": 320094,
+      "options": {
+        "initial_state": {
+          "x": -0.07132853712187774,
+          "y": 1.7230953622409169,
+          "vx": 0.004117288695903642,
+          "vy": -0.05981277999752965,
+          "theta": -0.007012389578779106,
+          "omega": -0.00048558090370842135
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "coverage-v2-development-0095",
+      "condition": "original",
+      "source_level": 3,
+      "seed": 320095,
+      "options": {
+        "initial_state": {
+          "x": -0.07803352239284213,
+          "y": 11.38414936196677,
+          "vx": -0.0521073436929723,
+          "vy": -0.7776096743279701,
+          "theta": 0.02419454887168642,
+          "omega": -0.0002669668028291394
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "coverage-v2-development-0096",
+      "condition": "level1",
+      "source_level": 1,
+      "seed": 320096,
+      "options": {
+        "initial_state": {
+          "x": -0.0036477244626626384,
+          "y": 2.252722013803714,
+          "vx": -0.02031240715240723,
+          "vy": -0.19090535515137894,
+          "theta": -0.004756054198376636,
+          "omega": -0.0010236409572608352
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "coverage-v2-development-0097",
+      "condition": "original",
+      "source_level": 3,
+      "seed": 320097,
+      "options": {
+        "initial_state": {
+          "x": -0.25355670396822244,
+          "y": 9.76546266695437,
+          "vx": -0.04249523334541359,
+          "vy": -0.10574026097534961,
+          "theta": 0.02631405267466469,
+          "omega": -0.00341431218068447
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "coverage-v2-development-0098",
+      "condition": "level1",
+      "source_level": 1,
+      "seed": 320098,
+      "options": {
+        "initial_state": {
+          "x": -0.05854663776622409,
+          "y": 1.9057625055634033,
+          "vx": -0.007396342283264756,
+          "vy": -0.29084074207706667,
+          "theta": -0.009744100377687602,
+          "omega": 0.0030091212436525717
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "coverage-v2-development-0099",
+      "condition": "original",
+      "source_level": 3,
+      "seed": 320099,
+      "options": {
+        "initial_state": {
+          "x": -0.13731599959727725,
+          "y": 9.057405528603926,
+          "vx": 0.007428720564840386,
+          "vy": -0.7840812630135391,
+          "theta": -0.020971483615698804,
+          "omega": 0.004083148636683896
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "coverage-v2-development-0100",
+      "condition": "level1",
+      "source_level": 1,
+      "seed": 320100,
+      "options": {
+        "initial_state": {
+          "x": 0.0810193705392926,
+          "y": 1.837523887680451,
+          "vx": -0.004626877544280939,
+          "vy": -0.1983169846756529,
+          "theta": 0.005002075923529013,
+          "omega": -0.0007016968270704271
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "coverage-v2-development-0101",
+      "condition": "original",
+      "source_level": 3,
+      "seed": 320101,
+      "options": {
+        "initial_state": {
+          "x": -0.22156940302239456,
+          "y": 8.844945745418539,
+          "vx": 0.07525566915237224,
+          "vy": -0.29144677214179915,
+          "theta": 0.016543938107724553,
+          "omega": -0.004435769033107831
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "coverage-v2-development-0102",
+      "condition": "level1",
+      "source_level": 1,
+      "seed": 320102,
+      "options": {
+        "initial_state": {
+          "x": -0.09677188915484505,
+          "y": 2.1211474256047365,
+          "vx": 0.009170055964017343,
+          "vy": -0.12323976790681751,
+          "theta": -0.005044705425352068,
+          "omega": 0.0019549346792436485
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "coverage-v2-development-0103",
+      "condition": "original",
+      "source_level": 3,
+      "seed": 320103,
+      "options": {
+        "initial_state": {
+          "x": -0.17344698523071633,
+          "y": 11.43594414108116,
+          "vx": 0.04407383301628953,
+          "vy": -0.44105854291694013,
+          "theta": 0.02132465301792601,
+          "omega": -0.00052046916130161
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "coverage-v2-development-0104",
+      "condition": "level1",
+      "source_level": 1,
+      "seed": 320104,
+      "options": {
+        "initial_state": {
+          "x": -0.002885747837986985,
+          "y": 1.62259760244426,
+          "vx": 0.015315730604544301,
+          "vy": -0.27451247903495457,
+          "theta": -0.008692688555906958,
+          "omega": -0.004989671428037483
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "coverage-v2-development-0105",
+      "condition": "original",
+      "source_level": 3,
+      "seed": 320105,
+      "options": {
+        "initial_state": {
+          "x": -0.22656953172268515,
+          "y": 10.194844740891424,
+          "vx": -0.0949449834503863,
+          "vy": -0.32169780358766786,
+          "theta": -0.01936884579413546,
+          "omega": -0.0027962120770094524
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "coverage-v2-development-0106",
+      "condition": "level1",
+      "source_level": 1,
+      "seed": 320106,
+      "options": {
+        "initial_state": {
+          "x": 0.06288155061164435,
+          "y": 2.319335497748831,
+          "vx": -0.011087402597553826,
+          "vy": -0.10945442593330054,
+          "theta": -0.00736387533365759,
+          "omega": -0.00390912233166054
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "coverage-v2-development-0107",
+      "condition": "original",
+      "source_level": 3,
+      "seed": 320107,
+      "options": {
+        "initial_state": {
+          "x": 0.2635615298827571,
+          "y": 8.222938587648011,
+          "vx": 0.002358809004814755,
+          "vy": -0.8971701156658681,
+          "theta": 0.017664909502040752,
+          "omega": -0.004582266248572905
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "coverage-v2-development-0108",
+      "condition": "level1",
+      "source_level": 1,
+      "seed": 320108,
+      "options": {
+        "initial_state": {
+          "x": 0.04531159874112359,
+          "y": 1.8884388082537489,
+          "vx": 0.004353827469918925,
+          "vy": -0.077177630326554,
+          "theta": -0.007084835730568348,
+          "omega": -0.002486864906598064
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "coverage-v2-development-0109",
+      "condition": "original",
+      "source_level": 3,
+      "seed": 320109,
+      "options": {
+        "initial_state": {
+          "x": -0.14569364890574416,
+          "y": 8.069000024027888,
+          "vx": -0.04929800547155721,
+          "vy": -0.7689428895291349,
+          "theta": -0.016646888861544685,
+          "omega": -0.004990249304693733
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "coverage-v2-development-0110",
+      "condition": "level1",
+      "source_level": 1,
+      "seed": 320110,
+      "options": {
+        "initial_state": {
+          "x": 0.07370248568009752,
+          "y": 1.7295313101485166,
+          "vx": -0.021648894202598586,
+          "vy": -0.1317681181250305,
+          "theta": 0.0010310537470838742,
+          "omega": -0.0026278242805702324
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "coverage-v2-development-0111",
+      "condition": "original",
+      "source_level": 3,
+      "seed": 320111,
+      "options": {
+        "initial_state": {
+          "x": -0.17927731370534258,
+          "y": 9.098429246329468,
+          "vx": -0.03147648881564589,
+          "vy": -0.778343853748976,
+          "theta": -0.009544927065665516,
+          "omega": 0.0043010966907072205
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "coverage-v2-development-0112",
+      "condition": "level1",
+      "source_level": 1,
+      "seed": 320112,
+      "options": {
+        "initial_state": {
+          "x": -0.008209563362111228,
+          "y": 1.8744140487226892,
+          "vx": -0.001189168719332574,
+          "vy": -0.18173506099829226,
+          "theta": -0.00874858837024431,
+          "omega": 0.0024893299654847037
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "coverage-v2-development-0113",
+      "condition": "original",
+      "source_level": 3,
+      "seed": 320113,
+      "options": {
+        "initial_state": {
+          "x": 0.1803309567277071,
+          "y": 10.028490233434207,
+          "vx": 0.002479842847359248,
+          "vy": -0.09233488138746127,
+          "theta": -0.005984783975865819,
+          "omega": 3.616777956087058e-05
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "coverage-v2-development-0114",
+      "condition": "level1",
+      "source_level": 1,
+      "seed": 320114,
+      "options": {
+        "initial_state": {
+          "x": -0.008048059762680216,
+          "y": 1.6950475517153956,
+          "vx": 0.005647324463957166,
+          "vy": -0.14649308362034189,
+          "theta": 0.0022772110177721383,
+          "omega": -0.004811270325370175
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "coverage-v2-development-0115",
+      "condition": "original",
+      "source_level": 3,
+      "seed": 320115,
+      "options": {
+        "initial_state": {
+          "x": -0.04870010765254851,
+          "y": 11.859711899134663,
+          "vx": 0.06836461625243732,
+          "vy": -0.9422036984632522,
+          "theta": -0.010852262862368815,
+          "omega": 0.00019525646390121
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "coverage-v2-development-0116",
+      "condition": "level1",
+      "source_level": 1,
+      "seed": 320116,
+      "options": {
+        "initial_state": {
+          "x": -0.09273452398786407,
+          "y": 2.155620361971894,
+          "vx": 0.029312271488390877,
+          "vy": -0.07264813296504488,
+          "theta": -0.008281938842384054,
+          "omega": 0.0019096343611853396
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "coverage-v2-development-0117",
+      "condition": "original",
+      "source_level": 3,
+      "seed": 320117,
+      "options": {
+        "initial_state": {
+          "x": 0.2921719003601756,
+          "y": 9.163397940951914,
+          "vx": 0.09800044440698936,
+          "vy": -0.2753568033671655,
+          "theta": -0.0115395895959222,
+          "omega": -0.0005613665833909654
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "coverage-v2-development-0118",
+      "condition": "level1",
+      "source_level": 1,
+      "seed": 320118,
+      "options": {
+        "initial_state": {
+          "x": 0.0889835389842175,
+          "y": 1.7205250740025382,
+          "vx": -0.012660641205371703,
+          "vy": -0.26570469659780566,
+          "theta": 0.007137397040568054,
+          "omega": 0.004422996662524675
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "coverage-v2-development-0119",
+      "condition": "original",
+      "source_level": 3,
+      "seed": 320119,
+      "options": {
+        "initial_state": {
+          "x": 0.08663013382451352,
+          "y": 11.17680060202573,
+          "vx": 0.08272193076724982,
+          "vy": -0.3628837761710737,
+          "theta": -0.02695471815236767,
+          "omega": 0.0034942551236786822
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "coverage-v2-development-0120",
+      "condition": "level1",
+      "source_level": 1,
+      "seed": 320120,
+      "options": {
+        "initial_state": {
+          "x": -0.07559213638809398,
+          "y": 2.3135781296112756,
+          "vx": -0.0026857727359434233,
+          "vy": -0.2804775333939544,
+          "theta": -0.004964286260736552,
+          "omega": 0.004780637118690411
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "coverage-v2-development-0121",
+      "condition": "original",
+      "source_level": 3,
+      "seed": 320121,
+      "options": {
+        "initial_state": {
+          "x": 0.0073975791162683045,
+          "y": 10.05058278047898,
+          "vx": -0.08859578010026314,
+          "vy": -0.470603828559091,
+          "theta": 0.021925162877263805,
+          "omega": -0.0014225774884334963
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "coverage-v2-development-0122",
+      "condition": "level1",
+      "source_level": 1,
+      "seed": 320122,
+      "options": {
+        "initial_state": {
+          "x": 0.0015201141209845838,
+          "y": 2.3654756287138743,
+          "vx": -0.014873080942757936,
+          "vy": -0.09699451792170632,
+          "theta": 0.0016160848252940263,
+          "omega": -0.0041861724854633285
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "coverage-v2-development-0123",
+      "condition": "original",
+      "source_level": 3,
+      "seed": 320123,
+      "options": {
+        "initial_state": {
+          "x": 0.08447108098096802,
+          "y": 9.36793924089312,
+          "vx": 0.06375399940720564,
+          "vy": -0.767945678467024,
+          "theta": -0.02225381823458005,
+          "omega": -0.0014372867666459332
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "coverage-v2-development-0124",
+      "condition": "level1",
+      "source_level": 1,
+      "seed": 320124,
+      "options": {
+        "initial_state": {
+          "x": -0.011595438287449668,
+          "y": 2.305952557780697,
+          "vx": -0.012661025126743136,
+          "vy": -0.14233679151769796,
+          "theta": -0.00036801821831434323,
+          "omega": 0.0018578962730841121
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "coverage-v2-development-0125",
+      "condition": "original",
+      "source_level": 3,
+      "seed": 320125,
+      "options": {
+        "initial_state": {
+          "x": -0.03547032521439157,
+          "y": 11.826663835014216,
+          "vx": 0.0706564574843093,
+          "vy": -0.757109705711789,
+          "theta": -0.008484229118320374,
+          "omega": 0.004423175731498791
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "coverage-v2-development-0126",
+      "condition": "level1",
+      "source_level": 1,
+      "seed": 320126,
+      "options": {
+        "initial_state": {
+          "x": 0.0024150928163936716,
+          "y": 2.0130143286840028,
+          "vx": 0.02862612846436337,
+          "vy": -0.0645069177341154,
+          "theta": -0.00860118719523001,
+          "omega": -0.004530626052168667
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "coverage-v2-development-0127",
+      "condition": "original",
+      "source_level": 3,
+      "seed": 320127,
+      "options": {
+        "initial_state": {
+          "x": 0.26485091902893076,
+          "y": 9.482954340503934,
+          "vx": 0.025231803137503485,
+          "vy": -0.28863987826262194,
+          "theta": 0.008669949035414485,
+          "omega": -0.0045223567570533444
+        },
+        "wind_force": 0.0
+      }
+    }
+  ]
+}

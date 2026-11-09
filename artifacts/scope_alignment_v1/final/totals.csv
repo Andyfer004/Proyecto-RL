@@ -1,0 +1,13 @@
+method,suite,n,successes,contacts,success,invalid_contact,body_contact,missed_platform,ceiling_exit,side_exit,time_limit
+double_assisted42,complement,288,266,288,266,22,0,0,0,0,0
+double_assisted42,reserved,100,94,100,94,5,1,0,0,0,0
+double_dqn_scratch,complement,288,0,288,0,19,213,56,0,0,0
+double_dqn_scratch,reserved,100,0,100,0,10,49,41,0,0,0
+dqn_assisted42,complement,288,275,288,275,13,0,0,0,0,0
+dqn_assisted42,reserved,100,96,100,96,4,0,0,0,0,0
+dqn_assisted43,complement,288,277,288,277,11,0,0,0,0,0
+dqn_assisted43,reserved,100,100,100,100,0,0,0,0,0,0
+dqn_scratch,complement,288,0,224,0,45,155,24,60,4,0
+dqn_scratch,reserved,100,0,59,0,2,38,19,39,2,0
+pid,complement,288,287,288,287,1,0,0,0,0,0
+pid,reserved,100,98,100,98,2,0,0,0,0,0

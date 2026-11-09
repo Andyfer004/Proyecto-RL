@@ -1,0 +1,44 @@
+[
+  {
+    "method": "dqn_assisted42",
+    "classification_updates": 10000,
+    "offline_td_margin_updates": 10000,
+    "online_td_margin_updates": 4969,
+    "total_updates": 24969,
+    "checkpoint_online_steps": 20000,
+    "logged_td_loss_mean": 0.6314847268164158,
+    "logged_nstep_loss_mean": 1.3263418182730675,
+    "logged_margin_loss_mean": 0.09482452174027761,
+    "actual_algorithm": "dqn",
+    "checkpoint_sha256": "6a727315be69b97aac25db943ddd0cbe1f7bdfbd9b9b93bf4887e9cf688c508a",
+    "evidence": "artifacts/recovery_v1/dqn_coverage_v2_seed42/metrics.csv"
+  },
+  {
+    "method": "double_assisted42",
+    "classification_updates": 10000,
+    "offline_td_margin_updates": 10000,
+    "online_td_margin_updates": 7469,
+    "total_updates": 27469,
+    "checkpoint_online_steps": 30000,
+    "logged_td_loss_mean": 0.680950191244483,
+    "logged_nstep_loss_mean": 1.0198464783839882,
+    "logged_margin_loss_mean": 0.09435723423957824,
+    "actual_algorithm": "double_dqn",
+    "checkpoint_sha256": "412d8795cd0c287a9821d027927124be006a20e550f1a12f89f69538cf7e9c60",
+    "evidence": "artifacts/recovery_v1/double_coverage_v2_seed42/metrics.csv"
+  },
+  {
+    "method": "dqn_assisted43",
+    "classification_updates": 10000,
+    "offline_td_margin_updates": 10000,
+    "online_td_margin_updates": 7469,
+    "total_updates": 27469,
+    "checkpoint_online_steps": 30000,
+    "logged_td_loss_mean": 0.43684097528457644,
+    "logged_nstep_loss_mean": 0.9382512048818171,
+    "logged_margin_loss_mean": 0.08277843464165927,
+    "actual_algorithm": "dqn",
+    "checkpoint_sha256": "ed8f7588091e8c4ae9822871fd1b75b0eca60f426cdc1e944b2a97914d969f46",
+    "evidence": "artifacts/recovery_v1/dqn_coverage_v2_seed43/metrics.csv"
+  }
+]

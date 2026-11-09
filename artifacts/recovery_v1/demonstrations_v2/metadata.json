@@ -1,0 +1,11 @@
+{
+  "teacher": "Frozen PID",
+  "split": "training only",
+  "episodes": 1024,
+  "successful_episodes": 1005,
+  "transitions": 84882,
+  "heldout_episode_rule": "episode_index%8==0; never sampled for learning",
+  "discarded_failed_episodes": true,
+  "observation_version": "landing_scales_v2",
+  "wall_seconds": 36.579884833001415
+}

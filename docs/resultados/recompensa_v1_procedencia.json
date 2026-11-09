@@ -1,0 +1,51 @@
+{
+  "audit_metadata_sha256": "c6f98f8dcf7a275f5510b0f3c21c53d574413bc6d59927712c48fc491217cf59",
+  "files": {
+    "docs/resultados/recompensa_v1_conductas.csv": {
+      "source": "artifacts/reward_audit_level1_v1/report/behaviour_summary.csv",
+      "sha256": "d4af39fa6310ffebf82e521333e98a6721c83ac3ba55577823a14ae31d748526"
+    },
+    "docs/resultados/recompensa_v1_por_estado.csv": {
+      "source": "artifacts/reward_audit_level1_v1/report/all_states_comparison.csv",
+      "sha256": "a67269cb82ad8680b91c74fa4aa7156ac41a6786515c8540485ec4dfdcdc3164"
+    },
+    "docs/resultados/recompensa_v1_diferencias.csv": {
+      "source": "artifacts/reward_audit_level1_v1/report/paired_summary.csv",
+      "sha256": "ae5bbd1935cd948e1389d87cd4a642335fd873a66aa5ad23a99f732e197557bd"
+    },
+    "docs/resultados/recompensa_v1_senales_pid.csv": {
+      "source": "artifacts/reward_audit_level1_v1/report/pid_signal.csv",
+      "sha256": "d684316c32133daf6df68890859ab48c8dd48b54a667c1711446428e58513edb"
+    },
+    "docs/resultados/recompensa_v1_escalas.csv": {
+      "source": "artifacts/reward_audit_level1_v1/report/per_step_scales.csv",
+      "sha256": "fb012d49e5205e886ac6dc3b575c6dd99db247ca860bb63d30cc067b550f9796"
+    },
+    "docs/resultados/recompensa_v1_retornos.png": {
+      "source": "artifacts/reward_audit_level1_v1/report/paired_returns.png",
+      "sha256": "f38223016797869418c5241b61a0492b58b0b0b49b3235fb3e22a2f5a624649d"
+    },
+    "docs/resultados/recompensa_v1_trayectorias.png": {
+      "source": "artifacts/reward_audit_level1_v1/report/fixed_case_trajectories.png",
+      "sha256": "d2818abf5ebf32e4190aba765718424b2d4f90fc30ea66332193ec81863db5bc"
+    },
+    "docs/resultados/recompensa_v1_componentes.png": {
+      "source": "artifacts/reward_audit_level1_v1/report/discounted_components.png",
+      "sha256": "4985b11206e10bdfb343b55ff4375a5b49b29939f37c51b3af169e59f67a27dc"
+    }
+  },
+  "prepared_pilot": {
+    "experiment_id": "exploration_balance_reward_v1_seed42_100k_v1",
+    "status": "prepared_not_executed",
+    "training_environment_interactions": 0,
+    "sha256": {
+      "configs/exploration_balance_v1_protocol.json": "2c311ee686a1f83c09c55c20eba4b30628e8a1c29bbb296570884030675d574b",
+      "configs/dqn_exploration_v1.json": "c1b61e6a3df86db9a0614001f2aac3636895d971446b3b9c10dbabbc674fadc6",
+      "configs/double_dqn_exploration_v1.json": "48ec1cd1183168d6f2b20e2e7ae583647b14269fc1181ea2e6dcc28a4d34e9bb",
+      "configs/level1_train_scenarios.json": "81a41af231c8d3e291f65dae0d0ae421d9140d7c4b1ccd816315d0e67905977f",
+      "configs/level1_validation_scenarios.json": "994cee905747f1e5527f8f73f13fa1d10dcd2129d91e4d52cfa2b2086d4f0208",
+      "src/thruster_landing/train.py": "d6ccf6b7e7f4f89c8afadc768462944105545aea61805a42b41a0563a51d56e1",
+      "src/thruster_landing/agents/exploration.py": "f48b344280f28824494515e45bfe1ea8a27739e8488e18f33471ed33babf950c"
+    }
+  }
+}

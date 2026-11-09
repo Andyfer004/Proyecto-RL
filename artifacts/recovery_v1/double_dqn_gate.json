@@ -1,0 +1,12 @@
+{
+  "dqn_development_success": {
+    "10000": 0.984375,
+    "20000": 1.0,
+    "30000": 0.96875
+  },
+  "configuration_changes_for_double": [
+    "algorithm"
+  ],
+  "second_intervention": false,
+  "check_data_used_for_training": false
+}

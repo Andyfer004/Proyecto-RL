@@ -1,0 +1,5 @@
+algorithm,method,env_steps,training_episodes,training_successes,training_contacts,training_gas_exhausted,first_training_success_step,first_greedy_l1_success_step,greedy_l1_successes,greedy_l1_n,greedy_all_successes,greedy_all_n,replay_successful_terminal_transitions,training_mean_return,training_mean_discounted_return,greedy_l1_mean_return,greedy_l1_mean_discounted_return,training_duration_s,training_gas_Ns,partial_episode_steps
+dqn,uniform,100000,911,0,166,62,,,0,32,0,128,0,-104.59068118657706,-49.71826373576848,-108.9183124599208,-6.166621399191465,5.459576948101177,6187.747956893496,48
+dqn,weighted_variant,100000,1058,3,258,29,2324.0,,0,32,0,128,0,-103.41508053847596,-48.671193136219664,-110.2193673850212,-4.675488453972926,4.686773200051049,5075.193468578589,295
+double_dqn,uniform,100000,885,0,156,60,,,0,32,0,128,0,-104.64331745078286,-48.27348097474353,-107.6363827810987,-8.758402593709974,5.610846926981171,6339.096650605976,240
+double_dqn,weighted_variant,100000,997,0,268,31,,,0,32,0,128,0,-104.07602029661967,-48.23222905870453,-109.72322185341366,-4.3913958352117,4.985804414125777,5378.988926395959,83

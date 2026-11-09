@@ -1,0 +1,27 @@
+{
+  "algorithm": "double_dqn",
+  "seed": 42,
+  "device": "cpu",
+  "learning_rate": 0.0001,
+  "gamma": 0.99,
+  "buffer_capacity": 150000,
+  "batch_size": 64,
+  "learning_starts": 1000,
+  "train_frequency": 4,
+  "target_update_frequency": 500,
+  "epsilon_start": 1.0,
+  "epsilon_end": 0.1,
+  "epsilon_decay_steps": 80000,
+  "total_steps": 100000,
+  "validation_frequency": 10000,
+  "checkpoint_frequency": 10000,
+  "log_frequency": 100,
+  "gradient_norm_limit": 10.0,
+  "hidden_sizes": [
+    128,
+    128
+  ],
+  "torch_threads": 1,
+  "detailed_validation": true,
+  "smooth_l1_beta": 10.0
+}

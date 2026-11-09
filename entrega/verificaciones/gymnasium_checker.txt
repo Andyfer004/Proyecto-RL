@@ -1,0 +1,5 @@
+/Users/andyfer004/Documents/Desktop/Proyecto-RL/.venv/lib/python3.12/site-packages/gymnasium/utils/env_checker.py:372: UserWarning: [33mWARN: A Box observation space minimum value is -infinity. This is probably too low.[0m
+  logger.warn(
+/Users/andyfer004/Documents/Desktop/Proyecto-RL/.venv/lib/python3.12/site-packages/gymnasium/utils/env_checker.py:376: UserWarning: [33mWARN: A Box observation space maximum value is infinity. This is probably too high.[0m
+  logger.warn(
+Gymnasium checker: valid

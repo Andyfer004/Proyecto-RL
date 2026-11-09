@@ -1,0 +1,1095 @@
+{
+  "schema_version": 1,
+  "split": "validation",
+  "role": "development",
+  "scenarios": [
+    {
+      "id": "recovery-development-0000",
+      "condition": "level1",
+      "source_level": 1,
+      "seed": 220000,
+      "options": {
+        "initial_state": {
+          "x": 0.09300124657050711,
+          "y": 1.966890121513698,
+          "vx": -0.027927309833583824,
+          "vy": -0.19336186493895322,
+          "theta": 0.0002137373230981332,
+          "omega": 0.001750892486811948
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "recovery-development-0001",
+      "condition": "level1",
+      "source_level": 1,
+      "seed": 220001,
+      "options": {
+        "initial_state": {
+          "x": -0.06585731798266936,
+          "y": 1.8653918539774172,
+          "vx": 0.016676773341635896,
+          "vy": -0.23639169271519192,
+          "theta": -0.0018183662215469944,
+          "omega": 0.0004857907714081411
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "recovery-development-0002",
+      "condition": "level1",
+      "source_level": 1,
+      "seed": 220002,
+      "options": {
+        "initial_state": {
+          "x": 0.006717018152655064,
+          "y": 2.354308311573295,
+          "vx": 0.020785958355912838,
+          "vy": -0.10662489247363716,
+          "theta": 0.005084758838870507,
+          "omega": 0.003780141009818918
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "recovery-development-0003",
+      "condition": "level1",
+      "source_level": 1,
+      "seed": 220003,
+      "options": {
+        "initial_state": {
+          "x": -0.055746744164181176,
+          "y": 2.1711571668740666,
+          "vx": -0.02472438848621416,
+          "vy": -0.10966885893242795,
+          "theta": 0.001755162229237901,
+          "omega": 0.00374665162122941
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "recovery-development-0004",
+      "condition": "level1",
+      "source_level": 1,
+      "seed": 220004,
+      "options": {
+        "initial_state": {
+          "x": -0.06599326175877583,
+          "y": 1.9775890081196923,
+          "vx": -0.01729537233494154,
+          "vy": -0.12590157734737378,
+          "theta": 0.009775787717901463,
+          "omega": -0.0010505881916099157
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "recovery-development-0005",
+      "condition": "level1",
+      "source_level": 1,
+      "seed": 220005,
+      "options": {
+        "initial_state": {
+          "x": -0.05323610727303059,
+          "y": 2.2173694677324525,
+          "vx": 0.008614298977818626,
+          "vy": -0.2083436908649323,
+          "theta": -0.001784772983834928,
+          "omega": -0.0038307134326690776
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "recovery-development-0006",
+      "condition": "level1",
+      "source_level": 1,
+      "seed": 220006,
+      "options": {
+        "initial_state": {
+          "x": 0.06759126331000423,
+          "y": 1.880828540463783,
+          "vx": 0.02785871016799879,
+          "vy": -0.22256649173445264,
+          "theta": -0.0035922422916967725,
+          "omega": -0.0005689005226649258
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "recovery-development-0007",
+      "condition": "level1",
+      "source_level": 1,
+      "seed": 220007,
+      "options": {
+        "initial_state": {
+          "x": 0.06359596233544944,
+          "y": 2.390922129027855,
+          "vx": 0.00046922575978660004,
+          "vy": -0.27301139617860987,
+          "theta": 0.004423563222827081,
+          "omega": -0.0025286507708703943
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "recovery-development-0008",
+      "condition": "level1",
+      "source_level": 1,
+      "seed": 220008,
+      "options": {
+        "initial_state": {
+          "x": -0.03998922968862176,
+          "y": 2.0686113204527925,
+          "vx": -0.022791705676654665,
+          "vy": -0.16125845169216027,
+          "theta": 0.001927838213614488,
+          "omega": -0.0006160961755829031
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "recovery-development-0009",
+      "condition": "level1",
+      "source_level": 1,
+      "seed": 220009,
+      "options": {
+        "initial_state": {
+          "x": -0.046580298063458474,
+          "y": 2.3130957965539296,
+          "vx": -0.004835006221039717,
+          "vy": -0.12780838600977928,
+          "theta": -0.0033147893120334215,
+          "omega": -0.0021973513251197173
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "recovery-development-0010",
+      "condition": "level1",
+      "source_level": 1,
+      "seed": 220010,
+      "options": {
+        "initial_state": {
+          "x": 0.01571435587891892,
+          "y": 1.6097140329773878,
+          "vx": -0.009337581797069498,
+          "vy": -0.07383966714896145,
+          "theta": 0.008847964398312152,
+          "omega": 0.004208064500524803
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "recovery-development-0011",
+      "condition": "level1",
+      "source_level": 1,
+      "seed": 220011,
+      "options": {
+        "initial_state": {
+          "x": -0.03493558013623861,
+          "y": 2.2060720162906815,
+          "vx": -0.028718593429910153,
+          "vy": -0.19857589065036696,
+          "theta": 0.006924005657212375,
+          "omega": -0.002536221784365502
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "recovery-development-0012",
+      "condition": "level1",
+      "source_level": 1,
+      "seed": 220012,
+      "options": {
+        "initial_state": {
+          "x": -0.01479721802627383,
+          "y": 1.6914941367246767,
+          "vx": 0.004939044656490141,
+          "vy": -0.25034234018678164,
+          "theta": 0.007625143965091481,
+          "omega": 0.00454996842419613
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "recovery-development-0013",
+      "condition": "level1",
+      "source_level": 1,
+      "seed": 220013,
+      "options": {
+        "initial_state": {
+          "x": -0.06035410491634588,
+          "y": 2.0829561177531213,
+          "vx": -0.00582489440843909,
+          "vy": -0.13605608191535762,
+          "theta": 0.003409644316375915,
+          "omega": 0.003114500216027858
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "recovery-development-0014",
+      "condition": "level1",
+      "source_level": 1,
+      "seed": 220014,
+      "options": {
+        "initial_state": {
+          "x": 0.02250801374552749,
+          "y": 1.9188452735070063,
+          "vx": 0.016533504048247678,
+          "vy": -0.10782521153626609,
+          "theta": 0.004696697579758902,
+          "omega": 0.0015322304593826698
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "recovery-development-0015",
+      "condition": "level1",
+      "source_level": 1,
+      "seed": 220015,
+      "options": {
+        "initial_state": {
+          "x": 0.030032665945057914,
+          "y": 1.7278251678521157,
+          "vx": -0.02517292302379173,
+          "vy": -0.22940002291478592,
+          "theta": 0.008583189442784737,
+          "omega": -0.00440603880671978
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "recovery-development-0016",
+      "condition": "level1",
+      "source_level": 1,
+      "seed": 220016,
+      "options": {
+        "initial_state": {
+          "x": -0.09913362591245636,
+          "y": 2.294383046815526,
+          "vx": -0.02364292586565746,
+          "vy": -0.1505097902547439,
+          "theta": -0.009130421465908341,
+          "omega": 0.0032780141004007946
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "recovery-development-0017",
+      "condition": "level1",
+      "source_level": 1,
+      "seed": 220017,
+      "options": {
+        "initial_state": {
+          "x": 0.019876390553107238,
+          "y": 2.20248707900475,
+          "vx": -0.023539602188215762,
+          "vy": -0.18966562526480454,
+          "theta": 0.007488930575787052,
+          "omega": -0.0007505665056534927
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "recovery-development-0018",
+      "condition": "level1",
+      "source_level": 1,
+      "seed": 220018,
+      "options": {
+        "initial_state": {
+          "x": -0.06980216248377231,
+          "y": 1.7439209806650975,
+          "vx": 0.013656973052883343,
+          "vy": -0.29375056570214986,
+          "theta": -0.005078816256567924,
+          "omega": 0.0006680964651985344
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "recovery-development-0019",
+      "condition": "level1",
+      "source_level": 1,
+      "seed": 220019,
+      "options": {
+        "initial_state": {
+          "x": 0.01594662229903976,
+          "y": 2.3450505925714653,
+          "vx": -0.014660141075653202,
+          "vy": -0.2370452656678275,
+          "theta": -0.006848114547107671,
+          "omega": -0.0011035705323144973
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "recovery-development-0020",
+      "condition": "level1",
+      "source_level": 1,
+      "seed": 220020,
+      "options": {
+        "initial_state": {
+          "x": 0.03699936150789305,
+          "y": 2.100341474383989,
+          "vx": 0.020947779717562585,
+          "vy": -0.2179851917944064,
+          "theta": -0.0017391710869965205,
+          "omega": 0.0046418736304397554
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "recovery-development-0021",
+      "condition": "level1",
+      "source_level": 1,
+      "seed": 220021,
+      "options": {
+        "initial_state": {
+          "x": -0.05002389858446974,
+          "y": 1.9912424899946504,
+          "vx": 0.008842380396353709,
+          "vy": -0.15109327528033156,
+          "theta": 0.00642962065674781,
+          "omega": -0.00022718310173668654
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "recovery-development-0022",
+      "condition": "level1",
+      "source_level": 1,
+      "seed": 220022,
+      "options": {
+        "initial_state": {
+          "x": 0.07808100065112589,
+          "y": 2.2944019733437733,
+          "vx": -0.01023067104640706,
+          "vy": -0.17397435164964112,
+          "theta": -0.0011460225957249982,
+          "omega": -0.0038765809493389414
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "recovery-development-0023",
+      "condition": "level1",
+      "source_level": 1,
+      "seed": 220023,
+      "options": {
+        "initial_state": {
+          "x": -0.00577812292147768,
+          "y": 2.0319381910431,
+          "vx": -0.01954197973647961,
+          "vy": -0.1023813247638658,
+          "theta": 0.004782776154852551,
+          "omega": 0.001229158759633615
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "recovery-development-0024",
+      "condition": "level1",
+      "source_level": 1,
+      "seed": 220024,
+      "options": {
+        "initial_state": {
+          "x": 0.030457242855748003,
+          "y": 1.8862728765787662,
+          "vx": -0.016388469779490517,
+          "vy": -0.24173842306720458,
+          "theta": -0.0015366752329027244,
+          "omega": -0.002631688267229163
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "recovery-development-0025",
+      "condition": "level1",
+      "source_level": 1,
+      "seed": 220025,
+      "options": {
+        "initial_state": {
+          "x": -0.07241971262142925,
+          "y": 2.3063388529951676,
+          "vx": 0.0012002739686756802,
+          "vy": -0.19854831982317098,
+          "theta": 0.0007885608387621668,
+          "omega": -0.001204738399497438
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "recovery-development-0026",
+      "condition": "level1",
+      "source_level": 1,
+      "seed": 220026,
+      "options": {
+        "initial_state": {
+          "x": 0.051270591652192124,
+          "y": 2.2903263743292217,
+          "vx": 0.015061369959918885,
+          "vy": -0.09152969872595829,
+          "theta": -0.0011177567790680088,
+          "omega": 0.001827960001860043
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "recovery-development-0027",
+      "condition": "level1",
+      "source_level": 1,
+      "seed": 220027,
+      "options": {
+        "initial_state": {
+          "x": -0.021305409768504015,
+          "y": 1.9179520897398898,
+          "vx": -0.01537101432470125,
+          "vy": -0.12964196233126551,
+          "theta": -0.008603348830256754,
+          "omega": -0.003299049140471375
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "recovery-development-0028",
+      "condition": "level1",
+      "source_level": 1,
+      "seed": 220028,
+      "options": {
+        "initial_state": {
+          "x": -0.020784112642094323,
+          "y": 1.84975474318861,
+          "vx": 0.02568255933139814,
+          "vy": -0.05101567918972827,
+          "theta": -0.002848650235746464,
+          "omega": -0.002999091812485504
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "recovery-development-0029",
+      "condition": "level1",
+      "source_level": 1,
+      "seed": 220029,
+      "options": {
+        "initial_state": {
+          "x": 0.008880256624412075,
+          "y": 2.1018866575245045,
+          "vx": -0.022713521439648443,
+          "vy": -0.17302825071566605,
+          "theta": -0.0012112345768464428,
+          "omega": -0.0027045898493691825
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "recovery-development-0030",
+      "condition": "level1",
+      "source_level": 1,
+      "seed": 220030,
+      "options": {
+        "initial_state": {
+          "x": 0.006737772333712,
+          "y": 2.014034154417736,
+          "vx": 0.028768756205950707,
+          "vy": -0.2996678317292045,
+          "theta": 0.006850369031050609,
+          "omega": -0.0003161252856042718
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "recovery-development-0031",
+      "condition": "level1",
+      "source_level": 1,
+      "seed": 220031,
+      "options": {
+        "initial_state": {
+          "x": -0.01647947540837218,
+          "y": 1.78317156255096,
+          "vx": 0.02157929343394583,
+          "vy": -0.24345569574230275,
+          "theta": -0.002652167296518455,
+          "omega": 0.002085201798215649
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "recovery-development-0032",
+      "condition": "level1",
+      "source_level": 1,
+      "seed": 220032,
+      "options": {
+        "initial_state": {
+          "x": 0.07541631379636796,
+          "y": 2.070378328490264,
+          "vx": 0.007758921409137073,
+          "vy": -0.25606935447822143,
+          "theta": 0.0013897339436364088,
+          "omega": -0.004157316769708431
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "recovery-development-0033",
+      "condition": "level1",
+      "source_level": 1,
+      "seed": 220033,
+      "options": {
+        "initial_state": {
+          "x": 0.03873150205157314,
+          "y": 2.3251374351482736,
+          "vx": -0.0006286852915527552,
+          "vy": -0.09237613040186451,
+          "theta": 0.009186259047431096,
+          "omega": -0.0046382160194060554
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "recovery-development-0034",
+      "condition": "level1",
+      "source_level": 1,
+      "seed": 220034,
+      "options": {
+        "initial_state": {
+          "x": -0.07763386505839885,
+          "y": 1.9203646173301279,
+          "vx": -0.006706809676621523,
+          "vy": -0.06097588211201674,
+          "theta": -0.004594960001908153,
+          "omega": -0.002362623215469909
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "recovery-development-0035",
+      "condition": "level1",
+      "source_level": 1,
+      "seed": 220035,
+      "options": {
+        "initial_state": {
+          "x": 0.008811056614989243,
+          "y": 1.9381325668580012,
+          "vx": 0.02526472456887969,
+          "vy": -0.24920449768964553,
+          "theta": 0.004108072329195784,
+          "omega": -0.003181804419476355
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "recovery-development-0036",
+      "condition": "level1",
+      "source_level": 1,
+      "seed": 220036,
+      "options": {
+        "initial_state": {
+          "x": 0.0395936687372412,
+          "y": 1.8525188292900359,
+          "vx": 0.001430229837486212,
+          "vy": -0.20536827061182744,
+          "theta": -0.005454452244990205,
+          "omega": -0.0010447677685329459
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "recovery-development-0037",
+      "condition": "level1",
+      "source_level": 1,
+      "seed": 220037,
+      "options": {
+        "initial_state": {
+          "x": 0.05969966819998778,
+          "y": 2.2838561103845336,
+          "vx": 0.021328070253268498,
+          "vy": -0.2172899646161068,
+          "theta": 0.0063386648054091065,
+          "omega": -0.002496201877608868
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "recovery-development-0038",
+      "condition": "level1",
+      "source_level": 1,
+      "seed": 220038,
+      "options": {
+        "initial_state": {
+          "x": 0.0831650787976853,
+          "y": 2.184477834421175,
+          "vx": -0.025158292870595494,
+          "vy": -0.14652237653705807,
+          "theta": -0.0026406524154771183,
+          "omega": -0.0014924580396531051
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "recovery-development-0039",
+      "condition": "level1",
+      "source_level": 1,
+      "seed": 220039,
+      "options": {
+        "initial_state": {
+          "x": -0.07003115183090217,
+          "y": 1.9676991472244683,
+          "vx": -0.014312480419444322,
+          "vy": -0.10720390887527426,
+          "theta": -0.006734429383642921,
+          "omega": -0.004590121657621895
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "recovery-development-0040",
+      "condition": "level1",
+      "source_level": 1,
+      "seed": 220040,
+      "options": {
+        "initial_state": {
+          "x": -0.06023297866663207,
+          "y": 2.033513365105984,
+          "vx": -0.009182291283717267,
+          "vy": -0.2414776222073731,
+          "theta": 0.0032841627339709125,
+          "omega": -0.0030142317572389157
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "recovery-development-0041",
+      "condition": "level1",
+      "source_level": 1,
+      "seed": 220041,
+      "options": {
+        "initial_state": {
+          "x": 0.021157468299404927,
+          "y": 2.0589679312812637,
+          "vx": 0.007273955768327174,
+          "vy": -0.1820177638380365,
+          "theta": 0.005641994086921638,
+          "omega": -0.004854201054091785
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "recovery-development-0042",
+      "condition": "level1",
+      "source_level": 1,
+      "seed": 220042,
+      "options": {
+        "initial_state": {
+          "x": -0.0540407421769453,
+          "y": 2.1846250661089868,
+          "vx": 0.0020134464209173174,
+          "vy": -0.07304704807631965,
+          "theta": -0.00835684446736215,
+          "omega": -0.002657887804138285
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "recovery-development-0043",
+      "condition": "level1",
+      "source_level": 1,
+      "seed": 220043,
+      "options": {
+        "initial_state": {
+          "x": 0.030504553168972895,
+          "y": 2.2868302049836537,
+          "vx": -0.002436082633872363,
+          "vy": -0.2922762367320532,
+          "theta": -0.0035862731371310618,
+          "omega": -0.003986232385346208
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "recovery-development-0044",
+      "condition": "level1",
+      "source_level": 1,
+      "seed": 220044,
+      "options": {
+        "initial_state": {
+          "x": 0.09924436670332226,
+          "y": 1.7566475161655564,
+          "vx": -0.010026688702802416,
+          "vy": -0.05394629483121566,
+          "theta": 0.009282339323710842,
+          "omega": 0.0019259493167436159
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "recovery-development-0045",
+      "condition": "level1",
+      "source_level": 1,
+      "seed": 220045,
+      "options": {
+        "initial_state": {
+          "x": 0.0944025517697654,
+          "y": 2.1212251215154514,
+          "vx": -0.010337422127044853,
+          "vy": -0.22272321796178407,
+          "theta": -0.005441398157762876,
+          "omega": -0.0037504807163098565
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "recovery-development-0046",
+      "condition": "level1",
+      "source_level": 1,
+      "seed": 220046,
+      "options": {
+        "initial_state": {
+          "x": 0.09290576615914162,
+          "y": 1.684142773540247,
+          "vx": -0.0006751256044504794,
+          "vy": -0.1981628655744681,
+          "theta": -0.0020398098423839153,
+          "omega": -0.001605097132512442
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "recovery-development-0047",
+      "condition": "level1",
+      "source_level": 1,
+      "seed": 220047,
+      "options": {
+        "initial_state": {
+          "x": -0.05427320904654163,
+          "y": 2.0837112830471156,
+          "vx": -0.008886759511095797,
+          "vy": -0.23956728683368517,
+          "theta": -0.004089368740435844,
+          "omega": 0.0019254332579181689
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "recovery-development-0048",
+      "condition": "level1",
+      "source_level": 1,
+      "seed": 220048,
+      "options": {
+        "initial_state": {
+          "x": 0.08381906471212881,
+          "y": 1.796556298169085,
+          "vx": -0.012760207826977633,
+          "vy": -0.08405243620897282,
+          "theta": -0.0092053518364648,
+          "omega": -0.00023213479731208465
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "recovery-development-0049",
+      "condition": "level1",
+      "source_level": 1,
+      "seed": 220049,
+      "options": {
+        "initial_state": {
+          "x": 0.06739284567495314,
+          "y": 1.7789439070880482,
+          "vx": 0.02074334028418146,
+          "vy": -0.10552248514431656,
+          "theta": -0.0009318320468285047,
+          "omega": 0.003947608018272179
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "recovery-development-0050",
+      "condition": "level1",
+      "source_level": 1,
+      "seed": 220050,
+      "options": {
+        "initial_state": {
+          "x": -0.06032906530869871,
+          "y": 2.2487187388354015,
+          "vx": 0.008773988592029032,
+          "vy": -0.1390602135047686,
+          "theta": -0.00561836877173691,
+          "omega": 0.0016803656158088276
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "recovery-development-0051",
+      "condition": "level1",
+      "source_level": 1,
+      "seed": 220051,
+      "options": {
+        "initial_state": {
+          "x": -0.026137897329117334,
+          "y": 1.6072799043431127,
+          "vx": -0.006340450802413054,
+          "vy": -0.26377303081939124,
+          "theta": 0.006335390469757969,
+          "omega": 0.00296666061431452
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "recovery-development-0052",
+      "condition": "level1",
+      "source_level": 1,
+      "seed": 220052,
+      "options": {
+        "initial_state": {
+          "x": 0.07270424710678121,
+          "y": 1.7471354588067767,
+          "vx": -0.009679613223087476,
+          "vy": -0.10263383598460646,
+          "theta": -0.003336721182540663,
+          "omega": -0.002831384686165779
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "recovery-development-0053",
+      "condition": "level1",
+      "source_level": 1,
+      "seed": 220053,
+      "options": {
+        "initial_state": {
+          "x": 0.06754137425851414,
+          "y": 2.2466921620664477,
+          "vx": -0.025227746793986736,
+          "vy": -0.2262970383005484,
+          "theta": -0.007134936797407321,
+          "omega": -0.0003525748596175471
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "recovery-development-0054",
+      "condition": "level1",
+      "source_level": 1,
+      "seed": 220054,
+      "options": {
+        "initial_state": {
+          "x": -0.011093841150801809,
+          "y": 1.7123969139482182,
+          "vx": -0.02821572116863706,
+          "vy": -0.07829258995219679,
+          "theta": -0.009184858398395732,
+          "omega": 0.00026355498321437357
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "recovery-development-0055",
+      "condition": "level1",
+      "source_level": 1,
+      "seed": 220055,
+      "options": {
+        "initial_state": {
+          "x": -0.0296100400281748,
+          "y": 2.2048655030749846,
+          "vx": 0.01695999199141556,
+          "vy": -0.29830507509606863,
+          "theta": -0.005746646221311081,
+          "omega": 0.0031273162680851264
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "recovery-development-0056",
+      "condition": "level1",
+      "source_level": 1,
+      "seed": 220056,
+      "options": {
+        "initial_state": {
+          "x": 0.034586565715547926,
+          "y": 2.3812499625109216,
+          "vx": 0.008324115510454365,
+          "vy": -0.10423509053897398,
+          "theta": 0.009830692652863536,
+          "omega": -0.0032796636448187977
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "recovery-development-0057",
+      "condition": "level1",
+      "source_level": 1,
+      "seed": 220057,
+      "options": {
+        "initial_state": {
+          "x": -0.02359710111002309,
+          "y": 1.7280254152774737,
+          "vx": -0.006341678595116593,
+          "vy": -0.11713092604518838,
+          "theta": 0.002583699437741296,
+          "omega": 1.7402403926007893e-05
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "recovery-development-0058",
+      "condition": "level1",
+      "source_level": 1,
+      "seed": 220058,
+      "options": {
+        "initial_state": {
+          "x": -0.02369184732882561,
+          "y": 1.9023270357847646,
+          "vx": 0.0050105293948672445,
+          "vy": -0.09036395370369416,
+          "theta": -0.005168802226596847,
+          "omega": 0.0015025730473573152
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "recovery-development-0059",
+      "condition": "level1",
+      "source_level": 1,
+      "seed": 220059,
+      "options": {
+        "initial_state": {
+          "x": 0.07771064985088538,
+          "y": 1.7706296174267224,
+          "vx": 0.009037621765212486,
+          "vy": -0.2925987479326528,
+          "theta": -0.0025788763138705996,
+          "omega": 0.0018731717278469562
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "recovery-development-0060",
+      "condition": "level1",
+      "source_level": 1,
+      "seed": 220060,
+      "options": {
+        "initial_state": {
+          "x": 0.05489528105897612,
+          "y": 2.3482669225186266,
+          "vx": -0.014452906866521363,
+          "vy": -0.23076299214981666,
+          "theta": -0.008393368299770288,
+          "omega": 0.004775126280779239
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "recovery-development-0061",
+      "condition": "level1",
+      "source_level": 1,
+      "seed": 220061,
+      "options": {
+        "initial_state": {
+          "x": 0.031126029757308007,
+          "y": 2.062599217685392,
+          "vx": -0.02190674257303382,
+          "vy": -0.10061167383567138,
+          "theta": 0.0005549114568398683,
+          "omega": -0.0010624063844719167
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "recovery-development-0062",
+      "condition": "level1",
+      "source_level": 1,
+      "seed": 220062,
+      "options": {
+        "initial_state": {
+          "x": -0.04271107994465602,
+          "y": 2.36103442131299,
+          "vx": 0.027673529726326626,
+          "vy": -0.10944894864666613,
+          "theta": 0.008444102639644617,
+          "omega": -0.0022346195471165276
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "recovery-development-0063",
+      "condition": "level1",
+      "source_level": 1,
+      "seed": 220063,
+      "options": {
+        "initial_state": {
+          "x": -0.042937304315588204,
+          "y": 2.2513515571999,
+          "vx": 0.02612999153255811,
+          "vy": -0.27326886521149246,
+          "theta": -0.00824798741765428,
+          "omega": -0.0003209411116755623
+        },
+        "wind_force": 0.0
+      }
+    }
+  ]
+}
