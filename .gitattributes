@@ -1,5 +1,8 @@
-# Mantener hashes del protocolo al clonar en distintos sistemas.
+# Código/documentación: finales LF para clones entre sistemas.
 * text=auto eol=lf
+# Evidencia congelada: preservar bytes originales, incluidos CSV con CRLF.
+/artifacts/** -text -eol
+*.csv -text -eol whitespace=cr-at-eol
 *.pt binary
 *.png binary
 *.gif binary
