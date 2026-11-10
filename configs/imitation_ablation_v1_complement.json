@@ -1,0 +1,5480 @@
+{
+  "schema_version": 1,
+  "split": "test",
+  "role": "imitation_ablation_complement",
+  "origin": "Semillas por caso NumPy default_rng desde 1440000; prescrito sin evaluar ninguna politica; sin rechazo por resultado",
+  "scenarios": [
+    {
+      "id": "ablation-represented_l1-000",
+      "condition": "represented_l1",
+      "seed": 1440000,
+      "suite": "ablation_complement",
+      "exposure": "within_assisted_initial_support",
+      "paired_wind_id": "",
+      "options": {
+        "initial_state": {
+          "x": 0.06531937932073953,
+          "y": 1.8190233191209655,
+          "vx": -0.027797967399130392,
+          "vy": -0.2558798600796741,
+          "theta": -0.0032489104764495446,
+          "omega": 0.0015690140787779768
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "ablation-represented_l1-001",
+      "condition": "represented_l1",
+      "seed": 1440001,
+      "suite": "ablation_complement",
+      "exposure": "within_assisted_initial_support",
+      "paired_wind_id": "",
+      "options": {
+        "initial_state": {
+          "x": 0.012267833558523497,
+          "y": 1.8729803418265427,
+          "vx": 0.0016567873689779036,
+          "vy": -0.06163163611563463,
+          "theta": 0.0012423006926592928,
+          "omega": 0.004654261955772484
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "ablation-represented_l1-002",
+      "condition": "represented_l1",
+      "seed": 1440002,
+      "suite": "ablation_complement",
+      "exposure": "within_assisted_initial_support",
+      "paired_wind_id": "",
+      "options": {
+        "initial_state": {
+          "x": -0.03365624372228149,
+          "y": 2.1920206994761497,
+          "vx": -0.014235195823589675,
+          "vy": -0.1426049659756713,
+          "theta": 0.0021903421188793487,
+          "omega": 0.0005757080267980831
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "ablation-represented_l1-003",
+      "condition": "represented_l1",
+      "seed": 1440003,
+      "suite": "ablation_complement",
+      "exposure": "within_assisted_initial_support",
+      "paired_wind_id": "",
+      "options": {
+        "initial_state": {
+          "x": -0.027156804117161024,
+          "y": 2.189218338207107,
+          "vx": 0.019665872551452156,
+          "vy": -0.1347133840210117,
+          "theta": -0.0031944728900086816,
+          "omega": -0.0048252158728360785
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "ablation-represented_l1-004",
+      "condition": "represented_l1",
+      "seed": 1440004,
+      "suite": "ablation_complement",
+      "exposure": "within_assisted_initial_support",
+      "paired_wind_id": "",
+      "options": {
+        "initial_state": {
+          "x": -0.01889376802178863,
+          "y": 2.1804520866267314,
+          "vx": 0.025391782954575455,
+          "vy": -0.05409923603864111,
+          "theta": 0.0073042341204005625,
+          "omega": 0.0018581966238883614
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "ablation-represented_l1-005",
+      "condition": "represented_l1",
+      "seed": 1440005,
+      "suite": "ablation_complement",
+      "exposure": "within_assisted_initial_support",
+      "paired_wind_id": "",
+      "options": {
+        "initial_state": {
+          "x": 0.054349018010489,
+          "y": 1.7892972522319963,
+          "vx": -0.009546113654090499,
+          "vy": -0.23971724417299586,
+          "theta": 0.0025853426200304515,
+          "omega": -0.004158174697092214
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "ablation-represented_l1-006",
+      "condition": "represented_l1",
+      "seed": 1440006,
+      "suite": "ablation_complement",
+      "exposure": "within_assisted_initial_support",
+      "paired_wind_id": "",
+      "options": {
+        "initial_state": {
+          "x": -0.07234216738421412,
+          "y": 2.293009708698002,
+          "vx": -0.0013342224138051112,
+          "vy": -0.17124322568131492,
+          "theta": 0.002892741227109547,
+          "omega": -0.002895663767273795
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "ablation-represented_l1-007",
+      "condition": "represented_l1",
+      "seed": 1440007,
+      "suite": "ablation_complement",
+      "exposure": "within_assisted_initial_support",
+      "paired_wind_id": "",
+      "options": {
+        "initial_state": {
+          "x": 0.085153728930555,
+          "y": 1.9010040497577572,
+          "vx": -0.01626114543757392,
+          "vy": -0.10182485984099299,
+          "theta": -0.0028333601147762424,
+          "omega": -0.0018276634666633896
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "ablation-represented_l1-008",
+      "condition": "represented_l1",
+      "seed": 1440008,
+      "suite": "ablation_complement",
+      "exposure": "within_assisted_initial_support",
+      "paired_wind_id": "",
+      "options": {
+        "initial_state": {
+          "x": 0.031584781037437754,
+          "y": 1.7018608296194286,
+          "vx": -0.015408486363790656,
+          "vy": -0.09572501106959866,
+          "theta": 0.0048349054549440655,
+          "omega": 0.0031431711949618723
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "ablation-represented_l1-009",
+      "condition": "represented_l1",
+      "seed": 1440009,
+      "suite": "ablation_complement",
+      "exposure": "within_assisted_initial_support",
+      "paired_wind_id": "",
+      "options": {
+        "initial_state": {
+          "x": 0.03675281914857248,
+          "y": 2.2051406900117976,
+          "vx": -0.02406430514971611,
+          "vy": -0.1666641482930205,
+          "theta": 0.006224791255675434,
+          "omega": 0.0006412758482247892
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "ablation-represented_l1-010",
+      "condition": "represented_l1",
+      "seed": 1440010,
+      "suite": "ablation_complement",
+      "exposure": "within_assisted_initial_support",
+      "paired_wind_id": "",
+      "options": {
+        "initial_state": {
+          "x": -0.017421740215112475,
+          "y": 2.2663421604917233,
+          "vx": -0.015351065537582628,
+          "vy": -0.08898594278501928,
+          "theta": 0.006831841872401075,
+          "omega": 0.0017271026332135002
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "ablation-represented_l1-011",
+      "condition": "represented_l1",
+      "seed": 1440011,
+      "suite": "ablation_complement",
+      "exposure": "within_assisted_initial_support",
+      "paired_wind_id": "",
+      "options": {
+        "initial_state": {
+          "x": -0.049821415807394014,
+          "y": 1.9063434454594148,
+          "vx": 0.021131214414698507,
+          "vy": -0.08333357125262283,
+          "theta": 0.007964068329086861,
+          "omega": 0.004071588156566442
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "ablation-represented_l1-012",
+      "condition": "represented_l1",
+      "seed": 1440012,
+      "suite": "ablation_complement",
+      "exposure": "within_assisted_initial_support",
+      "paired_wind_id": "",
+      "options": {
+        "initial_state": {
+          "x": -0.04273009376843034,
+          "y": 1.6039084352956812,
+          "vx": -0.009900686408408885,
+          "vy": -0.1287801401895073,
+          "theta": 0.002486237356874173,
+          "omega": 0.0028234477099634185
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "ablation-represented_l1-013",
+      "condition": "represented_l1",
+      "seed": 1440013,
+      "suite": "ablation_complement",
+      "exposure": "within_assisted_initial_support",
+      "paired_wind_id": "",
+      "options": {
+        "initial_state": {
+          "x": 0.08929523628067074,
+          "y": 1.6405026795961017,
+          "vx": -0.018741225930195313,
+          "vy": -0.21499677723374194,
+          "theta": -0.007364974579312038,
+          "omega": 0.0013335385333522985
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "ablation-represented_l1-014",
+      "condition": "represented_l1",
+      "seed": 1440014,
+      "suite": "ablation_complement",
+      "exposure": "within_assisted_initial_support",
+      "paired_wind_id": "",
+      "options": {
+        "initial_state": {
+          "x": 0.04064546394448168,
+          "y": 1.9304047737112464,
+          "vx": -0.01700345248463963,
+          "vy": -0.24654811142579267,
+          "theta": 0.005103309399941292,
+          "omega": -0.0025411279423083
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "ablation-represented_l1-015",
+      "condition": "represented_l1",
+      "seed": 1440015,
+      "suite": "ablation_complement",
+      "exposure": "within_assisted_initial_support",
+      "paired_wind_id": "",
+      "options": {
+        "initial_state": {
+          "x": -0.04555884690585313,
+          "y": 2.2281693990574483,
+          "vx": 0.0016323652643592326,
+          "vy": -0.14490975958908353,
+          "theta": -0.002650907128046858,
+          "omega": 0.004678197606063078
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "ablation-represented_l1-016",
+      "condition": "represented_l1",
+      "seed": 1440016,
+      "suite": "ablation_complement",
+      "exposure": "within_assisted_initial_support",
+      "paired_wind_id": "",
+      "options": {
+        "initial_state": {
+          "x": 0.02237881858987864,
+          "y": 2.32004510090985,
+          "vx": -0.027266695536615378,
+          "vy": -0.11603706491533541,
+          "theta": -0.005303889033691618,
+          "omega": 0.0027204688185332214
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "ablation-represented_l1-017",
+      "condition": "represented_l1",
+      "seed": 1440017,
+      "suite": "ablation_complement",
+      "exposure": "within_assisted_initial_support",
+      "paired_wind_id": "",
+      "options": {
+        "initial_state": {
+          "x": -0.055219175271846305,
+          "y": 2.351361464566042,
+          "vx": -0.02608364342436578,
+          "vy": -0.21604118004942188,
+          "theta": 0.0036827044637235563,
+          "omega": -0.002237413630117057
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "ablation-represented_l1-018",
+      "condition": "represented_l1",
+      "seed": 1440018,
+      "suite": "ablation_complement",
+      "exposure": "within_assisted_initial_support",
+      "paired_wind_id": "",
+      "options": {
+        "initial_state": {
+          "x": 0.03304636625440155,
+          "y": 2.320644751381907,
+          "vx": 0.028994473223146862,
+          "vy": -0.07113117121703591,
+          "theta": 0.001141937598360376,
+          "omega": -0.002463039631924301
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "ablation-represented_l1-019",
+      "condition": "represented_l1",
+      "seed": 1440019,
+      "suite": "ablation_complement",
+      "exposure": "within_assisted_initial_support",
+      "paired_wind_id": "",
+      "options": {
+        "initial_state": {
+          "x": 0.04932701956912361,
+          "y": 1.8412397125148792,
+          "vx": 0.02779898272052163,
+          "vy": -0.15104364915850507,
+          "theta": -0.002354339310966078,
+          "omega": 0.0031328681275261437
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "ablation-represented_l1-020",
+      "condition": "represented_l1",
+      "seed": 1440020,
+      "suite": "ablation_complement",
+      "exposure": "within_assisted_initial_support",
+      "paired_wind_id": "",
+      "options": {
+        "initial_state": {
+          "x": -0.09248173443632875,
+          "y": 1.627499545138747,
+          "vx": -0.024958546535159477,
+          "vy": -0.10942905819422702,
+          "theta": 0.008742938548332147,
+          "omega": -0.00395301716604809
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "ablation-represented_l1-021",
+      "condition": "represented_l1",
+      "seed": 1440021,
+      "suite": "ablation_complement",
+      "exposure": "within_assisted_initial_support",
+      "paired_wind_id": "",
+      "options": {
+        "initial_state": {
+          "x": 0.003808138849945658,
+          "y": 1.7807636820024664,
+          "vx": 0.022991121756958777,
+          "vy": -0.180584513249994,
+          "theta": -0.00936639873366732,
+          "omega": 0.0011862053344870007
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "ablation-represented_l1-022",
+      "condition": "represented_l1",
+      "seed": 1440022,
+      "suite": "ablation_complement",
+      "exposure": "within_assisted_initial_support",
+      "paired_wind_id": "",
+      "options": {
+        "initial_state": {
+          "x": 0.008344479483627848,
+          "y": 1.9684751387335175,
+          "vx": -0.0018089237674231567,
+          "vy": -0.08016675953915314,
+          "theta": 0.008277989413001839,
+          "omega": -0.0016869706594531018
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "ablation-represented_l1-023",
+      "condition": "represented_l1",
+      "seed": 1440023,
+      "suite": "ablation_complement",
+      "exposure": "within_assisted_initial_support",
+      "paired_wind_id": "",
+      "options": {
+        "initial_state": {
+          "x": 0.0026721399583368582,
+          "y": 1.7406871298571651,
+          "vx": 0.0008168560773906784,
+          "vy": -0.10262451193215408,
+          "theta": -0.007884150656243892,
+          "omega": -0.0031851739423728533
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "ablation-represented_l1-024",
+      "condition": "represented_l1",
+      "seed": 1440024,
+      "suite": "ablation_complement",
+      "exposure": "within_assisted_initial_support",
+      "paired_wind_id": "",
+      "options": {
+        "initial_state": {
+          "x": -0.0012837028612124879,
+          "y": 1.8928219375248785,
+          "vx": 0.008685368989823944,
+          "vy": -0.0976718714608863,
+          "theta": -0.0014649774279916674,
+          "omega": 0.004915128569371958
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "ablation-represented_l1-025",
+      "condition": "represented_l1",
+      "seed": 1440025,
+      "suite": "ablation_complement",
+      "exposure": "within_assisted_initial_support",
+      "paired_wind_id": "",
+      "options": {
+        "initial_state": {
+          "x": 0.06903587833599598,
+          "y": 1.885094363983301,
+          "vx": 0.013416412783182022,
+          "vy": -0.08089967356632041,
+          "theta": 0.009854644616515534,
+          "omega": -0.0036838313441451267
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "ablation-represented_l1-026",
+      "condition": "represented_l1",
+      "seed": 1440026,
+      "suite": "ablation_complement",
+      "exposure": "within_assisted_initial_support",
+      "paired_wind_id": "",
+      "options": {
+        "initial_state": {
+          "x": 0.07637939991551965,
+          "y": 2.383630500862613,
+          "vx": 0.028975259976249355,
+          "vy": -0.08697992368995006,
+          "theta": -0.0050399978149543445,
+          "omega": 0.0012341630221871704
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "ablation-represented_l1-027",
+      "condition": "represented_l1",
+      "seed": 1440027,
+      "suite": "ablation_complement",
+      "exposure": "within_assisted_initial_support",
+      "paired_wind_id": "",
+      "options": {
+        "initial_state": {
+          "x": -0.06743260038542978,
+          "y": 1.7393768700686638,
+          "vx": 0.012188953348558094,
+          "vy": -0.23268098138854706,
+          "theta": 0.004530450609210939,
+          "omega": 0.0022219137763248723
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "ablation-represented_l1-028",
+      "condition": "represented_l1",
+      "seed": 1440028,
+      "suite": "ablation_complement",
+      "exposure": "within_assisted_initial_support",
+      "paired_wind_id": "",
+      "options": {
+        "initial_state": {
+          "x": -0.06970052647909555,
+          "y": 2.30197912594373,
+          "vx": -0.025578705137420093,
+          "vy": -0.26212593328750544,
+          "theta": -0.009734983338001523,
+          "omega": 0.002996605992626882
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "ablation-represented_l1-029",
+      "condition": "represented_l1",
+      "seed": 1440029,
+      "suite": "ablation_complement",
+      "exposure": "within_assisted_initial_support",
+      "paired_wind_id": "",
+      "options": {
+        "initial_state": {
+          "x": -0.006604398878568868,
+          "y": 1.6368969338464994,
+          "vx": -0.022637163670822986,
+          "vy": -0.10992724633707396,
+          "theta": 0.0059354549492618165,
+          "omega": -0.0006668041259919868
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "ablation-represented_l1-030",
+      "condition": "represented_l1",
+      "seed": 1440030,
+      "suite": "ablation_complement",
+      "exposure": "within_assisted_initial_support",
+      "paired_wind_id": "",
+      "options": {
+        "initial_state": {
+          "x": -0.0029659405833739882,
+          "y": 2.144743266009253,
+          "vx": 0.0013089578115112882,
+          "vy": -0.08205379589857253,
+          "theta": -0.0031572910137079727,
+          "omega": 0.004868541904431772
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "ablation-represented_l1-031",
+      "condition": "represented_l1",
+      "seed": 1440031,
+      "suite": "ablation_complement",
+      "exposure": "within_assisted_initial_support",
+      "paired_wind_id": "",
+      "options": {
+        "initial_state": {
+          "x": -0.04263449096865784,
+          "y": 1.6273582100222241,
+          "vx": 0.0044852486804205505,
+          "vy": -0.09308155998575857,
+          "theta": 0.0017004243273081882,
+          "omega": 0.004839884764697894
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "ablation-represented_high-000",
+      "condition": "represented_high",
+      "seed": 1441000,
+      "suite": "ablation_complement",
+      "exposure": "within_assisted_initial_support",
+      "paired_wind_id": "",
+      "options": {
+        "initial_state": {
+          "x": 0.09573717697706419,
+          "y": 8.357052631102391,
+          "vx": -0.09770238578628981,
+          "vy": -0.03209309827498352,
+          "theta": -0.010049229563019638,
+          "omega": 0.0006853946591293507
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "ablation-represented_high-001",
+      "condition": "represented_high",
+      "seed": 1441001,
+      "suite": "ablation_complement",
+      "exposure": "within_assisted_initial_support",
+      "paired_wind_id": "",
+      "options": {
+        "initial_state": {
+          "x": -0.24366815628331215,
+          "y": 12.952414191971759,
+          "vx": 0.0170097290192371,
+          "vy": -0.6425451743551228,
+          "theta": 0.008242916859701285,
+          "omega": -0.0019620289695139958
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "ablation-represented_high-002",
+      "condition": "represented_high",
+      "seed": 1441002,
+      "suite": "ablation_complement",
+      "exposure": "within_assisted_initial_support",
+      "paired_wind_id": "",
+      "options": {
+        "initial_state": {
+          "x": 0.009182313042262802,
+          "y": 10.908072233353922,
+          "vx": 0.024314719046477196,
+          "vy": -0.585353999330076,
+          "theta": -0.007627448331825729,
+          "omega": 0.001972997204438779
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "ablation-represented_high-003",
+      "condition": "represented_high",
+      "seed": 1441003,
+      "suite": "ablation_complement",
+      "exposure": "within_assisted_initial_support",
+      "paired_wind_id": "",
+      "options": {
+        "initial_state": {
+          "x": -0.016500589897732565,
+          "y": 9.941962321820485,
+          "vx": 0.07419993563476018,
+          "vy": -0.8874941546135737,
+          "theta": 0.02039844263378026,
+          "omega": -0.0008579589664100907
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "ablation-represented_high-004",
+      "condition": "represented_high",
+      "seed": 1441004,
+      "suite": "ablation_complement",
+      "exposure": "within_assisted_initial_support",
+      "paired_wind_id": "",
+      "options": {
+        "initial_state": {
+          "x": -0.1841377576670697,
+          "y": 12.876339640903378,
+          "vx": -0.05087167647743296,
+          "vy": -0.0905422558195752,
+          "theta": 0.018384573933433096,
+          "omega": -0.0007600663120762782
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "ablation-represented_high-005",
+      "condition": "represented_high",
+      "seed": 1441005,
+      "suite": "ablation_complement",
+      "exposure": "within_assisted_initial_support",
+      "paired_wind_id": "",
+      "options": {
+        "initial_state": {
+          "x": 0.02116362685751827,
+          "y": 9.468205588602366,
+          "vx": -0.03302238556615529,
+          "vy": -0.13081239507316533,
+          "theta": 0.02634375683800981,
+          "omega": -0.004722373415784845
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "ablation-represented_high-006",
+      "condition": "represented_high",
+      "seed": 1441006,
+      "suite": "ablation_complement",
+      "exposure": "within_assisted_initial_support",
+      "paired_wind_id": "",
+      "options": {
+        "initial_state": {
+          "x": 0.19660152620936855,
+          "y": 8.594806562692181,
+          "vx": -0.02297986293495853,
+          "vy": -0.2438228858998467,
+          "theta": 0.024945727885176197,
+          "omega": 0.001161736286557742
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "ablation-represented_high-007",
+      "condition": "represented_high",
+      "seed": 1441007,
+      "suite": "ablation_complement",
+      "exposure": "within_assisted_initial_support",
+      "paired_wind_id": "",
+      "options": {
+        "initial_state": {
+          "x": 0.28469338109632764,
+          "y": 9.961054649962826,
+          "vx": 0.061891068640393176,
+          "vy": -0.019678618848617435,
+          "theta": 0.029928922351688453,
+          "omega": -0.0031162072681368566
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "ablation-represented_high-008",
+      "condition": "represented_high",
+      "seed": 1441008,
+      "suite": "ablation_complement",
+      "exposure": "within_assisted_initial_support",
+      "paired_wind_id": "",
+      "options": {
+        "initial_state": {
+          "x": -0.018875966572162783,
+          "y": 12.936475622493113,
+          "vx": 0.03683883994384379,
+          "vy": -0.38641260199045235,
+          "theta": 0.011523188880155848,
+          "omega": 0.0043587128781223
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "ablation-represented_high-009",
+      "condition": "represented_high",
+      "seed": 1441009,
+      "suite": "ablation_complement",
+      "exposure": "within_assisted_initial_support",
+      "paired_wind_id": "",
+      "options": {
+        "initial_state": {
+          "x": -0.15153344858196302,
+          "y": 10.952643325128289,
+          "vx": -0.0274803880629398,
+          "vy": -0.9907616611354636,
+          "theta": -0.0171534251287168,
+          "omega": 0.0038089825399264853
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "ablation-represented_high-010",
+      "condition": "represented_high",
+      "seed": 1441010,
+      "suite": "ablation_complement",
+      "exposure": "within_assisted_initial_support",
+      "paired_wind_id": "",
+      "options": {
+        "initial_state": {
+          "x": -0.08180406752323394,
+          "y": 12.92305998531845,
+          "vx": 0.050322282262714596,
+          "vy": -0.26197938488233274,
+          "theta": 0.019946937557341102,
+          "omega": -0.0013745404369599123
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "ablation-represented_high-011",
+      "condition": "represented_high",
+      "seed": 1441011,
+      "suite": "ablation_complement",
+      "exposure": "within_assisted_initial_support",
+      "paired_wind_id": "",
+      "options": {
+        "initial_state": {
+          "x": 0.23985247909775137,
+          "y": 8.152585694986747,
+          "vx": 0.07503779009194486,
+          "vy": -0.2763994820329496,
+          "theta": 0.010594144378730012,
+          "omega": -0.0019194435162321055
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "ablation-represented_high-012",
+      "condition": "represented_high",
+      "seed": 1441012,
+      "suite": "ablation_complement",
+      "exposure": "within_assisted_initial_support",
+      "paired_wind_id": "",
+      "options": {
+        "initial_state": {
+          "x": 0.05586192834283954,
+          "y": 8.607177519167141,
+          "vx": -0.03924434912827908,
+          "vy": -0.8597046185087309,
+          "theta": 0.00040391238416388753,
+          "omega": 0.0030883114965751307
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "ablation-represented_high-013",
+      "condition": "represented_high",
+      "seed": 1441013,
+      "suite": "ablation_complement",
+      "exposure": "within_assisted_initial_support",
+      "paired_wind_id": "",
+      "options": {
+        "initial_state": {
+          "x": -0.2949209916828385,
+          "y": 10.733580915503653,
+          "vx": -0.035746904596271875,
+          "vy": -0.2513213616741866,
+          "theta": 0.005467773489033836,
+          "omega": -0.0011466197399155145
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "ablation-represented_high-014",
+      "condition": "represented_high",
+      "seed": 1441014,
+      "suite": "ablation_complement",
+      "exposure": "within_assisted_initial_support",
+      "paired_wind_id": "",
+      "options": {
+        "initial_state": {
+          "x": 0.19474294680477527,
+          "y": 12.14397634375635,
+          "vx": 0.013208620135302884,
+          "vy": -0.09082343210122612,
+          "theta": -0.02239676881263669,
+          "omega": -0.001493322346381607
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "ablation-represented_high-015",
+      "condition": "represented_high",
+      "seed": 1441015,
+      "suite": "ablation_complement",
+      "exposure": "within_assisted_initial_support",
+      "paired_wind_id": "",
+      "options": {
+        "initial_state": {
+          "x": -0.07051868467662442,
+          "y": 9.023306276013859,
+          "vx": -0.05583987108363504,
+          "vy": -0.9883772299133305,
+          "theta": -0.01423967754829366,
+          "omega": 0.0012542014762563294
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "ablation-represented_high-016",
+      "condition": "represented_high",
+      "seed": 1441016,
+      "suite": "ablation_complement",
+      "exposure": "within_assisted_initial_support",
+      "paired_wind_id": "",
+      "options": {
+        "initial_state": {
+          "x": 0.21071079289615885,
+          "y": 8.100701010660014,
+          "vx": -0.07335233129410323,
+          "vy": -0.36426752755580416,
+          "theta": 0.005244022139535842,
+          "omega": 0.0003929224892251504
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "ablation-represented_high-017",
+      "condition": "represented_high",
+      "seed": 1441017,
+      "suite": "ablation_complement",
+      "exposure": "within_assisted_initial_support",
+      "paired_wind_id": "",
+      "options": {
+        "initial_state": {
+          "x": 0.021809610484511688,
+          "y": 9.187763056955779,
+          "vx": -0.028342130717125172,
+          "vy": -0.3738137126207993,
+          "theta": -0.002723519839861969,
+          "omega": 0.002010804812672828
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "ablation-represented_high-018",
+      "condition": "represented_high",
+      "seed": 1441018,
+      "suite": "ablation_complement",
+      "exposure": "within_assisted_initial_support",
+      "paired_wind_id": "",
+      "options": {
+        "initial_state": {
+          "x": 0.14477479180046715,
+          "y": 9.668295458136082,
+          "vx": 0.05021734260077709,
+          "vy": -0.6341387736860395,
+          "theta": -0.0013345586665996535,
+          "omega": -0.0012105890211597825
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "ablation-represented_high-019",
+      "condition": "represented_high",
+      "seed": 1441019,
+      "suite": "ablation_complement",
+      "exposure": "within_assisted_initial_support",
+      "paired_wind_id": "",
+      "options": {
+        "initial_state": {
+          "x": 0.21445477193221701,
+          "y": 8.22822855412238,
+          "vx": -0.0057086536382118525,
+          "vy": -0.7181259453182857,
+          "theta": 0.02230921472902664,
+          "omega": -9.789044488812005e-05
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "ablation-represented_high-020",
+      "condition": "represented_high",
+      "seed": 1441020,
+      "suite": "ablation_complement",
+      "exposure": "within_assisted_initial_support",
+      "paired_wind_id": "",
+      "options": {
+        "initial_state": {
+          "x": -0.1677816065806546,
+          "y": 9.76596655694161,
+          "vx": 0.010585582023719578,
+          "vy": -0.1326105876832907,
+          "theta": 0.0036094703472061423,
+          "omega": 0.002556473786765978
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "ablation-represented_high-021",
+      "condition": "represented_high",
+      "seed": 1441021,
+      "suite": "ablation_complement",
+      "exposure": "within_assisted_initial_support",
+      "paired_wind_id": "",
+      "options": {
+        "initial_state": {
+          "x": -0.06386541883505203,
+          "y": 9.000594384797576,
+          "vx": 0.010571072015795963,
+          "vy": -0.38702325258318293,
+          "theta": -0.014921197217056321,
+          "omega": -0.003570760020088861
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "ablation-represented_high-022",
+      "condition": "represented_high",
+      "seed": 1441022,
+      "suite": "ablation_complement",
+      "exposure": "within_assisted_initial_support",
+      "paired_wind_id": "",
+      "options": {
+        "initial_state": {
+          "x": -0.09049794298105956,
+          "y": 10.92654691355461,
+          "vx": 0.019231106844665488,
+          "vy": -0.07046680636379021,
+          "theta": 0.01490335643891215,
+          "omega": 0.004891489582681828
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "ablation-represented_high-023",
+      "condition": "represented_high",
+      "seed": 1441023,
+      "suite": "ablation_complement",
+      "exposure": "within_assisted_initial_support",
+      "paired_wind_id": "",
+      "options": {
+        "initial_state": {
+          "x": -0.20983255765222028,
+          "y": 11.861248893494524,
+          "vx": -0.0047665718027933845,
+          "vy": -0.7664808603238321,
+          "theta": 0.019566313352228568,
+          "omega": 0.0039051179724737027
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "ablation-represented_high-024",
+      "condition": "represented_high",
+      "seed": 1441024,
+      "suite": "ablation_complement",
+      "exposure": "within_assisted_initial_support",
+      "paired_wind_id": "",
+      "options": {
+        "initial_state": {
+          "x": -0.024811254555475726,
+          "y": 10.604613705774804,
+          "vx": -0.03905406429536023,
+          "vy": -0.8817490872281499,
+          "theta": 0.015494630656865183,
+          "omega": 0.0025742430420810144
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "ablation-represented_high-025",
+      "condition": "represented_high",
+      "seed": 1441025,
+      "suite": "ablation_complement",
+      "exposure": "within_assisted_initial_support",
+      "paired_wind_id": "",
+      "options": {
+        "initial_state": {
+          "x": 0.2059234418473978,
+          "y": 11.756631781196965,
+          "vx": 0.0393415368885591,
+          "vy": -0.4934534841675545,
+          "theta": -0.026146773898169433,
+          "omega": 0.004596547957238162
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "ablation-represented_high-026",
+      "condition": "represented_high",
+      "seed": 1441026,
+      "suite": "ablation_complement",
+      "exposure": "within_assisted_initial_support",
+      "paired_wind_id": "",
+      "options": {
+        "initial_state": {
+          "x": -0.18127002958171928,
+          "y": 11.588179070766046,
+          "vx": 0.0635679996294016,
+          "vy": -0.13898328034061713,
+          "theta": -0.021707414847333677,
+          "omega": -0.0024365352584986557
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "ablation-represented_high-027",
+      "condition": "represented_high",
+      "seed": 1441027,
+      "suite": "ablation_complement",
+      "exposure": "within_assisted_initial_support",
+      "paired_wind_id": "",
+      "options": {
+        "initial_state": {
+          "x": -0.007140423097247994,
+          "y": 11.185762306780713,
+          "vx": -0.0295087010387811,
+          "vy": -0.265005135266675,
+          "theta": 0.020436471307180695,
+          "omega": 0.0040426150701720525
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "ablation-represented_high-028",
+      "condition": "represented_high",
+      "seed": 1441028,
+      "suite": "ablation_complement",
+      "exposure": "within_assisted_initial_support",
+      "paired_wind_id": "",
+      "options": {
+        "initial_state": {
+          "x": -0.008437305015952079,
+          "y": 12.557879063298,
+          "vx": -0.08060041064869657,
+          "vy": -0.46990640246065685,
+          "theta": 0.01650979354270675,
+          "omega": 0.004924592340915084
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "ablation-represented_high-029",
+      "condition": "represented_high",
+      "seed": 1441029,
+      "suite": "ablation_complement",
+      "exposure": "within_assisted_initial_support",
+      "paired_wind_id": "",
+      "options": {
+        "initial_state": {
+          "x": -0.282789776907851,
+          "y": 8.95899833884639,
+          "vx": -0.0666023938710189,
+          "vy": -0.11497992067490892,
+          "theta": 0.02107436864534059,
+          "omega": -0.004162919006846059
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "ablation-represented_high-030",
+      "condition": "represented_high",
+      "seed": 1441030,
+      "suite": "ablation_complement",
+      "exposure": "within_assisted_initial_support",
+      "paired_wind_id": "",
+      "options": {
+        "initial_state": {
+          "x": 0.2269818305206312,
+          "y": 12.84989879482498,
+          "vx": 0.05101535841533003,
+          "vy": -0.6653859856827669,
+          "theta": -0.0050118262708458705,
+          "omega": -0.0010727321838664358
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "ablation-represented_high-031",
+      "condition": "represented_high",
+      "seed": 1441031,
+      "suite": "ablation_complement",
+      "exposure": "within_assisted_initial_support",
+      "paired_wind_id": "",
+      "options": {
+        "initial_state": {
+          "x": 0.1312158142863143,
+          "y": 10.579377976303444,
+          "vx": 0.025768718603114776,
+          "vy": -0.8080625401518177,
+          "theta": -0.004559374581535134,
+          "omega": -0.0021045116398936215
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "ablation-new_displacement-000",
+      "condition": "new_displacement",
+      "seed": 1442000,
+      "suite": "ablation_complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "",
+      "options": {
+        "initial_state": {
+          "x": -0.8018166586073284,
+          "y": 11.186007175413568,
+          "vx": 0.07295164557604644,
+          "vy": -0.9884281654493147,
+          "theta": -0.005120722296573881,
+          "omega": -0.0007081353925441269
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "ablation-new_displacement-001",
+      "condition": "new_displacement",
+      "seed": 1442001,
+      "suite": "ablation_complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "",
+      "options": {
+        "initial_state": {
+          "x": 0.6183285677050666,
+          "y": 10.105305713428724,
+          "vx": -0.06272168869809654,
+          "vy": -0.635765626023453,
+          "theta": -0.005569906237919631,
+          "omega": -0.0042239852816342155
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "ablation-new_displacement-002",
+      "condition": "new_displacement",
+      "seed": 1442002,
+      "suite": "ablation_complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "",
+      "options": {
+        "initial_state": {
+          "x": -1.190727753145056,
+          "y": 11.326572249724343,
+          "vx": -0.04850717669052687,
+          "vy": -0.37102938204811975,
+          "theta": -0.015336219468172431,
+          "omega": 0.0014377881580364031
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "ablation-new_displacement-003",
+      "condition": "new_displacement",
+      "seed": 1442003,
+      "suite": "ablation_complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "",
+      "options": {
+        "initial_state": {
+          "x": 1.4754767337685164,
+          "y": 10.967828095500565,
+          "vx": 0.04227771653897164,
+          "vy": -0.027706964385510346,
+          "theta": -0.016028714315821854,
+          "omega": -0.002881965556274865
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "ablation-new_displacement-004",
+      "condition": "new_displacement",
+      "seed": 1442004,
+      "suite": "ablation_complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "",
+      "options": {
+        "initial_state": {
+          "x": -0.8397432452828029,
+          "y": 12.009730826519656,
+          "vx": 0.02649614093011654,
+          "vy": -0.37642134406885996,
+          "theta": 0.027002928351004,
+          "omega": -0.0032487485131577655
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "ablation-new_displacement-005",
+      "condition": "new_displacement",
+      "seed": 1442005,
+      "suite": "ablation_complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "",
+      "options": {
+        "initial_state": {
+          "x": -1.3654822832440283,
+          "y": 12.546348596421602,
+          "vx": -0.056618618261623066,
+          "vy": -0.16541944210306858,
+          "theta": -0.009498703632675465,
+          "omega": -0.002733087385925822
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "ablation-new_displacement-006",
+      "condition": "new_displacement",
+      "seed": 1442006,
+      "suite": "ablation_complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "",
+      "options": {
+        "initial_state": {
+          "x": -1.3827161582548597,
+          "y": 12.255107668506259,
+          "vx": 0.05061593919781218,
+          "vy": -0.39543845286001245,
+          "theta": -0.028481791683939425,
+          "omega": 2.0875328057533456e-05
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "ablation-new_displacement-007",
+      "condition": "new_displacement",
+      "seed": 1442007,
+      "suite": "ablation_complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "",
+      "options": {
+        "initial_state": {
+          "x": -1.4682250006783262,
+          "y": 9.727537161662942,
+          "vx": 0.013198961325026029,
+          "vy": -0.4599548679860572,
+          "theta": -0.027166198853089844,
+          "omega": 0.0031743404966612506
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "ablation-new_displacement-008",
+      "condition": "new_displacement",
+      "seed": 1442008,
+      "suite": "ablation_complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "",
+      "options": {
+        "initial_state": {
+          "x": -1.0388231184665666,
+          "y": 8.6757506869914,
+          "vx": 0.031299119968497824,
+          "vy": -0.914094544398037,
+          "theta": -0.000885656342290965,
+          "omega": -0.0013434789136896252
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "ablation-new_displacement-009",
+      "condition": "new_displacement",
+      "seed": 1442009,
+      "suite": "ablation_complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "",
+      "options": {
+        "initial_state": {
+          "x": 1.295917087849105,
+          "y": 10.26151899535358,
+          "vx": 0.06931065159886718,
+          "vy": -0.5310356955370156,
+          "theta": 0.02898100545507934,
+          "omega": -0.003921574578904122
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "ablation-new_displacement-010",
+      "condition": "new_displacement",
+      "seed": 1442010,
+      "suite": "ablation_complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "",
+      "options": {
+        "initial_state": {
+          "x": -0.9358327335475958,
+          "y": 8.208575910185363,
+          "vx": -0.0023622859008956276,
+          "vy": -0.28693666210993896,
+          "theta": -0.00940472354780518,
+          "omega": 0.001960621515985749
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "ablation-new_displacement-011",
+      "condition": "new_displacement",
+      "seed": 1442011,
+      "suite": "ablation_complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "",
+      "options": {
+        "initial_state": {
+          "x": 1.0754783330204871,
+          "y": 11.735656524561621,
+          "vx": 0.008532941727005555,
+          "vy": -0.2966390799669726,
+          "theta": -0.016284791013570523,
+          "omega": -0.0025083968085253374
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "ablation-new_displacement-012",
+      "condition": "new_displacement",
+      "seed": 1442012,
+      "suite": "ablation_complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "",
+      "options": {
+        "initial_state": {
+          "x": -0.8658269751174059,
+          "y": 11.674757639698386,
+          "vx": -0.06746084636308454,
+          "vy": -0.04375762982457909,
+          "theta": 0.007481769250315039,
+          "omega": 0.002673589980055355
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "ablation-new_displacement-013",
+      "condition": "new_displacement",
+      "seed": 1442013,
+      "suite": "ablation_complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "",
+      "options": {
+        "initial_state": {
+          "x": 0.994941949638979,
+          "y": 12.487475394551966,
+          "vx": 0.062399115050933845,
+          "vy": -0.14247642484173784,
+          "theta": 0.028512800650955128,
+          "omega": -0.000698005143750114
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "ablation-new_displacement-014",
+      "condition": "new_displacement",
+      "seed": 1442014,
+      "suite": "ablation_complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "",
+      "options": {
+        "initial_state": {
+          "x": -1.0431408099994424,
+          "y": 12.349020616068493,
+          "vx": -0.060170948819030984,
+          "vy": -0.3246681822560856,
+          "theta": 0.029035479763059625,
+          "omega": 8.593007717342706e-05
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "ablation-new_displacement-015",
+      "condition": "new_displacement",
+      "seed": 1442015,
+      "suite": "ablation_complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "",
+      "options": {
+        "initial_state": {
+          "x": -1.4005514139299367,
+          "y": 8.407190538993925,
+          "vx": -0.0695481715988504,
+          "vy": -0.5287872289170675,
+          "theta": -0.011067774732391907,
+          "omega": 0.00486037806145207
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "ablation-new_displacement-016",
+      "condition": "new_displacement",
+      "seed": 1442016,
+      "suite": "ablation_complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "",
+      "options": {
+        "initial_state": {
+          "x": 1.0065353282868321,
+          "y": 9.914757913909959,
+          "vx": 0.0021180551936719194,
+          "vy": -0.986272562808454,
+          "theta": -0.016539087258050783,
+          "omega": 0.0025858630603465297
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "ablation-new_displacement-017",
+      "condition": "new_displacement",
+      "seed": 1442017,
+      "suite": "ablation_complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "",
+      "options": {
+        "initial_state": {
+          "x": 0.728852183949555,
+          "y": 8.252431943047762,
+          "vx": -0.06117608842224401,
+          "vy": -0.6634555900065563,
+          "theta": 0.009614341983620413,
+          "omega": -0.00014411778162852842
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "ablation-new_displacement-018",
+      "condition": "new_displacement",
+      "seed": 1442018,
+      "suite": "ablation_complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "",
+      "options": {
+        "initial_state": {
+          "x": 1.0888490811520166,
+          "y": 8.608734589220273,
+          "vx": -0.024467644842341568,
+          "vy": -0.6156114691768773,
+          "theta": -0.01637390972519464,
+          "omega": 0.0020572985747542806
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "ablation-new_displacement-019",
+      "condition": "new_displacement",
+      "seed": 1442019,
+      "suite": "ablation_complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "",
+      "options": {
+        "initial_state": {
+          "x": -0.8563436797356874,
+          "y": 8.566029288562868,
+          "vx": -0.03343508606480457,
+          "vy": -0.9804891166587582,
+          "theta": -0.02960732660411658,
+          "omega": -0.003950662241339387
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "ablation-new_displacement-020",
+      "condition": "new_displacement",
+      "seed": 1442020,
+      "suite": "ablation_complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "",
+      "options": {
+        "initial_state": {
+          "x": -1.2201846252070014,
+          "y": 8.959851396807109,
+          "vx": 0.00238860829207517,
+          "vy": -0.7217055142608167,
+          "theta": -0.027262667246389295,
+          "omega": -0.0015366451809354508
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "ablation-new_displacement-021",
+      "condition": "new_displacement",
+      "seed": 1442021,
+      "suite": "ablation_complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "",
+      "options": {
+        "initial_state": {
+          "x": 0.6743399912067257,
+          "y": 11.174147925306858,
+          "vx": -0.0012389730258636489,
+          "vy": -0.03721397631831713,
+          "theta": -0.008868329316715898,
+          "omega": -0.0010137595159649586
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "ablation-new_displacement-022",
+      "condition": "new_displacement",
+      "seed": 1442022,
+      "suite": "ablation_complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "",
+      "options": {
+        "initial_state": {
+          "x": -1.1253280446298268,
+          "y": 12.567928023931056,
+          "vx": 0.0503214405292948,
+          "vy": -0.2198564598617051,
+          "theta": -0.025915013970406228,
+          "omega": 0.004266195750117364
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "ablation-new_displacement-023",
+      "condition": "new_displacement",
+      "seed": 1442023,
+      "suite": "ablation_complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "",
+      "options": {
+        "initial_state": {
+          "x": -1.4175143202970242,
+          "y": 9.731167560955475,
+          "vx": -0.009160914457394781,
+          "vy": -0.6026257425366042,
+          "theta": -0.022705140805748446,
+          "omega": 0.0015753233238093326
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "ablation-new_displacement-024",
+      "condition": "new_displacement",
+      "seed": 1442024,
+      "suite": "ablation_complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "",
+      "options": {
+        "initial_state": {
+          "x": -0.7247114861858246,
+          "y": 10.567248827800771,
+          "vx": 0.05868136242586275,
+          "vy": -0.8966125277674233,
+          "theta": -0.0020207596187439315,
+          "omega": 0.0011065644543794802
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "ablation-new_displacement-025",
+      "condition": "new_displacement",
+      "seed": 1442025,
+      "suite": "ablation_complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "",
+      "options": {
+        "initial_state": {
+          "x": -1.0517546037649341,
+          "y": 8.093623523850015,
+          "vx": 0.09861340027161114,
+          "vy": -0.943357087811965,
+          "theta": -0.0012857462580090455,
+          "omega": -0.004396044050673701
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "ablation-new_displacement-026",
+      "condition": "new_displacement",
+      "seed": 1442026,
+      "suite": "ablation_complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "",
+      "options": {
+        "initial_state": {
+          "x": -0.8104100399923388,
+          "y": 12.948368569148062,
+          "vx": 0.05335105026904641,
+          "vy": -0.227874116495,
+          "theta": -0.02501338113168189,
+          "omega": 0.004919966816111054
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "ablation-new_displacement-027",
+      "condition": "new_displacement",
+      "seed": 1442027,
+      "suite": "ablation_complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "",
+      "options": {
+        "initial_state": {
+          "x": -0.6358353081666865,
+          "y": 11.670796246407445,
+          "vx": -0.07497675591173675,
+          "vy": -0.9622884984743537,
+          "theta": 0.00976484598178455,
+          "omega": 0.0019129447966859557
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "ablation-new_displacement-028",
+      "condition": "new_displacement",
+      "seed": 1442028,
+      "suite": "ablation_complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "",
+      "options": {
+        "initial_state": {
+          "x": 1.2489211852273656,
+          "y": 11.323110525489943,
+          "vx": 0.029800761886186272,
+          "vy": -0.12346466304813808,
+          "theta": -0.013126417921727418,
+          "omega": -0.0005013103274908838
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "ablation-new_displacement-029",
+      "condition": "new_displacement",
+      "seed": 1442029,
+      "suite": "ablation_complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "",
+      "options": {
+        "initial_state": {
+          "x": 0.7868489771005565,
+          "y": 10.469310542126141,
+          "vx": 0.005333241859315246,
+          "vy": -0.5091431941688572,
+          "theta": 0.009291132265124763,
+          "omega": -0.0036275721019199134
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "ablation-new_displacement-030",
+      "condition": "new_displacement",
+      "seed": 1442030,
+      "suite": "ablation_complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "",
+      "options": {
+        "initial_state": {
+          "x": 1.3234040492038186,
+          "y": 8.250053294422285,
+          "vx": -0.035090123868985273,
+          "vy": -0.29987650228860496,
+          "theta": 0.0002654242447051834,
+          "omega": 0.001219099543362999
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "ablation-new_displacement-031",
+      "condition": "new_displacement",
+      "seed": 1442031,
+      "suite": "ablation_complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "",
+      "options": {
+        "initial_state": {
+          "x": 0.9245637667785336,
+          "y": 11.506770228819413,
+          "vx": 0.0038423982407085333,
+          "vy": -0.48828895371846404,
+          "theta": -0.028520739639345198,
+          "omega": 0.003877482944952145
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "ablation-new_dynamics-000",
+      "condition": "new_dynamics",
+      "seed": 1443000,
+      "suite": "ablation_complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "",
+      "options": {
+        "initial_state": {
+          "x": 0.1380191405636796,
+          "y": 9.492192364286403,
+          "vx": -0.3057568313484216,
+          "vy": -1.7299381635626663,
+          "theta": 0.08248325208117047,
+          "omega": 0.009107573213389696
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "ablation-new_dynamics-001",
+      "condition": "new_dynamics",
+      "seed": 1443001,
+      "suite": "ablation_complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "",
+      "options": {
+        "initial_state": {
+          "x": -0.05747205956730364,
+          "y": 12.945496778083768,
+          "vx": -0.2619819073739248,
+          "vy": -1.28054859010166,
+          "theta": 0.07984602909298914,
+          "omega": 0.02192646130274871
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "ablation-new_dynamics-002",
+      "condition": "new_dynamics",
+      "seed": 1443002,
+      "suite": "ablation_complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "",
+      "options": {
+        "initial_state": {
+          "x": 0.20369736858604565,
+          "y": 10.229366712169698,
+          "vx": -0.3267365763178053,
+          "vy": -1.5640109562887137,
+          "theta": 0.10829142910103719,
+          "omega": 0.0010941952657598439
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "ablation-new_dynamics-003",
+      "condition": "new_dynamics",
+      "seed": 1443003,
+      "suite": "ablation_complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "",
+      "options": {
+        "initial_state": {
+          "x": 0.08561760329681051,
+          "y": 12.239354754257121,
+          "vx": 0.3693108539247918,
+          "vy": -0.8540852069578275,
+          "theta": -0.10169078825538228,
+          "omega": -0.006967970355084466
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "ablation-new_dynamics-004",
+      "condition": "new_dynamics",
+      "seed": 1443004,
+      "suite": "ablation_complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "",
+      "options": {
+        "initial_state": {
+          "x": 0.2976540678890344,
+          "y": 11.309285073768862,
+          "vx": 0.24675979725228803,
+          "vy": -0.9976012707707422,
+          "theta": -0.07099068461096514,
+          "omega": -0.03824964954221416
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "ablation-new_dynamics-005",
+      "condition": "new_dynamics",
+      "seed": 1443005,
+      "suite": "ablation_complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "",
+      "options": {
+        "initial_state": {
+          "x": 0.03571183663633115,
+          "y": 10.463951748361945,
+          "vx": 0.49954137401838145,
+          "vy": -1.0138211735399767,
+          "theta": -0.06666321366301588,
+          "omega": -0.037682454501206865
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "ablation-new_dynamics-006",
+      "condition": "new_dynamics",
+      "seed": 1443006,
+      "suite": "ablation_complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "",
+      "options": {
+        "initial_state": {
+          "x": -0.08478108777376725,
+          "y": 9.544299457292325,
+          "vx": 0.27415662264061563,
+          "vy": -0.9120725950241542,
+          "theta": 0.08049376709318631,
+          "omega": 0.012296020190330971
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "ablation-new_dynamics-007",
+      "condition": "new_dynamics",
+      "seed": 1443007,
+      "suite": "ablation_complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "",
+      "options": {
+        "initial_state": {
+          "x": 0.03527011788125767,
+          "y": 11.324864609839413,
+          "vx": 0.3982176267092422,
+          "vy": -1.0341758031339738,
+          "theta": -0.07987470128620697,
+          "omega": -0.02711612649272166
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "ablation-new_dynamics-008",
+      "condition": "new_dynamics",
+      "seed": 1443008,
+      "suite": "ablation_complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "",
+      "options": {
+        "initial_state": {
+          "x": 0.2738310653471587,
+          "y": 8.188559790709514,
+          "vx": 0.40551420254388826,
+          "vy": -1.397417937749561,
+          "theta": 0.09152782067286894,
+          "omega": -0.023261266427028495
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "ablation-new_dynamics-009",
+      "condition": "new_dynamics",
+      "seed": 1443009,
+      "suite": "ablation_complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "",
+      "options": {
+        "initial_state": {
+          "x": 0.02316838392704168,
+          "y": 12.347356776754824,
+          "vx": 0.27015268337068954,
+          "vy": -1.6655305384071517,
+          "theta": 0.0824443934014284,
+          "omega": -0.011471433093860062
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "ablation-new_dynamics-010",
+      "condition": "new_dynamics",
+      "seed": 1443010,
+      "suite": "ablation_complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "",
+      "options": {
+        "initial_state": {
+          "x": -0.07427142885990673,
+          "y": 12.594947757980776,
+          "vx": 0.22833264271623913,
+          "vy": -1.1998014270479662,
+          "theta": -0.0963503366038218,
+          "omega": -0.015235308056573173
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "ablation-new_dynamics-011",
+      "condition": "new_dynamics",
+      "seed": 1443011,
+      "suite": "ablation_complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "",
+      "options": {
+        "initial_state": {
+          "x": -0.2354917418043348,
+          "y": 11.492834507939062,
+          "vx": -0.49126691349357166,
+          "vy": -1.6533814375017966,
+          "theta": -0.11578326830286474,
+          "omega": -0.048992684234133936
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "ablation-new_dynamics-012",
+      "condition": "new_dynamics",
+      "seed": 1443012,
+      "suite": "ablation_complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "",
+      "options": {
+        "initial_state": {
+          "x": -0.030655203966444278,
+          "y": 8.916603379440378,
+          "vx": -0.3411113734624219,
+          "vy": -1.4864385478853122,
+          "theta": 0.11902759410148117,
+          "omega": -0.009325080768787887
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "ablation-new_dynamics-013",
+      "condition": "new_dynamics",
+      "seed": 1443013,
+      "suite": "ablation_complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "",
+      "options": {
+        "initial_state": {
+          "x": 0.15532977921180635,
+          "y": 8.550395603279558,
+          "vx": 0.2326044026794508,
+          "vy": -1.345482070406034,
+          "theta": 0.10466481375084542,
+          "omega": 0.019869607502728773
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "ablation-new_dynamics-014",
+      "condition": "new_dynamics",
+      "seed": 1443014,
+      "suite": "ablation_complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "",
+      "options": {
+        "initial_state": {
+          "x": -0.022386501241354106,
+          "y": 12.503903916446937,
+          "vx": -0.31005736628434416,
+          "vy": -1.0899980548796644,
+          "theta": -0.09244001994307527,
+          "omega": -0.030049063621117856
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "ablation-new_dynamics-015",
+      "condition": "new_dynamics",
+      "seed": 1443015,
+      "suite": "ablation_complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "",
+      "options": {
+        "initial_state": {
+          "x": -0.2228739147533787,
+          "y": 12.561172058369165,
+          "vx": -0.3933782345686656,
+          "vy": -1.0706185410870797,
+          "theta": 0.0966498141543084,
+          "omega": -0.011627992277411972
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "ablation-new_dynamics-016",
+      "condition": "new_dynamics",
+      "seed": 1443016,
+      "suite": "ablation_complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "",
+      "options": {
+        "initial_state": {
+          "x": -0.22416761887031353,
+          "y": 12.044620802744237,
+          "vx": 0.29750605563021026,
+          "vy": -0.9595547827526553,
+          "theta": 0.0734152299176607,
+          "omega": -0.026115339438618247
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "ablation-new_dynamics-017",
+      "condition": "new_dynamics",
+      "seed": 1443017,
+      "suite": "ablation_complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "",
+      "options": {
+        "initial_state": {
+          "x": -0.2804470741309551,
+          "y": 12.860349907764101,
+          "vx": -0.45143473323016875,
+          "vy": -1.3200296043869935,
+          "theta": 0.11102816790150738,
+          "omega": -0.04020474295029746
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "ablation-new_dynamics-018",
+      "condition": "new_dynamics",
+      "seed": 1443018,
+      "suite": "ablation_complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "",
+      "options": {
+        "initial_state": {
+          "x": -0.29652565530252784,
+          "y": 11.000754127316723,
+          "vx": 0.23225692699824382,
+          "vy": -1.4911115829758317,
+          "theta": -0.11198308628384801,
+          "omega": 0.012363514821064223
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "ablation-new_dynamics-019",
+      "condition": "new_dynamics",
+      "seed": 1443019,
+      "suite": "ablation_complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "",
+      "options": {
+        "initial_state": {
+          "x": -0.24030007996527358,
+          "y": 12.238807080709048,
+          "vx": 0.43633225134158404,
+          "vy": -1.0758630638826505,
+          "theta": -0.08240651686397114,
+          "omega": 0.008908768335202863
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "ablation-new_dynamics-020",
+      "condition": "new_dynamics",
+      "seed": 1443020,
+      "suite": "ablation_complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "",
+      "options": {
+        "initial_state": {
+          "x": -0.20764931394190878,
+          "y": 11.572825583544255,
+          "vx": 0.253054489875228,
+          "vy": -1.3928327898004853,
+          "theta": 0.10693962004289578,
+          "omega": -0.00804186067611963
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "ablation-new_dynamics-021",
+      "condition": "new_dynamics",
+      "seed": 1443021,
+      "suite": "ablation_complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "",
+      "options": {
+        "initial_state": {
+          "x": 0.14581509864237602,
+          "y": 11.900004687813382,
+          "vx": -0.4725255564926645,
+          "vy": -0.8501785261381468,
+          "theta": -0.07699561484385589,
+          "omega": -0.000937463564976114
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "ablation-new_dynamics-022",
+      "condition": "new_dynamics",
+      "seed": 1443022,
+      "suite": "ablation_complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "",
+      "options": {
+        "initial_state": {
+          "x": -0.17066452418751854,
+          "y": 12.950151236492339,
+          "vx": -0.3764322038941559,
+          "vy": -1.4716960403491743,
+          "theta": -0.08649772875606944,
+          "omega": -0.02769060437117852
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "ablation-new_dynamics-023",
+      "condition": "new_dynamics",
+      "seed": 1443023,
+      "suite": "ablation_complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "",
+      "options": {
+        "initial_state": {
+          "x": 0.13995298989787291,
+          "y": 8.467227146908513,
+          "vx": -0.4223284188039601,
+          "vy": -1.4247832711403439,
+          "theta": -0.08675387583320567,
+          "omega": -0.04056658830512525
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "ablation-new_dynamics-024",
+      "condition": "new_dynamics",
+      "seed": 1443024,
+      "suite": "ablation_complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "",
+      "options": {
+        "initial_state": {
+          "x": -0.18350489294583114,
+          "y": 10.412076413130007,
+          "vx": 0.29414968923266543,
+          "vy": -1.0754372298906785,
+          "theta": 0.08817305567125965,
+          "omega": -0.009048661826436447
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "ablation-new_dynamics-025",
+      "condition": "new_dynamics",
+      "seed": 1443025,
+      "suite": "ablation_complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "",
+      "options": {
+        "initial_state": {
+          "x": -0.2167566644484316,
+          "y": 10.056280122306287,
+          "vx": 0.4966355733770337,
+          "vy": -1.2209465802335657,
+          "theta": -0.10354671137257652,
+          "omega": 0.007038968489783949
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "ablation-new_dynamics-026",
+      "condition": "new_dynamics",
+      "seed": 1443026,
+      "suite": "ablation_complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "",
+      "options": {
+        "initial_state": {
+          "x": 0.03643466802838097,
+          "y": 8.170402476867558,
+          "vx": 0.25976293718205024,
+          "vy": -0.8252978129547799,
+          "theta": 0.11062727733655092,
+          "omega": -0.044965776820985626
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "ablation-new_dynamics-027",
+      "condition": "new_dynamics",
+      "seed": 1443027,
+      "suite": "ablation_complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "",
+      "options": {
+        "initial_state": {
+          "x": -0.07756722717275982,
+          "y": 9.452881156935666,
+          "vx": -0.32163313585507725,
+          "vy": -1.693576710755761,
+          "theta": 0.08658147795297666,
+          "omega": 0.03681704244247133
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "ablation-new_dynamics-028",
+      "condition": "new_dynamics",
+      "seed": 1443028,
+      "suite": "ablation_complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "",
+      "options": {
+        "initial_state": {
+          "x": -0.2710492731359202,
+          "y": 10.900208405468367,
+          "vx": 0.4487595934374466,
+          "vy": -1.0571775588470247,
+          "theta": -0.0835319462876239,
+          "omega": 0.04396623216982158
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "ablation-new_dynamics-029",
+      "condition": "new_dynamics",
+      "seed": 1443029,
+      "suite": "ablation_complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "",
+      "options": {
+        "initial_state": {
+          "x": -0.1004925683388567,
+          "y": 12.216081029697847,
+          "vx": -0.23111682072117634,
+          "vy": -1.452434682307274,
+          "theta": 0.07715668959378351,
+          "omega": -0.0024850885256572086
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "ablation-new_dynamics-030",
+      "condition": "new_dynamics",
+      "seed": 1443030,
+      "suite": "ablation_complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "",
+      "options": {
+        "initial_state": {
+          "x": -0.18914719993743406,
+          "y": 10.238343031215898,
+          "vx": -0.434758403269971,
+          "vy": -1.0083137019787538,
+          "theta": 0.10629408918031244,
+          "omega": 0.014743025966263937
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "ablation-new_dynamics-031",
+      "condition": "new_dynamics",
+      "seed": 1443031,
+      "suite": "ablation_complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "",
+      "options": {
+        "initial_state": {
+          "x": 0.15623756511949977,
+          "y": 9.40267939724327,
+          "vx": -0.3888064619499991,
+          "vy": -1.7995369523953169,
+          "theta": -0.08173603045184974,
+          "omega": 0.01897052340312097
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "ablation-wind_control-000",
+      "condition": "wind_control",
+      "seed": 1444000,
+      "suite": "ablation_complement",
+      "exposure": "within_assisted_initial_support",
+      "paired_wind_id": "wind-base-000",
+      "options": {
+        "initial_state": {
+          "x": 0.1830379401629359,
+          "y": 8.001205667165298,
+          "vx": -0.07552466671954056,
+          "vy": -0.16760644471967145,
+          "theta": 0.029350098464689292,
+          "omega": -0.00346360803142861
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "ablation-wind_m20-000",
+      "condition": "wind_m20",
+      "seed": 1544000,
+      "suite": "ablation_complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "wind-base-000",
+      "options": {
+        "initial_state": {
+          "x": 0.1830379401629359,
+          "y": 8.001205667165298,
+          "vx": -0.07552466671954056,
+          "vy": -0.16760644471967145,
+          "theta": 0.029350098464689292,
+          "omega": -0.00346360803142861
+        },
+        "wind_force": -20.0
+      }
+    },
+    {
+      "id": "ablation-wind_p20-000",
+      "condition": "wind_p20",
+      "seed": 1644000,
+      "suite": "ablation_complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "wind-base-000",
+      "options": {
+        "initial_state": {
+          "x": 0.1830379401629359,
+          "y": 8.001205667165298,
+          "vx": -0.07552466671954056,
+          "vy": -0.16760644471967145,
+          "theta": 0.029350098464689292,
+          "omega": -0.00346360803142861
+        },
+        "wind_force": 20.0
+      }
+    },
+    {
+      "id": "ablation-wind_m40-000",
+      "condition": "wind_m40",
+      "seed": 1744000,
+      "suite": "ablation_complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "wind-base-000",
+      "options": {
+        "initial_state": {
+          "x": 0.1830379401629359,
+          "y": 8.001205667165298,
+          "vx": -0.07552466671954056,
+          "vy": -0.16760644471967145,
+          "theta": 0.029350098464689292,
+          "omega": -0.00346360803142861
+        },
+        "wind_force": -40.0
+      }
+    },
+    {
+      "id": "ablation-wind_p40-000",
+      "condition": "wind_p40",
+      "seed": 1844000,
+      "suite": "ablation_complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "wind-base-000",
+      "options": {
+        "initial_state": {
+          "x": 0.1830379401629359,
+          "y": 8.001205667165298,
+          "vx": -0.07552466671954056,
+          "vy": -0.16760644471967145,
+          "theta": 0.029350098464689292,
+          "omega": -0.00346360803142861
+        },
+        "wind_force": 40.0
+      }
+    },
+    {
+      "id": "ablation-wind_control-001",
+      "condition": "wind_control",
+      "seed": 1444001,
+      "suite": "ablation_complement",
+      "exposure": "within_assisted_initial_support",
+      "paired_wind_id": "wind-base-001",
+      "options": {
+        "initial_state": {
+          "x": -0.29187463135388053,
+          "y": 11.845161076251571,
+          "vx": 0.0739737044520869,
+          "vy": -0.110384813395494,
+          "theta": -0.026815528205796045,
+          "omega": 0.0005214579579101231
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "ablation-wind_m20-001",
+      "condition": "wind_m20",
+      "seed": 1544001,
+      "suite": "ablation_complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "wind-base-001",
+      "options": {
+        "initial_state": {
+          "x": -0.29187463135388053,
+          "y": 11.845161076251571,
+          "vx": 0.0739737044520869,
+          "vy": -0.110384813395494,
+          "theta": -0.026815528205796045,
+          "omega": 0.0005214579579101231
+        },
+        "wind_force": -20.0
+      }
+    },
+    {
+      "id": "ablation-wind_p20-001",
+      "condition": "wind_p20",
+      "seed": 1644001,
+      "suite": "ablation_complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "wind-base-001",
+      "options": {
+        "initial_state": {
+          "x": -0.29187463135388053,
+          "y": 11.845161076251571,
+          "vx": 0.0739737044520869,
+          "vy": -0.110384813395494,
+          "theta": -0.026815528205796045,
+          "omega": 0.0005214579579101231
+        },
+        "wind_force": 20.0
+      }
+    },
+    {
+      "id": "ablation-wind_m40-001",
+      "condition": "wind_m40",
+      "seed": 1744001,
+      "suite": "ablation_complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "wind-base-001",
+      "options": {
+        "initial_state": {
+          "x": -0.29187463135388053,
+          "y": 11.845161076251571,
+          "vx": 0.0739737044520869,
+          "vy": -0.110384813395494,
+          "theta": -0.026815528205796045,
+          "omega": 0.0005214579579101231
+        },
+        "wind_force": -40.0
+      }
+    },
+    {
+      "id": "ablation-wind_p40-001",
+      "condition": "wind_p40",
+      "seed": 1844001,
+      "suite": "ablation_complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "wind-base-001",
+      "options": {
+        "initial_state": {
+          "x": -0.29187463135388053,
+          "y": 11.845161076251571,
+          "vx": 0.0739737044520869,
+          "vy": -0.110384813395494,
+          "theta": -0.026815528205796045,
+          "omega": 0.0005214579579101231
+        },
+        "wind_force": 40.0
+      }
+    },
+    {
+      "id": "ablation-wind_control-002",
+      "condition": "wind_control",
+      "seed": 1444002,
+      "suite": "ablation_complement",
+      "exposure": "within_assisted_initial_support",
+      "paired_wind_id": "wind-base-002",
+      "options": {
+        "initial_state": {
+          "x": 0.056630701538766426,
+          "y": 8.176190415472009,
+          "vx": 0.04420130769971195,
+          "vy": -0.711630859168832,
+          "theta": -0.015130088112347284,
+          "omega": 0.0028078584132431505
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "ablation-wind_m20-002",
+      "condition": "wind_m20",
+      "seed": 1544002,
+      "suite": "ablation_complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "wind-base-002",
+      "options": {
+        "initial_state": {
+          "x": 0.056630701538766426,
+          "y": 8.176190415472009,
+          "vx": 0.04420130769971195,
+          "vy": -0.711630859168832,
+          "theta": -0.015130088112347284,
+          "omega": 0.0028078584132431505
+        },
+        "wind_force": -20.0
+      }
+    },
+    {
+      "id": "ablation-wind_p20-002",
+      "condition": "wind_p20",
+      "seed": 1644002,
+      "suite": "ablation_complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "wind-base-002",
+      "options": {
+        "initial_state": {
+          "x": 0.056630701538766426,
+          "y": 8.176190415472009,
+          "vx": 0.04420130769971195,
+          "vy": -0.711630859168832,
+          "theta": -0.015130088112347284,
+          "omega": 0.0028078584132431505
+        },
+        "wind_force": 20.0
+      }
+    },
+    {
+      "id": "ablation-wind_m40-002",
+      "condition": "wind_m40",
+      "seed": 1744002,
+      "suite": "ablation_complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "wind-base-002",
+      "options": {
+        "initial_state": {
+          "x": 0.056630701538766426,
+          "y": 8.176190415472009,
+          "vx": 0.04420130769971195,
+          "vy": -0.711630859168832,
+          "theta": -0.015130088112347284,
+          "omega": 0.0028078584132431505
+        },
+        "wind_force": -40.0
+      }
+    },
+    {
+      "id": "ablation-wind_p40-002",
+      "condition": "wind_p40",
+      "seed": 1844002,
+      "suite": "ablation_complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "wind-base-002",
+      "options": {
+        "initial_state": {
+          "x": 0.056630701538766426,
+          "y": 8.176190415472009,
+          "vx": 0.04420130769971195,
+          "vy": -0.711630859168832,
+          "theta": -0.015130088112347284,
+          "omega": 0.0028078584132431505
+        },
+        "wind_force": 40.0
+      }
+    },
+    {
+      "id": "ablation-wind_control-003",
+      "condition": "wind_control",
+      "seed": 1444003,
+      "suite": "ablation_complement",
+      "exposure": "within_assisted_initial_support",
+      "paired_wind_id": "wind-base-003",
+      "options": {
+        "initial_state": {
+          "x": 0.02548860459353469,
+          "y": 9.077308295519341,
+          "vx": 0.04295633353382733,
+          "vy": -0.3403990935541904,
+          "theta": 0.004126411105543022,
+          "omega": -0.0010120294436287234
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "ablation-wind_m20-003",
+      "condition": "wind_m20",
+      "seed": 1544003,
+      "suite": "ablation_complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "wind-base-003",
+      "options": {
+        "initial_state": {
+          "x": 0.02548860459353469,
+          "y": 9.077308295519341,
+          "vx": 0.04295633353382733,
+          "vy": -0.3403990935541904,
+          "theta": 0.004126411105543022,
+          "omega": -0.0010120294436287234
+        },
+        "wind_force": -20.0
+      }
+    },
+    {
+      "id": "ablation-wind_p20-003",
+      "condition": "wind_p20",
+      "seed": 1644003,
+      "suite": "ablation_complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "wind-base-003",
+      "options": {
+        "initial_state": {
+          "x": 0.02548860459353469,
+          "y": 9.077308295519341,
+          "vx": 0.04295633353382733,
+          "vy": -0.3403990935541904,
+          "theta": 0.004126411105543022,
+          "omega": -0.0010120294436287234
+        },
+        "wind_force": 20.0
+      }
+    },
+    {
+      "id": "ablation-wind_m40-003",
+      "condition": "wind_m40",
+      "seed": 1744003,
+      "suite": "ablation_complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "wind-base-003",
+      "options": {
+        "initial_state": {
+          "x": 0.02548860459353469,
+          "y": 9.077308295519341,
+          "vx": 0.04295633353382733,
+          "vy": -0.3403990935541904,
+          "theta": 0.004126411105543022,
+          "omega": -0.0010120294436287234
+        },
+        "wind_force": -40.0
+      }
+    },
+    {
+      "id": "ablation-wind_p40-003",
+      "condition": "wind_p40",
+      "seed": 1844003,
+      "suite": "ablation_complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "wind-base-003",
+      "options": {
+        "initial_state": {
+          "x": 0.02548860459353469,
+          "y": 9.077308295519341,
+          "vx": 0.04295633353382733,
+          "vy": -0.3403990935541904,
+          "theta": 0.004126411105543022,
+          "omega": -0.0010120294436287234
+        },
+        "wind_force": 40.0
+      }
+    },
+    {
+      "id": "ablation-wind_control-004",
+      "condition": "wind_control",
+      "seed": 1444004,
+      "suite": "ablation_complement",
+      "exposure": "within_assisted_initial_support",
+      "paired_wind_id": "wind-base-004",
+      "options": {
+        "initial_state": {
+          "x": -0.03899126520939861,
+          "y": 12.57733715090755,
+          "vx": 0.001965018402834584,
+          "vy": -0.14150530634481773,
+          "theta": 0.024244089849529776,
+          "omega": 0.0014908634481137347
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "ablation-wind_m20-004",
+      "condition": "wind_m20",
+      "seed": 1544004,
+      "suite": "ablation_complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "wind-base-004",
+      "options": {
+        "initial_state": {
+          "x": -0.03899126520939861,
+          "y": 12.57733715090755,
+          "vx": 0.001965018402834584,
+          "vy": -0.14150530634481773,
+          "theta": 0.024244089849529776,
+          "omega": 0.0014908634481137347
+        },
+        "wind_force": -20.0
+      }
+    },
+    {
+      "id": "ablation-wind_p20-004",
+      "condition": "wind_p20",
+      "seed": 1644004,
+      "suite": "ablation_complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "wind-base-004",
+      "options": {
+        "initial_state": {
+          "x": -0.03899126520939861,
+          "y": 12.57733715090755,
+          "vx": 0.001965018402834584,
+          "vy": -0.14150530634481773,
+          "theta": 0.024244089849529776,
+          "omega": 0.0014908634481137347
+        },
+        "wind_force": 20.0
+      }
+    },
+    {
+      "id": "ablation-wind_m40-004",
+      "condition": "wind_m40",
+      "seed": 1744004,
+      "suite": "ablation_complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "wind-base-004",
+      "options": {
+        "initial_state": {
+          "x": -0.03899126520939861,
+          "y": 12.57733715090755,
+          "vx": 0.001965018402834584,
+          "vy": -0.14150530634481773,
+          "theta": 0.024244089849529776,
+          "omega": 0.0014908634481137347
+        },
+        "wind_force": -40.0
+      }
+    },
+    {
+      "id": "ablation-wind_p40-004",
+      "condition": "wind_p40",
+      "seed": 1844004,
+      "suite": "ablation_complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "wind-base-004",
+      "options": {
+        "initial_state": {
+          "x": -0.03899126520939861,
+          "y": 12.57733715090755,
+          "vx": 0.001965018402834584,
+          "vy": -0.14150530634481773,
+          "theta": 0.024244089849529776,
+          "omega": 0.0014908634481137347
+        },
+        "wind_force": 40.0
+      }
+    },
+    {
+      "id": "ablation-wind_control-005",
+      "condition": "wind_control",
+      "seed": 1444005,
+      "suite": "ablation_complement",
+      "exposure": "within_assisted_initial_support",
+      "paired_wind_id": "wind-base-005",
+      "options": {
+        "initial_state": {
+          "x": -0.11462584651646879,
+          "y": 10.452518489331425,
+          "vx": -0.08113045585401149,
+          "vy": -0.09756920147386605,
+          "theta": 0.017359554161014305,
+          "omega": 0.0022432677172856286
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "ablation-wind_m20-005",
+      "condition": "wind_m20",
+      "seed": 1544005,
+      "suite": "ablation_complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "wind-base-005",
+      "options": {
+        "initial_state": {
+          "x": -0.11462584651646879,
+          "y": 10.452518489331425,
+          "vx": -0.08113045585401149,
+          "vy": -0.09756920147386605,
+          "theta": 0.017359554161014305,
+          "omega": 0.0022432677172856286
+        },
+        "wind_force": -20.0
+      }
+    },
+    {
+      "id": "ablation-wind_p20-005",
+      "condition": "wind_p20",
+      "seed": 1644005,
+      "suite": "ablation_complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "wind-base-005",
+      "options": {
+        "initial_state": {
+          "x": -0.11462584651646879,
+          "y": 10.452518489331425,
+          "vx": -0.08113045585401149,
+          "vy": -0.09756920147386605,
+          "theta": 0.017359554161014305,
+          "omega": 0.0022432677172856286
+        },
+        "wind_force": 20.0
+      }
+    },
+    {
+      "id": "ablation-wind_m40-005",
+      "condition": "wind_m40",
+      "seed": 1744005,
+      "suite": "ablation_complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "wind-base-005",
+      "options": {
+        "initial_state": {
+          "x": -0.11462584651646879,
+          "y": 10.452518489331425,
+          "vx": -0.08113045585401149,
+          "vy": -0.09756920147386605,
+          "theta": 0.017359554161014305,
+          "omega": 0.0022432677172856286
+        },
+        "wind_force": -40.0
+      }
+    },
+    {
+      "id": "ablation-wind_p40-005",
+      "condition": "wind_p40",
+      "seed": 1844005,
+      "suite": "ablation_complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "wind-base-005",
+      "options": {
+        "initial_state": {
+          "x": -0.11462584651646879,
+          "y": 10.452518489331425,
+          "vx": -0.08113045585401149,
+          "vy": -0.09756920147386605,
+          "theta": 0.017359554161014305,
+          "omega": 0.0022432677172856286
+        },
+        "wind_force": 40.0
+      }
+    },
+    {
+      "id": "ablation-wind_control-006",
+      "condition": "wind_control",
+      "seed": 1444006,
+      "suite": "ablation_complement",
+      "exposure": "within_assisted_initial_support",
+      "paired_wind_id": "wind-base-006",
+      "options": {
+        "initial_state": {
+          "x": -0.08936741657165728,
+          "y": 10.51085804677405,
+          "vx": -0.09688743704609831,
+          "vy": -0.4538565778380428,
+          "theta": 0.00984566522415637,
+          "omega": 0.002324622306513641
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "ablation-wind_m20-006",
+      "condition": "wind_m20",
+      "seed": 1544006,
+      "suite": "ablation_complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "wind-base-006",
+      "options": {
+        "initial_state": {
+          "x": -0.08936741657165728,
+          "y": 10.51085804677405,
+          "vx": -0.09688743704609831,
+          "vy": -0.4538565778380428,
+          "theta": 0.00984566522415637,
+          "omega": 0.002324622306513641
+        },
+        "wind_force": -20.0
+      }
+    },
+    {
+      "id": "ablation-wind_p20-006",
+      "condition": "wind_p20",
+      "seed": 1644006,
+      "suite": "ablation_complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "wind-base-006",
+      "options": {
+        "initial_state": {
+          "x": -0.08936741657165728,
+          "y": 10.51085804677405,
+          "vx": -0.09688743704609831,
+          "vy": -0.4538565778380428,
+          "theta": 0.00984566522415637,
+          "omega": 0.002324622306513641
+        },
+        "wind_force": 20.0
+      }
+    },
+    {
+      "id": "ablation-wind_m40-006",
+      "condition": "wind_m40",
+      "seed": 1744006,
+      "suite": "ablation_complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "wind-base-006",
+      "options": {
+        "initial_state": {
+          "x": -0.08936741657165728,
+          "y": 10.51085804677405,
+          "vx": -0.09688743704609831,
+          "vy": -0.4538565778380428,
+          "theta": 0.00984566522415637,
+          "omega": 0.002324622306513641
+        },
+        "wind_force": -40.0
+      }
+    },
+    {
+      "id": "ablation-wind_p40-006",
+      "condition": "wind_p40",
+      "seed": 1844006,
+      "suite": "ablation_complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "wind-base-006",
+      "options": {
+        "initial_state": {
+          "x": -0.08936741657165728,
+          "y": 10.51085804677405,
+          "vx": -0.09688743704609831,
+          "vy": -0.4538565778380428,
+          "theta": 0.00984566522415637,
+          "omega": 0.002324622306513641
+        },
+        "wind_force": 40.0
+      }
+    },
+    {
+      "id": "ablation-wind_control-007",
+      "condition": "wind_control",
+      "seed": 1444007,
+      "suite": "ablation_complement",
+      "exposure": "within_assisted_initial_support",
+      "paired_wind_id": "wind-base-007",
+      "options": {
+        "initial_state": {
+          "x": 0.17136509967580732,
+          "y": 8.386720941347921,
+          "vx": 0.017036793484171572,
+          "vy": -0.8679046085855787,
+          "theta": 0.010266335872008127,
+          "omega": -0.001778718753913817
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "ablation-wind_m20-007",
+      "condition": "wind_m20",
+      "seed": 1544007,
+      "suite": "ablation_complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "wind-base-007",
+      "options": {
+        "initial_state": {
+          "x": 0.17136509967580732,
+          "y": 8.386720941347921,
+          "vx": 0.017036793484171572,
+          "vy": -0.8679046085855787,
+          "theta": 0.010266335872008127,
+          "omega": -0.001778718753913817
+        },
+        "wind_force": -20.0
+      }
+    },
+    {
+      "id": "ablation-wind_p20-007",
+      "condition": "wind_p20",
+      "seed": 1644007,
+      "suite": "ablation_complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "wind-base-007",
+      "options": {
+        "initial_state": {
+          "x": 0.17136509967580732,
+          "y": 8.386720941347921,
+          "vx": 0.017036793484171572,
+          "vy": -0.8679046085855787,
+          "theta": 0.010266335872008127,
+          "omega": -0.001778718753913817
+        },
+        "wind_force": 20.0
+      }
+    },
+    {
+      "id": "ablation-wind_m40-007",
+      "condition": "wind_m40",
+      "seed": 1744007,
+      "suite": "ablation_complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "wind-base-007",
+      "options": {
+        "initial_state": {
+          "x": 0.17136509967580732,
+          "y": 8.386720941347921,
+          "vx": 0.017036793484171572,
+          "vy": -0.8679046085855787,
+          "theta": 0.010266335872008127,
+          "omega": -0.001778718753913817
+        },
+        "wind_force": -40.0
+      }
+    },
+    {
+      "id": "ablation-wind_p40-007",
+      "condition": "wind_p40",
+      "seed": 1844007,
+      "suite": "ablation_complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "wind-base-007",
+      "options": {
+        "initial_state": {
+          "x": 0.17136509967580732,
+          "y": 8.386720941347921,
+          "vx": 0.017036793484171572,
+          "vy": -0.8679046085855787,
+          "theta": 0.010266335872008127,
+          "omega": -0.001778718753913817
+        },
+        "wind_force": 40.0
+      }
+    },
+    {
+      "id": "ablation-wind_control-008",
+      "condition": "wind_control",
+      "seed": 1444008,
+      "suite": "ablation_complement",
+      "exposure": "within_assisted_initial_support",
+      "paired_wind_id": "wind-base-008",
+      "options": {
+        "initial_state": {
+          "x": 0.09670562610414202,
+          "y": 11.084460702412745,
+          "vx": -0.019953966258819886,
+          "vy": -0.46032494426751147,
+          "theta": 0.001052719695444352,
+          "omega": -0.0026455350210018804
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "ablation-wind_m20-008",
+      "condition": "wind_m20",
+      "seed": 1544008,
+      "suite": "ablation_complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "wind-base-008",
+      "options": {
+        "initial_state": {
+          "x": 0.09670562610414202,
+          "y": 11.084460702412745,
+          "vx": -0.019953966258819886,
+          "vy": -0.46032494426751147,
+          "theta": 0.001052719695444352,
+          "omega": -0.0026455350210018804
+        },
+        "wind_force": -20.0
+      }
+    },
+    {
+      "id": "ablation-wind_p20-008",
+      "condition": "wind_p20",
+      "seed": 1644008,
+      "suite": "ablation_complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "wind-base-008",
+      "options": {
+        "initial_state": {
+          "x": 0.09670562610414202,
+          "y": 11.084460702412745,
+          "vx": -0.019953966258819886,
+          "vy": -0.46032494426751147,
+          "theta": 0.001052719695444352,
+          "omega": -0.0026455350210018804
+        },
+        "wind_force": 20.0
+      }
+    },
+    {
+      "id": "ablation-wind_m40-008",
+      "condition": "wind_m40",
+      "seed": 1744008,
+      "suite": "ablation_complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "wind-base-008",
+      "options": {
+        "initial_state": {
+          "x": 0.09670562610414202,
+          "y": 11.084460702412745,
+          "vx": -0.019953966258819886,
+          "vy": -0.46032494426751147,
+          "theta": 0.001052719695444352,
+          "omega": -0.0026455350210018804
+        },
+        "wind_force": -40.0
+      }
+    },
+    {
+      "id": "ablation-wind_p40-008",
+      "condition": "wind_p40",
+      "seed": 1844008,
+      "suite": "ablation_complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "wind-base-008",
+      "options": {
+        "initial_state": {
+          "x": 0.09670562610414202,
+          "y": 11.084460702412745,
+          "vx": -0.019953966258819886,
+          "vy": -0.46032494426751147,
+          "theta": 0.001052719695444352,
+          "omega": -0.0026455350210018804
+        },
+        "wind_force": 40.0
+      }
+    },
+    {
+      "id": "ablation-wind_control-009",
+      "condition": "wind_control",
+      "seed": 1444009,
+      "suite": "ablation_complement",
+      "exposure": "within_assisted_initial_support",
+      "paired_wind_id": "wind-base-009",
+      "options": {
+        "initial_state": {
+          "x": 0.008638741862416421,
+          "y": 11.987065653101325,
+          "vx": 0.060915334257911374,
+          "vy": -0.4657224596587711,
+          "theta": 0.02340580317393924,
+          "omega": -0.003636756132510871
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "ablation-wind_m20-009",
+      "condition": "wind_m20",
+      "seed": 1544009,
+      "suite": "ablation_complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "wind-base-009",
+      "options": {
+        "initial_state": {
+          "x": 0.008638741862416421,
+          "y": 11.987065653101325,
+          "vx": 0.060915334257911374,
+          "vy": -0.4657224596587711,
+          "theta": 0.02340580317393924,
+          "omega": -0.003636756132510871
+        },
+        "wind_force": -20.0
+      }
+    },
+    {
+      "id": "ablation-wind_p20-009",
+      "condition": "wind_p20",
+      "seed": 1644009,
+      "suite": "ablation_complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "wind-base-009",
+      "options": {
+        "initial_state": {
+          "x": 0.008638741862416421,
+          "y": 11.987065653101325,
+          "vx": 0.060915334257911374,
+          "vy": -0.4657224596587711,
+          "theta": 0.02340580317393924,
+          "omega": -0.003636756132510871
+        },
+        "wind_force": 20.0
+      }
+    },
+    {
+      "id": "ablation-wind_m40-009",
+      "condition": "wind_m40",
+      "seed": 1744009,
+      "suite": "ablation_complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "wind-base-009",
+      "options": {
+        "initial_state": {
+          "x": 0.008638741862416421,
+          "y": 11.987065653101325,
+          "vx": 0.060915334257911374,
+          "vy": -0.4657224596587711,
+          "theta": 0.02340580317393924,
+          "omega": -0.003636756132510871
+        },
+        "wind_force": -40.0
+      }
+    },
+    {
+      "id": "ablation-wind_p40-009",
+      "condition": "wind_p40",
+      "seed": 1844009,
+      "suite": "ablation_complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "wind-base-009",
+      "options": {
+        "initial_state": {
+          "x": 0.008638741862416421,
+          "y": 11.987065653101325,
+          "vx": 0.060915334257911374,
+          "vy": -0.4657224596587711,
+          "theta": 0.02340580317393924,
+          "omega": -0.003636756132510871
+        },
+        "wind_force": 40.0
+      }
+    },
+    {
+      "id": "ablation-wind_control-010",
+      "condition": "wind_control",
+      "seed": 1444010,
+      "suite": "ablation_complement",
+      "exposure": "within_assisted_initial_support",
+      "paired_wind_id": "wind-base-010",
+      "options": {
+        "initial_state": {
+          "x": -0.09783249880857539,
+          "y": 11.986405065098523,
+          "vx": 0.03657304328634675,
+          "vy": -0.7992958514073801,
+          "theta": 0.025676619561835236,
+          "omega": 0.0047669019289778335
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "ablation-wind_m20-010",
+      "condition": "wind_m20",
+      "seed": 1544010,
+      "suite": "ablation_complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "wind-base-010",
+      "options": {
+        "initial_state": {
+          "x": -0.09783249880857539,
+          "y": 11.986405065098523,
+          "vx": 0.03657304328634675,
+          "vy": -0.7992958514073801,
+          "theta": 0.025676619561835236,
+          "omega": 0.0047669019289778335
+        },
+        "wind_force": -20.0
+      }
+    },
+    {
+      "id": "ablation-wind_p20-010",
+      "condition": "wind_p20",
+      "seed": 1644010,
+      "suite": "ablation_complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "wind-base-010",
+      "options": {
+        "initial_state": {
+          "x": -0.09783249880857539,
+          "y": 11.986405065098523,
+          "vx": 0.03657304328634675,
+          "vy": -0.7992958514073801,
+          "theta": 0.025676619561835236,
+          "omega": 0.0047669019289778335
+        },
+        "wind_force": 20.0
+      }
+    },
+    {
+      "id": "ablation-wind_m40-010",
+      "condition": "wind_m40",
+      "seed": 1744010,
+      "suite": "ablation_complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "wind-base-010",
+      "options": {
+        "initial_state": {
+          "x": -0.09783249880857539,
+          "y": 11.986405065098523,
+          "vx": 0.03657304328634675,
+          "vy": -0.7992958514073801,
+          "theta": 0.025676619561835236,
+          "omega": 0.0047669019289778335
+        },
+        "wind_force": -40.0
+      }
+    },
+    {
+      "id": "ablation-wind_p40-010",
+      "condition": "wind_p40",
+      "seed": 1844010,
+      "suite": "ablation_complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "wind-base-010",
+      "options": {
+        "initial_state": {
+          "x": -0.09783249880857539,
+          "y": 11.986405065098523,
+          "vx": 0.03657304328634675,
+          "vy": -0.7992958514073801,
+          "theta": 0.025676619561835236,
+          "omega": 0.0047669019289778335
+        },
+        "wind_force": 40.0
+      }
+    },
+    {
+      "id": "ablation-wind_control-011",
+      "condition": "wind_control",
+      "seed": 1444011,
+      "suite": "ablation_complement",
+      "exposure": "within_assisted_initial_support",
+      "paired_wind_id": "wind-base-011",
+      "options": {
+        "initial_state": {
+          "x": 0.14524037683240332,
+          "y": 10.18991478907551,
+          "vx": -0.0007662775334615485,
+          "vy": -0.47669500619258987,
+          "theta": 0.026846982259363883,
+          "omega": -0.0007328997419520835
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "ablation-wind_m20-011",
+      "condition": "wind_m20",
+      "seed": 1544011,
+      "suite": "ablation_complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "wind-base-011",
+      "options": {
+        "initial_state": {
+          "x": 0.14524037683240332,
+          "y": 10.18991478907551,
+          "vx": -0.0007662775334615485,
+          "vy": -0.47669500619258987,
+          "theta": 0.026846982259363883,
+          "omega": -0.0007328997419520835
+        },
+        "wind_force": -20.0
+      }
+    },
+    {
+      "id": "ablation-wind_p20-011",
+      "condition": "wind_p20",
+      "seed": 1644011,
+      "suite": "ablation_complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "wind-base-011",
+      "options": {
+        "initial_state": {
+          "x": 0.14524037683240332,
+          "y": 10.18991478907551,
+          "vx": -0.0007662775334615485,
+          "vy": -0.47669500619258987,
+          "theta": 0.026846982259363883,
+          "omega": -0.0007328997419520835
+        },
+        "wind_force": 20.0
+      }
+    },
+    {
+      "id": "ablation-wind_m40-011",
+      "condition": "wind_m40",
+      "seed": 1744011,
+      "suite": "ablation_complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "wind-base-011",
+      "options": {
+        "initial_state": {
+          "x": 0.14524037683240332,
+          "y": 10.18991478907551,
+          "vx": -0.0007662775334615485,
+          "vy": -0.47669500619258987,
+          "theta": 0.026846982259363883,
+          "omega": -0.0007328997419520835
+        },
+        "wind_force": -40.0
+      }
+    },
+    {
+      "id": "ablation-wind_p40-011",
+      "condition": "wind_p40",
+      "seed": 1844011,
+      "suite": "ablation_complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "wind-base-011",
+      "options": {
+        "initial_state": {
+          "x": 0.14524037683240332,
+          "y": 10.18991478907551,
+          "vx": -0.0007662775334615485,
+          "vy": -0.47669500619258987,
+          "theta": 0.026846982259363883,
+          "omega": -0.0007328997419520835
+        },
+        "wind_force": 40.0
+      }
+    },
+    {
+      "id": "ablation-wind_control-012",
+      "condition": "wind_control",
+      "seed": 1444012,
+      "suite": "ablation_complement",
+      "exposure": "within_assisted_initial_support",
+      "paired_wind_id": "wind-base-012",
+      "options": {
+        "initial_state": {
+          "x": 0.24852015166899427,
+          "y": 12.766371148605689,
+          "vx": -0.07509267475784254,
+          "vy": -0.7176670861189782,
+          "theta": -0.026825660323661685,
+          "omega": 0.0001055738269906516
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "ablation-wind_m20-012",
+      "condition": "wind_m20",
+      "seed": 1544012,
+      "suite": "ablation_complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "wind-base-012",
+      "options": {
+        "initial_state": {
+          "x": 0.24852015166899427,
+          "y": 12.766371148605689,
+          "vx": -0.07509267475784254,
+          "vy": -0.7176670861189782,
+          "theta": -0.026825660323661685,
+          "omega": 0.0001055738269906516
+        },
+        "wind_force": -20.0
+      }
+    },
+    {
+      "id": "ablation-wind_p20-012",
+      "condition": "wind_p20",
+      "seed": 1644012,
+      "suite": "ablation_complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "wind-base-012",
+      "options": {
+        "initial_state": {
+          "x": 0.24852015166899427,
+          "y": 12.766371148605689,
+          "vx": -0.07509267475784254,
+          "vy": -0.7176670861189782,
+          "theta": -0.026825660323661685,
+          "omega": 0.0001055738269906516
+        },
+        "wind_force": 20.0
+      }
+    },
+    {
+      "id": "ablation-wind_m40-012",
+      "condition": "wind_m40",
+      "seed": 1744012,
+      "suite": "ablation_complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "wind-base-012",
+      "options": {
+        "initial_state": {
+          "x": 0.24852015166899427,
+          "y": 12.766371148605689,
+          "vx": -0.07509267475784254,
+          "vy": -0.7176670861189782,
+          "theta": -0.026825660323661685,
+          "omega": 0.0001055738269906516
+        },
+        "wind_force": -40.0
+      }
+    },
+    {
+      "id": "ablation-wind_p40-012",
+      "condition": "wind_p40",
+      "seed": 1844012,
+      "suite": "ablation_complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "wind-base-012",
+      "options": {
+        "initial_state": {
+          "x": 0.24852015166899427,
+          "y": 12.766371148605689,
+          "vx": -0.07509267475784254,
+          "vy": -0.7176670861189782,
+          "theta": -0.026825660323661685,
+          "omega": 0.0001055738269906516
+        },
+        "wind_force": 40.0
+      }
+    },
+    {
+      "id": "ablation-wind_control-013",
+      "condition": "wind_control",
+      "seed": 1444013,
+      "suite": "ablation_complement",
+      "exposure": "within_assisted_initial_support",
+      "paired_wind_id": "wind-base-013",
+      "options": {
+        "initial_state": {
+          "x": -0.2753224646710067,
+          "y": 8.177149199256064,
+          "vx": 0.009454243786265651,
+          "vy": -0.2288760729144962,
+          "theta": 0.013647864258717404,
+          "omega": -0.0012585002031304405
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "ablation-wind_m20-013",
+      "condition": "wind_m20",
+      "seed": 1544013,
+      "suite": "ablation_complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "wind-base-013",
+      "options": {
+        "initial_state": {
+          "x": -0.2753224646710067,
+          "y": 8.177149199256064,
+          "vx": 0.009454243786265651,
+          "vy": -0.2288760729144962,
+          "theta": 0.013647864258717404,
+          "omega": -0.0012585002031304405
+        },
+        "wind_force": -20.0
+      }
+    },
+    {
+      "id": "ablation-wind_p20-013",
+      "condition": "wind_p20",
+      "seed": 1644013,
+      "suite": "ablation_complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "wind-base-013",
+      "options": {
+        "initial_state": {
+          "x": -0.2753224646710067,
+          "y": 8.177149199256064,
+          "vx": 0.009454243786265651,
+          "vy": -0.2288760729144962,
+          "theta": 0.013647864258717404,
+          "omega": -0.0012585002031304405
+        },
+        "wind_force": 20.0
+      }
+    },
+    {
+      "id": "ablation-wind_m40-013",
+      "condition": "wind_m40",
+      "seed": 1744013,
+      "suite": "ablation_complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "wind-base-013",
+      "options": {
+        "initial_state": {
+          "x": -0.2753224646710067,
+          "y": 8.177149199256064,
+          "vx": 0.009454243786265651,
+          "vy": -0.2288760729144962,
+          "theta": 0.013647864258717404,
+          "omega": -0.0012585002031304405
+        },
+        "wind_force": -40.0
+      }
+    },
+    {
+      "id": "ablation-wind_p40-013",
+      "condition": "wind_p40",
+      "seed": 1844013,
+      "suite": "ablation_complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "wind-base-013",
+      "options": {
+        "initial_state": {
+          "x": -0.2753224646710067,
+          "y": 8.177149199256064,
+          "vx": 0.009454243786265651,
+          "vy": -0.2288760729144962,
+          "theta": 0.013647864258717404,
+          "omega": -0.0012585002031304405
+        },
+        "wind_force": 40.0
+      }
+    },
+    {
+      "id": "ablation-wind_control-014",
+      "condition": "wind_control",
+      "seed": 1444014,
+      "suite": "ablation_complement",
+      "exposure": "within_assisted_initial_support",
+      "paired_wind_id": "wind-base-014",
+      "options": {
+        "initial_state": {
+          "x": -0.26248353250258966,
+          "y": 11.333841914733888,
+          "vx": -0.053785391266315145,
+          "vy": -0.7593137999297845,
+          "theta": 0.00764155301954228,
+          "omega": -0.004181681214841399
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "ablation-wind_m20-014",
+      "condition": "wind_m20",
+      "seed": 1544014,
+      "suite": "ablation_complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "wind-base-014",
+      "options": {
+        "initial_state": {
+          "x": -0.26248353250258966,
+          "y": 11.333841914733888,
+          "vx": -0.053785391266315145,
+          "vy": -0.7593137999297845,
+          "theta": 0.00764155301954228,
+          "omega": -0.004181681214841399
+        },
+        "wind_force": -20.0
+      }
+    },
+    {
+      "id": "ablation-wind_p20-014",
+      "condition": "wind_p20",
+      "seed": 1644014,
+      "suite": "ablation_complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "wind-base-014",
+      "options": {
+        "initial_state": {
+          "x": -0.26248353250258966,
+          "y": 11.333841914733888,
+          "vx": -0.053785391266315145,
+          "vy": -0.7593137999297845,
+          "theta": 0.00764155301954228,
+          "omega": -0.004181681214841399
+        },
+        "wind_force": 20.0
+      }
+    },
+    {
+      "id": "ablation-wind_m40-014",
+      "condition": "wind_m40",
+      "seed": 1744014,
+      "suite": "ablation_complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "wind-base-014",
+      "options": {
+        "initial_state": {
+          "x": -0.26248353250258966,
+          "y": 11.333841914733888,
+          "vx": -0.053785391266315145,
+          "vy": -0.7593137999297845,
+          "theta": 0.00764155301954228,
+          "omega": -0.004181681214841399
+        },
+        "wind_force": -40.0
+      }
+    },
+    {
+      "id": "ablation-wind_p40-014",
+      "condition": "wind_p40",
+      "seed": 1844014,
+      "suite": "ablation_complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "wind-base-014",
+      "options": {
+        "initial_state": {
+          "x": -0.26248353250258966,
+          "y": 11.333841914733888,
+          "vx": -0.053785391266315145,
+          "vy": -0.7593137999297845,
+          "theta": 0.00764155301954228,
+          "omega": -0.004181681214841399
+        },
+        "wind_force": 40.0
+      }
+    },
+    {
+      "id": "ablation-wind_control-015",
+      "condition": "wind_control",
+      "seed": 1444015,
+      "suite": "ablation_complement",
+      "exposure": "within_assisted_initial_support",
+      "paired_wind_id": "wind-base-015",
+      "options": {
+        "initial_state": {
+          "x": -0.2310727792439431,
+          "y": 10.126719320785499,
+          "vx": -0.08799230877940799,
+          "vy": -0.8399737725747339,
+          "theta": -0.013701484284049038,
+          "omega": 0.004132115445799727
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "ablation-wind_m20-015",
+      "condition": "wind_m20",
+      "seed": 1544015,
+      "suite": "ablation_complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "wind-base-015",
+      "options": {
+        "initial_state": {
+          "x": -0.2310727792439431,
+          "y": 10.126719320785499,
+          "vx": -0.08799230877940799,
+          "vy": -0.8399737725747339,
+          "theta": -0.013701484284049038,
+          "omega": 0.004132115445799727
+        },
+        "wind_force": -20.0
+      }
+    },
+    {
+      "id": "ablation-wind_p20-015",
+      "condition": "wind_p20",
+      "seed": 1644015,
+      "suite": "ablation_complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "wind-base-015",
+      "options": {
+        "initial_state": {
+          "x": -0.2310727792439431,
+          "y": 10.126719320785499,
+          "vx": -0.08799230877940799,
+          "vy": -0.8399737725747339,
+          "theta": -0.013701484284049038,
+          "omega": 0.004132115445799727
+        },
+        "wind_force": 20.0
+      }
+    },
+    {
+      "id": "ablation-wind_m40-015",
+      "condition": "wind_m40",
+      "seed": 1744015,
+      "suite": "ablation_complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "wind-base-015",
+      "options": {
+        "initial_state": {
+          "x": -0.2310727792439431,
+          "y": 10.126719320785499,
+          "vx": -0.08799230877940799,
+          "vy": -0.8399737725747339,
+          "theta": -0.013701484284049038,
+          "omega": 0.004132115445799727
+        },
+        "wind_force": -40.0
+      }
+    },
+    {
+      "id": "ablation-wind_p40-015",
+      "condition": "wind_p40",
+      "seed": 1844015,
+      "suite": "ablation_complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "wind-base-015",
+      "options": {
+        "initial_state": {
+          "x": -0.2310727792439431,
+          "y": 10.126719320785499,
+          "vx": -0.08799230877940799,
+          "vy": -0.8399737725747339,
+          "theta": -0.013701484284049038,
+          "omega": 0.004132115445799727
+        },
+        "wind_force": 40.0
+      }
+    },
+    {
+      "id": "ablation-wind_control-016",
+      "condition": "wind_control",
+      "seed": 1444016,
+      "suite": "ablation_complement",
+      "exposure": "within_assisted_initial_support",
+      "paired_wind_id": "wind-base-016",
+      "options": {
+        "initial_state": {
+          "x": 0.1074695088556159,
+          "y": 12.899789343066733,
+          "vx": -0.05927146743669956,
+          "vy": -0.8119729792285858,
+          "theta": -0.021835650050950728,
+          "omega": 0.0006872776042810766
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "ablation-wind_m20-016",
+      "condition": "wind_m20",
+      "seed": 1544016,
+      "suite": "ablation_complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "wind-base-016",
+      "options": {
+        "initial_state": {
+          "x": 0.1074695088556159,
+          "y": 12.899789343066733,
+          "vx": -0.05927146743669956,
+          "vy": -0.8119729792285858,
+          "theta": -0.021835650050950728,
+          "omega": 0.0006872776042810766
+        },
+        "wind_force": -20.0
+      }
+    },
+    {
+      "id": "ablation-wind_p20-016",
+      "condition": "wind_p20",
+      "seed": 1644016,
+      "suite": "ablation_complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "wind-base-016",
+      "options": {
+        "initial_state": {
+          "x": 0.1074695088556159,
+          "y": 12.899789343066733,
+          "vx": -0.05927146743669956,
+          "vy": -0.8119729792285858,
+          "theta": -0.021835650050950728,
+          "omega": 0.0006872776042810766
+        },
+        "wind_force": 20.0
+      }
+    },
+    {
+      "id": "ablation-wind_m40-016",
+      "condition": "wind_m40",
+      "seed": 1744016,
+      "suite": "ablation_complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "wind-base-016",
+      "options": {
+        "initial_state": {
+          "x": 0.1074695088556159,
+          "y": 12.899789343066733,
+          "vx": -0.05927146743669956,
+          "vy": -0.8119729792285858,
+          "theta": -0.021835650050950728,
+          "omega": 0.0006872776042810766
+        },
+        "wind_force": -40.0
+      }
+    },
+    {
+      "id": "ablation-wind_p40-016",
+      "condition": "wind_p40",
+      "seed": 1844016,
+      "suite": "ablation_complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "wind-base-016",
+      "options": {
+        "initial_state": {
+          "x": 0.1074695088556159,
+          "y": 12.899789343066733,
+          "vx": -0.05927146743669956,
+          "vy": -0.8119729792285858,
+          "theta": -0.021835650050950728,
+          "omega": 0.0006872776042810766
+        },
+        "wind_force": 40.0
+      }
+    },
+    {
+      "id": "ablation-wind_control-017",
+      "condition": "wind_control",
+      "seed": 1444017,
+      "suite": "ablation_complement",
+      "exposure": "within_assisted_initial_support",
+      "paired_wind_id": "wind-base-017",
+      "options": {
+        "initial_state": {
+          "x": 0.07632023511948821,
+          "y": 11.961071235006333,
+          "vx": 0.013688109715649738,
+          "vy": -0.9602239571990094,
+          "theta": -0.01785042678959066,
+          "omega": -0.0018593047941296804
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "ablation-wind_m20-017",
+      "condition": "wind_m20",
+      "seed": 1544017,
+      "suite": "ablation_complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "wind-base-017",
+      "options": {
+        "initial_state": {
+          "x": 0.07632023511948821,
+          "y": 11.961071235006333,
+          "vx": 0.013688109715649738,
+          "vy": -0.9602239571990094,
+          "theta": -0.01785042678959066,
+          "omega": -0.0018593047941296804
+        },
+        "wind_force": -20.0
+      }
+    },
+    {
+      "id": "ablation-wind_p20-017",
+      "condition": "wind_p20",
+      "seed": 1644017,
+      "suite": "ablation_complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "wind-base-017",
+      "options": {
+        "initial_state": {
+          "x": 0.07632023511948821,
+          "y": 11.961071235006333,
+          "vx": 0.013688109715649738,
+          "vy": -0.9602239571990094,
+          "theta": -0.01785042678959066,
+          "omega": -0.0018593047941296804
+        },
+        "wind_force": 20.0
+      }
+    },
+    {
+      "id": "ablation-wind_m40-017",
+      "condition": "wind_m40",
+      "seed": 1744017,
+      "suite": "ablation_complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "wind-base-017",
+      "options": {
+        "initial_state": {
+          "x": 0.07632023511948821,
+          "y": 11.961071235006333,
+          "vx": 0.013688109715649738,
+          "vy": -0.9602239571990094,
+          "theta": -0.01785042678959066,
+          "omega": -0.0018593047941296804
+        },
+        "wind_force": -40.0
+      }
+    },
+    {
+      "id": "ablation-wind_p40-017",
+      "condition": "wind_p40",
+      "seed": 1844017,
+      "suite": "ablation_complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "wind-base-017",
+      "options": {
+        "initial_state": {
+          "x": 0.07632023511948821,
+          "y": 11.961071235006333,
+          "vx": 0.013688109715649738,
+          "vy": -0.9602239571990094,
+          "theta": -0.01785042678959066,
+          "omega": -0.0018593047941296804
+        },
+        "wind_force": 40.0
+      }
+    },
+    {
+      "id": "ablation-wind_control-018",
+      "condition": "wind_control",
+      "seed": 1444018,
+      "suite": "ablation_complement",
+      "exposure": "within_assisted_initial_support",
+      "paired_wind_id": "wind-base-018",
+      "options": {
+        "initial_state": {
+          "x": 0.2902226782956318,
+          "y": 11.798663479961785,
+          "vx": 0.07543208119901626,
+          "vy": -0.22994836700725496,
+          "theta": -0.022397657324495817,
+          "omega": 0.0006028573278704895
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "ablation-wind_m20-018",
+      "condition": "wind_m20",
+      "seed": 1544018,
+      "suite": "ablation_complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "wind-base-018",
+      "options": {
+        "initial_state": {
+          "x": 0.2902226782956318,
+          "y": 11.798663479961785,
+          "vx": 0.07543208119901626,
+          "vy": -0.22994836700725496,
+          "theta": -0.022397657324495817,
+          "omega": 0.0006028573278704895
+        },
+        "wind_force": -20.0
+      }
+    },
+    {
+      "id": "ablation-wind_p20-018",
+      "condition": "wind_p20",
+      "seed": 1644018,
+      "suite": "ablation_complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "wind-base-018",
+      "options": {
+        "initial_state": {
+          "x": 0.2902226782956318,
+          "y": 11.798663479961785,
+          "vx": 0.07543208119901626,
+          "vy": -0.22994836700725496,
+          "theta": -0.022397657324495817,
+          "omega": 0.0006028573278704895
+        },
+        "wind_force": 20.0
+      }
+    },
+    {
+      "id": "ablation-wind_m40-018",
+      "condition": "wind_m40",
+      "seed": 1744018,
+      "suite": "ablation_complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "wind-base-018",
+      "options": {
+        "initial_state": {
+          "x": 0.2902226782956318,
+          "y": 11.798663479961785,
+          "vx": 0.07543208119901626,
+          "vy": -0.22994836700725496,
+          "theta": -0.022397657324495817,
+          "omega": 0.0006028573278704895
+        },
+        "wind_force": -40.0
+      }
+    },
+    {
+      "id": "ablation-wind_p40-018",
+      "condition": "wind_p40",
+      "seed": 1844018,
+      "suite": "ablation_complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "wind-base-018",
+      "options": {
+        "initial_state": {
+          "x": 0.2902226782956318,
+          "y": 11.798663479961785,
+          "vx": 0.07543208119901626,
+          "vy": -0.22994836700725496,
+          "theta": -0.022397657324495817,
+          "omega": 0.0006028573278704895
+        },
+        "wind_force": 40.0
+      }
+    },
+    {
+      "id": "ablation-wind_control-019",
+      "condition": "wind_control",
+      "seed": 1444019,
+      "suite": "ablation_complement",
+      "exposure": "within_assisted_initial_support",
+      "paired_wind_id": "wind-base-019",
+      "options": {
+        "initial_state": {
+          "x": -0.02165685885039398,
+          "y": 8.58428846580875,
+          "vx": -0.033224807054473435,
+          "vy": -0.7730531686982587,
+          "theta": 0.015460171355861169,
+          "omega": -0.004543673858499663
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "ablation-wind_m20-019",
+      "condition": "wind_m20",
+      "seed": 1544019,
+      "suite": "ablation_complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "wind-base-019",
+      "options": {
+        "initial_state": {
+          "x": -0.02165685885039398,
+          "y": 8.58428846580875,
+          "vx": -0.033224807054473435,
+          "vy": -0.7730531686982587,
+          "theta": 0.015460171355861169,
+          "omega": -0.004543673858499663
+        },
+        "wind_force": -20.0
+      }
+    },
+    {
+      "id": "ablation-wind_p20-019",
+      "condition": "wind_p20",
+      "seed": 1644019,
+      "suite": "ablation_complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "wind-base-019",
+      "options": {
+        "initial_state": {
+          "x": -0.02165685885039398,
+          "y": 8.58428846580875,
+          "vx": -0.033224807054473435,
+          "vy": -0.7730531686982587,
+          "theta": 0.015460171355861169,
+          "omega": -0.004543673858499663
+        },
+        "wind_force": 20.0
+      }
+    },
+    {
+      "id": "ablation-wind_m40-019",
+      "condition": "wind_m40",
+      "seed": 1744019,
+      "suite": "ablation_complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "wind-base-019",
+      "options": {
+        "initial_state": {
+          "x": -0.02165685885039398,
+          "y": 8.58428846580875,
+          "vx": -0.033224807054473435,
+          "vy": -0.7730531686982587,
+          "theta": 0.015460171355861169,
+          "omega": -0.004543673858499663
+        },
+        "wind_force": -40.0
+      }
+    },
+    {
+      "id": "ablation-wind_p40-019",
+      "condition": "wind_p40",
+      "seed": 1844019,
+      "suite": "ablation_complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "wind-base-019",
+      "options": {
+        "initial_state": {
+          "x": -0.02165685885039398,
+          "y": 8.58428846580875,
+          "vx": -0.033224807054473435,
+          "vy": -0.7730531686982587,
+          "theta": 0.015460171355861169,
+          "omega": -0.004543673858499663
+        },
+        "wind_force": 40.0
+      }
+    },
+    {
+      "id": "ablation-wind_control-020",
+      "condition": "wind_control",
+      "seed": 1444020,
+      "suite": "ablation_complement",
+      "exposure": "within_assisted_initial_support",
+      "paired_wind_id": "wind-base-020",
+      "options": {
+        "initial_state": {
+          "x": 0.029579821625896896,
+          "y": 9.262011059619786,
+          "vx": 0.02349933496805383,
+          "vy": -0.18917175827418553,
+          "theta": -0.0015914823225415368,
+          "omega": 0.0004541253705341933
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "ablation-wind_m20-020",
+      "condition": "wind_m20",
+      "seed": 1544020,
+      "suite": "ablation_complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "wind-base-020",
+      "options": {
+        "initial_state": {
+          "x": 0.029579821625896896,
+          "y": 9.262011059619786,
+          "vx": 0.02349933496805383,
+          "vy": -0.18917175827418553,
+          "theta": -0.0015914823225415368,
+          "omega": 0.0004541253705341933
+        },
+        "wind_force": -20.0
+      }
+    },
+    {
+      "id": "ablation-wind_p20-020",
+      "condition": "wind_p20",
+      "seed": 1644020,
+      "suite": "ablation_complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "wind-base-020",
+      "options": {
+        "initial_state": {
+          "x": 0.029579821625896896,
+          "y": 9.262011059619786,
+          "vx": 0.02349933496805383,
+          "vy": -0.18917175827418553,
+          "theta": -0.0015914823225415368,
+          "omega": 0.0004541253705341933
+        },
+        "wind_force": 20.0
+      }
+    },
+    {
+      "id": "ablation-wind_m40-020",
+      "condition": "wind_m40",
+      "seed": 1744020,
+      "suite": "ablation_complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "wind-base-020",
+      "options": {
+        "initial_state": {
+          "x": 0.029579821625896896,
+          "y": 9.262011059619786,
+          "vx": 0.02349933496805383,
+          "vy": -0.18917175827418553,
+          "theta": -0.0015914823225415368,
+          "omega": 0.0004541253705341933
+        },
+        "wind_force": -40.0
+      }
+    },
+    {
+      "id": "ablation-wind_p40-020",
+      "condition": "wind_p40",
+      "seed": 1844020,
+      "suite": "ablation_complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "wind-base-020",
+      "options": {
+        "initial_state": {
+          "x": 0.029579821625896896,
+          "y": 9.262011059619786,
+          "vx": 0.02349933496805383,
+          "vy": -0.18917175827418553,
+          "theta": -0.0015914823225415368,
+          "omega": 0.0004541253705341933
+        },
+        "wind_force": 40.0
+      }
+    },
+    {
+      "id": "ablation-wind_control-021",
+      "condition": "wind_control",
+      "seed": 1444021,
+      "suite": "ablation_complement",
+      "exposure": "within_assisted_initial_support",
+      "paired_wind_id": "wind-base-021",
+      "options": {
+        "initial_state": {
+          "x": -0.15183782222931821,
+          "y": 10.952515321598565,
+          "vx": 0.0017644485615058159,
+          "vy": -0.31343230299583813,
+          "theta": -0.01988812030968209,
+          "omega": 0.0030870346800301275
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "ablation-wind_m20-021",
+      "condition": "wind_m20",
+      "seed": 1544021,
+      "suite": "ablation_complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "wind-base-021",
+      "options": {
+        "initial_state": {
+          "x": -0.15183782222931821,
+          "y": 10.952515321598565,
+          "vx": 0.0017644485615058159,
+          "vy": -0.31343230299583813,
+          "theta": -0.01988812030968209,
+          "omega": 0.0030870346800301275
+        },
+        "wind_force": -20.0
+      }
+    },
+    {
+      "id": "ablation-wind_p20-021",
+      "condition": "wind_p20",
+      "seed": 1644021,
+      "suite": "ablation_complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "wind-base-021",
+      "options": {
+        "initial_state": {
+          "x": -0.15183782222931821,
+          "y": 10.952515321598565,
+          "vx": 0.0017644485615058159,
+          "vy": -0.31343230299583813,
+          "theta": -0.01988812030968209,
+          "omega": 0.0030870346800301275
+        },
+        "wind_force": 20.0
+      }
+    },
+    {
+      "id": "ablation-wind_m40-021",
+      "condition": "wind_m40",
+      "seed": 1744021,
+      "suite": "ablation_complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "wind-base-021",
+      "options": {
+        "initial_state": {
+          "x": -0.15183782222931821,
+          "y": 10.952515321598565,
+          "vx": 0.0017644485615058159,
+          "vy": -0.31343230299583813,
+          "theta": -0.01988812030968209,
+          "omega": 0.0030870346800301275
+        },
+        "wind_force": -40.0
+      }
+    },
+    {
+      "id": "ablation-wind_p40-021",
+      "condition": "wind_p40",
+      "seed": 1844021,
+      "suite": "ablation_complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "wind-base-021",
+      "options": {
+        "initial_state": {
+          "x": -0.15183782222931821,
+          "y": 10.952515321598565,
+          "vx": 0.0017644485615058159,
+          "vy": -0.31343230299583813,
+          "theta": -0.01988812030968209,
+          "omega": 0.0030870346800301275
+        },
+        "wind_force": 40.0
+      }
+    },
+    {
+      "id": "ablation-wind_control-022",
+      "condition": "wind_control",
+      "seed": 1444022,
+      "suite": "ablation_complement",
+      "exposure": "within_assisted_initial_support",
+      "paired_wind_id": "wind-base-022",
+      "options": {
+        "initial_state": {
+          "x": -0.046617096684382076,
+          "y": 8.93515444643899,
+          "vx": -0.04150804317540502,
+          "vy": -0.30186074807413277,
+          "theta": 0.01380353589789355,
+          "omega": -0.001055755026938534
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "ablation-wind_m20-022",
+      "condition": "wind_m20",
+      "seed": 1544022,
+      "suite": "ablation_complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "wind-base-022",
+      "options": {
+        "initial_state": {
+          "x": -0.046617096684382076,
+          "y": 8.93515444643899,
+          "vx": -0.04150804317540502,
+          "vy": -0.30186074807413277,
+          "theta": 0.01380353589789355,
+          "omega": -0.001055755026938534
+        },
+        "wind_force": -20.0
+      }
+    },
+    {
+      "id": "ablation-wind_p20-022",
+      "condition": "wind_p20",
+      "seed": 1644022,
+      "suite": "ablation_complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "wind-base-022",
+      "options": {
+        "initial_state": {
+          "x": -0.046617096684382076,
+          "y": 8.93515444643899,
+          "vx": -0.04150804317540502,
+          "vy": -0.30186074807413277,
+          "theta": 0.01380353589789355,
+          "omega": -0.001055755026938534
+        },
+        "wind_force": 20.0
+      }
+    },
+    {
+      "id": "ablation-wind_m40-022",
+      "condition": "wind_m40",
+      "seed": 1744022,
+      "suite": "ablation_complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "wind-base-022",
+      "options": {
+        "initial_state": {
+          "x": -0.046617096684382076,
+          "y": 8.93515444643899,
+          "vx": -0.04150804317540502,
+          "vy": -0.30186074807413277,
+          "theta": 0.01380353589789355,
+          "omega": -0.001055755026938534
+        },
+        "wind_force": -40.0
+      }
+    },
+    {
+      "id": "ablation-wind_p40-022",
+      "condition": "wind_p40",
+      "seed": 1844022,
+      "suite": "ablation_complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "wind-base-022",
+      "options": {
+        "initial_state": {
+          "x": -0.046617096684382076,
+          "y": 8.93515444643899,
+          "vx": -0.04150804317540502,
+          "vy": -0.30186074807413277,
+          "theta": 0.01380353589789355,
+          "omega": -0.001055755026938534
+        },
+        "wind_force": 40.0
+      }
+    },
+    {
+      "id": "ablation-wind_control-023",
+      "condition": "wind_control",
+      "seed": 1444023,
+      "suite": "ablation_complement",
+      "exposure": "within_assisted_initial_support",
+      "paired_wind_id": "wind-base-023",
+      "options": {
+        "initial_state": {
+          "x": 0.22570240220757892,
+          "y": 11.937416947975576,
+          "vx": -0.017130362919951667,
+          "vy": -0.8439534396157489,
+          "theta": -0.006345672159984526,
+          "omega": 0.0018164862781979612
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "ablation-wind_m20-023",
+      "condition": "wind_m20",
+      "seed": 1544023,
+      "suite": "ablation_complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "wind-base-023",
+      "options": {
+        "initial_state": {
+          "x": 0.22570240220757892,
+          "y": 11.937416947975576,
+          "vx": -0.017130362919951667,
+          "vy": -0.8439534396157489,
+          "theta": -0.006345672159984526,
+          "omega": 0.0018164862781979612
+        },
+        "wind_force": -20.0
+      }
+    },
+    {
+      "id": "ablation-wind_p20-023",
+      "condition": "wind_p20",
+      "seed": 1644023,
+      "suite": "ablation_complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "wind-base-023",
+      "options": {
+        "initial_state": {
+          "x": 0.22570240220757892,
+          "y": 11.937416947975576,
+          "vx": -0.017130362919951667,
+          "vy": -0.8439534396157489,
+          "theta": -0.006345672159984526,
+          "omega": 0.0018164862781979612
+        },
+        "wind_force": 20.0
+      }
+    },
+    {
+      "id": "ablation-wind_m40-023",
+      "condition": "wind_m40",
+      "seed": 1744023,
+      "suite": "ablation_complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "wind-base-023",
+      "options": {
+        "initial_state": {
+          "x": 0.22570240220757892,
+          "y": 11.937416947975576,
+          "vx": -0.017130362919951667,
+          "vy": -0.8439534396157489,
+          "theta": -0.006345672159984526,
+          "omega": 0.0018164862781979612
+        },
+        "wind_force": -40.0
+      }
+    },
+    {
+      "id": "ablation-wind_p40-023",
+      "condition": "wind_p40",
+      "seed": 1844023,
+      "suite": "ablation_complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "wind-base-023",
+      "options": {
+        "initial_state": {
+          "x": 0.22570240220757892,
+          "y": 11.937416947975576,
+          "vx": -0.017130362919951667,
+          "vy": -0.8439534396157489,
+          "theta": -0.006345672159984526,
+          "omega": 0.0018164862781979612
+        },
+        "wind_force": 40.0
+      }
+    },
+    {
+      "id": "ablation-wind_control-024",
+      "condition": "wind_control",
+      "seed": 1444024,
+      "suite": "ablation_complement",
+      "exposure": "within_assisted_initial_support",
+      "paired_wind_id": "wind-base-024",
+      "options": {
+        "initial_state": {
+          "x": -0.20801464739692643,
+          "y": 12.878218114310375,
+          "vx": 0.00538895061080287,
+          "vy": -0.3897423339852163,
+          "theta": 0.01048042749057667,
+          "omega": 0.0017377115836844726
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "ablation-wind_m20-024",
+      "condition": "wind_m20",
+      "seed": 1544024,
+      "suite": "ablation_complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "wind-base-024",
+      "options": {
+        "initial_state": {
+          "x": -0.20801464739692643,
+          "y": 12.878218114310375,
+          "vx": 0.00538895061080287,
+          "vy": -0.3897423339852163,
+          "theta": 0.01048042749057667,
+          "omega": 0.0017377115836844726
+        },
+        "wind_force": -20.0
+      }
+    },
+    {
+      "id": "ablation-wind_p20-024",
+      "condition": "wind_p20",
+      "seed": 1644024,
+      "suite": "ablation_complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "wind-base-024",
+      "options": {
+        "initial_state": {
+          "x": -0.20801464739692643,
+          "y": 12.878218114310375,
+          "vx": 0.00538895061080287,
+          "vy": -0.3897423339852163,
+          "theta": 0.01048042749057667,
+          "omega": 0.0017377115836844726
+        },
+        "wind_force": 20.0
+      }
+    },
+    {
+      "id": "ablation-wind_m40-024",
+      "condition": "wind_m40",
+      "seed": 1744024,
+      "suite": "ablation_complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "wind-base-024",
+      "options": {
+        "initial_state": {
+          "x": -0.20801464739692643,
+          "y": 12.878218114310375,
+          "vx": 0.00538895061080287,
+          "vy": -0.3897423339852163,
+          "theta": 0.01048042749057667,
+          "omega": 0.0017377115836844726
+        },
+        "wind_force": -40.0
+      }
+    },
+    {
+      "id": "ablation-wind_p40-024",
+      "condition": "wind_p40",
+      "seed": 1844024,
+      "suite": "ablation_complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "wind-base-024",
+      "options": {
+        "initial_state": {
+          "x": -0.20801464739692643,
+          "y": 12.878218114310375,
+          "vx": 0.00538895061080287,
+          "vy": -0.3897423339852163,
+          "theta": 0.01048042749057667,
+          "omega": 0.0017377115836844726
+        },
+        "wind_force": 40.0
+      }
+    },
+    {
+      "id": "ablation-wind_control-025",
+      "condition": "wind_control",
+      "seed": 1444025,
+      "suite": "ablation_complement",
+      "exposure": "within_assisted_initial_support",
+      "paired_wind_id": "wind-base-025",
+      "options": {
+        "initial_state": {
+          "x": -0.03643700852600096,
+          "y": 10.573017476342525,
+          "vx": 0.08507907652778812,
+          "vy": -0.6806832297562206,
+          "theta": 0.00684791148159998,
+          "omega": 0.004505020765879963
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "ablation-wind_m20-025",
+      "condition": "wind_m20",
+      "seed": 1544025,
+      "suite": "ablation_complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "wind-base-025",
+      "options": {
+        "initial_state": {
+          "x": -0.03643700852600096,
+          "y": 10.573017476342525,
+          "vx": 0.08507907652778812,
+          "vy": -0.6806832297562206,
+          "theta": 0.00684791148159998,
+          "omega": 0.004505020765879963
+        },
+        "wind_force": -20.0
+      }
+    },
+    {
+      "id": "ablation-wind_p20-025",
+      "condition": "wind_p20",
+      "seed": 1644025,
+      "suite": "ablation_complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "wind-base-025",
+      "options": {
+        "initial_state": {
+          "x": -0.03643700852600096,
+          "y": 10.573017476342525,
+          "vx": 0.08507907652778812,
+          "vy": -0.6806832297562206,
+          "theta": 0.00684791148159998,
+          "omega": 0.004505020765879963
+        },
+        "wind_force": 20.0
+      }
+    },
+    {
+      "id": "ablation-wind_m40-025",
+      "condition": "wind_m40",
+      "seed": 1744025,
+      "suite": "ablation_complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "wind-base-025",
+      "options": {
+        "initial_state": {
+          "x": -0.03643700852600096,
+          "y": 10.573017476342525,
+          "vx": 0.08507907652778812,
+          "vy": -0.6806832297562206,
+          "theta": 0.00684791148159998,
+          "omega": 0.004505020765879963
+        },
+        "wind_force": -40.0
+      }
+    },
+    {
+      "id": "ablation-wind_p40-025",
+      "condition": "wind_p40",
+      "seed": 1844025,
+      "suite": "ablation_complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "wind-base-025",
+      "options": {
+        "initial_state": {
+          "x": -0.03643700852600096,
+          "y": 10.573017476342525,
+          "vx": 0.08507907652778812,
+          "vy": -0.6806832297562206,
+          "theta": 0.00684791148159998,
+          "omega": 0.004505020765879963
+        },
+        "wind_force": 40.0
+      }
+    },
+    {
+      "id": "ablation-wind_control-026",
+      "condition": "wind_control",
+      "seed": 1444026,
+      "suite": "ablation_complement",
+      "exposure": "within_assisted_initial_support",
+      "paired_wind_id": "wind-base-026",
+      "options": {
+        "initial_state": {
+          "x": 0.2635356108845464,
+          "y": 9.963978935443333,
+          "vx": 0.09348114103516492,
+          "vy": -0.9541869637512375,
+          "theta": -0.027484467411825093,
+          "omega": 0.002211316115764488
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "ablation-wind_m20-026",
+      "condition": "wind_m20",
+      "seed": 1544026,
+      "suite": "ablation_complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "wind-base-026",
+      "options": {
+        "initial_state": {
+          "x": 0.2635356108845464,
+          "y": 9.963978935443333,
+          "vx": 0.09348114103516492,
+          "vy": -0.9541869637512375,
+          "theta": -0.027484467411825093,
+          "omega": 0.002211316115764488
+        },
+        "wind_force": -20.0
+      }
+    },
+    {
+      "id": "ablation-wind_p20-026",
+      "condition": "wind_p20",
+      "seed": 1644026,
+      "suite": "ablation_complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "wind-base-026",
+      "options": {
+        "initial_state": {
+          "x": 0.2635356108845464,
+          "y": 9.963978935443333,
+          "vx": 0.09348114103516492,
+          "vy": -0.9541869637512375,
+          "theta": -0.027484467411825093,
+          "omega": 0.002211316115764488
+        },
+        "wind_force": 20.0
+      }
+    },
+    {
+      "id": "ablation-wind_m40-026",
+      "condition": "wind_m40",
+      "seed": 1744026,
+      "suite": "ablation_complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "wind-base-026",
+      "options": {
+        "initial_state": {
+          "x": 0.2635356108845464,
+          "y": 9.963978935443333,
+          "vx": 0.09348114103516492,
+          "vy": -0.9541869637512375,
+          "theta": -0.027484467411825093,
+          "omega": 0.002211316115764488
+        },
+        "wind_force": -40.0
+      }
+    },
+    {
+      "id": "ablation-wind_p40-026",
+      "condition": "wind_p40",
+      "seed": 1844026,
+      "suite": "ablation_complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "wind-base-026",
+      "options": {
+        "initial_state": {
+          "x": 0.2635356108845464,
+          "y": 9.963978935443333,
+          "vx": 0.09348114103516492,
+          "vy": -0.9541869637512375,
+          "theta": -0.027484467411825093,
+          "omega": 0.002211316115764488
+        },
+        "wind_force": 40.0
+      }
+    },
+    {
+      "id": "ablation-wind_control-027",
+      "condition": "wind_control",
+      "seed": 1444027,
+      "suite": "ablation_complement",
+      "exposure": "within_assisted_initial_support",
+      "paired_wind_id": "wind-base-027",
+      "options": {
+        "initial_state": {
+          "x": -0.15058298041996557,
+          "y": 11.642683021453456,
+          "vx": 0.04875366874493439,
+          "vy": -0.15514253314880888,
+          "theta": 0.011875157198548161,
+          "omega": 0.0017342799735511165
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "ablation-wind_m20-027",
+      "condition": "wind_m20",
+      "seed": 1544027,
+      "suite": "ablation_complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "wind-base-027",
+      "options": {
+        "initial_state": {
+          "x": -0.15058298041996557,
+          "y": 11.642683021453456,
+          "vx": 0.04875366874493439,
+          "vy": -0.15514253314880888,
+          "theta": 0.011875157198548161,
+          "omega": 0.0017342799735511165
+        },
+        "wind_force": -20.0
+      }
+    },
+    {
+      "id": "ablation-wind_p20-027",
+      "condition": "wind_p20",
+      "seed": 1644027,
+      "suite": "ablation_complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "wind-base-027",
+      "options": {
+        "initial_state": {
+          "x": -0.15058298041996557,
+          "y": 11.642683021453456,
+          "vx": 0.04875366874493439,
+          "vy": -0.15514253314880888,
+          "theta": 0.011875157198548161,
+          "omega": 0.0017342799735511165
+        },
+        "wind_force": 20.0
+      }
+    },
+    {
+      "id": "ablation-wind_m40-027",
+      "condition": "wind_m40",
+      "seed": 1744027,
+      "suite": "ablation_complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "wind-base-027",
+      "options": {
+        "initial_state": {
+          "x": -0.15058298041996557,
+          "y": 11.642683021453456,
+          "vx": 0.04875366874493439,
+          "vy": -0.15514253314880888,
+          "theta": 0.011875157198548161,
+          "omega": 0.0017342799735511165
+        },
+        "wind_force": -40.0
+      }
+    },
+    {
+      "id": "ablation-wind_p40-027",
+      "condition": "wind_p40",
+      "seed": 1844027,
+      "suite": "ablation_complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "wind-base-027",
+      "options": {
+        "initial_state": {
+          "x": -0.15058298041996557,
+          "y": 11.642683021453456,
+          "vx": 0.04875366874493439,
+          "vy": -0.15514253314880888,
+          "theta": 0.011875157198548161,
+          "omega": 0.0017342799735511165
+        },
+        "wind_force": 40.0
+      }
+    },
+    {
+      "id": "ablation-wind_control-028",
+      "condition": "wind_control",
+      "seed": 1444028,
+      "suite": "ablation_complement",
+      "exposure": "within_assisted_initial_support",
+      "paired_wind_id": "wind-base-028",
+      "options": {
+        "initial_state": {
+          "x": -0.04809472336330611,
+          "y": 11.930834832885191,
+          "vx": 0.043179034907449815,
+          "vy": -0.20482511180868435,
+          "theta": -0.018999346193870864,
+          "omega": 0.0037090851252451927
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "ablation-wind_m20-028",
+      "condition": "wind_m20",
+      "seed": 1544028,
+      "suite": "ablation_complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "wind-base-028",
+      "options": {
+        "initial_state": {
+          "x": -0.04809472336330611,
+          "y": 11.930834832885191,
+          "vx": 0.043179034907449815,
+          "vy": -0.20482511180868435,
+          "theta": -0.018999346193870864,
+          "omega": 0.0037090851252451927
+        },
+        "wind_force": -20.0
+      }
+    },
+    {
+      "id": "ablation-wind_p20-028",
+      "condition": "wind_p20",
+      "seed": 1644028,
+      "suite": "ablation_complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "wind-base-028",
+      "options": {
+        "initial_state": {
+          "x": -0.04809472336330611,
+          "y": 11.930834832885191,
+          "vx": 0.043179034907449815,
+          "vy": -0.20482511180868435,
+          "theta": -0.018999346193870864,
+          "omega": 0.0037090851252451927
+        },
+        "wind_force": 20.0
+      }
+    },
+    {
+      "id": "ablation-wind_m40-028",
+      "condition": "wind_m40",
+      "seed": 1744028,
+      "suite": "ablation_complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "wind-base-028",
+      "options": {
+        "initial_state": {
+          "x": -0.04809472336330611,
+          "y": 11.930834832885191,
+          "vx": 0.043179034907449815,
+          "vy": -0.20482511180868435,
+          "theta": -0.018999346193870864,
+          "omega": 0.0037090851252451927
+        },
+        "wind_force": -40.0
+      }
+    },
+    {
+      "id": "ablation-wind_p40-028",
+      "condition": "wind_p40",
+      "seed": 1844028,
+      "suite": "ablation_complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "wind-base-028",
+      "options": {
+        "initial_state": {
+          "x": -0.04809472336330611,
+          "y": 11.930834832885191,
+          "vx": 0.043179034907449815,
+          "vy": -0.20482511180868435,
+          "theta": -0.018999346193870864,
+          "omega": 0.0037090851252451927
+        },
+        "wind_force": 40.0
+      }
+    },
+    {
+      "id": "ablation-wind_control-029",
+      "condition": "wind_control",
+      "seed": 1444029,
+      "suite": "ablation_complement",
+      "exposure": "within_assisted_initial_support",
+      "paired_wind_id": "wind-base-029",
+      "options": {
+        "initial_state": {
+          "x": 0.16892561280894258,
+          "y": 11.964845004943285,
+          "vx": -0.07237482273963997,
+          "vy": -0.6071859106751918,
+          "theta": -0.014185539553039722,
+          "omega": -0.001955816371586049
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "ablation-wind_m20-029",
+      "condition": "wind_m20",
+      "seed": 1544029,
+      "suite": "ablation_complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "wind-base-029",
+      "options": {
+        "initial_state": {
+          "x": 0.16892561280894258,
+          "y": 11.964845004943285,
+          "vx": -0.07237482273963997,
+          "vy": -0.6071859106751918,
+          "theta": -0.014185539553039722,
+          "omega": -0.001955816371586049
+        },
+        "wind_force": -20.0
+      }
+    },
+    {
+      "id": "ablation-wind_p20-029",
+      "condition": "wind_p20",
+      "seed": 1644029,
+      "suite": "ablation_complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "wind-base-029",
+      "options": {
+        "initial_state": {
+          "x": 0.16892561280894258,
+          "y": 11.964845004943285,
+          "vx": -0.07237482273963997,
+          "vy": -0.6071859106751918,
+          "theta": -0.014185539553039722,
+          "omega": -0.001955816371586049
+        },
+        "wind_force": 20.0
+      }
+    },
+    {
+      "id": "ablation-wind_m40-029",
+      "condition": "wind_m40",
+      "seed": 1744029,
+      "suite": "ablation_complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "wind-base-029",
+      "options": {
+        "initial_state": {
+          "x": 0.16892561280894258,
+          "y": 11.964845004943285,
+          "vx": -0.07237482273963997,
+          "vy": -0.6071859106751918,
+          "theta": -0.014185539553039722,
+          "omega": -0.001955816371586049
+        },
+        "wind_force": -40.0
+      }
+    },
+    {
+      "id": "ablation-wind_p40-029",
+      "condition": "wind_p40",
+      "seed": 1844029,
+      "suite": "ablation_complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "wind-base-029",
+      "options": {
+        "initial_state": {
+          "x": 0.16892561280894258,
+          "y": 11.964845004943285,
+          "vx": -0.07237482273963997,
+          "vy": -0.6071859106751918,
+          "theta": -0.014185539553039722,
+          "omega": -0.001955816371586049
+        },
+        "wind_force": 40.0
+      }
+    },
+    {
+      "id": "ablation-wind_control-030",
+      "condition": "wind_control",
+      "seed": 1444030,
+      "suite": "ablation_complement",
+      "exposure": "within_assisted_initial_support",
+      "paired_wind_id": "wind-base-030",
+      "options": {
+        "initial_state": {
+          "x": -0.23377166614823508,
+          "y": 12.391523857773892,
+          "vx": 0.07548859699382907,
+          "vy": -0.3684753083293977,
+          "theta": -0.011236681072345236,
+          "omega": -0.0020479025710426237
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "ablation-wind_m20-030",
+      "condition": "wind_m20",
+      "seed": 1544030,
+      "suite": "ablation_complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "wind-base-030",
+      "options": {
+        "initial_state": {
+          "x": -0.23377166614823508,
+          "y": 12.391523857773892,
+          "vx": 0.07548859699382907,
+          "vy": -0.3684753083293977,
+          "theta": -0.011236681072345236,
+          "omega": -0.0020479025710426237
+        },
+        "wind_force": -20.0
+      }
+    },
+    {
+      "id": "ablation-wind_p20-030",
+      "condition": "wind_p20",
+      "seed": 1644030,
+      "suite": "ablation_complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "wind-base-030",
+      "options": {
+        "initial_state": {
+          "x": -0.23377166614823508,
+          "y": 12.391523857773892,
+          "vx": 0.07548859699382907,
+          "vy": -0.3684753083293977,
+          "theta": -0.011236681072345236,
+          "omega": -0.0020479025710426237
+        },
+        "wind_force": 20.0
+      }
+    },
+    {
+      "id": "ablation-wind_m40-030",
+      "condition": "wind_m40",
+      "seed": 1744030,
+      "suite": "ablation_complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "wind-base-030",
+      "options": {
+        "initial_state": {
+          "x": -0.23377166614823508,
+          "y": 12.391523857773892,
+          "vx": 0.07548859699382907,
+          "vy": -0.3684753083293977,
+          "theta": -0.011236681072345236,
+          "omega": -0.0020479025710426237
+        },
+        "wind_force": -40.0
+      }
+    },
+    {
+      "id": "ablation-wind_p40-030",
+      "condition": "wind_p40",
+      "seed": 1844030,
+      "suite": "ablation_complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "wind-base-030",
+      "options": {
+        "initial_state": {
+          "x": -0.23377166614823508,
+          "y": 12.391523857773892,
+          "vx": 0.07548859699382907,
+          "vy": -0.3684753083293977,
+          "theta": -0.011236681072345236,
+          "omega": -0.0020479025710426237
+        },
+        "wind_force": 40.0
+      }
+    },
+    {
+      "id": "ablation-wind_control-031",
+      "condition": "wind_control",
+      "seed": 1444031,
+      "suite": "ablation_complement",
+      "exposure": "within_assisted_initial_support",
+      "paired_wind_id": "wind-base-031",
+      "options": {
+        "initial_state": {
+          "x": 0.26216871308331263,
+          "y": 11.02638771278766,
+          "vx": -0.01590001268639743,
+          "vy": -0.8563722652507292,
+          "theta": -0.025613392153060653,
+          "omega": 0.00255720798793999
+        },
+        "wind_force": 0.0
+      }
+    },
+    {
+      "id": "ablation-wind_m20-031",
+      "condition": "wind_m20",
+      "seed": 1544031,
+      "suite": "ablation_complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "wind-base-031",
+      "options": {
+        "initial_state": {
+          "x": 0.26216871308331263,
+          "y": 11.02638771278766,
+          "vx": -0.01590001268639743,
+          "vy": -0.8563722652507292,
+          "theta": -0.025613392153060653,
+          "omega": 0.00255720798793999
+        },
+        "wind_force": -20.0
+      }
+    },
+    {
+      "id": "ablation-wind_p20-031",
+      "condition": "wind_p20",
+      "seed": 1644031,
+      "suite": "ablation_complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "wind-base-031",
+      "options": {
+        "initial_state": {
+          "x": 0.26216871308331263,
+          "y": 11.02638771278766,
+          "vx": -0.01590001268639743,
+          "vy": -0.8563722652507292,
+          "theta": -0.025613392153060653,
+          "omega": 0.00255720798793999
+        },
+        "wind_force": 20.0
+      }
+    },
+    {
+      "id": "ablation-wind_m40-031",
+      "condition": "wind_m40",
+      "seed": 1744031,
+      "suite": "ablation_complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "wind-base-031",
+      "options": {
+        "initial_state": {
+          "x": 0.26216871308331263,
+          "y": 11.02638771278766,
+          "vx": -0.01590001268639743,
+          "vy": -0.8563722652507292,
+          "theta": -0.025613392153060653,
+          "omega": 0.00255720798793999
+        },
+        "wind_force": -40.0
+      }
+    },
+    {
+      "id": "ablation-wind_p40-031",
+      "condition": "wind_p40",
+      "seed": 1844031,
+      "suite": "ablation_complement",
+      "exposure": "outside_assisted_initial_support",
+      "paired_wind_id": "wind-base-031",
+      "options": {
+        "initial_state": {
+          "x": 0.26216871308331263,
+          "y": 11.02638771278766,
+          "vx": -0.01590001268639743,
+          "vy": -0.8563722652507292,
+          "theta": -0.025613392153060653,
+          "omega": 0.00255720798793999
+        },
+        "wind_force": 40.0
+      }
+    }
+  ]
+}
