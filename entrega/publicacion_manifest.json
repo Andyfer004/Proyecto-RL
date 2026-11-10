@@ -10,7 +10,7 @@
     "demonstrations.pt",
     "historical raw campaigns not selected"
   ],
-  "bytes": 73197867,
+  "bytes": 73198967,
   "files": {
     "artifacts/double_dqn_pilot_100k/best.policy.pt": "baa76e063404309f527b9b98973a5a000a02c0b26eab5e36800611061ed39aac",
     "artifacts/double_dqn_pilot_100k/metadata.json": "5b71283f948ac38a70ceee2462bebbc4698bddef0891474d8d7122f6e186fccb",
@@ -159,9 +159,9 @@
     "artifacts/scope_alignment_v1/reserved_exclusion_check.json": "53b44e7c69f917c103dac265bd923e9b74112e44e0859fe543a42d5d33df6a0b",
     "output/pdf/figuras/contacto_pdf.pdf": "8310d88068f48efe9f00f9d97f20a38fba04ab6cb4d3cfcc2ede2c236bbe8813",
     "output/pdf/figuras/exitos_pdf.pdf": "ba1cd93c0adde2e97c1040e0df7f3fdbb2bcc408437edfcbadf2c67bff1ce331",
-    "output/pdf/informe_final.pdf": "bc36dd19fe82569cbc33960aa16a4d2ff6310542d481cc113229cfb1ef917b7b",
-    "output/pdf/informe_final.tex": "9d90d628e9edec6c9116ba6ae0beba95b7f351b05af503de78805ef3fa9c3b14",
-    "output/pdf/informe_final_latex.zip": "0fc2ecccb3bfc4d5395824f0aa8e9a807bc6c3ee87d2e24b2ad43737020cb8c6",
-    "output/pdf/verificacion.json": "9b005e634f084ab1e53e6a69daa7c8efe85bccc76c94266f4c226b04671f359c"
+    "output/pdf/informe_final.pdf": "11974b44c43d475671cbedea78302ee42dcb3c5d122a04c2c17e1ac1a473aa9e",
+    "output/pdf/informe_final.tex": "198df33393eb15f459bd07597b14c3094dbcb79c855b37340fa9a8c4d8fefd2e",
+    "output/pdf/informe_final_latex.zip": "e7a595d6e7f96d9c3e7b0cb64ad7452e6621740de53c710bc819e31e73b395a8",
+    "output/pdf/verificacion.json": "abf8b333d18a7b1569454c2012682fd0448cc0b68a9c6eae68887b1ed7a9233c"
   }
 }

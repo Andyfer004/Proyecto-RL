@@ -2,6 +2,8 @@
 
 [**Abrir el informe completo en PDF (23 páginas)**](output/pdf/informe_final.pdf)
 
+[**Ver el video de demostración en YouTube**](https://youtu.be/X4G2c8bK0bM)
+
 Simulador académico propio **2D** de estabilización y aterrizaje con propulsores discretos, gas limitado y viento horizontal. La inspiración Tesla Roadster es conceptual: física y parámetros son propios, sin equivalencia comercial, hardware ni extensión a 3D.
 
 El [informe final técnico y matemático](docs/informe_final.md) explica dinámica, PID, recompensa, DQN/Double DQN, demostraciones, protocolo y límites. La [matriz de trazabilidad](docs/trazabilidad_alcance.md) contrasta el alcance original con evidencia real. La [demostración](docs/demostracion.md) y su [galería offline](docs/demostracion.html) reproducen estados guardados, sin entrenar ni reevaluar.

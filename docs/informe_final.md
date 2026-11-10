@@ -455,6 +455,8 @@ Se contrastaron fuentes primarias y documentación oficial durante este cierre. 
 
 ## 13. Guía de reproducción y mapa de entrega
 
+**Video de demostración:** [https://youtu.be/X4G2c8bK0bM](https://youtu.be/X4G2c8bK0bM).
+
 La entrada principal es [README](../README.md). [demostracion.md](demostracion.md) ofrece un guion sin entrenamiento y una galería offline de GIF. [evaluacion_alcance.md](evaluacion_alcance.md) conserva protocolo/resultados; [trazabilidad_alcance.md](trazabilidad_alcance.md), contrato y pendientes. Los informes anteriores son historia experimental y no sustituyen este estado final.
 
 Desde raíz, con Python3.12 y dependencias instaladas según README:
